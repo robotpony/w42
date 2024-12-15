@@ -3,8 +3,9 @@ slug: how-we-write-headlines-is-changing
 title: 💡Good ideas aren't always great
 date: 2021-04-17T23:26:13Z
 draft: false
+tags:
+- art
 ---
-#
 
 One of my art projects last year was an attempt at nerdy art in a retro [PCB](https://en.wikipedia.org/wiki/Printed_circuit_board) style:
 
