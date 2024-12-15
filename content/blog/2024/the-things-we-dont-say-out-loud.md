@@ -2,7 +2,7 @@
 slug: the-things-we-dont-say-out-loud
 title: The things we don’t say out loud
 date: 2024-03-29T21:27:07Z
-draft: true
+draft: false
 ---
 
 There is a point in your career where you start to weigh what you want to say with what you can and should say. If you’re not careful, it can paralyze and stunt your ability to hold opinions with conviction. I suspect that the difference between our inner voice and where it comes from, versus what we know we should sound like, is one of the primary causes of imposter syndrome, and possibly contributes to a cycle of burnout. I find the more disconnected my inner voice is from my external persona (and the longer there is dissonance), the less I feel like myself.
