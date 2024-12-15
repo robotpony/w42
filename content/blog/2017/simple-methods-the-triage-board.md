@@ -3,6 +3,9 @@ slug: simple-methods-the-triage-board
 title: 'Simple methods: the triage board'
 date: 2017-11-14T23:43:19Z
 draft: false
+tags:
+- methodology
+- software-development
 ---
 
 Some of my most productive business tools are the simplest. Take the *triage board*. It's a whiteboard that hangs over my desk that has a list of my current projects, with magnets marking what I'm working on next. Weekly I erase the board and re-prioritize my projects, and daily I scribble notes and move the magnets as I work.
