@@ -1,4 +1,4 @@
 baseURL = 'https://warpedvisions.org/'
 languageCode = 'en-us'
 title = 'warpedvisions.org'
-theme = 'papermod'
+theme = 'w40'
