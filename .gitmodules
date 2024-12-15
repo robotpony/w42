@@ -1,0 +1,3 @@
+[submodule "hugo-WarpedPaperMod"]
+	path = themes/w40
+	url = git@github.com:robotpony/hugo-WarpedPaperMod.git
