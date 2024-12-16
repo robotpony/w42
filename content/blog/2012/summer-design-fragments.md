@@ -47,5 +47,3 @@ This summer's design projects reinforced a number of principles for me:
 - **Simpler writing tools result in better writing, and writing really matters.** Simpler tools are better. Simpler editors, markup, and hosting.
 
 Hammering at the methodology and practicing each of the individual skills shows results quickly. I'm able to prototype a new set of features in a few days now, assuming functioning creative mojo. Iterating design with shorter design stints makes for more polish. Wax on, wax off, and all that.
-
-#Design
