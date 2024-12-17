@@ -1,5 +1,9 @@
 baseURL = 'https://warpedvisions.org/'
 languageCode = 'en-us'
 title = 'warpedvisions.org'
-tagline = 'ESSAYS, HOW-TO ARTICLES, AND GENERAL MAKERY BY [BRUCE ALDERSON](about-bruce-alderson).'
 theme = 'w40'
+
+[params]
+description = 'ESSAYS, HOW-TO ARTICLES, AND GENERAL MAKERY BY BRUCE ALDERSON.'
+warpedScript = "/js/warped.js"
+warpedStyle = "/css/warped.css"
