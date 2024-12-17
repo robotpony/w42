@@ -29,5 +29,3 @@ Sometimes the simplest questions are not answered by the spec.
 ## And how does the story end?
 
 The developer recast the `GET` as a `POST`. The semantic of the request was to retrieve a customized resource based on specific parameters, essentially creating a new resource on the fly based on the given parameters. As the filters were non-trivial, they could not be cast as `HTTP` headers or components of the `URI`. This was a pragmatic fix too (one line in his tool chain).
-
-#HTTP

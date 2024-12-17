@@ -26,5 +26,3 @@ Now I can dream of ways to make my writing *flow* better, instead of building ev
 If I do decide to build a CMS in the future, I will make it my main gig, instead of trying to fit it inbetween the other stuff. Letting side projects interfere with your flow is a sure sign that the balance is wrong.
 
 In the interim, when I get the itch to invent a new CMS, I will aim my powers at trinkets, plugins, and themes for WordPress (and other CMS's).
-
-#Weblog

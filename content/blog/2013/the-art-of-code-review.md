@@ -61,5 +61,3 @@ These loathsome problems require a graft and not just a simple nudge. Solve the 
 #### Rule 6: there is no rule 6
 
 There are always problems that don't fit your experience. Roll with it and remember your team is awesome. Support them, look for the long game, and base your recommendations on solid first principles and fact. Keep it clean. Keep it fun. And remember: code review is a form of programming itself. You're encoding your team's success using a simple series of feedback loops.
-
-#SoftwareEngineering #TheArtOf

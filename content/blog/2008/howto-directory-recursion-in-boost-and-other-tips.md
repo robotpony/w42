@@ -66,6 +66,3 @@ Things that are great about `boost::filesystem`'s approach:
 - It mirrors Perl/*sh functionality, something most developers should know well.
 - It throws errors (`filesystem_error`), allowing for some really clean, transactional code.
 - And, it abstracts paths that work on Win32, OSX, Unix, and Linux variants.
-
-
-#boost #c++

@@ -54,5 +54,3 @@ It ends up it's all about the data. Make the data obvious, and everything else f
 layout expressiveness to wrap data in a way that is obvious and easy to make look good.
 
 `</rant>`
-
-#CSS #Programming

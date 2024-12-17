@@ -25,5 +25,3 @@ Sending a client data is trivial in most dynamic languages, and PHP is no differ
 The result is a mirror of your server side structure on the client. You should encode your object somewhere else (like in your framework), as you should take care to ensure that the result is valid, but the simplified example shows the basic process.
 
 You can replace these data objects from the server in subsequent requests too, ether in `JSON` calls or when requesting subsequent chunks of `HTML` (by including the same script tag). The technique lets you keep your client and server model in sync, to whatever degree your application requires. It also helps force your thinking to data structures, which gives you a chance to properly model what your application needs.
-
-#PHP

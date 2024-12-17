@@ -14,5 +14,3 @@ When you want to become great at something, stick with it, obsess over it, and s
 And when you want to become truly incredible at something, you need to invert your thinking: reflect on the fundamentals, write, and do anything that lets you define what that thing is.
 
 Then lather, rinse, and repeat.
-
-#HOWTO

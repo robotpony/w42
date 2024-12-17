@@ -33,5 +33,3 @@ There are a few podcasts that are carefully *produced*, which makes a world of d
 - *Shorter is way better* for some reason. Cutting out the boring parts and keeping the conversations focused keeps me listening.
 
 The balance of production quality, focus, and length are the attributes that make the most difference to me. Facts are a close second as opinions get old quickly, and facts are so easy to check.
-
-#Weblog

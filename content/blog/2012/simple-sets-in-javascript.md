@@ -32,5 +32,3 @@ As the `in` keyword operates on the index of the referred object, we set
 the value of the constants to `1` (true). A bit of a hack, but it
 results in a very clean way of checking if something is part of a set of
 valid values.
-
-#Weblog

@@ -72,5 +72,3 @@ I look back on those early successes when I get lost in software development. I 
 Looking back on some of my earliest, successful projects also gives me a sense of perspective, one I could not have found at the time. Those early projects were not as bad as I thought they were. They were a balance of pragmatic, functional, and creative (at least the ones I remember). I often find myself wishing I could find that balance again, a balance that I was forced into by my lack of knowledge and experience, a balance that is now more difficult to find.
 
 Some of our art is in learning how to learn, learning how to practice and hone our craft, and in exercising our experience and knowledge. The craft is also in finding that child-like simplicity, where the balance hinges on the limitations more than the infinite possibilities, and where that youthful passion is clearly seen in the things we make.
-
-#Weblog

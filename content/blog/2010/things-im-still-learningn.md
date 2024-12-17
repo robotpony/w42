@@ -48,5 +48,3 @@ The real trick is learning to figure out which is which. Take commuting for exam
 ### And over everything else, don't lose the passion.
 
 I love the rush I get when I finally grok something interesting, the insane joy of starting a new design, the comfort I find in crafting software the right way, and the feeling I get when I finally ship something.
-
-#Weblog
