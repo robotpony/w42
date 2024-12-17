@@ -43,5 +43,3 @@ It's amazing what a bit of whitespace can do to a Twitter post, even though not 
 ## In the end, weeding the garden is good
 
 The best thing about cleaning out who I follow is that I've re-discovered some really interesting people, who write things that change how I think. It also has me weighing what I post more carefully, as Twitter doesn't really allow you to demote or segregate content well. For what it's worth, some basic categorization for feeds would allow for people to segment their streams a bit, allowing followers some choice of what aspect of a person you read about.
-
-#Weblog

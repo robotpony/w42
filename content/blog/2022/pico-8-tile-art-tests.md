@@ -3,6 +3,9 @@ slug: pico-8-tile-art-tests
 title: PICO-8 tile art tests
 date: 2022-02-19T00:04:16Z
 draft: false
+tags:
+- pico8
+- programming
 ---
 
 I've been playing around in [PICO-8](https://www.lexaloffle.com/pico-8.php), working on some generative art ideas. Lua is a fun little language that feels a lot like something between BASIC and JavaScript. Lua isn't my favourite language, but it's fun at the small scale. PICO-8, however, is a fantastic little game engine (or "Fantasy Console") that has all of the feels of the 80s.
@@ -33,5 +36,3 @@ The third test evolves on the previous and improves the performance significantl
 </video>
 
 I'm working on taking the basic concepts from these tests and building a Swift/iOS version that adds some interactivity. We'll see how that goes!
-
-#pico8 #weblog

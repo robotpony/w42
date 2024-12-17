@@ -59,5 +59,3 @@ And finally: as JS matures past ES6 and ES7, the language is getting easier to t
 - The [AirBnB JS style guidelines](https://github.com/airbnb/javascript) that pretty much everyone uses these days
 - [A cartoon intro to Fiber](https://www.youtube.com/watch?v=ZCuYPiUIONs), a very detailed view at how rendering improves with fibers
 - [The state of JS in 2017](http://stateofjs.com/2017/introduction/)
-
-#JavaScript #Programming

@@ -32,5 +32,3 @@ What I've found is that there are a few simple principles that are critical for 
 I've seem businesses spend disproportionate amount of their profits on automation tools, processes, and other organizational objectives on systems that failed to deliver.
 
 A set of tools should be grossly pragmatic, vastly improving profitability and quality. Anything less is irresponsible to the business and the businesses purpose.
-
-#Software Engineering

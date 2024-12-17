@@ -89,5 +89,3 @@ What I see happen is that smart people can control production and planning by us
 The problem isn't in the process, however, it's just a reminder that it's easy to focus on the wrong goal. Sticking to your process is often a much clearer path than figuring out what your users really need, or how to design that thing in such a way that it's a viable business. And because the process can be easier to succeed at, it becomes an easy target for people on a career path.
 
 As software leaders we just need to remind our people to apply the process and tools for the outcome. We want to build useful things for our fans and users, and we want these projects to serve the needs of the business. The processes and methodologies are just tools to this end, and not the end itself.
-
-#SoftwareEngineering #Weblog

@@ -3,6 +3,8 @@ slug: a-media-diet-for-the-crazy-years-2019-2020
 title: A media diet for the crazy years
 date: 2020-06-01T21:59:05Z
 draft: false
+tags:
+- lists
 ---
 
 In the last year I read a lot less than normal, while at the same time I watched more streaming shows than I’m used to. I’ve been busier with work, in addition to what’s shaping up to be a crazy year. Stress and burnout kill my ability to focus on long form reading, which is something I’m working hard to counteract. Sometimes just forcing myself to read a book is the best medicine imaginable.
@@ -51,5 +53,3 @@ Other great streaming things:
 
 
 There were so many other fantastic streaming things. Series and miniseries are the new movies these days. Being able to disappear into a universe for 10-20 hours is an amazing and greatly privileged thing to do.
-
-#MediaDiet

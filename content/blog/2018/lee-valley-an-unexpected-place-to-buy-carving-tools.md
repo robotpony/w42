@@ -12,5 +12,3 @@ I was looking at buying a set of PFEIL carving tools this year, but was holding 
 ![](https://images.warpedvisions.org/2018/11/IMG_1449.jpeg)
 
 *[$49 (CAD) block carving tools at Lee Valley Tools](http://www.leevalley.com/us/wood/page.aspx?p=31106&cat=43332,43334&ap=1)*
-
-#Art

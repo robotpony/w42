@@ -27,5 +27,3 @@ Project #0 was to move the list to a Google doc:
 [2016 project list](https://docs.google.com/spreadsheets/d/1I8nIHImymyzu4gVrq2I2-btn_Dnp5GmWvLDdzzqzeYA/edit?usp=sharing)
 
 I will update the list as I work through it. I'm using the list to obsess over making stuff, tracking ideas, and getting motivated to do.
-
-#Weblog

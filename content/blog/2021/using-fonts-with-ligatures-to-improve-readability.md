@@ -12,5 +12,3 @@ Ligatures are two or more letters (or graphemes) that can be combined to make a 
 ![Fira Code in Nova](https://images.warpedvisions.org/2021/02/Screen-Shot-2021-02-28-at-12.57.28-PM.png "Fira Code")
 
 Fira Code has [installation instructions](https://github.com/tonsky/FiraCode/wiki/Installing) for most platforms, though be aware that most editors have additional requirements to enable the automatic display of ligatures.
-
-#Weblog

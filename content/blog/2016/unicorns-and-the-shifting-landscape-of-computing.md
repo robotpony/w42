@@ -48,5 +48,3 @@ Now the question remains: how was this shift in computing knowledge surprising? 
 Today? Most mid and senior level developers can work through problems with less rigour. There is less need to understand how the engines work, and there are many problems that the current generations of developers will never need to think about. Questions about systems planning, measurement, and design are above the experience of these generations.
 
 Deep knowledge has shifted up over each generation of developers and designers over the last 50 years. Deeper design knowledge is now relegated to unicorns and architects. And that's okay. We'll still use it, and we will continue to teach it as deep understanding always pays off over the long term.
-
-#Weblog

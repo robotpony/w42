@@ -3,6 +3,9 @@ slug: playing-with-the-pico-8-fantasy-console
 title: Playing with the Pico-8 fantasy console
 date: 2022-02-19T02:46:51Z
 draft: false
+tags:
+  - pico8
+  - programming
 ---
 
 #
@@ -14,5 +17,3 @@ This week I'm toying with generative art ideas, starting with a tool that stamps
 One of my demos this week is a GTIA style plotter that simulates a weird 80s graphic chip that drew wide pixels, but coloured in a way that produces some fun random patterns:
 
 ![Drawing test" width="100%](https://images.warpedvisions.org/2021/03/gtia-tiles.png)
-
-#pico8

@@ -52,5 +52,3 @@ To figure out if a project is really *me*, I think I have to do a few things. Fi
 I also have to imagine if it's something that fits what I've done already, at least the stuff I'm still excited about. It needs to fit where I'm going too. If I draw a line through those things and extrapolate, do I like where it points? Is the thing it points to a better version of me?
 
 So I now have a new question for my side projects: is this project really *me*? Is it a very *Bruce* thing? I have lots of project ideas that are totally me. I think I'll focus on those.
-
-#Weblog

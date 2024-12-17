@@ -5,6 +5,7 @@ date: 2016-12-30T23:40:51Z
 draft: false
 tags:
 - tools
+- lists
 ---
 
 There's a lot to like about our beloved task management tools. But if we're honest, there's a lot they get wrong too. Here are a few ways
@@ -28,5 +29,3 @@ TODO tools grind my gears:
 16. Some tasks are just plain different than others. I'm looking at you, "Find inspiration today".
 17. I finish certain types of tasks better at certain times of day, or when I'm in certain moods.
 18. And finally, task lists are very rarely inspiring. I've never looked at my TODOs and had an epiphany.
-
-#Weblog
