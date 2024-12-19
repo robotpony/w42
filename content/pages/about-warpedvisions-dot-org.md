@@ -23,7 +23,7 @@ For the past few decades the site has been hosted by [Dreamhost](http://dreamhos
 have been mostly great. I've stuck with them as they were my first taste of organized hosting, they're honest, and mostly it
 just works. Kudos to them for sticking with the long game; it's downright respectable, and it's super reliable 20-something years later.
 
-The site is generated using Hugo and is hosted again at [Dreamhost](http://dreamhost.com/r.cgi?madmaxx/shared/comparison.html) again,
+The site is generated using Hugo and is hosted again at [Dreamhost](http://dreamhost.com/r.cgi?madmaxx/shared/comparison.html),
 though over the years it's been hosted using dozens and dozens of other tools ([Write.as](https://write.as), Wordpress, Jekyll, Movable Type,
 Textism, Slashcode and siblings, Blosxom, Tumblr, and a few of my own systems). It's always been my testing grounds for new tools and
 techniques. And for what it's worth, my favourite engine (next to this one) was [Blosxom](http://www.blosxom.com/), a bare-to-the-metal Perl
