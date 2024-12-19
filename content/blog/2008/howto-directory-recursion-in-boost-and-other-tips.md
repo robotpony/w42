@@ -15,7 +15,7 @@ Boost's [Filesystem](http://www.boost.org/doc/libs/1_35_0/libs/filesystem/doc/in
 
 This is the coolest feature I've found in `boost::filesystem` so far.  It treats directory elements like iterators, and has a convenience iterator that flattens the problem of iterating through a directory tree recursively.  The only examples I found for it were in their extensive test sources, (See [convenience tests](http://www.boost.org/doc/libs/1_35_0/libs/filesystem/test/convenience_test.cpp) and [operations tests](http://www.boost.org/doc/libs/1_35_0/libs/filesystem/test/operations_test.cpp) for more examples.) which are a bit light on comments.
 
-{{< highlight cpp>}}
+{{<highlight cpp>}}
 #include "boost/filesystem.hpp"
 #include <iostream>;
 
@@ -23,7 +23,7 @@ for ( boost::filesystem::recursive_directory_iterator end, dir("./");
        dir != end; ++dir ) {
        cout &lt;&lt; *dir &lt;&lt; std::endl;
 }
-{{< / highlight >}}
+{{</highlight>}}
 
 The example starts in the current working directory, and prints all of the file names (and directories) in `inode` order. ((Later I'll try to post an example that uses the `stat` features to dump extra information.))
 
