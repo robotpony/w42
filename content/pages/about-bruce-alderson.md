@@ -15,11 +15,11 @@ I enjoy life in all of its oddness and beauty, especially the distinct, the curi
 Here are some of the things I've:
 
 - [written](https://warpedvisions.org/),
-- [blurted out](https://twitter.com/robotpony),
+- [blurted out](https://bsky.app/profile/robotpony.bsky.social),
 - [read](https://www.instapaper.com/p/robotpony),
 - [built](https://github.com/robotpony),
 - [worked on](https://www.linkedin.com/in/bruce-alderson),
 - [carved](https://www.instagram.com/warpedvisionsdotorg/),
 - [drawn](http://robotpony.ca/2012/08/microwave-dinners.html),
-- [cooked](https://food.warpedvisions.org), and
+- [cooked](https://warpedvisions.org/food), and
 - [captured](https://www.instagram.com/bruce.alderson/).
