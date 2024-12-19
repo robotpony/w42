@@ -1,13 +1,14 @@
-baseURL = 'https://warpedvisions.org/'
+baseURL = 'https://w42.warpedvisions.org/'
 languageCode = 'en-us'
 title = 'warpedvisions.org'
-theme = 'w40'
+theme = 'w42'
 
 [params]
 description = '[ESSAYS](/blog), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
 warpedScript = "/js/warped.js"
 warpedStyle = "/css/warped.css"
 disableSpecial1stPost = true
+defaultTheme = "light"
 
 [params.assets]
 disableScrollBarStyle = true
