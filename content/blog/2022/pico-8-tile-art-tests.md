@@ -14,7 +14,7 @@ I've been playing around in [PICO-8](https://www.lexaloffle.com/pico-8.php), wor
 
 I started with a Minecraft style terrain generator, but as 2D tyles:
 
-<video controls width="256">
+<video controls width="640">
     <source src="https://images.warpedvisions.org/2022/02/terrain-gen-test-14.mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
@@ -23,14 +23,14 @@ It was a fun attempt and performed reasonably well that I filed away under _mayb
 
 My second attempt was a stamp generation tool, that defines some simple verbs and nouns for generating art, and applies it to coloured tiles:
 
-<video controls width="75%">
+<video controls width="640">
     <source src="https://images.warpedvisions.org/2022/02/tile-gen-test-1.mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
 
 The third test evolves on the previous and improves the performance significantly:
 
-<video controls width="75%">
+<video controls width="640">
     <source src="https://images.warpedvisions.org/2022/02/tile-stamper-test-2.mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
