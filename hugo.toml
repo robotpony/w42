@@ -4,7 +4,7 @@ title = 'warpedvisions.org'
 theme = 'w42'
 
 [params]
-description = '[ESSAYS](/blog), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
+description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
 warpedScript = "/js/warped.js"
 warpedStyle = "/css/warped.css"
 disableSpecial1stPost = true
