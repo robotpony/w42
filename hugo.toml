@@ -1,4 +1,4 @@
-baseURL = 'https://w42.warpedvisions.org/'
+baseURL = 'https://warpedvisions.org/'
 languageCode = 'en-us'
 title = 'warpedvisions.org'
 theme = 'w42'
