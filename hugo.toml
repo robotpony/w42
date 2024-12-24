@@ -5,11 +5,19 @@ theme = 'w42'
 
 [params]
 description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
+footer.text = "[@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.social)"
 warpedScript = "/js/warped.js"
 warpedStyle = "/css/warped.css"
 disableSpecial1stPost = true
 defaultTheme = "light"
-footer.text = "[@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.social)"
+
+
+newContentEditor = "vim"
+
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^npx$', '^postcss$', '^tailwindcss$', '^vim$']
+
 
 [services]
 [services.googleAnalytics]
@@ -37,3 +45,4 @@ tabWidth = 4
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
+
