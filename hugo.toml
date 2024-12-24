@@ -9,6 +9,7 @@ warpedScript = "/js/warped.js"
 warpedStyle = "/css/warped.css"
 disableSpecial1stPost = true
 defaultTheme = "light"
+footer.text = "[@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.social)"
 
 [services]
 [services.googleAnalytics]
