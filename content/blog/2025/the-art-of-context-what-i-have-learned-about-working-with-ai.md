@@ -8,13 +8,16 @@ draft: false
 I sat down last week to ask Claude to help me analyze some user feedback data. I spent fifteen minutes crafting what I thought was the perfect prompt:
 
 ```
-> "Please analyze this data, but don't make assumptions about causation, don't over-interpret small sample sizes, don't use corporate jargon, don't suggest solutions we can't implement, and definitely don't..."
+> Please analyze this data, but don't make assumptions about causation,
+  don't over-interpret small sample sizes, don't use corporate jargon,
+  don't suggest solutions we can't implement, and definitely don't...
 ```
 
 The response was generic and cautious. Frustrated, I tried again with a simple request:
 
 ```
-> "Here's some user feedback. What patterns do you see that might help us improve the product?"
+> Here's some user feedback. What patterns do you see that might help us
+  improve the product?
 ```
 
 The result was exactly what I needed. There were clear insights, practical observations, and actionable suggestions.
