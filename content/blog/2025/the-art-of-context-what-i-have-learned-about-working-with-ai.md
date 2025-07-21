@@ -5,9 +5,19 @@ date: 2025-07-21T21:27:07Z
 draft: false
 ---
 
-I sat down last week to ask Claude to help me analyze some user feedback data. I spent fifteen minutes crafting what I thought was the perfect prompt: "Please analyze this data, but don't make assumptions about causation, don't over-interpret small sample sizes, don't use corporate jargon, don't suggest solutions we can't implement, and definitely don't..."
+I sat down last week to ask Claude to help me analyze some user feedback data. I spent fifteen minutes crafting what I thought was the perfect prompt:
 
-The response was generic and cautious. Frustrated, I tried again with a simple request: "Here's some user feedback. What patterns do you see that might help us improve the product?" The result was exactly what I needed. There were clear insights, practical observations, and actionable suggestions.
+```
+> "Please analyze this data, but don't make assumptions about causation, don't over-interpret small sample sizes, don't use corporate jargon, don't suggest solutions we can't implement, and definitely don't..."
+```
+
+The response was generic and cautious. Frustrated, I tried again with a simple request:
+
+```
+> "Here's some user feedback. What patterns do you see that might help us improve the product?"
+```
+
+The result was exactly what I needed. There were clear insights, practical observations, and actionable suggestions.
 
 That moment crystallized something I'd been learning over months of working with AI tools: success isn't about prompt engineering tricks or elaborate constraints. It's about managing context effectively.
 
@@ -24,7 +34,7 @@ This reminds me of the early web development days when we'd write elaborate CSS 
 
 To understand why negative context often backfires, think of it this way: what happens when I tell you, "Don't think about purple elephants?"
 
-You thought about purple elephants, didn't you?
+*You thought about purple elephants, didn't you?*
 
 The same cognitive load applies when we frontload AI conversations with extensive don'ts and warnings. Every restriction requires mental processing power, both for the AI and for us as we craft increasingly complex constraints. A prompt that starts with "Don't assume, don't generalize, don't oversimplify, don't..." forces the system to hold all those negatives in working memory while trying to figure out what you do want.
 
@@ -52,11 +62,12 @@ When I treat the AI like a skilled colleague rather than a temperamental system 
 
 Through trial and error, I've developed some simple principles for managing context effectively:
 
-**Start with intent, not constraints.** Lead with what you're trying to accomplish before diving into specifics. This gives the AI a framework for interpreting everything that follows.
-**Build context iteratively.** You don't need to frontload everything. Start with the core problem and add detail as the conversation develops. This feels more natural and allows for course correction.
-**Use examples generously.** Show the AI what good output looks like, even if it's just a rough sketch. Examples are worth a thousand constraints.
-**Reset when context gets muddled.** If a conversation goes off track, it's often better to start fresh than to try steering with increasingly complex corrections.
-**Be explicit about your role and expertise.** The AI can tailor its responses better when it understands your background and what level of detail you need.
+* **Start with intent, not constraints.** Lead with what you're trying to accomplish before diving into specifics. This gives the AI a framework for interpreting everything that follows.
+* **Build context iteratively.** You don't need to frontload everything. Start with the core problem and add detail as the conversation develops. This feels more natural and allows for course correction.
+* **Use examples generously.** Show the AI what good output looks like, even if it's just a rough sketch. Examples are worth a thousand constraints.
+* **Reset when context gets muddled.** If a conversation goes off track, it's often better to start fresh than to try steering with increasingly complex corrections.
+* **Be explicit about your role and expertise.** The AI can tailor its responses better when it understands your background and what level of detail you need.
+
 These aren't revolutionary insights—they're basic principles of clear communication. The surprising thing is how much we forget them when the other party happens to be a machine.
 
 ## Learning to communicate better, period
