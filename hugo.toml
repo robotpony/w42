@@ -14,6 +14,11 @@ defaultTheme = "light"
 
 newContentEditor = "vim"
 
+[cover]
+hidden = false 
+hiddenInList = false
+hiddenInSingle = false 
+
 [security]
   [security.exec]
     allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^npx$', '^postcss$', '^tailwindcss$', '^vim$']
