@@ -5,7 +5,7 @@ date: 2025-07-21T21:27:07Z
 draft: false
 ---
 
-I sat down last week to ask Claude to help me analyze some user feedback data. I spent fifteen minutes crafting what I thought was the perfect prompt:
+I sat down a few weeks ago to ask Claude to help me analyze some user feedback data. I spent fifteen minutes crafting what I thought was the perfect prompt:
 
 ```
 > Please analyze this data, but don't make assumptions about causation,
@@ -52,7 +52,7 @@ I learned to say: "Here's some code I'm reviewing. I'm looking for feedback simi
 
 The difference is profound. The first approach creates a minefield of constraints. The second establishes a shared mental model and lets the AI work within that framework.
 
-This mirrors good technical documentation practices. The best API docs don't list everything you shouldn't do. Instead, they show you clear examples of the intended usage patterns. They build understanding rather than enforcement.
+This mirrors good technical documentation practices. The best API docs don't list everything you shouldn't do. Instead, they show you clear examples of the intended usage patterns. They build understanding rather than enforcement. The best part of this is that your documentation ends up being more useful than a bunch of weird rules.
 
 ## Clear language beats prompt hacking
 
