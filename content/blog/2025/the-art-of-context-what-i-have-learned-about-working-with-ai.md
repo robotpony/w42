@@ -26,7 +26,7 @@ That moment crystallized something I'd been learning over months of working with
 
 ## Context is everything (and we're thinking about it wrong)
 
-Working with AI for research or creation tasks has taught me that the real skill isn't in crafting clever prompts, it's in information architecture for conversation. We're not programming a system; we're building a shared understanding with a collaborator who happens to be imaginary artificial.
+Working with AI for research or creation tasks has taught me that the real skill isn't in crafting clever prompts, it's in information architecture for conversation. We're not programming a system; we're building a shared understanding with a collaborator who happens to be ~imaginary~ artificial.
 
 The newness of these tools has people thinking about context in strange ways. I see developers approaching AI like they're writing defensive code, trying to anticipate every possible failure mode. I see writers crafting prompts like legal documents, hedging against misinterpretation. We're bringing old mental models
 to a fundamentally different kind of interaction.

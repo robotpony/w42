@@ -2,10 +2,8 @@
 slug: burnout-is-a-repetitive-strain-injury
 title: "Burnout is a repetitive strain injury"
 date: 2025-07-22T21:27:07Z
-draft: true
+draft: falsee
 ---
-
-# Burnout is a repetitive strain injury
 
 We've all seen the ergonomic warnings. Adjust your monitor height. Take breaks every twenty minutes. Use a proper keyboard. The IT department sends out reminders about repetitive strain injuries, and we dutifully nod while hunching over our laptops for another six-hour coding session.
 
@@ -37,7 +35,7 @@ The worst part? We've normalized this. We call it "being busy" or "startup life"
 
 Stephen King once wrote that amateurs sit around waiting for inspiration, while professionals just get up and go to work. But he also emphasized something crucial: you have to feed the muse. You have to give your creative capacity the input and rest it needs to function.
 
-I learned this the hard way during a particularly brutal startup phase. We were pulling sixteen-hour days, living on pizza and Red Bull, convinced we were being heroic. For three months, I barely read anything that wasn't code or documentation. I stopped taking walks. I stopped sketching. I convinced myself that anything not directly productive was waste.
+I learned this the hard way during a particularly brutal startup phase. We were pulling sixteen-hour days, living on packaged ramen and coffee, convinced we were being heroic. For three months, I barely read anything that wasn't code or documentation. I stopped taking walks. I stopped sketching. I convinced myself that anything not directly productive was waste.
 
 By month four, I couldn't design my way out of a paper bag. Every solution felt forced. Every architectural decision felt like I was just copying something I'd done before. I had starved my muse into submission.
 
@@ -71,4 +69,4 @@ Your brain is a muscle. Treat it like one.
 
 ---
 
-*What does cognitive recovery look like for you? I'm curious about the practices that help you stay creative and engaged over the long term. Drop me a line—I'm always interested in how other makers manage the sustainability challenge.*
+*What does cognitive recovery look like for you? I'm curious about the practices that help you stay creative and engaged over the long term. [Drop me a line](https://mas.to/@robotpony), I'm always interested in how other makers manage the sustainability challenge.*
