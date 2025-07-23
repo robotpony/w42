@@ -1,7 +1,7 @@
 ---
 slug: story-time-how-product-thinking-made-me-a-better-engineer
 title: "Story time: How product thinking made me a better engineer"
-date: 2025-07-23T21:27:07Z
+date: 2025-07-23T12:22:07Z
 draft: true
 ---
 
