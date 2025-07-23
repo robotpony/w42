@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'warpedvisions.org'
 theme = 'w42'
 
+# buildDrafts = true
+
 [params]
 description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
 footer.text = "[@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.social)"
