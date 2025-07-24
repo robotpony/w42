@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'warpedvisions.org'
 theme = 'w42'
 
-# buildDrafts = true
+buildDrafts = true
 
 [params]
 description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
