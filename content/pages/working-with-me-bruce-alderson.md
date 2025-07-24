@@ -1,8 +1,8 @@
 ---
 slug: "working-with-me-bruce-alderson"
 title: "HOWTO: Work with me"
-date: "2025-07-23T13:30:01-07:00"
-draft: true
+date: "2025-07-23T15:30:01-07:00"
+draft: false
 ---
 
 **"The thinking that goes into your software *is* the software"**. It's a philosophy that has guided me through over 30 years of making things with code. I wrote my first program when I was 8, a BASIC adventure game that I proudly saved to tape. What I didn't expect was that my flakey tape drive would become my first teacher in the importance of documentation. After losing several programs to that unreliable piece of hardware, I learned to write out design first, a habit that became fundamental to how I work today.
