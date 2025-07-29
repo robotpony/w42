@@ -2,7 +2,7 @@
 slug: why-ai-coding-tools-make-us-better-programmers
 title: "Why AI Coding tools make us better programmers (assuming we don't skip the hard parts)"
 date: 2025-07-28T17:27:07Z
-draft: true
+draft: false
 ---
 
 There's a familiar anxiety in the air among software architects and engineering leaders. AI coding tools are going to make us lazy programmers. They'll erode our fundamental skills. We'll lose the ability to think through problems. Sound familiar?
