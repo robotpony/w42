@@ -5,27 +5,32 @@ date: "2025-07-23T15:30:01-07:00"
 draft: false
 ---
 
-**"The thinking that goes into your software *is* the software"**. It's a philosophy that has guided me through over 30 years of making things with code. I wrote my first program when I was 8, a BASIC adventure game that I proudly saved to tape. What I didn't expect was that my flakey tape drive would become my first teacher in the importance of documentation. After losing several programs to that unreliable piece of hardware, I learned to write out design first, a habit that became fundamental to how I work today.
+**"The thinking that goes into your software *is* the software"**. It's a philosophy that has guided me through over 30 years of making things with code. I wrote my first program when I was 8, a BASIC adventure game that I proudly saved to tape. What I didn't expect was that my flakey tape drive would become my first teacher in the importance of documentation. After losing several programs to that unreliable piece of hardware[^1], I learned to write out design first, a habit that became fundamental to how I work today.
 
 From tape drives to AI, I'm still excited about making things with computers.
 
+
+[^1]: It was a [Chelco-based 410 drive](https://en.wikipedia.org/wiki/Atari_Program_Recorder), which had a 550 bit/s data rate (that's **bits** per second!). I'm pretty sure the drive was a return, which may explain why it was so flakey. 
+
 ## The winding path
 
-My journey through technology hasn't been linear, either. After I learned basic, I struggled through C when I was 12, then I  found clarity using Pascal, and finally discovered my long love affair with C++, and the many languages related to it. But the real foundation came from work that had nothing to do with computers.
+My journey through technology hasn't been linear, either. After I learned basic, I struggled through C when I was 12[^2], then I  found clarity using Pascal, and finally discovered my long love affair with C++, and the many languages related to it. But the real foundation came from work that had nothing to do with computers.
 
 I started delivering newspapers when I was 8 and worked full-time in restaurants when I was 15, through to the end of college. I spent soul-crushing time as a millworker, counting down the seconds every day, and managed a 7-11 (which taught me exactly what I *didn't* want to do with my life). These experiences weren't detours - they were education in work ethic, dealing with people, and understanding what ~meaningful~ difficult work feels like.
 
 My technical evolution mirrors the industry's growth. I started with real-time data collection systems, writing device drivers and protocol stacks, porting code across multiple CPUs and operating systems. From there I moved into systems architecture, then cloud platforms as they emerged, followed by SaaS applications where the focus shifted to solving real business problems at scale.
 
-Eventually I found my way to front-end development and design - the place where all that backend complexity meets human beings. I've managed teams and led engineering organizations, but always with the same goal: building things that matter to the people who use them.
+Eventually I found my way to front-end development and design, the place where all that backend complexity meets human beings. I've managed teams and led engineering organizations, but always with the same goal: building things that matter to the people who use them.
 
 The constraints of each era taught me something valuable. Real-time systems demanded discipline. Cloud platforms taught scalability thinking. SaaS forced me to understand business value. Front-end work reminded me that in the end, it's all about the human experience.
+
+[^2]: Finding textbooks was difficult in the 1980s, so I was learning C from an advanced systems guide. I actually had better luck with ASM at the time, as memory allocation was obvious and clear.
 
 ## How I work
 
 My approach is shaped by early lessons and hard-won experience:
 
-**Document first.** That tape drive failure at age 8 burned this into my brain. I start with sketches and storyboards before jumping to code. I believe deeply in the power of good diagrams to clarify thinking, both for myself and my teams.
+**Document first.** That tape drive failure at age 8 burned this into my brain. I start with sketches and storyboards before jumping to code. I believe deeply in the power of good diagrams and documenation to clarify thinking, both for myself and my teams.
 
 **Bias toward action.** Perfect is the enemy of shipped, and shipped is how you learn what actually works. Sometimes you just have to fucking do it.
 
