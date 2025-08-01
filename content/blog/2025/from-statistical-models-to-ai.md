@@ -1,93 +1,96 @@
 ---
 slug: 'from-statistical-models-to-ai'
 title: 'From statistical models to AI'
-date: '2025-07-31T14:21:54-07:00'
+date: '2025-07-31T14:17:47-07:00'
 draft: true
 ---
 
-
 <div class="post-image"><img src="http://images.warpedvisions.org/2025/07/ai.jpg" alt="AI Image" /></div>
 
-The first time I heard an AI podcasting my own writing, I had to stop what I was doing and just listen. Two synthetic voices were discussing one of my blog posts about technical debt, riffing on the ideas, adding context, even disagreeing with each other about my conclusions. It was surreal in that uncanny valley way that makes you question what you just experienced. But it was also undeniably impressive.
+The first time I heard an AI podcast based on my own writing[^1], I had to stop what I was doing and just listen. Two synthetic voices were discussing one of my posts about technical debt, riffing on the ideas, adding context, and even disagreeing with each other about my conclusions. It was surreal in that uncanny valley way that makes you question what you just experienced. But it was also undeniably impressive.
 
 I've been working with statistical modeling systems for over 20 years, watching the slow evolution from rule-based expert systems to neural networks to transformers. Each generation brought incremental improvements: better pattern recognition, more nuanced responses, fewer obvious failures. But for most of that time, the gap between "neat demo" and "daily useful" felt insurmountable.
 
-Something shifted in the last six months. The tools crossed a threshold that, while I saw it coming, I wasn't sure was going to happen, even as someone who's been watching this space closely. It's not that they're perfect (they're certainly not). But they've moved from curiosities to genuine collaborators in ways that have surprised me.
+Something shifted in the last six months. The tools crossed a threshold that, while I saw it coming, I wasn't sure was going to happen. It's not that they're perfect (they're certainly not). But they've moved from curiosities to genuine collaborators in ways that have surprised me.
 
-## The moment an AI held up a mirror to my writing
+[^1]: If you're curious, I generated the podcast sample using [Google's NotebookLM](https://notebooklm.google.com/).
 
-A few weeks ago, I fed Claude all of my blog posts from the last 15 years and asked it to analyze my writing style. I was expecting something generic, maybe a few observations about sentence length and vocabulary. Instead, it handed me back a detailed style guide that read like someone had been shadowing me for years.
+## AI really gets me
+
+A few weeks ago, I fed Claude all of my blog posts from the last 15 years and asked it to analyze my writing style. I was expecting something generic, maybe a few observations about sentence length and vocabulary. Instead, it handed me back a [detailed style guide](https://docs.google.com/document/d/1stpYESDyE28ItlWpkoXuqcDjZjuSG0czjlMQuJFvBDk/edit?tab=t.0#heading=h.9xt7jhw4n9jx) in a Google doc that read like someone had been shadowing me for years.
 
 It nailed things I'd never articulated: my tendency to use "just fucking do it" for emphasis, the way I blend technical insights with personal anecdotes, how I structure posts to build from specific scenarios to broader principles. It identified recurring themes I wasn't consciously aware of: the intersection of craft and technology, the human side of building software, the constant tension between perfectionism and shipping.
 
-Reading that analysis was like looking in a mirror held by someone who understood my creative process better than I'd ever described it. The AI had parsed not just what I write about, but how I think about writing itself.
+Reading that analysis was like looking in a mirror held by someone who understood my creative process better than I'd ever described it. The AI had parsed not just what I write about, but how I think about writing itself. That mirror moment made me curious about what other collaborative possibilities I'd been missing. The next test came when I needed help with something more complex than self-analysis.
 
 ## A research assistant that actually synthesizes
 
-Last month, I was working on a getting-to-know-me essay for a potentialnew role. Usually, this means digging through years of work, trying to remember project timelines, and hunting down links to things I'd built. This time, I tried a different approach.
+Last month, I was working on a getting-to-know-me essay for a potential new role. Usually, this means digging through years of work, trying to remember project timelines, and hunting down links to things I'd built. This time, I tried a different approach.
 
-I gave Claude access to my Google Drive, pointed it at my resume and portfolio, and asked it to help me pull together a narrative. Not only did it find connections between projects I'd forgotten about, it synthesized insights about my career trajectory that I hadn't seen myself. It pulled relevant links, summarized complex technical work in accessible language, and even suggested themes that tied everything together.
+I gave Claude access to my Google Drive, pointed it at my resume and portfolio, and asked it to help me pull together a narrative. Not only did it find connections between projects I'd forgotten about, it also synthesized insights about my career trajectory that I hadn't seen myself. It pulled relevant links, summarized complex technical work in accessible language, and even suggested themes that tied everything together.
 
 The quality wasn't just aggregation. It was genuine synthesis. The AI found patterns in my work that told a coherent story about how I approach problems and build solutions. It was like having a research assistant who actually understood what they were researching.
 
-(new perspective given by AI is helpful and interesting)
+The research assistance was impressive, but I wondered if this collaborative approach would work for creative tasks that required more than just synthesis.
 
-## Five minutes to production-ready visuals
+## Faster production-ready visuals
 
-Here's where things get weird. I was building a scoreboard app for a local roller derby tournament and needed some quick logos. In the past, this would mean either spending hours in design software or hiring someone. Instead, I described what I wanted to GoogleGemini: "roller derby tournament logos, punk aesthetic, something that would look good on a scoreboard."
+Here's where things get weird. I was helping a local sports association prepare for a tournament and they needed some quick logos. In the past, this would mean either spending time in design software or hiring someone. Instead, I described what I wanted to Google Gemini: "roller derby tournament logos, punk aesthetic, something that would look good on a scoreboard."
 
-Five minutes later, I had a dozen options that were genuinely good. Clean typography, appropriate aesthetic, perfectly sized for digital display. The only issue was a spelling mistake in one of them (a repeated character) that I almost missed. But other than that human oversight moment, they were production-ready.
+Five minutes later, I had a dozen options that were genuinely good. Clean typography, appropriate aesthetic, perfectly sized for digital display. The only issue was a spelling mistake in one of them (a repeated character) that I almost missed. But other than that typical human oversight, they were production-ready.
 
 What struck me wasn't just the speed, but the consistency. Every option understood the brief, matched the aesthetic, and solved the practical constraints. It wasn't just generating images; it was solving a design problem.
 
 ## Code that passes code review
 
-Over the last few months, I've prototyped a dozen software tools with AI assistance. Each one reached its objectives: exploring solutions, testing architectural approaches, building functional demos. More surprisingly, the code quality has been consistently good. Not perfect, but definitely meeting professional standards.
+Over the last few months, I've prototyped a dozen software tools with AI assistance. Each one reached its objectives: exploring solutions, testing architectural approaches, and building functional demos. More surprisingly, the code quality has been consistently good. Not perfect, but definitely meeting professional standards.
 
 I built a Chrome extension for managing tabs, a Node.js service for processing webhooks, a React component library for data visualization. In each case, the AI understood not just the immediate requirements but the broader context of how the code would be used. It suggested appropriate error handling, included reasonable test coverage, and even documented the trickier bits.
 
-The challenge wasn't the AI's capabilities. It was learning to manage context effectively. Keeping the conversation focused, feeding the right information at the right time, knowing when to break complex problems into smaller pieces. These became the new skills to develop.
+The challenge wasn't the AI's capabilities. It was learning to manage context effectively, and learning to think further ahead. Keeping the conversation focused, feeding the right information at the right time, and knowing when to break complex problems into smaller pieces. These became the new skills to develop.
 
-## The constraints are now on our side
+These successes raised an important question: if the AI was performing this well, what was actually limiting the collaboration?
 
-This is where things get interesting. The bottleneck isn't the machines capabilities anymore; it's our ability to define what we want clearly and narrowly. Vague requests still produce mediocre results. But with precise direction, these tools produce consistently solid work.
+## Constraints that are on our side
 
-The experience multiplier effect is real, but it's not evenly distributed. For experienced developers, these tools amplify existing skills dramatically. You can prototype faster, explore more architectural options, and focus on high-level design while the AI handles implementation details.
+This is where things get interesting. The bottleneck isn't the machine's capabilities anymore; it's our ability to define what we want clearly and narrowly. Vague requests produce mediocre results. But with precise direction, these tools produce consistently solid work.
 
-But for beginners? The tools are almost dangerous. They can produce code that looks professional but contains subtle flaws that an inexperienced developer won't catch. They can suggest approaches that work in demos but fail at scale. The AI doesn't turn inexperienced coders into gods. It turns them into confident beginners with powerful but potentially unpredictable tools.
+The experience multiplier effect is real, but it's not evenly distributed. For experienced developers, these tools amplify existing skills dramatically. You can prototype faster, explore more architectural options, and focus on high-level design while the AI handles most of the grunt work.
 
-## Where human oversight remains critical
+But for beginners? The tools are almost dangerous. They can produce code that looks professional but contains subtle flaws that an inexperienced developer might not catch. They can suggest approaches that work in demos but fail at scale. The AI doesn't turn inexperienced coders into gods. It turns them into confident beginners with powerful but potentially unpredictable tools.
 
-There are still clear weak areas where human intervention is essential. The AI struggles with complex business logic that requires deep domain knowledge. It has trouble maintaining coherence across very long codebases. It can't reliably assess whether its own output is correct in contexts it hasn't seen before.
+Given these strengths and limitations, I started thinking about what this working relationship actually *is*.
 
-Quality control remains entirely human. You need to know when the output is wrong, why it's wrong, and how to fix it. The AI is an incredibly capable assistant, but it's still an assistant.
+## Human oversight remains critical
 
-Context management is the trickiest part. These tools work best with focused, well-scoped problems. Try to do too much in a single conversation and the quality degrades quickly. Learning to break complex work into AI-sized chunks is a skill in itself.
+There are still clear areas where human intervention is essential. The AI struggles with complex business logic that requires domain knowledge. It has trouble maintaining coherence across very long codebases. It can't reliably assess whether its own output is correct in contexts it hasn't seen before.
 
-## Pair programming with perfect recall
+Quality control should be driven by human review and testing, even where automated testing exists. You need to know when the output is wrong, why it's wrong, and how to fix it. The AI is an incredibly capable assistant, but it's still an assistant.
+
+## Is it pair programming?
 
 What's emerged over the last six months feels fundamentally different from the tool paradigm we're used to. These aren't just better compilers or smarter IDEs. They're collaborators with their own strengths and weaknesses, their own ways of approaching problems.
 
-The most effective sessions feel like pair programming with someone who has perfect recall but limited intuition. The AI can handle the mechanical parts (writing boilerplate, researching APIs, generating test cases) while I focus on architecture, business logic, and quality control.
+The most effective sessions feel almost like pair programming with someone who has perfect recall, but limited intuition. The AI can handle the mechanical parts (writing boilerplate, adding simple features, diagnosing issues, researching APIs, generating test cases) while I focus on architecture, business logic, and quality control.
 
 This collaboration model requires different skills than traditional development. Instead of just knowing how to code, you need to know how to direct, review, and refine. You need to be better at articulating requirements, breaking down problems, and validating solutions.
 
-## Twenty years of watching statistical models evolve
+## Evolution of the machines is interesting
 
 After two decades of building statistical models and watching AI evolve, this feels like a genuine inflection point. Not because the individual capabilities are unprecedented (we've had impressive demos before). But because of the consistency and reliability.
 
 These tools work well enough, often enough, that you can actually depend on them for real work. That changes everything. It's the difference between a cool research project and a fundamental shift in how software gets built.
 
-The real surprise isn't what these AIs can do. It's how quickly I adapted to treating them as collaborators rather than tools. Within weeks, I was naturally breaking down problems in AI-friendly ways, structuring conversations for maximum effectiveness, building workflows that leverage AI strengths while compensating for AI weaknesses.
+The real surprise isn't what these AIs can do. It's how quickly I adapted to treating them as collaborators rather than tools. Within weeks, I was naturally breaking down problems in AI-friendly ways, structuring conversations for maximum effectiveness, building workflows that leverage AI strengths while compensating for AI weaknesses. And most of these patterns work equally well with both human and machine collaborators.
 
 ## The real challenge is defining what we want
 
 The constraint now is entirely on the human side. As these tools become more capable, the bottleneck shifts to our ability to define what we actually want to build. Clear requirements, narrow scope, precise direction: these become the critical skills.
 
-We're not just getting better tools; we're getting better at understanding what we're trying to accomplish. The AI forces clarity in a way that traditional tools never did. You can't hand-wave through vague requirements when your collaborator needs explicit direction.
+We're not just getting better tools; we're getting better at understanding what we're trying to accomplish. The tools force clarity in a way that traditional tools never did. You can't hand-wave through vague requirements when your collaborator needs explicit direction.
 
 Looking ahead, I suspect the developers who thrive will be those who master this collaboration model. Not just writing code, but directing AI systems, managing complex contexts, and maintaining quality across human-AI workflows.
 
-After 20 years of watching statistical models slowly get smarter, this feels different. The tools crossed a threshold I didn't see coming. Now the question isn't whether AI can help us build better software. It's whether we can get better at working with AI to build the things we actually need.
+After years of watching statistical models slowly get smarter, this feels different. Now the question isn't whether AI can help us build better software. It's whether we can get better at working with AI to build the things we actually need.
 
-The future of development isn't human versus AI. It's human with AI, figuring out what we want to build together.
+The future of development isn't human versus machine. It's learning to collaborate *with* machines to build interesting and useful things.
