@@ -2,7 +2,7 @@
 slug: burnout-is-a-repetitive-strain-injury
 title: "Burnout is a repetitive strain injury"
 date: 2025-07-22T21:27:07Z
-draft: falsee
+draft: false
 ---
 
 We've all seen the ergonomic warnings. Adjust your monitor height. Take breaks every twenty minutes. Use a proper keyboard. The IT department sends out reminders about repetitive strain injuries, and we dutifully nod while hunching over our laptops for another six-hour coding session.
