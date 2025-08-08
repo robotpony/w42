@@ -2,21 +2,18 @@
 slug: 'how-i-use-ai-tools-and-how-they-are-changing-software-development'
 title: 'How I Use Ai Tools and How They Are Changing Software Development'
 date: '2025-08-07T14:14:30-07:00'
-draft: true
+draft: false
 ---
-
 
 <img src="http://images.warpedvisions.org/2025/07/ai-dream-wide.jpg" alt="AI Image" />
 
-Something weird happened last month. I caught myself sketching more than I had in years. Not less, but *more*. My notebook filled up with diagrams, wireframes, and half-formed ideas that used to live in my head until they died of neglect. The reason? I could finally get from sketch to fleshed-out concept fast enough that the ideas didn't evaporate.
+Something weird happened the other day. I found myself sketching more than I had in years. I sharpened my pencils and pulled out my favourite silky-smooth graph books.  The pages quickly fill with diagrams, wireframes, and half-formed ideas that used to live in my head until they died of neglect. The reason? I could finally get from sketch to fleshed-out concept fast enough that the ideas didn't evaporate.
 
-After a month of serious AI-assisted development, I'm starting to understand what these tools actually do well, and more importantly, where they'll cheerfully lead you off a cliff. They don't replace thinking, they amplify it. But only if you understand the difference between augmenting your expertise and outsourcing your judgment.
+After a few months of serious AI-assisted development, I'm starting to understand what these tools actually do well, and more importantly, where they'll cheerfully lead you off a cliff. They don't replace thinking, they amplify it. But only if you understand the difference between augmenting your expertise and outsourcing your judgment.
 
-## The arsenal: different tools for different jobs
+## Different tools for different jobs
 
-(needs a rewrite here)
-
-The key insight I've stumbled into is that different AI tools have different personalities, and matching the tool to the job makes all the difference. It's like having a workshop where each tool has a specific purpose, except some of these tools occasionally hallucinate.
+I’ve found that the most useful way to think about AI is as a collection of specialized tools. Each tool behaves like a hand‑crafted instrument with its own strengths and idiosyncrasies, and picking the right one for a given task can make the difference between success and frustration. Picture a workshop where every tool is built for a particular purpose—only a few of those tools occasionally start hallucinating.
 
 **Claude.ai** has become my design partner. I use it for ideation, design thinking, research, and writing. The conversational depth works perfectly for exploring complex problems, you can iterate on ideas in real-time without the cognitive overhead of context switching. But the real breakthrough came when I started using style guides as prompts.
 
