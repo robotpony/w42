@@ -21,7 +21,7 @@ Here's the script I've been using daily for years:
 open -a "iA Writer" $*
 ```
 
-Save this as `ai` somewhere on your `$PATH`, make it executable with `chmod +x ai`, and restart your terminal. Now you can type `ai` from anywhere and launch iA Writer, optionally passing files as arguments.
+Save this as `ia` somewhere on your `$PATH`, make it executable with `chmod +x ia`, and restart your terminal. Now you can type `ia` from anywhere and launch iA Writer, optionally passing files as arguments.
 
 This works for any named application on macOS. Want Photoshop? Make a script called `ps` that calls `open -a "Adobe Photoshop 2024"`. You're using the same display names you see in Applications—no bundle archaeology required.
 
