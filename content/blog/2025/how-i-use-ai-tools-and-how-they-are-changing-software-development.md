@@ -1,8 +1,8 @@
 ---
 slug: 'how-i-use-ai-tools-and-how-they-are-changing-software-development'
-title: 'How I Use AI Tools and How They Are Changing Software Development'
+title: 'How I use AI toosm and how they are changing software development'
 date: '2025-08-07T14:14:30-07:00'
-draft: true
+draft: false
 ---
 
 <img src="http://images.warpedvisions.org/2025/07/ai-dream-wide.jpg" alt="AI Image" />
