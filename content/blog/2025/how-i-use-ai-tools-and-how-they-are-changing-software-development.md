@@ -13,13 +13,13 @@ After a few months of serious AI-assisted development, I'm starting to understan
 
 ## Different tools for different jobs
 
-I’ve found that the most useful way to think about AI is as a collection of specialized tools. Each tool behaves like a hand-crafted instrument with its own strengths and idiosyncrasies, and picking the right one for a given task can make the difference between success and frustration. Picture a workshop where every tool is built for a particular purpose, only that a some of those tools occasionally start hallucinating.
+I’ve found that the most useful way to think about AI is as a collection of specialized tools. Each one behaves like a hand-crafted instrument with its own strengths and idiosyncrasies, and picking the right one for a given task can make the difference between success and frustration. Picture a workshop where every tool is built for a particular purpose, only that a some of those tools occasionally start hallucinating.
 
-**Claude.ai** has become my design partner. I use it for ideation, design thinking, research, and writing. The conversational depth works perfectly for exploring complex problems and you can iterate on ideas in real-time without the cognitive overhead of context switching. 
+**Claude.ai** has become my design partner. I use it for ideation, design thinking, research, and writing. The conversational depth works perfectly for exploring complex problems, and you can iterate on ideas in real-time without the cognitive overhead of context switching. 
 
-I had a real breakthrough with Claude when I started using style guides as prompts, when I realized that it thrived on clear and narrow context. I had some stale product requirements that needed to communicate their core value more clearly. Instead of grinding through rewrites myself, I asked Claude to provide alternatives closer to my style and Paul Graham's voice. The transformation was remarkable—suddenly dry technical specs became compelling explanations of why someone should care about the feature.
+I had a real breakthrough with Claude when I started using style guides along side my prompts, when I realized that it thrived on clear and narrow context. I had some stale product requirements that needed to communicate their core value more clearly. Instead of grinding through rewrites myself, I asked Claude to provide alternatives closer to my style and Paul Graham's voice. The transformation was remarkable: suddenly dry technical specs became compelling explanations of why someone should care about the feature.
 
-**Claude Code** lives in my terminal and VSCode, handling coding tasks. It excels at working on small utilities, refactoring changes, extending existing code, and—surprisingly: teaching me new codebases. There's something magical about being able to ask, "What does this function actually do?" and getting a clear explanation instead of spelunking through documentation. It's useful on larger projects, too, but you do have to manage your scope carefully.
+**Claude Code** lives in my terminal and VSCode, handling coding tasks. It excels at working on small utilities, refactoring changes, extending existing code, and, surprisingly, teaching me new codebases. There's something magical about being able to ask, "What does this function actually do?" and getting a clear explanation instead of spelunking through documentation. It's useful on larger projects, too, but you do have to manage your scope carefully.
 
 **Llama** runs locally for evaluation and prototyping. When I need to experiment without cloud dependencies, or when I'm working on something sensitive, having a capable local model changes the game. It's not as conversational as Claude (depending on the model and hardware), but for quick code analysis or brainstorming, it's invaluable.
 
@@ -33,9 +33,9 @@ The tools excel with small, clear, well-thought-out chunks of work. Give Claude 
 
 This has led to a sketching renaissance in my workflow. I'm writing more requirements, more architecture documents, more detailed sketches of what I want to build. The payoff is enormous: the gap from idea to working prototype has collapsed from days to hours.
 
-I've started using style guides for everything now—not just blog posts, but also for product requirements, READMEs, and architecture documents. Having a consistent voice across all your project documentation isn't just nice to have; it actually helps the AI understand the context and tone you're aiming for.
+I've started using style guides for everything now; not just blog posts, but for product requirements, READMEs, and architecture documents. Having a consistent voice across all your project documentation isn't just nice to have; it actually helps the AI understand the context and tone you're aiming for.
 
-## These tools are magical
+## These tools are really magical
 
 When these tools click, they feel like having a conversation with the most patient, knowledgeable colleague you've ever worked with. Here's where I've found the real productivity multipliers:
 
@@ -53,7 +53,7 @@ Of course, it's not all magic and productivity gains. These tools fail in predic
 
 But the more dangerous problem is that AI coding is like automating a **loaded gun**. Less experienced developers can build enormous, complex systems with AI assistance before realizing they've made fundamental design mistakes. It's like the old *ways to shoot yourself in the foot in various programming languages* joke, except now you can do it much more quickly and with larger guns.
 
-The pattern I see is "vibe coding"—relying too heavily on the AI's intuition without architectural guidance. When you're building something large with minimal constraints, everything from abstraction names to component design becomes random chance. This has always been true, but with AI tools, you reach the point of no return much more quickly.
+The pattern I see is that vibe coding relies too heavily on the AI's intuition without architectural guidance. When you're building something large with minimal constraints, everything from abstraction names to component design becomes random chance. This has always been true, but with AI tools, you reach the point of no return much more quickly.
 
 **Sunk cost spirals** are particularly insidious. Human plus AI can continue down obviously wrong paths for surprisingly long periods. The solution isn't better prompting, it's stepping back and questioning the entire approach. Sometimes you need to throw out the branch and start over.
 
@@ -71,7 +71,7 @@ The core insight that crystallized for me is that it was always about the idea-b
 
 If you're thinking about integrating AI tools into your development workflow, here's what I've learned works:
 
-**Match tools to specific use cases.** Don't try to use Claude for everything. Each tool has strengths and weaknesses—play to them.
+**Match tools to specific use cases.** Don't try to use Claude for everything. Each tool has strengths and weaknessesa nd we should play to them.
 
 **Structure your process around the tools' limitations.** Break work into small, well-defined chunks. Keep conversations focused. Restart context when things get muddy.
 
@@ -85,6 +85,6 @@ The frustration that experienced programmers initially feel is real and understa
 
 We're in the early days of understanding how AI changes software development. The tools will get better, the integration will get smoother, and the failure modes will evolve. But the fundamental insight remains: these are amplification tools, not replacement tools.
 
-The craft of software development isn't disappearing—it's evolving. The developers who thrive will be those who understand how to combine human insight with AI capabilities. We're becoming augmented developers, and that's a more interesting future than I expected.
+The craft of software development isn't disappearing, it's evolving. The developers who thrive will be those who understand how to combine human insight with AI capabilities. We're becoming augmented developers, and that's a more interesting future than I expected.
 
 The best part? I'm sketching more, writing more, and building more interesting things. The tools have compressed the tedious parts of development, leaving more time for the creative work that drew us to programming in the first place. That feels like progress.
