@@ -5,8 +5,6 @@ date: '2025-07-31T14:17:47-07:00'
 draft: true
 ---
 
-<div class="post-image"><img src="http://images.warpedvisions.org/2025/07/ai.jpg" alt="AI Image" /></div>
-
 The first time I heard an AI podcast based on my own writing[^1], I had to stop what I was doing and just listen. Two synthetic voices were discussing one of my posts about technical debt, riffing on the ideas, adding context, and even disagreeing with each other about my conclusions. It was surreal in that uncanny valley way that makes you question what you just experienced. But it was also undeniably impressive.
 
 I've been working with statistical modeling systems for over 20 years, watching the slow evolution from rule-based expert systems to neural networks to transformers. Each generation brought incremental improvements: better pattern recognition, more nuanced responses, fewer obvious failures. But for most of that time, the gap between "neat demo" and "daily useful" felt insurmountable.
