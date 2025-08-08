@@ -1,6 +1,6 @@
 ---
 slug: 'how-i-use-ai-tools-and-how-they-are-changing-software-development'
-title: 'How I Use Ai Tools and How They Are Changing Software Development'
+title: 'How I Use AI Tools and How They Are Changing Software Development'
 date: '2025-08-07T14:14:30-07:00'
 draft: false
 ---
@@ -13,17 +13,17 @@ After a few months of serious AI-assisted development, I'm starting to understan
 
 ## Different tools for different jobs
 
-I’ve found that the most useful way to think about AI is as a collection of specialized tools. Each tool behaves like a hand‑crafted instrument with its own strengths and idiosyncrasies, and picking the right one for a given task can make the difference between success and frustration. Picture a workshop where every tool is built for a particular purpose—only a few of those tools occasionally start hallucinating.
+I’ve found that the most useful way to think about AI is as a collection of specialized tools. Each tool behaves like a hand-crafted instrument with its own strengths and idiosyncrasies, and picking the right one for a given task can make the difference between success and frustration. Picture a workshop where every tool is built for a particular purpose—only a few of those tools occasionally start hallucinating.
 
 **Claude.ai** has become my design partner. I use it for ideation, design thinking, research, and writing. The conversational depth works perfectly for exploring complex problems, you can iterate on ideas in real-time without the cognitive overhead of context switching. But the real breakthrough came when I started using style guides as prompts.
 
-I had some fairly stale product requirements that needed to communicate their core value more clearly. Instead of grinding through rewrites myself, I asked Claude to provide alternatives closer to my style and Paul Graham's voice. The transformation was remarkable,suddenly dry technical specs became compelling explanations of why someone should care about the feature.
+I had some fairly stale product requirements that needed to communicate their core value more clearly. Instead of grinding through rewrites myself, I asked Claude to provide alternatives closer to my style and Paul Graham's voice. The transformation was remarkable—suddenly dry technical specs became compelling explanations of why someone should care about the feature.
 
 **Claude Code** lives in my terminal and VSCode, handling what I call "the coding collaborations." It excels at small utilities, refactoring changes, extending existing code, and—surprisingly—teaching me new codebases. There's something magical about being able to ask, "What does this function actually do?" and getting a clear explanation instead of spelunking through documentation.
 
 **Llama** runs locally for evaluation and prototyping. When I need to experiment without cloud dependencies, or when I'm working on something sensitive, having a capable local model changes the game. It's not as conversational as Claude, but for quick code analysis or brainstorming, it's invaluable.
 
-**Gemini** handles my more random questions and learning. I often cross-check findings across multiple engines, if Claude and Gemini agree on something technical, I'm usually in good shape. If they disagree, I know I need to dig deeper.
+**Gemini** handles my more random questions and learning. I often cross-check findings across multiple engines. If Claude and Gemini agree on something technical, I'm usually in good shape. If they disagree, I know I need to dig deeper.
 
 ## The method: splitting design from doing
 
