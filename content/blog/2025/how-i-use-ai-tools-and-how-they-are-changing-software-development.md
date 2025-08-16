@@ -7,7 +7,7 @@ draft: false
 
 <img src="http://images.warpedvisions.org/2025/07/ai-dream-wide.jpg" alt="AI Image" />
 
-Something weird happened the other day. I found myself sketching more than I had in years. The pages quickly fill with diagrams, wireframes, and half-formed ideas that used to live in my head until they died of neglect. The reason? I can finally get from sketch to fleshed-out concept fast enough that my ideas don't evaporate.
+Something weird happened the other day. I found myself sketching more than I had in years. The pages quickly filled with the doodles, wireframes, and half-formed ideas that used to live in my head until they died of neglect. The reason? I can finally get from sketch to fleshed-out concept fast enough that my ideas don't evaporate.
 
 After a few months of serious AI-assisted development, I'm starting to understand what these tools actually do well, and more importantly, where they will cheerfully lead you off a cliff. They don't replace thinking, they amplify it. But only if you understand the difference between augmenting your expertise and outsourcing your judgment.
 
@@ -41,17 +41,17 @@ When these tools click, they feel like having a conversation with the most patie
 
 **Architecture and decision making** have become collaborative. I ask for lists of alternative approaches, justifications for each, and detailed tradeoffs. I repeat this process a few times to ensure I'm seeing the full possibility space. What used to require hours of research and discussion now happens in minutes, but with better coverage of edge cases and alternatives.
 
-**Learning new technologies** is transformational. Instead of wading through documentation for simple questions, I can ask targeted questions and get immediate, contextual answers. "How does React's useEffect differ from componentDidMount?" gets me a precise answer instead of generic tutorials.
+**Learning new technologies** is transformational. Instead of wading through documentation for simple questions, I can ask targeted questions and get immediate, contextual answers. "How does React's `useEffect` differ from `componentDidMount`?" gets me a precise answer instead of generic tutorials.
 
-The real magic happens in **rapid prototyping**. I can go from rough sketch to working demo faster than ever before. Not because the AI writes better code than me, but because it handles the tedious parts while I focus on the interesting problems.
+The real magic happens when I prototype. I can go from rough sketch to working demo faster than ever before. Not because the AI writes better code than me, but because it handles the tedious parts while I focus on the interesting problems.
 
 ## Like boots or hearts: when it starts, it really falls apart
 
 Of course, it's not all magic and productivity gains. These tools fail in predictable ways, and if you're not careful, they'll fail spectacularly.
 
-**Context collapse** is the most common failure mode. The AI forgets key details, hallucinates features that don't exist, or loses the thread of what you're trying to accomplish. I've learned to structure my approach to minimize this: use smaller modules, focus on one priority at a time, and restart conversations between major tasks. When a conversation starts feeling confused, throw it out and start fresh.
+**Context collapse** is the most common failure I see. The AI forgets key details, hallucinates features that don't exist, or loses the thread of what you're trying to accomplish. I've learned to structure my approach to minimize this: use smaller modules, focus on one priority at a time, and restart conversations between major tasks. When a conversation starts feeling confused, throw it out and start fresh.
 
-But the more dangerous problem is that AI coding is like automating a **loaded gun**. Less experienced developers can build enormous, complex systems with AI assistance before realizing they've made fundamental design mistakes. It's like the old *ways to shoot yourself in the foot in various programming languages* joke, except now you can do it much more quickly and with larger guns.
+But the more dangerous problem is that AI coding is like automating a loaded gun. Less experienced developers can build enormous, complex systems with AI assistance before realizing they've made fundamental design mistakes. It's like the old *ways to shoot yourself in the foot in various programming languages* joke, except now you can do it much more quickly and with larger guns.
 
 The pattern I see is that vibe coding relies too heavily on the AI's intuition without architectural guidance. When you're building something large with minimal constraints, everything from abstraction names to component design becomes random chance. This has always been true, but with AI tools, you reach the point of no return much more quickly.
 

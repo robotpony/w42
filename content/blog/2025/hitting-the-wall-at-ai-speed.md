@@ -1,8 +1,8 @@
 ---
 slug: 'hitting-the-wall-at-ai-speed'
 title: "The hidden cost of AI-assisted development: cognitive fatigue"
-date: '2025-08-07T15:27:03-07:00'
-draft: true
+date: '2025-08-10T15:27:03-07:00'
+draft: false
 ---
 
 After three months of AI-assisted development, I'm more productive than ever. I'm also mentally exhausted in ways I didn't expect.
@@ -23,7 +23,7 @@ I find myself needing breaks not because I'm stuck on a problem, but because my 
 
 ## Hitting the wall at light speed
 
-The most jarring change is how quickly you slam into fundamental design decisions. In traditional development, you discover moar architectural problems as you implement, test, and scale. You have time to think through the implications because writing the code takes time.
+The most jarring change is how quickly you slam into fundamental design decisions. In traditional development, you discover more architectural problems as you implement, test, and scale. You have time to think through the implications because writing the code takes time.
 
 With AI assistance, you hit these walls immediately. The implementation happens fast enough that you're suddenly facing questions about data models, API design, and system boundaries before you've had time to think them through properly.
 
@@ -64,4 +64,3 @@ We're still in the early days of understanding how AI changes the actual experie
 The developers who thrive will be those who recognize that these tools don't just change what you can build—they change how you think about building. They amplify your highest-level thinking, which is incredibly powerful but also mentally demanding in ways we're still learning to manage.
 
 The adaptation period is worth it. But don't underestimate the learning curve, especially the parts that happen inside your head. Give your brain time to develop these new muscles. The tools will wait.
-
