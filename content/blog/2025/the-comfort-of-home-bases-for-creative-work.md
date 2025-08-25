@@ -5,9 +5,6 @@ date: '2025-08-24T14:36:07-07:00'
 draft: true
 ---
 
-
-# Home sweet home: The comfort of home bases for creative work
-
 There's a feeling you get when everything clicks into place. Not the eureka moment of solving a problem, but something more fundamental: the deep satisfaction of being exactly where you need to be, with exactly what you need, arranged exactly how it should be. It's the feeling of *home*, but applied to the spaces where we create.
 
 This isn't about aesthetics or luxury. It's about something more primal: the human need to nest, to claim territory, to shape our environment until it shapes us back. And nowhere is this more crucial than in the spaces where we do our most demanding creative work.
@@ -16,11 +13,11 @@ Consider the paradox of modern work: we have more tools than ever, more flexibil
 
 ## The neuroscience of just right
 
-Research from the University of Exeter reveals why this feeling matters so much: employees who have control over the design and layout of their workspace are not only happier and healthier -- they're also up to 32 percent more productive. But the implications go deeper than productivity metrics.
+Research from the University of Exeter[^1] reveals why this feeling matters so much: employees who have control over the design and layout of their workspace are not only happier and healthier -- they're also up to 32 percent more productive. But the implications go deeper than productivity metrics.
 
-When we work in familiar, well-organized environments, we're not just more efficient. We're cognitively lighter. Environmental psychology in the workplace focuses on understanding how physical space and design elements affect the mental states and behaviors of employees. The design of a workspace can influence factors such as mood, stress levels, creativity, and collaborative dynamics, ultimately impacting productivity and job satisfaction.
+When we work in familiar, well-organized environments, we're not just more efficient. We're cognitively lighter. Environmental psychology in the workplace[^4] focuses on understanding how physical space[^5] and design elements affect the mental states and behaviours of employees. The design of a workspace[^6] can influence factors such as mood, stress levels, creativity, and collaborative dynamics, ultimately impacting productivity and job satisfaction.
 
-The concept of cognitive load explains why. Our brains have limited processing power, and every unfamiliar interface, every misplaced tool, every moment spent thinking "where did they put that feature?" is mental energy stolen from the actual work. In familiar environments, this overhead drops to nearly zero. Muscle memory takes over. Tools become extensions of thought rather than obstacles to it.
+The concept of cognitive load[^3] explains why. Our brains have limited processing power, and every unfamiliar interface, every misplaced tool, every moment spent thinking "where did they put that feature?" is mental energy stolen from the actual work. In familiar environments, this overhead drops to nearly zero. Muscle memory takes over. Tools become extensions of thought rather than obstacles to it.
 
 Reducing setup time can increase developer productivity, especially in cases where learning to use the IDE is faster than manually integrating and learning all of the individual tools. It's not laziness. It's optimization.
 
@@ -36,15 +33,15 @@ The same dynamic plays out in music studios. A comfortable setup isn't about hav
 
 ## Virtual sanctuaries: Digital territory
 
-This territoriality extends seamlessly into our digital spaces. Research by NYU computer scientist Julian Togelius found that how people play Minecraft actually reflects their real-life personality traits—players who valued family built homes with fences, while independent players avoided main storylines. We're not just building virtual structures; we're expressing something fundamental about how we need our spaces to feel.
+This territoriality extends seamlessly into our digital spaces. Research by NYU computer scientist Julian Togelius[^2] found that how people play Minecraft actually reflects their real-life personality traits—players who valued family built homes with fences, while independent players avoided main storylines. We're not just building virtual structures; we're expressing something fundamental about how we need our spaces to feel.
 
 In Minecraft, players obsess over their bases with an intensity that might seem silly to outsiders. But watch someone show off their meticulously organized storage system, their perfectly lit corridors, their automated farms positioned for optimal efficiency, and you're seeing the same nesting instinct that drives us to perfect our real-world workspaces.
 
-The psychology is identical: these virtual homes provide safety, efficiency, and a sense of control in an unpredictable world. They're spaces where you can focus on higher-order problems because the basics are handled.
+The psychology is identical: these virtual homes provide safety[^9], efficiency, and a sense of control in an unpredictable world. They're spaces where you can focus on higher-order problems because the basics are handled.
 
-This maps directly to how developers feel about their IDEs. Take my recent experience with Claude Code versus Claude's web interface. Both access the same powerful AI, but Claude Code relies on your existing editor setup. In the wrong IDE (one without my customizations, shortcuts, and workflow optimizations) even a great tool feels constrained. The web interface, by contrast, is compact, purpose-built, and optimized for the specific task of AI interaction. It removes environmental friction.
+This maps directly to how developers feel about their IDEs. Take my recent experience with Claude Code versus Claude's web interface. Both access the same powerful AI, but Claude Code relies on your existing editor setup. In the wrong IDE[^8] (one without my customizations, shortcuts, and workflow optimizations) even a great tool feels constrained. The web interface, by contrast, is compact, purpose-built, and optimized for the specific task of AI interaction. It removes environmental friction.
 
-Context switching and experiencing tool sprawl can impede developers' ability to build and improve upon software. But it's not just about time lost to switching. It's about the cognitive overhead of maintaining multiple mental models of how different tools work. Every interface you haven't internalized is mental energy that could be spent on the actual problem you're solving.
+Context switching[^7] and experiencing tool sprawl can impede developers' ability to build and improve upon software. But it's not just about time lost to switching. It's about the cognitive overhead[^10] of maintaining multiple mental models of how different tools work. Every interface you haven't internalized is mental energy that could be spent on the actual problem you're solving.
 
 ## The comfort paradox
 
@@ -91,3 +88,15 @@ The most effective approach combines both: investing deeply in the environments 
 The goal isn't to eliminate the preference for familiar spaces. That preference exists for good psychological and cognitive reasons. Instead, it's about understanding why we need our spaces to feel *just so*, and using that understanding to create better environments for creative work, whether they're physical, virtual, or something in between.
 
 Because in the end, the comfort of a well-arranged workspace isn't vanity or pickiness. It's the foundation that lets us focus on what we're actually trying to create.
+
+
+[^1]: University of Exeter workspace control study: [Designing your own workspace improves health, happiness and productivity](https://www.sciencedaily.com/releases/2010/09/100907104035.htm) - ScienceDaily
+[^2]: Julian Togelius’s Minecraft personality research: Referenced but specific study link not found in search results. This appears to be from his work at NYU on player behavior analysis.
+[^3]: [Cognitive load theory](https://en.wikipedia.org/wiki/Cognitive_load)
+[^4]: Environmental psychology and workplace design: [How Does Workplace Design Influence Employee Psychology?](https://bluemonarchgroup.com/blog/how-does-workplace-design-influence-employee-psychology/) - Blue Monarch Group
+[^5]: Psychology of workspace design: [The Psychology of Workspace Design and Productivity](https://www.yardikube.com/blog/the-psychology-of-workspace-design-and-productivity/) - Yardi Kube
+[^6]: Office design psychology: [The Psychology Behind Office Layouts: How Furniture Influences Productivity](https://www.haiken.com/insights/the-psychology-behind-office-layouts-how-furniture-influences-productivity)  - Haiken
+[^7]: Context switching and developer productivity: [11 tools that facilitate developer productivity](https://www.techtarget.com/searchsoftwarequality/tip/Tools-that-facilitate-developer-productivity) - TechTarget
+[^8]: IDE productivity benefits: [What is an IDE?](https://aws.amazon.com/what-is/ide/) - Integrated Development Environment Explained - AWS
+[^9]: Workspace color and environmental psychology: [The Psychology of Office Spaces: Boosting Productivity, Creativity, And Morale](https://www.linkedin.com/pulse/psychology-office-spaces-boosting-productivity-morale-sharma)
+[^10]: Cognitive load and familiar environments: [Understanding the Psychology of Office Design](https://www.officeevolution.com/blog/understanding-the-psychology-of-office-design-26/) - Office Evolution
