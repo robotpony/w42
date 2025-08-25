@@ -1,9 +1,11 @@
 ---
 slug: 'the-comfort-of-home-bases-for-creative-work'
-title: 'The Comfort of Home Bases for Creative Work'
-date: '2025-08-24T14:36:07-07:00'
-draft: true
+title: 'The comfort of home bases for creative work'
+date: '2025-08-26T10:00:01-07:00'
+draft: false
 ---
+
+<img src="http://images.warpedvisions.org/2025/08/a-home-office-space.jpg" alt="A comfy home office" />
 
 There's a feeling you get when everything clicks into place. Not the eureka moment of solving a problem, but something more fundamental: the deep satisfaction of being exactly where you need to be, with exactly what you need, arranged exactly how it should be. It's the feeling of *home*, but applied to the spaces where we create.
 
@@ -17,25 +19,25 @@ Research from the University of Exeter[^1] reveals why this feeling matters so m
 
 When we work in familiar, well-organized environments, we're not just more efficient. We're cognitively lighter. Environmental psychology in the workplace[^4] focuses on understanding how physical space[^5] and design elements affect the mental states and behaviours of employees. The design of a workspace[^6] can influence factors such as mood, stress levels, creativity, and collaborative dynamics, ultimately impacting productivity and job satisfaction.
 
-The concept of cognitive load[^3] explains why. Our brains have limited processing power, and every unfamiliar interface, every misplaced tool, every moment spent thinking "where did they put that feature?" is mental energy stolen from the actual work. In familiar environments, this overhead drops to nearly zero. Muscle memory takes over. Tools become extensions of thought rather than obstacles to it.
+The concept of cognitive load[^3] explains why. Our brains have limited processing power, and every unfamiliar interface, every misplaced tool, every moment spent thinking "where did they put that feature?" is mental energy subtracted from the actual work. In familiar environments, this overhead drops to nearly zero. Muscle memory takes over. Tools become extensions of thought rather than obstacles to it.
 
 Reducing setup time can increase developer productivity, especially in cases where learning to use the IDE is faster than manually integrating and learning all of the individual tools. It's not laziness. It's optimization.
 
 ## Physical foundations: The mise en place of making
 
-Walk into any professional kitchen during prep, and you'll see this principle in action. *Mise en place* (everything in its place) isn't just organization; it's a philosophy. Every knife has its spot, every spice its position, every tool within arm's reach of where it's needed most.
+Walk into any professional kitchen during prep, and you'll see this principle in action. *Mise en place* (everything in its place) isn't just organization; it's a philosophy. Every knife has its spot, every spice its position, every tool and service ingredient within arm's reach of where it's needed most.
 
 My own kitchen exemplifies this. Open, bright, with generous counter space and storage that makes sense. A six-burner range that responds instantly, an in-wall oven positioned for efficient workflow. Over years of cooking, the space has evolved: commercial-grade tools where they matter most, everything arranged not for show but for the rhythm of actual cooking. Salt and pepper within reach of the stove. Knives on a magnetic strip above the cutting board. Olive oil in three different places because I use it everywhere.
 
-When everything is *just so*, cooking becomes meditation. The space disappears, and you're left with pure focus on flavor, technique, timing. But transplant me to an unfamiliar kitchen (one where I have to hunt for a cutting board or puzzle out an unfamiliar stove) and suddenly I'm thinking about the tools instead of the food.
+When everything is *just so*, cooking becomes meditation. The space disappears, and you're left with pure focus on flavor, technique, and timing. But transplant me to an unfamiliar kitchen (one where I have to hunt for a cutting board or puzzle out an unfamiliar stove) and suddenly I'm thinking about the tools instead of the food.
 
 The same dynamic plays out in music studios. A comfortable setup isn't about having the most expensive gear; it's about removing friction between inspiration and expression. When the guitar is in tune and in its stand, when the interface levels are set correctly, when the monitoring setup lets you hear every detail clearly, you stop thinking about the technology and start thinking in music.
 
-## Virtual sanctuaries: Digital territory
+## Virtual sanctuaries: digital territory
 
 This territoriality extends seamlessly into our digital spaces. Research by NYU computer scientist Julian Togelius[^2] found that how people play Minecraft actually reflects their real-life personality traits—players who valued family built homes with fences, while independent players avoided main storylines. We're not just building virtual structures; we're expressing something fundamental about how we need our spaces to feel.
 
-In Minecraft, players obsess over their bases with an intensity that might seem silly to outsiders. But watch someone show off their meticulously organized storage system, their perfectly lit corridors, their automated farms positioned for optimal efficiency, and you're seeing the same nesting instinct that drives us to perfect our real-world workspaces.
+In Minecraft, players obsess over their bases with an intensity that might seem odd to outsiders. But watch someone show off their meticulously organized storage system, their perfectly lit corridors, their automated farms positioned for optimal efficiency, and you're seeing the same nesting instinct that drives us to perfect our real-world workspaces.
 
 The psychology is identical: these virtual homes provide safety[^9], efficiency, and a sense of control in an unpredictable world. They're spaces where you can focus on higher-order problems because the basics are handled.
 
@@ -47,7 +49,7 @@ Context switching[^7] and experiencing tool sprawl can impede developers' abilit
 
 But here's where it gets interesting: comfort can become its own trap. The same environmental optimization that makes us productive can also make us rigid. We become so adapted to our perfect setup that any deviation feels impossible.
 
-I've seen developers who couldn't pair program effectively because their partner didn't use Vim. Musicians who couldn't record anywhere but their home studio. Chefs who struggled in restaurant kitchens because their knife wasn't *their* knife.
+I've seen developers who couldn't pair program effectively because their partner didn't use Vim. Musicians who couldn't record anywhere but their home studio. Chefs who struggled in restaurant kitchens because their setup wasn't their ideal setup.
 
 The research on workspace control suggests that the key is balancing consistency with adaptability. The most resilient creators maintain core comfort elements while staying flexible about the periphery. They identify what's truly essential versus what's just habitual.
 
