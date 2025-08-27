@@ -1,6 +1,6 @@
 ---
 slug: after-the-prompt-how-ai-disappears-into-everything
-title: 'After the Prompt: How AI Disappears Into Everything'
+title: 'After the prompt: how AI disappears into everything'
 date: 2024-12-24T10:00:00Z
 draft: true
 tags:
@@ -9,11 +9,11 @@ tags:
 - software-design
 ---
 
-I've been thinking about the current AI moment, and I can't shake the feeling that we're about to hit a wall. Not a failure wall, more like the wall Web 1.0 hit right before everything changed. Remember when every startup was "X.com" and the height of innovation was animated GIFs? We're in the AI equivalent of that era right now.
+I've been thinking about the current AI moment, and I can't shake the feeling that we're about to hit a wall. Not a failure wall, more like the wall Web 1.0 hit right before everything changed. Remember when every startup was "webr.com" and the height of innovation was animated GIFs? We're in the AI equivalent of that era right now.
 
 Just as Web 2.0 wasn't really about AJAX or rounded corners, AI 2.0 won't be about better chatbots. We're about to witness a fundamental shift in how AI gets built, deployed, and integrated into our daily tools. And honestly? It can't come soon enough.
 
-## The Web 2.0 Parallel
+## The Web 2.0 parallel
 
 Let's be real about what Web 2.0 actually was. It wasn't the technology—it was the shift in thinking:
 
@@ -41,7 +41,7 @@ The current bubble is full of stuff that needs to die:
 
 **ChatGPT wrappers with no moat.** You know the ones—they're basically a textarea that calls OpenAI's API. There are literally thousands of these. They'll be gone within 18 months.
 
-**"AI-powered" as a meaningful differentiator.** Saying your app is "AI-powered" in 2025 will sound as ridiculous as "database-powered" does today. Of course it uses AI. Everything will.
+**"AI-powered" as a meaningful differentiator.** Saying your app is "AI-powered" in 2026 will sound as ridiculous as "database-powered" does today. Of course it uses AI. Everything will.
 
 **The fantasy that LLMs alone can handle complex business logic.** I've watched too many teams learn this the hard way. Pure LLMs are chaos machines; brilliant chaos machines, but chaos nonetheless.
 
@@ -51,7 +51,7 @@ The current bubble is full of stuff that needs to die:
 
 But here's what survives and thrives:
 
-**Boring, reliable AI infrastructure.** Someone's going to be the Stripe of AI—making integration so simple that it's just another API call. Probably multiple someones, actually.
+**Boring, reliable AI infrastructure.** Someone's going to be the Stripe of AI; making integration so simple that it's just another API call. Probably multiple someones, actually.
 
 **Vertical-specific solutions with real domain expertise.** The winners won't be "ChatGPT for X." They'll be companies that deeply understand X and happen to use AI to solve real problems in that space.
 
@@ -65,11 +65,11 @@ Here's where things get weird and interesting. I've been thinking about tokens a
 
 Think about how we've climbed the abstraction ladder in traditional computing:
 
-go`Binary → Assembly → C → Python`
+`Binary → Assembly → C → Python`
 
 But with AI, we're going the opposite direction:
 
-> `Natural Language → ??? → ??? → Tokens`
+Natural Language → ??? → ??? → Tokens`
 
 We're literally working backwards. Natural language is our high-level interface, and tokens are our low-level implementation. It's like if we started with Python and had to invent assembly language afterwards.
 
