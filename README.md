@@ -44,7 +44,7 @@ The site uses a custom Hugo theme called "w42" (located in `themes/w42/`):
 
 ## Features
 
-- Google Analytics integration (G-77V9MKYGJ8)
+- Google Analytics integration
 - Light theme by default
 - Built-in search functionality
 - Year-based content organization
