@@ -1,6 +1,6 @@
 ---
-slug: ai-2-0-the-coming-shift-from-chatbots-to-invisible-intelligence
-title: 'AI 2.0: The Coming Shift from Chatbots to Invisible Intelligence'
+slug: after-the-prompt-how-ai-disappears-into-everything
+title: 'After the Prompt: How AI Disappears Into Everything'
 date: 2024-12-24T10:00:00Z
 draft: true
 tags:
@@ -9,7 +9,7 @@ tags:
 - software-design
 ---
 
-I've been thinking about the current AI moment, and I can't shake the feeling that we're about to hit a wall. Not a failure wall—more like the wall Web 1.0 hit right before everything changed. Remember when every startup was "X.com" and the height of innovation was animated GIFs? We're in the AI equivalent of that era right now.
+I've been thinking about the current AI moment, and I can't shake the feeling that we're about to hit a wall. Not a failure wall, more like the wall Web 1.0 hit right before everything changed. Remember when every startup was "X.com" and the height of innovation was animated GIFs? We're in the AI equivalent of that era right now.
 
 Just as Web 2.0 wasn't really about AJAX or rounded corners, AI 2.0 won't be about better chatbots. We're about to witness a fundamental shift in how AI gets built, deployed, and integrated into our daily tools. And honestly? It can't come soon enough.
 
