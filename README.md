@@ -58,12 +58,6 @@ The site uses a custom Hugo theme called "w42" (located in `themes/w42/`):
 - Generated content in `/public` (not version controlled)
 - Extensive content history dating back to 2008
 
-## About
-
-Bruce Alderson designs and crafts software for fun and profit, while also writing and making artful things. The site focuses on the distinct, the curious, and the wondrous - believing that simplicity is achieved when things fit *just so*.
-
-No comments or contact forms here - the best filter is public discourse. Write a response somewhere and link back. It takes more effort than a comment and gets you writing.
-
 ## Site Details
 
 - **URL**: https://warpedvisions.org/
