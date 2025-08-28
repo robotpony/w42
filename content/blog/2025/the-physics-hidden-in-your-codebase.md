@@ -2,7 +2,7 @@
 slug: the-physics-hidden-in-your-codebase
 title: The physics hidden in your codebase
 date: 2024-12-27T12:00:00Z
-draft: false
+draft: true
 tags:
 - software-design
 - architecture
