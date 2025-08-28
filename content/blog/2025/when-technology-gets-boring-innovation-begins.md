@@ -17,9 +17,11 @@ Someone once told me that ubiquity in technology is the point at which you stop 
 
 ## The pattern is always the same
 
-Every transformative technology follows this arc: Novel → Expensive → Common → Invisible.
+Every transformative technology follows this arc: 
 
-**CPUs** went from "the computer" that filled a room to computational dust sprinkled through every device. When I started programming, we carefully counted clock cycles. Now there's more processing power in my laptop's power supply than in my first workstation. Think about that—the thing that just converts AC to DC has a microcontroller more powerful than the computer I learned to code on.
+`Novel → Expensive → Common → Invisible`
+
+**CPUs** went from the machine that filled a room to computational dust sprinkled through every device. When I started programming, we carefully counted clock cycles. Now there's more processing power in my laptop's power supply than in my first workstation. Think about that: the thing that just converts AC to DC has a microcontroller more powerful than the computer I learned to code on.
 
 **LCD screens** traveled a similar path. Remember when a flat-screen monitor cost $3,000? Now they're so cheap we stick them on refrigerators to show the weather. My house has screens I've never turned on.
 
@@ -27,7 +29,7 @@ Every transformative technology follows this arc: Novel → Expensive → Common
 
 ## The cost curve never lies
 
-The economic pattern is predictable, almost boring in its reliability. The cost decrease follows something between a logarithmic and quadratic function, racing toward zero. Not literally zero—nothing's free—but effectively zero for decision-making purposes.
+The economic pattern is predictable, almost boring in its reliability. The cost decrease follows something between a logarithmic and quadratic function, racing toward zero. Not literally zero, but effectively zero for decision-making purposes.
 
 When something costs $10,000, you plan around it. When it costs $10, you might think about it. When it costs $0.10, you stop thinking entirely. That's the vanishing point.
 
@@ -35,9 +37,9 @@ This is where things get interesting for builders and designers. When a technolo
 
 ## What's vanishing right now?
 
-ML has been quietly driving weather prediction for years. We knew the current generation of AI would happen—the writing was on the wall for anyone paying attention to the research. I predicted advanced code generation years ago, based on the simple principle that if you iterate over code enough times with enough randomness, you'll eventually get something that works. 
+ML has been quietly driving weather prediction for years. We knew the current generation of AI would happen; the writing was on the wall for anyone paying attention to the research. I predicted advanced code generation years ago, based on the simple principle that if you iterate over code enough times with enough randomness, you'll eventually get something that works. 
 
-Turns out we short-cut the process with LLMs' ability to classify prompts and essentially "paint" code. Same destination, different path.
+Turns out we short-cut the process with LLMs' ability to classify prompts and essentially *paint* code. Same destination, different path.
 
 Right now, AI feels expensive. Every API call costs something. We carefully manage context windows and token limits. But the pattern is clear: this will become cheap, then cheaper, then effectively free. The question isn't if, but when.
 
@@ -53,7 +55,7 @@ The best software, like the best technology, disappears into utility. Nobody thi
 
 There's something beautiful and sad about this vanishing. The technologies that transform society most profoundly are the ones we eventually forget exist. The highest achievement for any technology is to become boring.
 
-I'm writing this on a device with billions of transistors, connected to a global network, powered by electricity I never think about, displaying on a screen I take for granted. Every one of these was once miraculous. Now they're just Tuesday.
+I'm writing this on a device with billions of transistors, connected to a global network, powered by electricity I never think about, displaying on a screen I take for granted. Every one of these was once miraculous. Now they're just part of the furniture, sometimes literally.
 
 The next time you're evaluating a new technology, ask yourself: can I imagine a world where this is too cheap to meter? Where it's so common we forget it exists? If the answer is yes, start building for that world now.
 
