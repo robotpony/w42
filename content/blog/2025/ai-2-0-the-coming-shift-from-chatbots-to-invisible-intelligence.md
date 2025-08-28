@@ -65,13 +65,15 @@ Here's where things get weird and interesting. I've been thinking about tokens a
 
 Think about how we've climbed the abstraction ladder in traditional computing:
 
-go`Binary → Assembly → C → Python`
+`Binary → Assembly → C → Python`
 
 But with AI, we're going the opposite direction:
 
-> `Natural Language → ??? → ??? → Tokens`
+`Natural Language → ??? → ??? → Tokens`
 
 We're literally working backwards. Natural language is our high-level interface, and tokens are our low-level implementation. It's like if we started with Python and had to invent assembly language afterwards.
+
+Consider this: the Chinese city '北京市' takes 3 tokens in GPT-4 but 7 in Claude. That's not just a quirk - it's a fundamental incompatibility at the lowest level of these systems. It's like trying to run x86 code on ARM.
 
 This matters because:
 
@@ -81,6 +83,7 @@ This matters because:
 
 If tokens really are the new binary, then whoever builds the "operating system" for tokens—the layer that manages token "memory," handles token "interrupts," and provides token "system calls"—builds the next $100B company.
 
+
 ## The architecture of next
 
 Right now, everyone's deploying static models. Even "ChatGPT" is just switching between frozen snapshots. But the architecture is evolving:
@@ -89,6 +92,9 @@ Right now, everyone's deploying static models. Even "ChatGPT" is just switching 
 | :-----: | :-----: | :-----: |
 | `Static Models` | `RAG + Scheduled Updates` | `Hybrid Systems` |
 
+- Static Models (frozen weights, no adaptation)
+- RAG + Updates (external memory, periodic retraining)
+- Hybrid Systems (deterministic code + probabilistic AI)
 
 Here's the thing most people don't want to admit: most "learning" needs are just clever caching. You don't need a model that truly learns from every interaction. You need a good data pipeline and maybe some periodic fine-tuning. 
 
