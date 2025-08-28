@@ -5,8 +5,6 @@ date: 2025-07-23T12:22:07Z
 draft: true
 ---
 
-(quality concerns with this post, needs a rethink)
-
 I still remember the retro from hell. We'd shipped our project management redesign on time, hit every technical milestone, and delivered exactly what the spec required. The architecture was clean, the performance metrics were solid, and we'd even managed to reduce technical debt along the way. By every engineering measure, it was a success.
 
 Except nobody used it.
