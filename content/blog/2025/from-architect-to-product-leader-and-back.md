@@ -49,6 +49,3 @@ The innovation happens at those fissures where technical architecture meets user
 
 Maybe the future isn't about choosing between being technical or being product-focused. Maybe it's about being both, and creating space for people who think holistically about the entire problem. The tools are there. The need is there. We just need to stop pretending that artificial role boundaries serve anyone, especially not the users whose problems we're trying to solve.
 
----
-
-*What's your experience with hybrid technical-product roles? I'd love to hear from others who've navigated this space.*
