@@ -61,7 +61,7 @@ But here's what survives and thrives:
 
 ## Tokens are the new Binary
 
-Here's where things get weird and interesting. I've been thinking about tokens a lot lately, and I've come to a bizarre realization: tokens are the new binary.
+Here's where things get weird and interesting. I've been thinking about tokens a lot lately, and I've come to a fairly obvious realization: tokens are the new binary.
 
 Think about how we've climbed the abstraction ladder in traditional computing:
 
@@ -69,7 +69,7 @@ Think about how we've climbed the abstraction ladder in traditional computing:
 
 But with AI, we're going the opposite direction:
 
-Natural Language → ??? → ??? → Tokens`
+`Natural Language → ??? → ??? → Tokens`
 
 We're literally working backwards. Natural language is our high-level interface, and tokens are our low-level implementation. It's like if we started with Python and had to invent assembly language afterwards.
 
