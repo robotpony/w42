@@ -1,8 +1,8 @@
 ---
 slug: the-physics-hidden-in-your-codebase
 title: The physics hidden in your codebase
-date: 2024-12-27T12:00:00Z
-draft: true
+date: 2025-09-02T11:02:00Z
+draft: false
 tags:
 - software-design
 - architecture
@@ -10,7 +10,9 @@ tags:
 - programming
 ---
 
-Evolution has a weird obsession with crabs. At least five times, nature has taken some random crustacean and said, "you know what would work better? A crab." But it's not just crabs, evolution continues to reinvent the wheel. Trees evolved independently more than 40 times. Many different types of eyes appeared in dozens of unrelated lineages. Flight emerged in insects, pterosaurs, birds, and bats, each indipendently.
+<img src="https://images.warpedvisions.org/2025/09/crab-evolution-hand-drawn.jpg" alt="AI Image of crabs" />
+
+Evolution has a weird obsession with crabs. At least five times, nature has taken some random crustacean and said, "you know what would work better? A crab." But it's not just crabs, evolution continues to reinvent the wheel. Trees evolved independently more than 40 times. Many different types of eyes appeared in dozens of unrelated lineages. Flight emerged in insects, pterosaurs, birds, and bats, each independently.
 
 These aren't coincidences. They're examples that good design is inevitable.
 
