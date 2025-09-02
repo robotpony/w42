@@ -5,7 +5,7 @@ date: '2025-08-07T14:14:30-07:00'
 draft: false
 ---
 
-<img src="http://images.warpedvisions.org/2025/07/ai-dream-wide.jpg" alt="AI Image" />
+<img src="https://images.warpedvisions.org/2025/07/ai-dream-wide.jpg" alt="AI Image" />
 
 Something weird happened the other day. I found myself sketching more than I had in years. The pages quickly filled with the doodles, wireframes, and half-formed ideas that used to live in my head until they died of neglect. The reason? I can finally get from sketch to fleshed-out concept fast enough that my ideas don't evaporate.
 
