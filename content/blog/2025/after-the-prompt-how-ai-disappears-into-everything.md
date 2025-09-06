@@ -1,8 +1,8 @@
 ---
 slug: after-the-prompt-how-ai-disappears-into-everything
 title: 'After the prompt: how AI disappears into everything'
-date: 2024-12-24T10:00:00Z
-draft: true
+date: 2025-09-06T10:00:00Z
+draft: false
 tags:
 - ai
 - computing
@@ -15,9 +15,9 @@ Just as Web 2.0 wasn't really about AJAX or rounded corners, AI 2.0 won't be abo
 
 ## The Web 2.0 parallel
 
-Let's be real about what Web 2.0 actually was. It wasn't the technology—it was the shift in thinking:
+Let's be real about what Web 2.0 actually was. It wasn't the technology, it was the shift in thinking:
 
-| Transition  |  Observation | 
+| What | How we got there | 
 | :------- | :------ | 
 | *Read → Write*             | We went from consuming static pages to everyone becoming a publisher  | 
 | *Desktop → Mobile*         | New devices meant new interaction paradigms |
@@ -28,61 +28,32 @@ The real magic? The winners made the "web" part invisible. You don't think about
 
 I'm seeing the same patterns in AI:
 
-| Transition  |  Observation | 
+| What  | How we’ll get there | 
 | :------- | :------ | 
 | *Prompt → Program* | We'll move from chat interfaces to embedded  intelligence |
 | *Cloud → Edge* | API calls will give way to local models (Apple's already betting on this) |
 | *General → Specific* | ChatGPT for everything becomes domain experts for specific things |
 | *Assistant → Infrastructure* | The helpful bot becomes an invisible layer |
 
-## Tired
-
-The current bubble is full of stuff that needs to die:
-
-**ChatGPT wrappers with no moat.** You know the ones—they're basically a textarea that calls OpenAI's API. There are literally thousands of these. They'll be gone within 18 months.
-
-**"AI-powered" as a meaningful differentiator.** Saying your app is "AI-powered" in 2026 will sound as ridiculous as "database-powered" does today. Of course it uses AI. Everything will.
-
-**The fantasy that LLMs alone can handle complex business logic.** I've watched too many teams learn this the hard way. Pure LLMs are chaos machines; brilliant chaos machines, but chaos nonetheless.
-
-**Demo-ware that can't handle production.** That amazing demo that works 95% of the time? That 5% failure rate means it's unusable for anything that matters.
-
-## Wired 2.0
-
-But here's what survives and thrives:
-
-**Boring, reliable AI infrastructure.** Someone's going to be the Stripe of AI; making integration so simple that it's just another API call. Probably multiple someones, actually.
-
-**Vertical-specific solutions with real domain expertise.** The winners won't be "ChatGPT for X." They'll be companies that deeply understand X and happen to use AI to solve real problems in that space.
-
-**Hybrid systems that combine deterministic code with probabilistic understanding.** Use AI for what it's good at (understanding messy human input), use traditional code for what it's good at (reliable execution). Revolutionary, I know.
-
-**Tools that make AI integration a commodity.** Just like AWS made servers boring (in the best way), someone's going to make AI inference boring. Can't wait.
+This pattern of initial complexity giving way to invisible infrastructure is already playing out with AI. The telltale signs are everywhere, from the shift in how we talk about these tools to what we're actually building with them. 
 
 ## Tokens are the new Binary
 
 Here's where things get weird and interesting. I've been thinking about tokens a lot lately, and I've come to a fairly obvious realization: tokens are the new binary.
 
-Think about how we've climbed the abstraction ladder in traditional computing:
+Consider this: the Chinese city '北京市' takes 3 tokens in GPT-4 but 7 in Claude. That's not just a quirk, it's a fundamental incompatibility at the lowest level of these systems. It's like trying to run x86 code on ARM.
 
-`Binary → Assembly → C → Python`
-
-But with AI, we're going the opposite direction:
-
-`Natural Language → ??? → ??? → Tokens`
-
-We're literally working backwards. Natural language is our high-level interface, and tokens are our low-level implementation. It's like if we started with Python and had to invent assembly language afterwards.
-
-Consider this: the Chinese city '北京市' takes 3 tokens in GPT-4 but 7 in Claude. That's not just a quirk - it's a fundamental incompatibility at the lowest level of these systems. It's like trying to run x86 code on ARM.
-
-This matters because:
+This is interesting because:
 
 - Token engineering is the new assembly optimization
 - Different tokenizers are creating the new x86 vs ARM
 - Token injection is the new buffer overflow
+- Token caching is the new opcode caching 
+- It’s a cost and performance differentiator that compounds and creates moats as sticky as iOS vs Android
 
-If tokens really are the new binary, then whoever builds the "operating system" for tokens—the layer that manages token "memory," handles token "interrupts," and provides token "system calls"—builds the next $100B company.
+If tokens really are the new binary, then whoever builds the "operating system" for tokens, the layer that manages token "memory," handles token "interrupts," and provides token "system calls”, builds the next $100B company.
 
+While there are many technical hurdles between ubiquitous use of LLMs, the larger gap is in the architecture. How do we scale and optimize these tools for use everywhere? 
 
 ## The architecture of next
 
@@ -90,11 +61,7 @@ Right now, everyone's deploying static models. Even "ChatGPT" is just switching 
 
 | Now → | Next → | Future → |
 | :-----: | :-----: | :-----: |
-| `Static Models` | `RAG + Scheduled Updates` | `Hybrid Systems` |
-
-- Static Models (frozen weights, no adaptation)
-- RAG + Updates (external memory, periodic retraining)
-- Hybrid Systems (deterministic code + probabilistic AI)
+| `Static Models` <br/> <br/> Frozen weights, no adaptation | `RAG + Scheduled Updates` <br/> <br/> External memory, periodic retraining | `Hybrid Systems`  <br/> <br/>  Deterministic code + probabilistic AI |
 
 Here's the thing most people don't want to admit: most "learning" needs are just clever caching. You don't need a model that truly learns from every interaction. You need a good data pipeline and maybe some periodic fine-tuning. 
 
@@ -113,8 +80,8 @@ When AI becomes truly boring:
 
 The winners won't focus on having the best models. They'll focus on:
 
-- Domain expertise over model quality
-- Reliability over impressiveness
+- Domain expertise over model quality *(think Bloomberg Terminal, not ChatGPT)*
+- Reliability over impressiveness 
 - Solving actual problems vs. building toys
 - Making AI so seamless users don't even know it's there
 
@@ -136,7 +103,7 @@ There are some things keeping me up at night about this shift:
 
 **Token lock-in is real.** OpenAI's tokenizer isn't the same as Claude's. Are we creating new platform wars? The same Chinese city name takes 3 tokens in GPT and 7+ in Claude. That's a cost and performance difference that compounds.
 
-**Where are the missing layers?** If tokens are binary, where's the operating system? Where's the LLVM of AI? Where's the middleware? These feel like billion-dollar questions that nobody's answering yet.
+**Where are the missing layers?** If tokens are binary, where's the operating system? Where's the LLVM of AI? Where's the middleware? Imagine a layer that automatically handles token optimization across models, like how LLVM handles CPU instruction optimization. These feel like billion-dollar questions that nobody's answering yet.
 
 **Who owns the primitives?** We're shifting from boolean logic to vector operations, from exact matches to similarity search. Whoever controls these new primitives controls the future stack.
 
@@ -146,7 +113,7 @@ The AI 2.0 winners won't have the best models. They'll build the boring infrastr
 
 The revolution isn't coming through better chatbots. It's coming through making AI so mundane, so integrated, and so reliable that we forget it's even there. Just like the best Web 2.0 companies made us forget about the web.
 
-I'm reminded of that William Gibson quote: "The future is already here—it's just not evenly distributed." The boring AI future is already visible if you know where to look. The teams building Postgres extensions for vectors, the companies making model deployment trivial, the startups focusing on specific vertical problems—they get it.
+I'm reminded of that William Gibson quote: "The future is already here, it's just not evenly distributed." The boring AI future is already visible if you know where to look. The teams building Postgres extensions for vectors (pgvector), the companies making model deployment trivial (Replicate, Modal), the startups focusing on specific vertical problems—they get it.
 
 The rest? They're still building chatbots.
 
