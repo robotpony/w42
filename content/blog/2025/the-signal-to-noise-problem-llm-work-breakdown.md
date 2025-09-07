@@ -1,6 +1,6 @@
 ---
 slug: the-signal-to-noise-problem-llm-work-breakdown
-title: 'The Signal-to-Noise Problem: Why Breaking Work Down for LLMs Is Harder Than It Looks'
+title: 'The signal-to-noise problem: why breaking work down for LLMs is harder than it looks'
 date: 2025-09-06T10:00:00Z
 draft: true
 tags:
@@ -10,23 +10,23 @@ tags:
 - productivity
 ---
 
-Last week, I was reviewing an LLM-generated outline for a technical article. It looked solid—comprehensive sections, logical flow, all the boxes checked. But something felt off. On a hunch, I removed one of the middle sections entirely. 
+Last week, I was reviewing an outline I worked on with an LLM agent for a technical article. It looked solid: comprehensive sections, logical flow, all the boxes checked. But something was off. On a hunch, I removed a section that was good (but didn’t quite fit) entirely. 
 
-The result? Not only did the article flow better, but when I ran it through multiple LLMs for quality scoring, they all rated the shortened version higher. The very tools that created the noise recognized the improved signal when it was removed.
+The result? Not only did the article flow better, but when I ran it through quality scoring, they all rated the shortened version higher. The very tools that helped created the meandering narrative recognized the improved signal when it was removed.
 
 This moment crystallized something I'd been noticing across months of working with LLMs: they excel at producing plausible content, but that plausibility masks a surprising amount of noise. And we're remarkably bad at spotting it in real-time.
 
 ## The Nature of LLM Noise
 
-Noise in LLM output isn't like static on a radio—it's more insidious. In prose, it manifests as sections that seem reasonable but don't quite belong. They use the right terminology, follow logical structures, but somehow dilute the core message. Remove them, and suddenly your argument sharpens.
+Noise in LLM output isn't like static on a radio, it's more insidious. In prose, it manifests as sections that seem reasonable but don't quite belong. They use the right terminology, follow logical structures, but somehow dilute the core message. Remove them, and your argument sharpens.
 
 In code, the noise takes different forms. LLMs love to over-engineer solutions, adding abstraction layers that feel professional but serve no real purpose. They'll implement a factory pattern for a simple function call, or create elaborate error handling for scenarios that can't occur given the constraints of the problem.
 
-The hallucination gradient runs from subtle to obvious. At one end, you have slightly misaligned assumptions—a function that handles edge cases that don't exist in your domain. At the other end, complete fabrications—importing libraries that sound plausible but were never written. Most noise lives in the murky middle, where experience and careful review might catch it, but often doesn't.
+The hallucination gradient runs from subtle to obvious. At one end, you have slightly misaligned assumptions; a function that handles edge cases that don't exist in your domain. At the other end, complete fabrications, importing libraries that sound plausible but were never written. Most noise lives in the murky middle, where experience and careful review might catch it, but often doesn't.
 
 This accumulation happens because LLMs optimize for completeness, not conciseness. They're trained on vast corpora where comprehensive answers often score higher than precise ones. When you ask for a design document, they give you everything that could possibly be relevant, plus some things that merely sound relevant.
 
-The ambiguity problem compounds over distance. Think about descending a mountain—a 1% deviation in your angle of descent might only put you a few feet off course after 100 yards. But maintain that angle for miles, and you'll miss base camp entirely. Each ambiguous decision in an LLM's output creates a branching point where noise can accumulate.
+The ambiguity problem compounds over distance. Think about descending a mountain: a 1% deviation in your angle of descent might only put you a few feet off course after 100 metres. But maintain that angle for kilometres, and you'll miss base camp entirely. Each ambiguous decision in an LLM's output creates a branching point where noise can accumulate.
 
 ## The Scale Problem
 
