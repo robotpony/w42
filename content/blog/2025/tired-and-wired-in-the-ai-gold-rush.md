@@ -1,11 +1,9 @@
 ---
 slug: tired-and-wired-in-the-ai-gold-rush
 title: "What's tired and what's wired in the AI gold rush"
-date: '2025-09-06T12:10:05-07:00'
+date: '2025-09-07T12:10:05-07:00'
 draft: true
 ---
-
-(Consider editing down the pre/post)
 
 I've been watching the AI gold rush unfold for the past two years now, and honestly? It's giving me serious déjà vu. Remember the early days of mobile apps when everyone and their cousin was building a flashlight app? Or when "on the blockchain" was supposedly going to revolutionize everything from grocery shopping to dental records?
 
@@ -22,7 +20,7 @@ So in the spirit of those old Wired magazine "Tired/Wired" lists (remember those
 
 **ChatGPT wrappers with no moat.** You know the ones; they're a `textarea` that calls OpenAI's API. There are literally thousands of these. They'll be gone within 18 months.
 
-**"AI-powered" as a meaningful differentiator.** Saying your app is "AI-powered" in 2026 will sound as ridiculous as "database-powered" does today. Of course it uses AI. Everything will.
+**"AI-powered" as a meaningful differentiator.** Saying your app is "AI-powered" in a few years will sound as ridiculous as "database-powered" does today. Of course it uses AI. Everything will.
 
 **The fantasy that LLMs alone can handle complex business logic.** I've watched too many teams learn this the hard way. Pure LLMs are chaos machines; brilliant chaos machines, but chaos nonetheless.
 
@@ -31,7 +29,6 @@ So in the spirit of those old Wired magazine "Tired/Wired" lists (remember those
 **The "AI will replace developers" panic.** Every few months, someone breathlessly announces that programming is dead. Meanwhile, I'm spending more time than ever debugging why the AI-generated code thinks undefined is a valid currency format. Turns out, computers still need adults in the room.
 
 </div>
-
 <div class="callout right">
 
 ## Wired

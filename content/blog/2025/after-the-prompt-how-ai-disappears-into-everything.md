@@ -119,4 +119,4 @@ The rest? They're still building chatbots.
 
 And that's fine. Someone needs to explore the current paradigm to its limits. But I'm more interested in what comes next. The shift from "look at this cool AI thing" to "of course it works that way, how else would it work?"
 
-That's the future I'm building toward. Boring, invisible, utterly transformative AI that just fucking works.
+That's the future I'm building toward. Boring, invisible, utterly transformative AI that just works.
