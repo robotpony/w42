@@ -1,7 +1,7 @@
 ---
 slug: draft-posts
 title: "Draft posts"
-date: 2025-09-07T17:49:46
+date: 2025-09-07T20:38:56
 draft: true
 ---
 
@@ -11,7 +11,7 @@ draft: true
 - [Teaching Claude to Write Like Me a Two Month Journey](https://warpedvisions.org/blog/teaching-claude-to-write-like-me-a-two-month-journey/) *September 07, 2025* `[blog]`
 - [Claude Code Versus Web Different Tools Different Thinking](https://warpedvisions.org/blog/claude-code-versus-web-different-tools-different-thinking/) *September 07, 2025* `[blog]`
 - [Lab notebook: a summer of LLM Assisted Everything](https://warpedvisions.org/blog/2025/lab-notebook-a-summer-of-llm-assisted-everything/) *September 07, 2025* `[blog]`
-- [What's tired and what's wired in the AI gold rush](https://warpedvisions.org/blog/2025/tired-and-wired-in-the-ai-gold-rush/) *September 07, 2025* `[blog]`
+- [Wired, tired in the AI gold rush](https://warpedvisions.org/blog/2025/wired-tired-in-the-ai-gold-rush/) *September 07, 2025* `[blog]`
 - [The signal-to-noise problem: why breaking work down for LLMs is harder than it looks](https://warpedvisions.org/blog/2025/the-signal-to-noise-problem-llm-work-breakdown/) *September 06, 2025* `[blog]`
 - [From Architect to Product Leader and Back](https://warpedvisions.org/blog/2025/from-architect-to-product-leader-and-back/) *July 31, 2025* `[blog]`
 - [From statistical models to AI](https://warpedvisions.org/blog/2025/from-statistical-models-to-ai/) *July 31, 2025* `[blog]`

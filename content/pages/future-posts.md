@@ -1,7 +1,7 @@
 ---
 slug: future-posts
 title: "Future posts"
-date: 2025-09-07T17:49:46
+date: 2025-09-07T20:38:56
 draft: true
 ---
 
