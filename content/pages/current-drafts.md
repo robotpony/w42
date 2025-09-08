@@ -1,7 +1,15 @@
-# Drafts and early posts
+---
+slug: draft-posts
+title: "Draft posts"
+date: 2025-09-07T17:49:46
+draft: true
+---
 
-*9 posts*
+*12 posts*
 
+- [Future posts](https://warpedvisions.org/pages/future-posts/) *September 07, 2025* `[pages]`
+- [Teaching Claude to Write Like Me a Two Month Journey](https://warpedvisions.org/blog/teaching-claude-to-write-like-me-a-two-month-journey/) *September 07, 2025* `[blog]`
+- [Claude Code Versus Web Different Tools Different Thinking](https://warpedvisions.org/blog/claude-code-versus-web-different-tools-different-thinking/) *September 07, 2025* `[blog]`
 - [Lab notebook: a summer of LLM Assisted Everything](https://warpedvisions.org/blog/2025/lab-notebook-a-summer-of-llm-assisted-everything/) *September 07, 2025* `[blog]`
 - [What's tired and what's wired in the AI gold rush](https://warpedvisions.org/blog/2025/tired-and-wired-in-the-ai-gold-rush/) *September 07, 2025* `[blog]`
 - [The signal-to-noise problem: why breaking work down for LLMs is harder than it looks](https://warpedvisions.org/blog/2025/the-signal-to-noise-problem-llm-work-breakdown/) *September 06, 2025* `[blog]`
