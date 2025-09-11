@@ -47,11 +47,11 @@ After 30 years of this, I've distilled my approach to three principles that actu
 
 **Ship broken rather than perfect.** Perfect code that never ships is just millwork with better pay. I learned this managing teams: the teams that ship learn faster than the teams that polish. You want to know if your idea works? Put it in front of some of your users and watch it break. The breakage teaches you more than any design review.
 
-**Method matters, process doesn't.** I've seen too many teams suffocate under Agile ceremonies while shipping nothing. Process is what managers do when they don't trust their teams. Method is what craftspeople develop through practice. Give me a team with good methods and no process over the opposite any day[^2].
+**Method matters, process doesn't.** I've seen too many teams suffocate under Agile ceremonies while shipping nothing. Process is what managers do when they don't trust their teams. Method is what craftspeople develop through practice. Give me a team with strong methods and less process over the opposite any day[^2].
 
 Here's what this looks like in practice: Last month, I was building a data visualization component. Classic over-engineering trap: trying to make it handle every possible case before shipping v1. Instead, I sketched the simplest thing that could work, shipped it broken, and fixed it based on actual usage. Took three days instead of three weeks, and the final version was nothing like my original design because users needed something completely different than I'd imagined.
 
-[^2]: Of course some process is helpful, but I side on method and understanding and not rules and rote.
+[^2]: Of course some process is helpful, but I side on method and understanding over rules and rote.
 
 ## What I'm actually good at (and what I'm not)
 
@@ -64,7 +64,7 @@ I'm terrible at politics, "managing up," and pretending bad ideas are good. I ha
 I code every day, not because I have to, but because I need to. It's how I think. Even in leadership roles, I'm writing code, reviewing PRs, testing, and debugging production issues[^4]. The day I stop coding is the day I stop understanding the actual problems.
 
 [^3]: That advanced systems programming book was way over my head. Had better luck with assembly language, oddly enough, because memory management was explicit and visible.
-[^4]: I don't always write production code these days, but I do love pulling prototype data for proving ideas, understanding cohorts, and such. And yes, I still like reviewing PRs. It keeps my grounded.
+[^4]: I don't always write production code these days, but I do love pulling prototype data for proving ideas, understanding cohorts, and such. And yes, I still like reviewing PRs. It keeps me grounded.
 
 ## The AI thing isn't really about AI
 

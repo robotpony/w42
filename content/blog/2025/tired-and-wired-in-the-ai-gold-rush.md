@@ -9,9 +9,7 @@ We've been watching the AI gold rush unfold for the past two years now, and hone
 
 We're in that phase with AI right now. The phase where adding "AI-powered" to your deck is supposed to make VCs throw money at you. Where every developer with a weekend and an OpenAI API key thinks they're building the next unicorn. Where demos that work most of the time are being pitched as production-ready solutions.
 
-I'm not an AI skeptic. Far from it. I've been neck-deep in building AI integrations for the past year, and the technology genuinely excites me in ways that few things have since I first discovered I could make computers do things with BASIC back in the ‘70s. But there's a world of difference between what's actually valuable and what's just noise.
-
-So in the spirit of those old Wired magazine "Wired, Tired" lists (remember those?), here's my take on what's already exhausting versus what's actually worth paying attention to in the AI space. Fair warning: if you're building a ChatGPT wrapper, you might not like what comes next.
+*So in the spirit of those old Wired magazine "Wired, Tired" lists (remember those?), here's my take on what's already exhausting versus what's actually worth paying attention to in the AI space. Fair warning: if you're building a ChatGPT wrapper, you might not like what comes next.*
 
 <div class="grouped">
 <div class="callout left">

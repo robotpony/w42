@@ -9,11 +9,11 @@ tags:
 - ai
 ---
 
-I was debugging a power issue with my home automation setup last week when it hit me: I had no idea how many batteries were in my house. Not approximately. Not even close. 
+I was debugging a power issue with my thermostat last week when it hit me: I had no idea how many batteries were in my house. Not approximately. Not even close.
 
-Twenty years ago, I knew exactly where every battery lived—the TV remote, the kitchen clock, maybe a flashlight. Today? They're everywhere and nowhere. In sensors, in remotes, in devices I've forgotten I own. They've crossed the threshold from technology to invisible infrastructure.
+Twenty years ago, I knew exactly where every battery lived; the TV remote, the kitchen clock, maybe a flashlight. Today? They're everywhere and nowhere. In sensors, in remotes, in devices I've forgotten I own. They've crossed the threshold from technology to invisible infrastructure.
 
-Someone once told me that ubiquity in technology is the point at which you stop noticing a thing. They used electric motors as an example: once upon a time, a town might have had a single motor, probably at the mill. Now there are dozens in your kitchen alone—in your refrigerator, dishwasher, garbage disposal, microwave turntable, range hood. You don't think about them. They just are.
+Someone once told me that ubiquity in technology is the point at which you stop noticing a thing. They used electric motors as an example: once upon a time, a town might have had a single motor, probably at the mill. Now there are dozens in your kitchen alone, in your refrigerator, dishwasher, garbage disposal, microwave turntable, range hood. You don't think about them. They just are.
 
 ## The pattern is always the same
 
