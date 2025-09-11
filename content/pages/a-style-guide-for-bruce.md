@@ -148,6 +148,8 @@ These themes often interconnect, with posts weaving multiple themes together to 
 * Features: Pop culture references, industry inside jokes, sharp contrasts between old and new thinking
 * Tone: Satirical but insightful, using humor to highlight genuine industry shifts
 * Closing: Often self-referential ("Tired: Tired/Wired lists...")
+* Differences from other posts: follows the Tired/Wired format more than Bruce's typical format, though my voice should poke through
+
 
 ## Other Rules
 
