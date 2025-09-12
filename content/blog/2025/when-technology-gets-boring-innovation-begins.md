@@ -61,4 +61,4 @@ The next time you're evaluating a new technology, ask yourself: can I imagine a 
 
 Because by the time everyone else notices it's inevitable, you'll already be building what comes next.
 
-Just fucking do it—while everyone's debating the implications, the real opportunity is in imagining what happens when nobody notices anymore.
+Just get out there and build, while everyone's debating the implications. The real opportunity is in imagining what happens when nobody notices anymore.
