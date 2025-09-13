@@ -11,7 +11,6 @@ footer.text = "[@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.
 disableSpecial1stPost = true
 defaultTheme = "light"
 
-# disable these two values to use a local cache of these files
 warpedScript = "//cdn.warpedvisions.org/warped.js"
 warpedStyle = "//cdn.warpedvisions.org/warped.css"
 

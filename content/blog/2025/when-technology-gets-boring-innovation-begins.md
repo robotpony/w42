@@ -1,7 +1,7 @@
 ---
 slug: when-technology-gets-boring-innovation-begins
 title: When technology gets boring, innovation begins
-date: 2024-12-27T12:00:00Z
+date: 2025-09-14T08:00:00Z
 draft: true
 tags:
 - computing
@@ -13,7 +13,7 @@ I was debugging a power issue with my thermostat last week when it hit me: I had
 
 Twenty years ago, I knew exactly where every battery lived; the TV remote, the kitchen clock, maybe a flashlight. Today? They're everywhere and nowhere. In sensors, in remotes, in devices I've forgotten I own. They've crossed the threshold from technology to invisible infrastructure.
 
-Someone once told me that ubiquity in technology is the point at which you stop noticing a thing. They used electric motors as an example: once upon a time, a town might have had a single motor, probably at the mill. Now there are dozens in your kitchen alone, in your refrigerator, dishwasher, garbage disposal, microwave turntable, range hood. You don't think about them. They just are.
+Someone once told me that ubiquity in technology is the point at which you stop noticing a thing. They used electric motors as an example: once upon a time, a town might have had a single motor, probably at the mill. Now there are dozens in your kitchen alone, in your refrigerator, dishwasher, garbage disposal, microwave turntable, range hood, and so on. You don't think about them. They just are.
 
 ## The pattern is always the same
 
@@ -23,7 +23,7 @@ Every transformative technology follows this arc:
 
 **CPUs** went from the machine that filled a room to computational dust sprinkled through every device. When I started programming, we carefully counted clock cycles. Now there's more processing power in my MacBook's power supply than in my first workstation. Think about that: the thing that just converts AC to DC has a microcontroller more powerful than the computer I learned to code on.
 
-**LCD screens** traveled a similar path. Remember when a flat-screen monitor cost $3,000? Now they're so cheap we stick them on refrigerators to show the weather. My house has screens I've never turned on.
+**LCD screens** traveled a similar path. Remember when a flat-screen monitor cost $3,000? Now they're so cheap we stick them on refrigerators to show the weather. My house has screens I've never turned on. My car has screens. Even my watch is a screen.
 
 **Batteries** might be the perfect example. From expensive curiosities to utterly forgotten infrastructure. Quick: how many devices in your house have batteries? Start counting. Include the obvious ones—remotes, clocks, smoke detectors. Now add the hidden ones—motherboard CMOS batteries, backup batteries in your router, the battery in that kitchen scale you forgot you owned. I'll wait.
 
