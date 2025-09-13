@@ -8,13 +8,15 @@ buildDrafts = true
 [params]
 description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
 footer.text = "[@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.social)"
-warpedScript = "/js/warped.js"
-warpedStyle = "/css/warped.css"
 disableSpecial1stPost = true
 defaultTheme = "light"
 
+# disable these two values to use a local cache of these files
+warpedScript = "https://cdn.warpedvisions.org/warped.js"
+warpedStyle = "https://cdn.warpedvisions.org/warped.css"
 
-newContentEditor = "vim"
+
+newContentEditor = "ia"
 
 [cover]
 hidden = false 
