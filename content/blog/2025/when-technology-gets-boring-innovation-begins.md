@@ -21,7 +21,7 @@ Every transformative technology follows this arc:
 
 `Novel → Expensive → Common → Invisible`
 
-**CPUs** went from the machine that filled a room to computational dust sprinkled through every device. When I started programming, we carefully counted clock cycles. Now there's more processing power in my laptop's power supply than in my first workstation. Think about that: the thing that just converts AC to DC has a microcontroller more powerful than the computer I learned to code on.
+**CPUs** went from the machine that filled a room to computational dust sprinkled through every device. When I started programming, we carefully counted clock cycles. Now there's more processing power in my MacBook's power supply than in my first workstation. Think about that: the thing that just converts AC to DC has a microcontroller more powerful than the computer I learned to code on.
 
 **LCD screens** traveled a similar path. Remember when a flat-screen monitor cost $3,000? Now they're so cheap we stick them on refrigerators to show the weather. My house has screens I've never turned on.
 
@@ -61,4 +61,4 @@ The next time you're evaluating a new technology, ask yourself: can I imagine a 
 
 Because by the time everyone else notices it's inevitable, you'll already be building what comes next.
 
-Just get out there and build, while everyone's debating the implications. The real opportunity is in imagining what happens when nobody notices anymore.
+Just get out there and build something interesting, while everyone's debating the implications. The real opportunity is in imagining what happens when nobody notices anymore.
