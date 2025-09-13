@@ -1,11 +1,11 @@
 ---
-slug: draft-posts
+slug: current-drafts
 title: "Draft posts"
 date: 2025-09-12T11:33:33
 draft: true
 ---
 
-*12 posts*
+## *12 posts*
 
 - [Future posts](https://warpedvisions.org/pages/future-posts/) *September 11, 2025* `[pages]`
 - [Teaching Claude to Write Like Me a Two Month Journey](https://warpedvisions.org/blog/2025/teaching-claude-to-write-like-me-a-two-month-journey/) *September 07, 2025* `[blog]`
@@ -19,4 +19,3 @@ draft: true
 - [Summer of Code: Finding My Way Back to Product](https://warpedvisions.org/blog/2025/summer-of-code-finding-my-way-back-to-product/) *January 09, 2025* `[blog]`
 - [Beware of turducken projects](https://warpedvisions.org/blog/2025/beware-of-turducken-projects/) *December 27, 2024* `[blog]`
 - [When technology gets boring, innovation begins](https://warpedvisions.org/blog/2025/when-technology-gets-boring-innovation-begins/) *December 27, 2024* `[blog]`
-
