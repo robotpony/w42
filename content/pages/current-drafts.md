@@ -1,13 +1,12 @@
 ---
 slug: draft-posts
 title: "Draft posts"
-date: 2025-09-13T12:26:05
+date: 2025-09-14T13:26:00
 draft: true
 ---
 
-*12 posts*
+*11 posts*
 
-- [When technology gets boring, innovation begins](https://warpedvisions.org/blog/2025/when-technology-gets-boring-innovation-begins/) *September 14, 2025* `[blog]`
 - [Future posts](https://warpedvisions.org/pages/future-posts/) *September 13, 2025* `[pages]`
 - [Teaching Claude to Write Like Me a Two Month Journey](https://warpedvisions.org/blog/2025/teaching-claude-to-write-like-me-a-two-month-journey/) *September 07, 2025* `[blog]`
 - [Claude Code Versus Web Different Tools Different Thinking](https://warpedvisions.org/blog/2025/claude-code-versus-web-different-tools-different-thinking/) *September 07, 2025* `[blog]`

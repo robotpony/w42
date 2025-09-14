@@ -1,11 +1,10 @@
 ---
 slug: future-posts
 title: "Future posts"
-date: 2025-09-13T12:26:05
+date: 2025-09-14T13:26:00
 draft: true
 ---
 
-*1 post*
+*0 posts*
 
-- [When technology gets boring, innovation begins](https://warpedvisions.org/blog/2025/when-technology-gets-boring-innovation-begins/) *September 14, 2025* `[blog]`
 
