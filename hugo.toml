@@ -4,6 +4,7 @@ title = 'warpedvisions.org'
 theme = 'w42'
 
 buildDrafts = true
+disableLiveReload = true
 
 [params]
 description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
@@ -11,11 +12,10 @@ footer.text = "[@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.
 disableSpecial1stPost = true
 defaultTheme = "light"
 
-warpedScript = "//cdn.warpedvisions.org/warped.js"
-warpedStyle = "//cdn.warpedvisions.org/warped.css"
+warpedScript = "https://cdn.warpedvisions.org/warped.js"
+warpedStyle = "https://cdn.warpedvisions.org/warped.css"
 
-
-newContentEditor = "ia"
+# newContentEditor = "ia"
 
 [cover]
 hidden = false 
