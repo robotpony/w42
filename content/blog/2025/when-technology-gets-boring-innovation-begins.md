@@ -1,8 +1,8 @@
 ---
 slug: when-technology-gets-boring-innovation-begins
-title: When technology gets boring, innovation begins
-date: 2025-09-14T08:00:00Z
-draft: true
+title: "When technology gets boring, innovation begins"
+date: 2025-09-13T08:00:00Z
+draft: false
 tags:
 - computing
 - software-design
@@ -25,7 +25,7 @@ Every transformative technology follows this arc:
 
 **LCD screens** traveled a similar path. Remember when a flat-screen monitor cost $3,000? Now they're so cheap we stick them on refrigerators to show the weather. My house has screens I've never turned on. My car has screens. Even my watch is a screen.
 
-**Batteries** might be the perfect example. From expensive curiosities to utterly forgotten infrastructure. Quick: how many devices in your house have batteries? Start counting. Include the obvious ones—remotes, clocks, smoke detectors. Now add the hidden ones—motherboard CMOS batteries, backup batteries in your router, the battery in that kitchen scale you forgot you owned. I'll wait.
+**Batteries** are my favourite example. From expensive curiosities to utterly forgotten infrastructure. Quick: how many devices in your house have batteries? Start counting. Include the obvious ones: remotes, clocks, smoke detectors. Now add the hidden ones: motherboard CMOS batteries, backup batteries in your router, the battery in that kitchen scale you forgot you owned. I'll wait.
 
 ## The cost curve never lies
 
@@ -37,7 +37,7 @@ This is where things get interesting for builders and designers. When a technolo
 
 ## What's vanishing right now?
 
-ML has been quietly driving weather prediction for years. We knew the current generation of AI would happen; the writing was on the wall for anyone paying attention to the research. I predicted advanced code generation years ago, based on the simple principle that if you iterate over code enough times with enough randomness, you'll eventually get something that works. 
+Machine learning has been quietly driving weather prediction for years, neural networks have been post-processing forecast data since the '90s. We knew the current generation of AI would happen in some form; the writing was on the wall for anyone paying attention to the research. I dreamed that we would be using advanced code generation years ago, based on the simple principle that if you iterate over code enough times with enough randomness, you'll eventually get something that works. 
 
 Turns out we short-cut the process with LLMs' ability to classify prompts and essentially *paint* code. Same destination, different path.
 
@@ -47,7 +47,7 @@ Right now, AI feels expensive. Every API call costs something. We carefully mana
 
 When we see something becoming inevitable, it means we can use a lot of it for cheap. Not today, but soon. This changes how we should build.
 
-Instead of optimizing for scarcity, we should be thinking about abundance. How do you design systems when AI inference costs nothing? When you can layer it, use it to check its own work, throw multiple models at the same problem just because you can?
+Instead of optimizing for scarcity, we should be thinking about abundance. How do you design systems when AI inference costs nothing? When you can layer it, use it to check its own work, and throw multiple models at the same problem just because you can?
 
 The best software, like the best technology, disappears into utility. Nobody thinks about TCP/IP anymore. Nobody marvels at Unicode. They just work, invisibly enabling everything else.
 
