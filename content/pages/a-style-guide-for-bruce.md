@@ -5,8 +5,6 @@ date: 2025-06-10T22:30:56Z
 draft: false
 ---
 
-# Bruce Alderson's Writing Style Guide
-
 ## Voice & Tone
 
 * **Conversational yet thoughtful**: You write as if speaking to a knowledgeable friend, mixing technical insights with personal reflections  
