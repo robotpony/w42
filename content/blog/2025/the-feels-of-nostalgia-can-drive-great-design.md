@@ -10,9 +10,9 @@ tags:
 - creativity
 ---
 
-I spent three hours last night hand-drawing pixel fonts in [Pixen](https://pixenapp.com/), placing each dot with care. At 8 * 8 pixels, it was just like the many character sets I designed for my Atari 600XL in the early 1980s. Each pixel mattered then because we only had 128 characters to work with and maybe 16KB of RAM, or up to 64KB if you were lucky enough to have a ram extension or a more expensive 800XL. Today, each pixel matters for completely different reasons: not because of technical constraints, but because those limitations forces a special kind of creativity.
+I spent three hours last night hand-drawing pixel fonts in [Pixen](https://pixenapp.com/), placing each dot with care. At 8 * 8 pixels, it was just like the many character sets I designed for my Atari 600XL in the early 1980s. Each pixel mattered then because we only had 128 characters to work with and maybe 16KB of RAM, or up to 64KB if you were lucky enough to have a ram extension or a more expensive 800XL. Today, each pixel matters for completely different reasons: not because of technical constraints, but because those limitations force a special kind of creativity.
 
-Here's the thing: I could generate dozens of glyphs with newer tools in the time it took me to perfect that one character. But that's not the point. The point is that placing those pixels by hand tickles something visceral, a thing that connects me directly to that nine-year-old who discovered I could make the computer display anything, if you understood  character sets and memory.
+Here's the thing: I could generate dozens of glyphs with newer tools in the time it took me to perfect that one character. But that's not the point. The point is that placing those pixels by hand tickles something visceral, a thing that connects me directly to that nine-year-old who discovered I could make the computer display anything, if you understood character sets and memory.
 
 That feeling, of balancing ideas with constraints is what made me fall in love with making things with computers in the first place.
 
@@ -22,7 +22,7 @@ And this isn't just nostalgia. It's something deeper: they're formative experien
 
 ## The physics of memory
 
-When I open the PICO-8 fantasy console and hear those distinctly crunchy sounds, I remember the Atari 600XL, Commodore 64, or NES, my brain doesn't just remember programming. It rebuilds the entire context: the weight of the keyboard, the smell of warm electronics, the specific frustration of waiting for a tape to load, the pure magic when a three-voice harmony finally works.
+When I open the PICO-8 fantasy console, I hear those distinctly crunchy sounds. I remember the Atari 600XL, Commodore 64, and NES. My brain doesn't just remember programming, it rebuilds the entire context of the time: the weight of the keyboard, the smell of warm electronics, the specific frustration of waiting for a tape to load, the pure magic when a three-voice harmony finally works.
 
 These aren't the fond memories we share at reunions. They're the memories that make us who we are. They're the reason certain design decisions feel *right* in our bones before we can articulate why.
 
@@ -104,7 +104,7 @@ The problem wasn't the skills; understanding that low-level architecture made me
 
 It took me years to realise I was optimizing for a world that had moved on.
 
-I see this same trap everywhere now. Developers who insist on Vim because "that's how real programmers work." Designers stuck in Photoshop because that's what they learned first. Teams using outdated frameworks because that's what feels comfortable. The tool becomes the identity, and changing tools feels like betrayal.
+I see this same trap everywhere now. Developers who insist on `vim` because "that's how real programmers work." Designers stuck in Photoshop because that's what they learned first. Teams using outdated frameworks because that's what feels comfortable. The tool becomes the identity, and changing tools feels like betrayal.
 
 The key is to extract the principle, not preserve the prison. What made the Atari special wasn't the 6502 processor or the ANTIC chip; it was the direct connection between intention and output, the ability to understand the entire system, the joy of making something from nothing but logic and electricity. Those principles translate to any platform.
 
@@ -148,7 +148,7 @@ This is crucial for design: nostalgia isn't universal, but the underlying experi
 
 When I'm designing interfaces now, I don't think "what would twelve-year-old me want?" I think "what would make someone feel like they felt when they first realised they could make the machine do their bidding?" Sometimes that's familiar patterns, sometimes it's new paradigms that just feel right.
 
-The generation that grew up with touchscreens has different muscle memory than those of us who grew up with keyboards. Their nostalgia triggers might be the bounce of rubber-band scrolling, the satisfaction of a perfect swipe gesture, the haptic tap that confirms an action. These aren't less valid than my love of clicky-clicky keys and phosphor glow. They're different expressions of the same need: for our tools to acknowledge our actions, to respond predictably, to feel like extensions of our intent.
+The generation that grew up with touchscreens has different muscle memory than those of us who grew up with keyboards. Their nostalgia triggers might be the bounce of rubber-band scrolling, the satisfaction of a perfect swipe gesture, a haptic tap that confirms an action. These aren't less valid than my love of clicky-clicky keys and phosphor glow. They're different expressions of the same need: for our tools to acknowledge our actions, to respond predictably, to feel like extensions of our intent.
 
 ## The AI paradox
 
@@ -158,13 +158,17 @@ But it can't feel the weight of those memories. When an LLM reviews my writing a
 
 This limitation is actually useful. Working with LLMs on design problems forces me to be explicit about what I'm trying to capture. I can't just say "make it feel nostalgic"; I have to explain what specific quality of the experience I'm trying to evoke. The amber lights meant active production. The mise en place meant readiness for complexity. The pixel constraints meant every choice mattered.
 
-In forcing me to articulate these connections, LLMs helps me understand them better. It's like explaining your hometown to someone who's never been there; you suddenly notice details you took for granted.
+In forcing me to articulate these connections, LLMs help me understand them better. It's like explaining your hometown to someone who's never been there; you suddenly notice details you took for granted.
+
+When I think about design, I look for the equivalents of my formative moments by observing and talking with the people that we're building for. When touch interfaces start feeling nostalgic, there will be a deep satisfaction of a well-crafted swipe gesture, Or in the bounce of rubber-band scrolling. The undo gesture may feel like time travel, and could be a PEEK/POKE moment of power.
 
 ## The failure files
 
 Let me tell you about my failures with nostalgic design, because they're more instructive than the successes.
 
-I once tried to recreate the exact feel of hand-drawing pixels in a web app. Added artificial constraints, a fake phosphor glow, even a delay to simulate slow refresh rates. The whole thing was a love letter to 1980s computing. Testers and users didn't get it, and we reverted to a more modern look. 
+I once recreated the feel of an accounting tool in a web app prototype. I leaned on artificial constraints, a  fixed-width typewriter font, and the classic gridlines with soft greens from old paper ledgers. The whole thing was a love letter to 1980s paper accounting. Testers and users hated it, and we updated it to a more modern look (though we kept the colours).
+
+We ended up building something that was too [skeuomorphic](https://en.wikipedia.org/wiki/Skeuomorph), which runs the risk feeling of like the uncanny valley. There is an uncomfortable place between the familiar and artificial, and given the constraints of interfaces, it falls short. The feeling is unease. It feels *off*.
 
 Nostalgia without purpose is just friction with a fancy name.
 
@@ -224,4 +228,4 @@ That's the real power of nostalgic design: not to recreate the past, but to reca
 
 The pixels still matter. Not because of the constraints, but because of what placing each one represents: intention, craft, the transformation of nothing into something. Whether it's pixels or pencils, code or cuisine, mills or Minecraft, we're all just trying to leave a mark, to transform raw materials into refined expression, to feel that ancient satisfaction of making something that wasn't there before.
 
-That feeling? That's what we're really designing for. Everything else is just an implementation detail.
+That feeling? That's what we're designing for. Everything else is just an implementation detail.
