@@ -1,7 +1,7 @@
 ---
 slug: draft-posts
 title: "Draft posts"
-date: 2025-10-02T18:13:13
+date: 2025-10-02T18:19:07
 draft: true
 ---
 

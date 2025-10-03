@@ -206,7 +206,7 @@ I think we'll see a deliberate return to constraints, but by choice rather than 
 
 The constraints aren't the point; they never were. The point is the intentionality they force, the decisions they require, the craft they demand. Whether you're working within the 128 bytes of an Atari display list or the token limits of a large language model, constraints force creativity.
 
-## The circle complete
+## The circle is complete
 
 I still collect pencils and display them in my office. Next to the pencils is my mechanical keyboard, with clicky switches and amber LEDs, similar to those control panel lights. On my screen, PICO-8 is open, a half-finished sprite character that's taking way too long to perfect. My code editor is arranged exactly like a kitchen workstation: everything in its place, ready for the complexity to come.
 
