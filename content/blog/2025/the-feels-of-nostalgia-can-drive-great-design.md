@@ -36,7 +36,7 @@ I can't explain it at first. Then I realize: I'm unconsciously recreating that m
 
 That dashboard ended up being one of the most successful interfaces I ever designed. Not because amber is inherently better than green; it's not. But because I understood, at a cellular level, what those indicators meant to the people watching them. They weren't just status lights. They were proof of function, of things being transformed from raw to refined.
 
-## The kitchen as first laboratory
+## The kitchen as a first laboratory
 
 Before I learned that [mise en place](https://en.wikipedia.org/wiki/Mise_en_place) had a name, I watched it happen. My grandmother and aunts would arrange ingredients for family dinner: everything measured, chopped, ready in its place. The cutting board here, the knife there, the bowls arranged by the order they'd be needed. They could cook huge meals without recipes because the physical arrangement *was* the recipe.
 
@@ -122,7 +122,7 @@ Standing in my workshop last year, carving a linocut while my code compiled, I f
 
 The medium changes but the feeling doesn't.
 
-So the question becomes: how do we bottle that feeling? How do we translate those visceral memories into interfaces that work for people whose formative experiences were completely different from ours?
+The question becomes: how do we bottle that feeling? How do we translate those visceral memories into interfaces that work for people whose formative experiences were completely different from ours?
 
 ## Translating feeling to function
 
