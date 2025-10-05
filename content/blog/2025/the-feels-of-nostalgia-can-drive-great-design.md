@@ -10,6 +10,8 @@ tags:
 - creativity
 ---
 
+<img src="https://images.warpedvisions.org/2025/10/pencil-sketch.jpg" alt="AI sketch in the style of Silverstein" />
+
 I spent three hours last night hand-drawing pixel fonts in [Pixen](https://pixenapp.com/), placing each dot with care. At 8x8 pixels, it was just like the many character sets I designed for my Atari 600XL in the early 1980s. Each pixel mattered then because we only had 128 characters to work with and maybe 16KB of RAM, or up to 64KB if you were lucky enough to have a RAM extension or a more expensive 800XL. Today, each pixel matters for completely different reasons: not because of technical constraints, but because those limitations force a special kind of creativity.
 
 Here's the thing: I could generate dozens of glyphs with newer tools in the time it took me to perfect that one character. But that's not the point. The point is that placing those pixels by hand tickles something visceral, a thing that connects me directly to that nine-year-old who discovered I could make the computer display anything, if you understood character sets and memory.
