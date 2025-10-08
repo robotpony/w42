@@ -1,14 +1,13 @@
 ---
 slug: draft-posts
 title: "Draft posts"
-date: 2025-10-07T19:33:48
+date: 2025-10-08T09:57:47
 draft: true
 ---
 
-*11 posts*
+*10 posts*
 
-- [Summer of Code: Finding My Way Back to Product](https://warpedvisions.org/blog/2025/summer-of-code-finding-my-way-back-to-product/) *October 05, 2025* `[blog]`
-- [Future posts](https://warpedvisions.org/pages/future-posts/) *October 04, 2025* `[pages]`
+- [Future posts](https://warpedvisions.org/pages/future-posts/) *October 07, 2025* `[pages]`
 - [Stop treating AI like magic; it's Autoconf on steroids](https://warpedvisions.org/blog/2025/stop-treating-ai-like-magic-its-autoconf-on-steroids/) *October 02, 2025* `[blog]`
 - [Teaching Claude to Write Like Me a Two Month Journey](https://warpedvisions.org/blog/2025/teaching-claude-to-write-like-me-a-two-month-journey/) *September 07, 2025* `[blog]`
 - [Claude Code Versus Web Different Tools Different Thinking](https://warpedvisions.org/blog/2025/claude-code-versus-web-different-tools-different-thinking/) *September 07, 2025* `[blog]`

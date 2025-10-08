@@ -36,7 +36,9 @@ The irony wasn't lost on me: I'd planned a summer of code and ended up writing a
 
 Of course I still coded. Several projects emerged, each serving a different purpose:
 
-A family tree visualization tool started as scratching a personal itch. My family's history is complicated (whose isn't?), with half of my family rooted in Scotland and the other half indigenous to North America. In my research, I found hundreds of burrial locations, vaccination records, and conscription records. I wanted to see the connections, not just list them. Building it taught me something: I enjoyed the system design more than the implementation details.
+A family tree visualization tool started as scratching a personal itch. My family's history is complicated (whose isn't?), with half of my family rooted in Scotland and the other half indigenous to North America. In my research, I found dozens of burial locations spread across continents, vaccination records, immigration records, and conscription records. I wanted to see the connections, not just list them. I wanted to map out where my people were from.  
+
+Building that family tree tool taught me something: I enjoyed the system design more than the implementation details. And it helps to be fascinated by the underlying topic.
 
 Interactive fiction systems came next. Not because I wanted to write games, but because they're perfect learning laboratories. State management, narrative flow, user agency; it's all there in miniature. Plus, debugging a broken story is more fun than debugging a broken form submission.
 
@@ -44,7 +46,7 @@ Text-based simulations followed. Games that teach, tools that play. Each one rev
 
 ### Product Briefs as Compass
 
-Every two weeks or so, I forced myself to write a product brief. Not for anyone else, just for me. This wasn't about features and user stories. It was about articulating value. I enjoyed these mini projects more than I expected.
+Every two weeks or so, I forced myself to write a product brief, either for a pet project, or for a commercial product idea. Not for anyone else, just for my own practice and growth. This wasn't about features and user stories. It was about articulating value. I enjoyed these mini projects more than I expected.
 
 Why does this thing need to exist? Who suffers if it doesn't? What changes if it does?
 
@@ -54,7 +56,7 @@ The discipline was revealing. Writing code, you can hide behind "it works." Writ
 
 Part of my summer plan involved diving deep into LLM tooling. Not just using Claude or GPT-4, but understanding how to build with them, their limitations, their sweet spots.
 
-I sampled various approaches, wrote a lab report, discussed findings with some local developer groups. The key insight wasn't technical; it was human. LLMs are capable assistants, but they require clarity and review. They amplify your thinking but don't replace it.
+I sampled various approaches, wrote a lab report, discussed findings with some  local developer friends and their teams. The key insight wasn't technical; it was human. LLMs are capable assistants, but they require clarity and review. They amplify your thinking but don't replace it.
 
 I learned LLMs are brilliant at refactoring messy code into clean patterns, but terrible at security review. They'll happily optimize an SQL injection right into production if you don't know what to look for.
 
@@ -66,11 +68,11 @@ The meta-lesson: explaining technology's impact matters as much as building it.
 
 ### Burnout Recognition
 
-The clearest sign of my burnout wasn't fatigue or frustration.   It was the loss of desire to read and write, replaced by endless doom scrolling. I'd open HN, Reddit, Twitter in rotation, a three-tab circus of manufactured urgency. An hour would vanish and I couldn't tell you what I'd read. I realized I was lost when I picked up my phone to check Reddit, *again*.
+The clearest sign of my burnout wasn't fatigue or frustration.  It was the loss of desire to read and write, replaced by endless doom scrolling. I'd open HN, Reddit, Twitter in rotation, a three-tab circus of manufactured urgency. An hour would vanish and I couldn't tell you what I'd read. I realized I was lost when I picked up my phone to check Reddit, *again*.
 
 Finding my rhythm again through daily practice wasn't instant. It was gradual, like warming up after being out in the cold too long. First, you just stop being numb. Then you start to feel again. Then, finally, you remember what normal felt like.
 
-Sometimes you need to stop to realize how tired you are. It's only when you're no longer carrying the weight that caused the burnout that you understand how heavy it was. And once you do, recovery is tedius and slow, much like an injury that requires physical therapy. You need a sort of mental therapy, a regular rest and stretching regimen that helps you recalibrate your mental acuity. 
+Sometimes you need to stop to realize how tired you are. It's only when you're no longer carrying the weight that caused the burnout that you understand how heavy it was. And once you do, recovery is tedious and slow, much like an injury that requires physical therapy. You need a sort of mental therapy, a regular rest and stretching regimen that helps you recalibrate your mental acuity. 
 
 ### The Altitude Metaphor
 
@@ -80,7 +82,7 @@ Software development is like working in the engine room. You're making things go
 
 Product management is being on the bridge. You're navigating, choosing direction, coordinating between all the parts. You need to understand the engine room, but your value isn't in turning wrenches.
 
-Both are essential. But I'm better at connecting business needs, human needs, and engineering and possibilities. I'm more valuable on the bridge, with regular trips to the engine room to stay grounded in reality and data.
+Both are essential. But I'm better at connecting business needs, human needs, and engineering possibilities. I'm more valuable on the bridge, with regular trips to the engine room to stay grounded in reality and data.
 
 Technical product management isn't about choosing between code and strategy. It's about speaking both languages fluently.
 
@@ -92,7 +94,7 @@ Real product work is strategy: finding the intersection of possibility and neces
 
 It's about finding meaningful metrics and goals. Not vanity metrics that make dashboards look good, but the ones that predict success or failure three months out. The canaries in your particular coal mine.
 
-A good example of a canary can be found in figuring out where and why people leave your product. Apathy is often a sign of low perceived value, which can be caused by any gap between a customer's world and your product. Frustration is an even harsher metric, and you want to prevent it. Once you identify a real metric, the difference will be immediately obvious. 
+Here's a good example of a canary: figuring out where and why people leave your product. Apathy can be a sign of low perceived value, which can be caused by any gap between a customer's world and your product. Frustration is an even harsher metric, and you want to prevent it. Once you identify a real metric, the difference will be immediately obvious.
 
 ## The Synthesis
 
@@ -136,7 +138,35 @@ Here's the thing: I can still write code. I do it regularly, to stay sharp, to s
 
 The answer to my question wasn't choosing between software development and product management. It was understanding that I'd already chosen, years ago, every time I got more excited about why we were building something than how.
 
-This summer just helped me finally admit it. And I'm excited to focus on thinking ab out product more clearly, and finding better ways to measure and mark success.
+This summer just helped me finally admit it. And I'm excited to focus on thinking about product more clearly, and finding better ways to measure and mark success.
 
 And that's okay. Better than okay, actually. It's exactly where I should be.
+
+## Further Reading
+
+In this essay I talk about burnout and career changes. These are important topics and I recommend reading more if you have time.
+
+### Burnout Research
+
+- [Understanding the burnout experience: recent research and its implications](https://pmc.ncbi.nlm.nih.gov/articles/PMC4911781/) - PMC review of burnout mechanisms and psychiatric implications
+- [Job Burnout: Consequences for Individuals, Organizations, and Equity](https://www.ncbi.nlm.nih.gov/books/NBK614516/) - NCBI evidence synthesis on burnout effects on cognitive function
+- [Burnout: A Review of Theory and Measurement](https://pmc.ncbi.nlm.nih.gov/articles/PMC8834764/) - Comprehensive review of burnout theory and assessment methods
+- [A study of the psychological mechanisms of job burnout](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1351032/full) - 2024 study on person-job fit and burnout
+- [Burnout and stress: new insights and interventions](https://www.nature.com/articles/s41598-025-92909-6) - Nature Scientific Reports 2025 editorial on recent research
+
+### Product Management Frameworks
+
+- [Product Frameworks](https://www.product-frameworks.com/) - Central repository of product management techniques and best practices
+- [The Ultimate Guide to Product Management Prioritization Frameworks](https://www.productplan.com/learn/product-management-frameworks/) - Detailed guide to prioritization methodologies
+- [8 Product Management Frameworks & How Top Companies Use Them](https://productschool.com/blog/product-fundamentals/product-management-frameworks) - Real-world examples from leading tech companies
+- [Product Management Framework Examples](https://www.productboard.com/blog/5-product-management-frameworks-billion-dollar-companies/) - Case studies from billion-dollar companies
+- [12 Proven Product Management Frameworks & Models](https://whatfix.com/blog/product-management-frameworks/) - Overview including GIST, HEART, and Jobs-to-be-Done
+
+### Career Transitions
+
+- [Career transitions and career success: A 15-year longitudinal study](https://www.sciencedirect.com/science/article/pii/S0001879122001208) - Long-term study on impact of career transitions
+- [When is a career transition successful? systematic literature review (1980–2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10552927/) - 40+ years of research synthesized
+- [Making sense of different perspectives on career transitions](https://www.sciencedirect.com/science/article/pii/S1053482218306788) - Review identifying 5 major theoretical perspectives
+- [Career transitions across the lifespan: review and research agenda](https://www.sciencedirect.com/science/article/pii/S0001879123001173) - Framework for understanding transitions at different career stages
+- [Making the difficult career transition during the great resignation](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.905813/full) - Recent study on resilience and adaptability
 
