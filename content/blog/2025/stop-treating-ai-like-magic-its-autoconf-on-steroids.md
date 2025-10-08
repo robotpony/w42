@@ -10,6 +10,8 @@ tags:
 - programming
 ---
 
+<img src="https://images.warpedvisions.org/2025/10/technical-magical.jpg" alt="AI showing technical magic in watercolours" />
+
 Remember autoconf? If you were building software in the late '90s or early 2000s, you probably have scars. You'd write some configuration rules, run the tool, and out popped a perfectly functional makefile. It felt like magic, until it didn't.
 
 The moment autoconf broke, you were debugging generated shell scripts that stretched for thousands of lines. The abstraction that seemed so elegant suddenly became opaque hell. You needed to understand not just what you wanted, but how the magic worked, where it could fail, and why.

@@ -5,6 +5,9 @@ date: '2025-08-10T15:27:03-07:00'
 draft: false
 ---
 
+<img src="https://images.warpedvisions.org/2025/10/watercolour-clouds-dripping.jpg" alt="AI showing complexity and fatique" />
+
+
 After three months of AI-assisted development, I'm more productive than ever. I'm also mentally exhausted in ways I didn't expect.
 
 The productivity gains are real—I can go from sketch to working prototype in hours instead of days. But there's a hidden cost that we're not talking  about: the tools fundamentally change the cognitive load of programming. Instead of being tired from wrestling with implementation details, I'm exhausted from operating constantly at the architecture and design level.

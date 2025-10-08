@@ -1,12 +1,13 @@
 ---
 slug: draft-posts
 title: "Draft posts"
-date: 2025-10-04T18:17:58
+date: 2025-10-07T19:33:48
 draft: true
 ---
 
-*12 posts*
+*11 posts*
 
+- [Summer of Code: Finding My Way Back to Product](https://warpedvisions.org/blog/2025/summer-of-code-finding-my-way-back-to-product/) *October 05, 2025* `[blog]`
 - [Future posts](https://warpedvisions.org/pages/future-posts/) *October 04, 2025* `[pages]`
 - [Stop treating AI like magic; it's Autoconf on steroids](https://warpedvisions.org/blog/2025/stop-treating-ai-like-magic-its-autoconf-on-steroids/) *October 02, 2025* `[blog]`
 - [Teaching Claude to Write Like Me a Two Month Journey](https://warpedvisions.org/blog/2025/teaching-claude-to-write-like-me-a-two-month-journey/) *September 07, 2025* `[blog]`
@@ -16,7 +17,5 @@ draft: true
 - [From Architect to Product Leader and Back](https://warpedvisions.org/blog/2025/from-architect-to-product-leader-and-back/) *July 31, 2025* `[blog]`
 - [From statistical models to AI](https://warpedvisions.org/blog/2025/from-statistical-models-to-ai/) *July 31, 2025* `[blog]`
 - [Story time: How product thinking made me a better engineer](https://warpedvisions.org/blog/2025/story-time-how-product-thinking-made-me-a-better-engineer/) *July 23, 2025* `[blog]`
-- [The hidden world principle: why great software reveals itself slowly](https://warpedvisions.org/blog/2025/the-hidden-world-principle-why-great-software-reveals-itself/) *January 27, 2025* `[blog]`
-- [Summer of Code: Finding My Way Back to Product](https://warpedvisions.org/blog/2025/summer-of-code-finding-my-way-back-to-product/) *January 09, 2025* `[blog]`
 - [Beware of turducken projects](https://warpedvisions.org/blog/2025/beware-of-turducken-projects/) *December 27, 2024* `[blog]`
 

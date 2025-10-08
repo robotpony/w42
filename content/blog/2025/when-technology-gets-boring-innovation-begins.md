@@ -9,6 +9,8 @@ tags:
 - ai
 ---
 
+<img src="https://images.warpedvisions.org/2025/10/progression-of-tech-cold-to-warm.jpg" alt="AI showing progression in watercolour" />
+
 I was debugging a power issue with my thermostat last week when it hit me: I had no idea how many batteries were in my house. Not approximately. Not even close.
 
 Twenty years ago, I knew exactly where every battery lived; the TV remote, the kitchen clock, maybe a flashlight. Today? They're everywhere and nowhere. In sensors, in remotes, in devices I've forgotten I own. They've crossed the threshold from technology to invisible infrastructure.
