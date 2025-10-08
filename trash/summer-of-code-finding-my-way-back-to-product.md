@@ -6,6 +6,8 @@ draft: true
 tags: ["career", "product management", "software development", "burnout", "personal growth"]
 ---
 
+{Note: this article is pulled for now, as it doesn't really capture the moment, and feels like it's reaching. Summer was a good experience, and the gist here is correct (just didn't like the tone in the end)}
+
 Five months ago I was forced to ask myself what seemed like a simple question: what do I focus on next, and do I want to focus on software development or product management?
 
 The answer wasn't in choosing one or the other. It was in understanding why I was asking the question at all.
