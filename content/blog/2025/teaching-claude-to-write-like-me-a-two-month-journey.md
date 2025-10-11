@@ -5,8 +5,6 @@ date: '2025-09-07T17:06:33-07:00'
 draft: true
 ---
 
-# Teaching Claude to Write Like Me: A Two-Month Journey
-
 Two months ago, I realized my Claude writing guide was lying to me. Not intentionally, of course - it just wasn't telling the whole truth about how I write.
 
 I'd spent weeks extracting patterns from my posts, building what I thought was a comprehensive style guide. Voice characteristics, recurring themes, favourite phrases - the works. But when I started using it to help draft posts, something felt off. The words were there, but the voice wasn't. It was like hearing someone do an impression of you: technically accurate but somehow wrong.

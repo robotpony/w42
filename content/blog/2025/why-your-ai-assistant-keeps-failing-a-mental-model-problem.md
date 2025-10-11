@@ -1,7 +1,7 @@
 ---
-slug: 'stop-treating-ai-like-magic-its-autoconf-on-steroids'
-title: "Stop treating AI like magic; it's Autoconf on steroids"
-date: '2025-10-02T18:30:03-07:00'
+slug: 'why-your-ai-assistant-keeps-failing-a-mental-model-problem'
+title: "Why your AI assistant keeps failing: a mental model problem"
+date: '2025-10-11T18:30:03-07:00'
 draft: true
 tags:
 - ai
@@ -48,9 +48,9 @@ Think about autocomplete in your IDE. When you type `array.map`, it suggests the
 
 Context windows and token limits are the practical constraints here. These aren't arbitrary limitations, they're fundamental to how these systems work. The model can only "see" what fits in its context window. Beyond that, it's operating blind.
 
-This is why they sometimes forget what you told them three prompts ago. It's not being difficult. The context literally exceeded its working memory. <-- *also consider different vectors/directionality that conflict*
+This is why they sometimes forget what you told them three prompts ago. It's not being difficult. The context literally exceeded its working memory. 
 
-The tools are getting better at saying "I don't know" instead of confidently hallucinating. But they still can't tell you their confidence level. They can't say "I'm 60% sure about this API signature." They just generate the most probable next tokens and hope for the best.
+The tools are getting better at saying "I don't know" instead of confidently hallucinating. But they still can't tell you their confidence level. They can't say "I'm 60% sure about this API signature." They just generate tokens based on probability distributions and hope for the best.
 
 ## Tool comparison: when to use what
 
@@ -72,6 +72,13 @@ There are three ways these tools reliably break down, and they all stem from the
 
 **Context explosion** is the first failure mode. You feed the model too much code, too many files, too much history. It tries to hold it all in its context window, but patterns start bleeding together. It confuses one module with another. It suggests fixes for problems that don't exist in the code you're actually working on.
 
+```qgraph {class="warped-graph"}
+Prompt 1: ████░░░░░░ (model remembers)
+Prompt 2: ██████░░░░ (model remembers)
+Prompt 3: ████████░░ (starts to forget Prompt 1)
+Prompt 4: ██████████ (Prompt 1 pushed out entirely)
+```
+
 I watched a developer spend three hours debugging AI-generated refactoring that was technically correct for the file the model thought it was editing, but completely wrong for the actual file. The model had lost track of which component was which somewhere around the tenth file.
 
 **Ambiguous inputs** are even worse. Vague requirements lead to creative interpretation. "Make it better" becomes "I'll guess what you meant and implement something plausible." The output might work. It might even be good. But it's probably not what you wanted.
@@ -82,7 +89,7 @@ This is garbage in, hallucination out. The model fills gaps in understanding wit
 
 The code compiles. Tests might even pass if you're lucky. But the architecture is random, the patterns are inconsistent, and six months from now, nobody will understand why anything works the way it does.
 
-Then there's the agent behavior problem. Autonomous AI that can execute actions without human oversight sounds great until it starts making decisions based on hallucinated understanding. I've seen agents confidently delete files they thought were redundant, refactor working code into broken code, and implement features that directly contradict the requirements, all while reporting success.
+Then there's the agent behaviour problem. Autonomous AI that can execute actions without human oversight sounds great until it starts making decisions based on hallucinated understanding. I've seen agents confidently delete files they thought were redundant, refactor working code into broken code, and implement features that directly contradict the requirements, all while reporting success.
 
 The sycophancy problem compounds everything. These models are trained to be helpful, which means they'll confidently provide an answer even when they shouldn't. Newer models are getting better at saying "I don't have enough information" or "I'm not certain about this." But the default is still to generate something plausible rather than admit uncertainty.
 
@@ -107,6 +114,21 @@ Last week, I needed to scaffold a new API endpoint with authentication, rate lim
 "Why might this query be slow?" becomes a conversation about indexes, query patterns, and optimization strategies. The model doesn't solve the problem, you do. But having a conversation helps clarify your thinking.
 
 **Small, well-defined problems** work best. The quality gradient is clear: narrow scope plus clear definition equals high success rate. "Implement user authentication" is too vague. "Add JWT token validation to this Express middleware, using bcrypt for password hashing, with a 24-hour expiration" is specific enough to work.
+
+```qgraph {class="warped-graph"}
+        Success Rate
+            ↑
+        100%|     ●
+            |       ●
+        75% |         ●
+            |           ●
+        50% |              ●
+            |                 ●
+        25% |                    ●
+            └────────────────────────→
+            Narrow              Broad
+                    Scope of Request
+```
 
 The practical workflow is treating the model like a very capable junior developer. They can write code, but you need to review it. They can implement features, but you need to verify the architecture makes sense. They can suggest solutions, but you need to validate the tradeoffs.
 
