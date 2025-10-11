@@ -12,9 +12,9 @@ tags:
 
 <img src="https://images.warpedvisions.org/2025/10/technical-magical.jpg" alt="AI showing technical magic in watercolours" />
 
-Remember autoconf? If you were building software in the late '90s or early 2000s, you probably have scars. You'd write some configuration rules, run the tool, and out popped a perfectly functional makefile. It felt like magic, until it didn't.
+Remember `autoconf`? If you were building software in the late '90s or early 2000s, you probably have scars. You'd write some configuration rules, run the tool, and out popped a perfectly functional makefile. It felt like magic, until it didn't.
 
-The moment autoconf broke, you were debugging generated shell scripts that stretched for thousands of lines. The abstraction that seemed so elegant suddenly became opaque hell. You needed to understand not just what you wanted, but how the magic worked, where it could fail, and why.
+The moment Autoconf broke, you were debugging generated shell scripts that stretched for thousands of lines. The abstraction that seemed so elegant suddenly became opaque hell. You needed to understand not just what you wanted, but how the magic worked, where it could fail, and why.
 
 LLMs are following a similar pattern. Sophisticated automation that feels magical until you hit its edges. The difference? Instead of generating build configurations, they're autocompleting from natural language. That's genuinely impressive. But it's still autocomplete, not comprehension.
 
