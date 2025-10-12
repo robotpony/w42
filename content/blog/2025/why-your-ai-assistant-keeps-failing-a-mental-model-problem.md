@@ -1,8 +1,8 @@
 ---
-slug: 'why-your-ai-assistant-keeps-failing-a-mental-model-problem'
-title: "Why your AI assistant keeps failing: a mental model problem"
-date: '2025-10-11T18:30:03-07:00'
-draft: true
+slug: 'why-your-ai-assistant-keeps-failing'
+title: "Why your AI assistant keeps failing"
+date: '2025-10-11T12:30:03-07:00'
+draft: false
 tags:
 - ai
 - software-development
@@ -14,15 +14,15 @@ tags:
 
 Remember `autoconf`? If you were building software in the late '90s or early 2000s, you probably have scars. You'd write some configuration rules, run the tool, and out popped a perfectly functional makefile. It felt like magic, until it didn't.
 
-The moment Autoconf broke, you were debugging generated shell scripts that stretched for thousands of lines. The abstraction that seemed so elegant suddenly became opaque hell. You needed to understand not just what you wanted, but how the magic worked, where it could fail, and why.
+The moment `autoconf` broke, you were debugging generated shell scripts that stretched for thousands of lines. The abstraction that seemed so elegant suddenly became opaque hell. You needed to understand not just what you wanted, but how the magic worked, where it could fail, and why.
 
-LLMs are following a similar pattern. Sophisticated automation that feels magical until you hit its edges. The difference? Instead of generating build configurations, they're autocompleting from natural language. That's genuinely impressive. But it's still autocomplete, not comprehension.
+LLMs are following a similar pattern. It's a sort of sophisticated automation that feels magical until you hit its edges. The difference? Instead of generating build configurations, they're autocompleting from natural language. That's genuinely impressive. But it's still autocomplete, not comprehension.
 
 And we keep forgetting that.
 
 ## The magical thinking trap
 
-I've been watching developers and leaders treat Claude, GPT, and Gemini like sentient coworkers. It's everywhere, on Reddit, in Slack channels, in planning meetings where executives announce that AI will 10x their engineering teams.
+I've been watching developers and leaders treat Claude, GPT, and Gemini like sentient coworkers. It's everywhere: on Reddit, in Slack channels, in planning meetings where executives announce that AI will 10x their engineering teams.
 
 The pattern is predictable. Someone asks their AI coding assistant to build something. It produces code that looks reasonable. They assume it "understands" the requirements. Then it breaks in production, or generates code that works but violates every architectural principle they hold dear, or just starts hallucinating APIs that don't exist.
 
@@ -38,7 +38,7 @@ Leaders are the worst offenders. "AI will transform our development process!" Su
 
 ## What these things actually are
 
-LLMs are pattern completion engines trained on massive corpora of text. They've seen so much code, documentation, and human writing that they can predict what comes next with remarkable accuracy. That's it. That's the entire trick.
+LLMs are pattern completion engines trained on massive corpora of content. They've seen so much code, documentation, and human writing that they can predict what comes next with remarkable accuracy. That's it. That's the entire trick.
 
 The innovation isn't artificial intelligence in any meaningful sense. The innovation is that natural language works as an input format. Instead of learning arcane configuration syntax or programming constructs, you can describe what you want in English (or whatever language the model was trained on). The model pattern-matches against everything it's seen and generates something plausible.
 
@@ -95,7 +95,7 @@ The sycophancy problem compounds everything. These models are trained to be help
 
 Why are developers surprised by these failures? Because they're expecting magic. When you think the tool understands your requirements, you don't anticipate the ways it might fail. When you realize it's just autocomplete, extremely sophisticated autocomplete, but still autocomplete, the failure modes become more obvious.
 
-**And, there are BONUS failures** as the technologies are so new. As systems scale, we have seen caching issues, model issues, and standard platform issues and downtime.
+**And, there are bonus failures** as the technologies are so new. As systems scale, we have seen caching issues, model issues, and standard platform issues and downtime.
 
 ## What actually works
 

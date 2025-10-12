@@ -5,12 +5,14 @@ date: 2025-06-10T22:30:56Z
 draft: false
 ---
 
+This style guide captures patterns from 20+ years of technical writing about software, design, and the human side of technology. It's designed to help maintain voice consistency when collaborating with editors and AI writing tools.
+
 ## Voice & Tone
 
 * **Conversational yet thoughtful**: You write as if speaking to a knowledgeable friend, mixing technical insights with personal reflections  
 * **Self-aware and introspective**: Often examining your own processes, biases, and growth as a developer/creator  
 * **Authentic and unpretentious**: Willing to admit mistakes, share frustrations, and discuss failures alongside successes  
-* **Occasionally profane**: Strategic use of mild profanity for emphasis ("just fucking do it")
+* **Occasionally profane**: Strategic use of mild profanity for emphasis ("just fucking do it"), but it does not need to be found in every essay.
 
 ## Structure & Format
 
@@ -31,6 +33,7 @@ draft: false
 ## Recurring Themes
 
 ### Technical Craft & Architecture
+
 * Technical debt vs. technical regret: Making informed technical decisions vs. poor planning
 * System design fundamentals: Architecture, diagramming, and thinking before coding
 * Minimalism in tools and process: Simple, focused tools over complex systems
@@ -40,6 +43,7 @@ draft: false
 * Tool-specific workflows and context management: When to use different AI tools and optimizing for each tool's strengths
 
 ### Human Elements & Sustainability
+
 * The human cost of technology: Burnout, imposter syndrome, work-life balance, and maintaining passion
 * Finding your authentic voice: The struggle between internal thoughts and external persona
 * Cognitive load and burnout in the age of acceleration: How faster tools create new mental fatigue
@@ -48,6 +52,7 @@ draft: false
 * Productivity through focus: Managing attention, avoiding distractions, creating environments for deep work
 
 ### Learning & Creative Process
+
 * Action over analysis paralysis: "Just doing it" vs overthinking, getting unstuck
 * Learning through iterative practice: Building skills through repetition, failure, and reflection
 * Writing as thinking: Using writing to clarify thoughts, document learning, and find voice
@@ -56,12 +61,16 @@ draft: false
 * Media diet and intentional consumption: Curating inputs to feed creativity and learning
 
 ### Industry Evolution & Future
+
 * Evolution of computing culture: How tools, practices, and thinking have changed from the 80s/90s to present
 * Historical context as perspective: Using past experiences to understand present challenges
 * AI as collaborative partner, not replacement tool: Treating AI as thought partner and amplifier of human expertise
 * The commoditization cycle of technology: How transformative tech becomes invisible infrastructure
 
-**Cross-cutting metaphor**: Food and cooking as design metaphor (appears across multiple categories)
+**Cross-cutting metaphors**:
+
+- Food and cooking as design metaphor (appears across multiple categories), especially around mise en place and knife skills
+- Art metaphors, for block prints, pixel art, and so on
 
 ## Technical Writing
 
@@ -86,6 +95,7 @@ draft: false
 **Personal experiments as teaching frameworks**: Using your own trials (Summer of Code, AI workflow development) as structured learning examples.
 
 **Structured visual elements**:
+
 * Tables for comparisons (Now → Next → Future)  
 * Grouped callouts (like the Wired/Tired columns)  
 * Timeline progressions  
@@ -93,13 +103,27 @@ draft: false
 
 ## Language Rules
 
-* **Language:** use British/Canadian English by default (or ask)  
-* **Units**: use metric or scientific notation where appropriate (provide alternative measures, like US or UK measures optionally)  
-* **Punctuation**: minimize EM-dashes (prefer commas, semi-colons, or colons when they work equally well)
+### Language:
+
+Use Canadian English (hybrid British/American).
+
+- British spellings: colour, favour, behaviour, neighbour, flavour, grey
+- American spellings: -ize endings (realize, organize, optimize), center, meter, liter
+- Rationale: Reflects Canadian convention and accessibility for American readers while maintaining Commonwealth character
+
+### Units:
+
+Use metric with optional US/imperial conversions in parentheses for accessibility (e.g. "20°C (68°F)", "5 km (3 miles)")
+
+### Punctuation: 
+
+Minimize em-dashes—prefer commas, semicolons, or colons when they work equally well
+
 
 ## Voice Calibration
 
 **Characteristic phrases:**
+
 * "This is good"  
 * "And that's okay"  
 * "Here's the thing:"  
@@ -159,6 +183,7 @@ draft: false
 ### Detailed Breakdowns
 
 **1. Quick Observation** (500-800 words)
+
 * Hook: Immediate observation or realization  
 * Structure: Single insight → 2-3 supporting points → Punchy takeaway  
 * Example: "The myth of uphill"  
@@ -166,30 +191,35 @@ draft: false
 * Closing: "In other words: just fucking do it already."
 
 **2. Technical Reflection** (1200-2000 words)
+
 * Hook: Personal anecdote or specific problem  
 * Structure: Story → Technical explanation → Historical context → Practical implications  
 * Example: "Simple sets in JavaScript"  
 * Uses: Code snippets, metaphors, before/after comparisons
 
 **3. Philosophical Essay** (2000-3000 words)
+
 * Hook: Broader observation about career/life  
 * Structure: Personal journey → Multiple examples → Evolution of thinking → Synthesis  
 * Example: "The road to and from and (hopefully) back to simplicity"  
 * Features: Self-reflection, admitting past mistakes, finding balance
 
 **4. Tool/Method Review** (800-1500 words)
+
 * Hook: Problem that needs solving  
 * Structure: Context → Personal experience → Honest assessment → Practical verdict  
 * Example: "Reasons I hate TODO list and task tools"  
 * Tone: Constructively critical, specific grievances, alternatives suggested
 
 **5. Media Diet/List Post** (1500-2500 words)
+
 * Hook: Reflection on consumption patterns  
 * Structure: Intro context → Categorized recommendations → Personal reactions  
 * Example: "A savoury media diet for a cold and somewhat dreary winter"  
 * Features: Conversational asides, links, brief but colorful descriptions
 
 **6. Tired/Wired Style Post** (800-1500 words)
+
 * Hook: Reference to current tech/cultural trends with historical context  
 * Structure: Format explanation → Series of tired/wired comparisons → Meta-commentary or punchline  
 * Example: "Tired and Wired in the AI Gold Rush"  
@@ -199,10 +229,73 @@ draft: false
 * Closing: Often self-referential ("Tired: Tired/Wired lists...")
 
 **7. Personal Experiment Analysis** (1500-2500 words)
+
 * Hook: Description of experiment setup  
 * Structure: Hypothesis → Method → Results → Broader implications  
 * Example: "Lab notebook: a summer of LLM Assisted Everything"  
 * Features: Metrics, iterative learning, transparent methodology  
 * Tone: Researcher sharing findings, not guru dispensing wisdom
 
+## Additional Style Guide Points: Writing Less Like AI
+
+Based on Wikipedia's "Signs of AI Writing" guide and related analyses, here are 8 actionable points to add to your style guide that will help both human and AI writers produce more authentic, balanced prose:
+
+### 1. Avoid symbolic inflation
+
+Don't make everything "stand as a symbol" of something broader or claim it has "enhanced significance." If something matters, explain *how* it matters specifically. 
+
+**Avoid phrases like:**
+
+- "stands as a testament to..."
+- "serves as a powerful reminder..."
+- "represents a dynamic hub of..."
+
+**Fix:** Be direct about actual impact and importance. Use specific outcomes over symbolic language.
+
+### 2. Kill the "not X, but Y" structure
+
+This dramatic negation pattern is pure AI: "It's not just about efficiency. It's about transformation." The structure creates false contrasts and sounds like sales copy.
+
+**Fix:** State what something *is* without the theatrical setup. If you need contrast, use it sparingly and make it meaningful.
+
+### 3. Stop relying on transition crutches
+
+AI leans heavily on a small set of transitions: "However," "Moreover," "On the other hand," "Furthermore," "In addition." Using these occasionally is fine; leading every third paragraph with them is a tell.
+
+**Fix:** Vary your transitions. Many sentences don't need explicit transitions—good ideas flow naturally. When you do transition, be specific about the relationship between ideas.
+
+### 4. The rule of three is a tell when overused
+
+Listing things in threes consistently ("quality, reliability, and innovation" / "fast, efficient, and scalable") makes prose predictable. It's good rhetoric used sparingly, but AI overuses it.
+
+**Fix:** Vary your list lengths. Sometimes two items. Sometimes four. Break the pattern.
+
+### 5. Eliminate vague intensifiers and filler phrases
+
+AI loves empty emphasis:
+
+- "One of the most important things to consider..."
+- "It's crucial to understand that..."
+- "This is a key factor in..."
+- "plays an important role in..."
+
+**Fix:** If something is important, prove it with specific details. Let the facts carry the weight, not the adjectives.
+
+### 6. Watch for promotional drift
+
+AI can't maintain truly neutral tone, especially about cultural topics, nature, or anything heritage-related. Everything becomes "captivating," "majestic," "diverse," or "fascinating."
+
+**Fix:** Use specific, observable descriptions. What makes something interesting? Show, don't tell.
+
+### 7. Avoid superficial depth
+
+AI creates the *appearance* of comprehensive explanation through good form (perfect grammar, smooth flow, proper structure) while saying little of substance. Following the rule of three, using transitions correctly, and writing in complete paragraphs can mask the absence of actual insight.
+
+**Fix:** After writing, ask: "What specific, useful information did I just convey?" If you can't identify concrete details or novel insights, you've created superficial depth.
+
+### 8. Strip out meta-commentary about writing itself
+
+AI loves to tell you what it's about to do or just did: "As we've explored..." "Building on this foundation..." "To summarize the key points..." This self-referential commentary adds no value.
+
+**Fix:** Just do the thing. Explore, build, summarize—without announcing it. Let the structure speak for itself.
 
