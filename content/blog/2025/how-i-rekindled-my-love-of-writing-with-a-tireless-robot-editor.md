@@ -211,3 +211,44 @@ The difference isn't the technology. It's the human process, the style guide, th
 ---
 
 *My style guide is [available here](https://warpedvisions.org/pages/a-style-guide-for-bruce/), and the review command I use is [documented here](https://github.com/robotpony/warped-claude/blob/main/review-draft.md). Feel free to use them as starting points for your own system. The best version won't be mine; it'll be yours, tuned to your voice and refined through your practice.*
+
+
+
+ Missing Concepts
+
+  1. Version control and writing history: You mention iterating on
+  drafts but never discuss whether you keep revision history. Do
+  you use git? Just save versions? This could tie into the "system"
+   framing.
+  2. Failure stories: You mention the system has "clear failure
+  modes" but only describe vague drift problems. A specific story
+  of a draft that went completely wrong would strengthen your
+  credibility.
+  3. Comparison to traditional editing processes: You touch on this
+   with the human editor cost comparison, but never directly
+  address: what did your writing process look like before? What
+  changed specifically?
+  4. The style guide evolution: You say you refined it weekly for
+  4-5 months, but what were the major turning points? What
+  discoveries changed how you thought about it?
+
+  Narrative Improvements
+
+  1. Structure the "breakthrough" more clearly: The realization
+  moment (lines 21-25) is powerful but happens early. Consider
+  foreshadowing it in the opening, then circling back: "I didn't
+  know it then, but that terrible document would lead me back to
+  writing..."
+  2. Create more tension in the middle: Lines 44-110 are very
+  process-heavy. The workflow is fascinating, but it's all "this is
+   how it works" without much struggle. Where did you get stuck?
+  What almost made you give up?
+  3. Stronger callbacks: The opening story about the colleague's
+  document never comes back. What would you say to them now? Could
+  you rewrite a paragraph from that doc using your system as a
+  demonstration?
+  4. The "rekindling" arrives late: The section titled "The
+  rekindling" doesn't appear until line 131, but it's in your
+  title. The emotional journey of falling back in love with writing
+   could thread through earlier sections.
+

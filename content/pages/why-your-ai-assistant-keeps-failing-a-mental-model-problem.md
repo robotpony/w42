@@ -107,7 +107,7 @@ I use LLMs for research constantly. "What are the tradeoffs between WebSockets a
 
 **Boilerplate with flexibility** is another sweet spot. Standard patterns that need customization, CRUD endpoints, data models, configuration files, these are perfect candidates. The model has seen thousands of examples. It knows the patterns. You just need to specify the parameters.
 
-Last week, I needed to scaffold a new API endpoint with authentication, rate limiting, and error handling. Instead of copying an existing endpoint and modifying it, I described what I wanted. Two minutes later, I had working boilerplate that followed our project conventions. I still reviewed every line, but the grunt work was handled.
+Last week, I needed to scaffold a new API endpoint with authentication, rate limiting, and error handling. Instead of copying an existing endpoint and modifying it, I described what I wanted. Two minutes later, I had a working boilerplate that followed our project conventions. I still reviewed every line, but the grunt work was handled.
 
 **Rubber ducking and perspective** is underrated. Sometimes you're stuck on a problem and need someone to ask obvious questions. LLMs are perfect for this. They're endlessly patient, they'll explore alternatives you didn't consider, and they won't judge you for missing something simple.
 
