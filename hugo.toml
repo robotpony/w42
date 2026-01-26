@@ -8,7 +8,7 @@ disableLiveReload = true
 
 [params]
 description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
-footer.text = "[@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.social)"
+footer.text = "[@robotpony mas.to](https://mas.to/@robotpony)"
 disableSpecial1stPost = true
 defaultTheme = "light"
 
