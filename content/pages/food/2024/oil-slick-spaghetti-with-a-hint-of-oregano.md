@@ -14,7 +14,7 @@ params:
 
 I remember an old cast aluminium pot, handed down from my grandparents. It was pockmarked, with a patina of polymerized oils in the depressions. It once served as a pressure cooker that exploded in my grandmother’s kitchen, so it no longer had a lid. The handle was loose and the bolt seized, making it a death trap when loaded with a hot sauce. This pot was mostly used for my mom’s frugal spaghetti sauce, which was a simple combination of beef, puréd tomatoes, and just a hint of oregano, salt, and pepper.
 
-And when I say a hint of oregano, it was an almost homoeopathic amount of seasoning. I remember helping my mom move in the 1990s and packing up that oregano, labelled with a best before date from somewhere in the early 1980s. I opened the bottle and smelled it, and somehow it still smelled like my childhood.
+And when I say a hint of oregano, it was an almost homeopathic amount of seasoning. I remember helping my mom move in the 1990s and packing up that oregano, labelled with a best before date from somewhere in the early 1980s. I opened the bottle and smelled it, and somehow it still smelled like my childhood.
 
 The method my mom used for making her tomato sauce was to drop a 1 pound package of mince, which I imagine was a 70/30 mix of beef and fat. We bought or traded for a quarter of beef every year, and stored the paper wrapped in stamped packages in one of the two large freezers in our shed in the backyard. I don’t remember her adding fresh onions or garlic, but I’m pretty sure a teaspoon of garlic and onion powder made their way into the sauce near the end.
 
