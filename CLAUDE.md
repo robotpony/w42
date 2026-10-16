@@ -45,7 +45,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - **Theme architecture (themes/w42/):**
   - Based on PaperMod with custom "Warped" branding
   - Modular CSS in `assets/css/` (core/, common/, extended/)
-  - Branding JS/CSS load from `cdn.warpedvisions.org` (`warpedScript`/`warpedStyle` in hugo.toml) (there's no local fallback)
+  - Branding JS/CSS load from `cdn.warpedvisions.org` (`warpedScript`/`warpedStyle` in hugo.toml), with no local fallback
   - Hugo templates in `layouts/`
   - English-only `i18n/` (other translations were removed); the theme needs Hugo 0.158.0 or later
 
