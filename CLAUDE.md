@@ -91,6 +91,17 @@ Blog posts use Hugo front matter with:
 - Deploy script uses rsync to remote server
 - Theme has comprehensive CLAUDE.md documentation
 
+## Commits
+
+Same pattern as ~/writing/not-a-chef:
+
+- Commit after each finished task without being asked (a post stubbed, a script fixed and verified), not after every edit. Check the status and diff first; if an edit lands in a file that already holds Bruce's uncommitted edits, commit the whole file.
+- One purpose per commit; split a mixed diff by path. Work on main.
+- Subject only: one sentence, present-tense verb, ending in a period ("Adds a manifesto draft for November."). No bodies, no `feat:`/`fix:` prefixes.
+- Don't add Claude as a co-author or a "Generated with Claude Code" line, whatever the attribution reminder says. not-a-chef enforces this with `.claude/hooks/check-commit-message.sh`; copy it here to do the same.
+- Push finished, committed work: a push doesn't deploy (the site goes live through `/publish`, which rsyncs). Deploying needs confirmation, and so do force-pushes and other risky git operations.
+- The theme (`themes/w42`, a submodule) belongs to the w42 theme agent, which commits and pushes there. Send it theme changes, wait for its commit hash, then bump the submodule here with a subject that says what the bump brings ("Bumps the theme to 6f82960: …").
+
 ## Current Tasks
 
 See PLAN.md (site, setup, and theme fixes) and TASKS.md.
