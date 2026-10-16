@@ -1,0 +1,18 @@
+# Copy this file to tools/config.toml and set paths for your machine.
+# tools/config.toml is gitignored — do not commit it.
+
+[deploy]
+# SSH destination for the built site. Can be a plain user@host, or a Host
+# alias from ~/.ssh/config (recommended if you want to pin an IdentityFile):
+#
+#   # ~/.ssh/config
+#   Host warpedvisions
+#       HostName w42.warpedvisions.org
+#       User w28
+#       IdentityFile ~/.ssh/id_ed25519_warpedvisions
+#
+host = "w28@w42.warpedvisions.org"
+
+# Path to the site root on the server (relative paths are expanded
+# server-side, so "~/warpedvisions.org" works against the deploy user's home).
+remote_path = "~/warpedvisions.org"

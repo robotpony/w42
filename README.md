@@ -5,25 +5,24 @@ A personal site by Bruce Alderson featuring essays on craft, makery, and softwar
 ## Quick Start
 
 ```bash
-# Start development server with live reloading
-hugo server
-
-# Include draft posts in development
-hugo server --buildDrafts
+# Start the development server (drafts, in memory)
+make preview
 
 # Build static site to /public directory
-hugo
+make build
 
-# Deploy to production
-./deploy.sh
+# Build, check, and deploy to production
+make deploy
 ```
 
 ## Content Structure
 
-- `/content/blog/YYYY/` - Blog posts organized by year (2008-2025)
-- `/content/food/` - Recipes and cooking content
+- `/content/blog/YYYY/` - Blog posts organized by year (2008-2026)
+- `/content/pages/food/` - Recipes and cooking content
 - `/content/projects/` - Maker projects and art
 - `/content/pages/` - Static pages (about, style guide)
+
+Not site content: `projects/` (Obsidian project notes) and `trash/` (retired drafts). Hugo builds neither.
 
 ## Theme
 
@@ -32,24 +31,52 @@ The site uses a custom Hugo theme called "w42" (located in `themes/w42/`):
 - Optimized for readability and clean design
 - "Warped" branding with colorful header/footer accents
 - Rainbow-colored article links with hover effects
-- 40+ language translations
 - Responsive mobile-first design
 
 ## Key Files
 
 - `hugo.toml` - Site configuration
 - `CLAUDE.md` - AI assistant guidance for code editing
+- `PLAN.md` - Site, setup, and theme fixes
 - `TASKS.md` - Development todo list
-- `deploy.sh` - Deployment script (rsync to remote server)
+- `Makefile` / `tools/` - Build, preview, and deploy scripts
 
 ## Features
 
 - Google Analytics integration
 - Light theme by default
-- Built-in search functionality
 - Year-based content organization
-- Content editor configured for vim
-- Draft mode visibility controls
+- Drafts hidden from the home list and RSS (but still built; see PLAN.md)
+
+## Building and deploying
+
+- `make preview` — run the Hugo dev server locally (`tools/preview.sh`)
+- `make build` — build the static site to `public/`
+- `make deploy` — build, check, then rsync `public/` to the server (`tools/publish.sh`)
+
+`tools/publish.sh` is the single entry point behind `make build`/`make deploy`; it also has subcommands not wired into the Makefile:
+
+- `tools/publish.sh check` — sanity-check the current `public/` (catches dev-server output like `localhost:1313` or `livereload.js` before it ships)
+- `tools/publish.sh dry-run` — build, check, and show what rsync would change without touching the server
+- `tools/publish.sh deploy` — check and deploy the current `public/` without rebuilding
+
+### Setup (per machine)
+
+Copy `tools/config.toml.example` to `tools/config.toml` (gitignored — holds the deploy target) and fill in `[deploy] host` / `remote_path`.
+
+For `host`, a plain `user@hostname` works, but a `~/.ssh/config` alias (with its own `IdentityFile`) is preferred over putting a username or key path in `config.toml`:
+
+```
+# ~/.ssh/config
+Host warpedvisions
+    HostName w42.warpedvisions.org
+    User w28
+    IdentityFile ~/.ssh/id_ed25519_warpedvisions
+```
+
+### Why `--renderToMemory` in preview
+
+`hugo.toml` sets `buildDrafts = true`, so a plain `hugo server` writes draft content straight into `public/`. Since `make deploy` rsyncs `public/`, a running preview could ship drafts that were only ever meant to be served locally. `tools/preview.sh` passes `--renderToMemory` so the dev server never touches `public/` — that directory only ever holds real builds.
 
 ## Development Notes
 

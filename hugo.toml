@@ -11,6 +11,9 @@ description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY
 footer.text = "[@robotpony mas.to](https://mas.to/@robotpony)"
 disableSpecial1stPost = true
 defaultTheme = "light"
+# Set here so the theme's rss.xml never falls back to site.Author, which
+# Hugo removed (the build fails on it from v0.15x on).
+author = "Bruce Alderson"
 
 warpedScript = "https://cdn.warpedvisions.org/warped.js"
 warpedStyle = "https://cdn.warpedvisions.org/warped.css"

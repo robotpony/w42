@@ -1,6 +1,6 @@
 ---
 title: "Boring is where AI earns its keep"
-date: TBD
+date: ""
 draft: true
 slug: boring-is-where-ai-earns-its-keep
 tags:

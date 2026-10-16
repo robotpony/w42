@@ -9,38 +9,48 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 ## Development Commands
 
 **Build and serve:**
-- `hugo server` - Start development server with live reloading
-- `hugo server --buildDrafts` - Include draft posts in development
-- `hugo` - Build static site to /public directory
+- `make preview` - Restart the dev server (`tools/preview.sh`) with drafts, in memory, and open it in Chrome
+- `make preview-all` - Same, plus future-dated (scheduled) posts (`tools/preview.sh all`)
+- `make build` - Build static site to /public directory (`tools/publish.sh build`)
+
+**Claude commands** (`.claude/commands/`, same pattern as ~/writing/not-a-chef):
+- `/preview` - start the dev server; `/preview all` or `/preview-all` adds future-dated posts
+- `/publish` - build and deploy
+- `/post-new` - stub a new post as a page bundle
+- `/image-add` - add photos or screenshots to a post's bundle (`tools/add-image.sh` for photos)
+- `/lint` - check post front matter, images, links, and leftover drafting markers
 
 **Content creation:**
-- Content editor is configured to use `vim` (hugo.toml:17)
-- Blog posts go in `content/blog/YYYY/` following year-based organization
-- Recipes go in `content/food/`
+- `hugo new` uses `$EDITOR` (`newContentEditor` is commented out in hugo.toml); `vim` is in the exec allowlist
+- Blog posts go in `content/blog/YYYY/` following year-based organization. Posts with images are page bundles (`<slug>/index.md` with images beside it); a series gets a subfolder (`content/blog/2026/not-a-chef/`)
+- Recipes go in `content/pages/food/` (built at `/pages/food/`)
 - Projects go in `content/projects/`
 
 **Deployment:**
-- `./deploy.sh` - Builds site and deploys via rsync to remote server
+- `make deploy` - Build, check, and rsync `public/` to the remote server (`tools/publish.sh`)
+- `tools/publish.sh dry-run` - Build and show what rsync would change without deploying
+- Deploy target lives in `tools/config.toml` (gitignored; copy from `tools/config.toml.example`)
 
 ## Architecture
 
 ### Site Structure
 - **Content organized by type and year:**
-  - `content/blog/` - Blog posts organized by year (2008-2025)
-  - `content/food/` - Recipes and cooking content
+  - `content/blog/` - Blog posts organized by year (2008-2026)
+  - `content/pages/food/` - Recipes and cooking content
   - `content/projects/` - Maker projects and art
   - `content/pages/` - Static pages (about, etc.)
+- **Not site content:** root `projects/` holds Obsidian project notes; `trash/` holds retired drafts. Hugo builds neither.
 
 - **Theme architecture (themes/w42/):**
   - Based on PaperMod with custom "Warped" branding
   - Modular CSS in `assets/css/` (core/, common/, extended/)
-  - Custom JavaScript in `assets/js/warped.js` 
+  - Branding JS/CSS load from `cdn.warpedvisions.org` (`warpedScript`/`warpedStyle` in hugo.toml); the theme's `assets/js/warped.js` is an older local fallback
   - Hugo templates in `layouts/`
   - 40+ language translations in `i18n/`
 
 ### Configuration
 - **hugo.toml** contains all site configuration
-- BuildDrafts enabled by default
+- `buildDrafts = true`: drafts are built and deployed, hidden only from the home list and RSS (see PLAN.md section 1)
 - Google Analytics integration (G-77V9MKYGJ8)
 - Custom CSS/JS paths configured
 - Security settings allow sass, git, vim, etc.
@@ -61,7 +71,7 @@ Blog posts use Hugo front matter with:
 - High readability focus with clean typography
 - Responsive mobile-first design
 - Light theme by default
-- Search functionality built-in
+- Search templates exist in the theme but aren't enabled (no search page or JSON output)
 
 ### Content Types
 - **Essays** - Long-form writing about technology, productivity, design
@@ -71,7 +81,7 @@ Blog posts use Hugo front matter with:
 
 ## Development Notes
 
-- Site has extensive content history (2008-2025)
+- Site has extensive content history (2008-2026)
 - No package.json - pure Hugo implementation
 - Static assets served from /static
 - Generated content in /public (not version controlled)
@@ -80,9 +90,4 @@ Blog posts use Hugo front matter with:
 
 ## Current Tasks
 
-From TASKS.md:
-- Testing Claude integration (in progress)
-- Need to figure out `hugo new` content syntax + scripting
-- Adding tags to posts
-- Reviewing theme improvements
-- Adding proper draft mode visibility controls
+See PLAN.md (site, setup, and theme fixes) and TASKS.md.
