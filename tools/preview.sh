@@ -1,20 +1,68 @@
 #!/usr/bin/env bash
-# Start the Hugo dev server (including drafts) and open it in the browser.
+# Start the Hugo dev server (including drafts) and open a post in the browser.
 #
-#   tools/preview.sh        drafts, but not future-dated (scheduled) posts
-#   tools/preview.sh all    drafts and future-dated posts
+#   tools/preview.sh              drafts; opens the most recently created post
+#   tools/preview.sh all          drafts and future-dated posts
+#   tools/preview.sh [all] POST   open POST: a file, a bundle folder, or part
+#                                 of a content path (e.g. a slug)
+#
+# A future-dated target post turns on `all` by itself, since Hugo won't
+# serve it otherwise.
 set -euo pipefail
 
 FUTURE=()
-case "${1:-}" in
-  "") ;;
-  all) FUTURE=(-F) ;;
-  *) echo "usage: tools/preview.sh [all]" >&2; exit 1 ;;
-esac
+POST=""
+for arg in "$@"; do
+  case "$arg" in
+    all) FUTURE=(-F) ;;
+    -*) echo "usage: tools/preview.sh [all] [post]" >&2; exit 1 ;;
+    *)
+      [ -z "$POST" ] || { echo "usage: tools/preview.sh [all] [post]" >&2; exit 1; }
+      POST="$arg"
+      ;;
+  esac
+done
 
 cd "$(dirname "$0")/.."
 
-URL="http://localhost:1313/"
+BASE="http://localhost:1313"
+URL="$BASE/"
+
+# Resolve the post to a content file. No argument means the most recently
+# created page (birth time, so editing an old post doesn't steal the spot).
+newest_post() {
+  find content -name '*.md' ! -name '_index.md' -exec stat -f '%B %N' {} + |
+    sort -rn | head -1 | cut -d' ' -f2-
+}
+
+if [ -z "$POST" ]; then
+  FILE="$(newest_post)"
+elif [ -f "$POST" ]; then
+  FILE="$POST"
+elif [ -f "$POST/index.md" ]; then
+  FILE="$POST/index.md"
+else
+  FILE="$(find content -name '*.md' ! -name '_index.md' -path "*$POST*" -exec stat -f '%B %N' {} + |
+    sort -rn | head -1 | cut -d' ' -f2-)"
+  [ -n "$FILE" ] || { echo "No post matches '$POST'." >&2; exit 1; }
+fi
+FILE="${FILE#./}"
+
+# `hugo list all` covers drafts and future posts. Read fields from the end of
+# each CSV row: titles can contain commas, but permalink/kind/section can't.
+ROW="$(hugo list all 2>/dev/null | awk -F, -v f="$FILE" '$1 == f { print; exit }')"
+if [ -n "$ROW" ]; then
+  PERMALINK="$(awk -F, '{ print $(NF-2) }' <<<"$ROW")"
+  PUBLISH="$(awk -F, '{ print $(NF-4) }' <<<"$ROW")"
+  URL="$BASE/$(sed -E 's#^https?://[^/]+/##' <<<"$PERMALINK")"
+  if [[ "$PUBLISH" > "$(date -u +%Y-%m-%dT%H:%M:%SZ)" ]] && [ ${#FUTURE[@]} -eq 0 ]; then
+    echo "$FILE is dated $PUBLISH; including future-dated posts."
+    FUTURE=(-F)
+  fi
+  echo "Previewing $FILE at $URL"
+else
+  echo "Couldn't find $FILE in hugo's page list; opening the home page." >&2
+fi
 
 # Restart, don't reuse: a hugo server left running from an earlier session
 # keeps serving stale templates and config. Stop any hugo already listening
@@ -35,7 +83,7 @@ open_browser() {
   # Opens in Chrome specifically (not the system default browser): the
   # Claude-in-Chrome extension used to check previews only sees Chrome tabs.
   for _ in $(seq 1 30); do
-    if curl -sf -o /dev/null "$URL"; then
+    if curl -sf -o /dev/null "$BASE/"; then
       open -a "Google Chrome" "$URL" 2>/dev/null || open "$URL" 2>/dev/null || xdg-open "$URL" 2>/dev/null || true
       return
     fi
@@ -47,9 +95,10 @@ open_browser &
 
 # -D: drafts. hugo.toml has buildDrafts = false, so only the preview shows them.
 #
-# -F (with `all`): scheduled posts are dated ahead (a series goes out
-# weekly), and Hugo skips future-dated content without it. Off by default so
-# the plain preview matches what a build would publish today.
+# -F (with `all`, or a future-dated target post): scheduled posts are dated
+# ahead (a series goes out weekly), and Hugo skips future-dated content
+# without it. Otherwise off, so the preview matches what a build would
+# publish today.
 #
 # --disableFastRender: Fast Render Mode can go stale mid-session during heavy
 # template/config editing; full rebuilds cost a little speed but never serve

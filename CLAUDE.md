@@ -14,7 +14,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - `make build` - Build static site to /public directory (`tools/publish.sh build`)
 
 **Claude commands** (`.claude/commands/`, same pattern as ~/writing/not-a-chef):
-- `/preview` - start the dev server; `/preview all` or `/preview-all` adds future-dated posts
+- `/preview [all] [post]` - start the dev server and open the newest post (or the one named); `all`, `/preview-all`, or a future-dated target adds future-dated posts
 - `/publish` - build and deploy
 - `/post-new` - stub a new post as a page bundle
 - `/image-add` - add photos or screenshots to a post's bundle (`tools/add-image.sh` for photos)
