@@ -25,10 +25,11 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - Blog posts go in `content/blog/YYYY/` following year-based organization. Posts with images are page bundles (`<slug>/index.md` with images beside it); a series gets a subfolder (`content/blog/2026/not-a-chef/`)
 - Recipes go in `content/pages/food/` (built at `/pages/food/`)
 - Projects go in `content/projects/`
+- Recipes with images are page bundles too (cover image beside `index.md`)
 
 **Deployment:**
 - `make deploy` - Build, check, and rsync `public/` to the remote server (`tools/publish.sh`)
-- `tools/publish.sh dry-run` - Build and show what rsync would change without deploying
+- `make check` / `make dry-run` - Check `public/` (dev-server output, drafts), or build and show what rsync would change without deploying
 - Deploy target lives in `tools/config.toml` (gitignored; copy from `tools/config.toml.example`)
 
 ## Architecture
@@ -39,7 +40,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
   - `content/pages/food/` - Recipes and cooking content
   - `content/projects/` - Maker projects and art
   - `content/pages/` - Static pages (about, etc.)
-- **Not site content:** root `projects/` holds Obsidian project notes; `trash/` holds retired drafts. Hugo builds neither.
+- **Not site content:** `trash/` holds retired drafts. Root `projects/` is gitignored (the warped-todo Obsidian plugin writes notes there); never add it back.
 
 - **Theme architecture (themes/w42/):**
   - Based on PaperMod with custom "Warped" branding
@@ -50,7 +51,9 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 
 ### Configuration
 - **hugo.toml** contains all site configuration
-- `buildDrafts = true`: drafts are built and deployed, hidden only from the home list and RSS (see PLAN.md section 1)
+- `buildDrafts = false`: drafts are preview-only (`tools/preview.sh` passes `-D`); `tools/publish.sh check` fails if a draft lands in `public/`
+- Header menu (`[menu.main]`) and `mainSections = ['blog']` are set in hugo.toml
+- Security headers live in `static/.htaccess`; CSP is a meta tag in the theme's `security.html`
 - Google Analytics integration (G-77V9MKYGJ8)
 - Custom CSS/JS paths configured
 - Security settings allow sass, git, vim, etc.

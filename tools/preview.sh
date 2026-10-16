@@ -45,7 +45,7 @@ open_browser() {
 
 open_browser &
 
-# -D: drafts (also on in hugo.toml; kept so the preview never depends on it).
+# -D: drafts. hugo.toml has buildDrafts = false, so only the preview shows them.
 #
 # -F (with `all`): scheduled posts are dated ahead (a series goes out
 # weekly), and Hugo skips future-dated content without it. Off by default so

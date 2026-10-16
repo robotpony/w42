@@ -2,7 +2,7 @@
 
 Build the Hugo site and deploy to the server.
 
-1. Run: `tools/publish.sh` (builds `public/`, checks it for dev-server output, then runs `tools/deploy.sh`)
+1. Run: `tools/publish.sh` (builds `public/`, checks it for dev-server output and draft posts, then runs `tools/deploy.sh`)
 2. Report the build output and deploy result.
 
 To preview what would change on the server without deploying, run `tools/publish.sh dry-run` instead. `tools/publish.sh help` lists all subcommands.

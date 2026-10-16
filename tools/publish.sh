@@ -43,6 +43,24 @@ check() {
     exit 1
   fi
 
+  # Drafts are preview-only. `hugo list drafts` gives each draft's permalink;
+  # none of them may exist in public/.
+  local drafts
+  drafts=$(hugo list drafts 2>/dev/null | python3 -c '
+import csv, os, sys
+from urllib.parse import urlparse
+for row in csv.DictReader(sys.stdin):
+    path = urlparse(row["permalink"]).path.strip("/")
+    if os.path.exists(os.path.join("public", path, "index.html")):
+        print(row["path"])
+' | head -5)
+  if [[ -n "$drafts" ]]; then
+    echo "error: public/ contains draft posts:" >&2
+    echo "$drafts" | sed 's/^/  /' >&2
+    echo "Rebuild with 'tools/publish.sh build' (buildDrafts must be false)." >&2
+    exit 1
+  fi
+
   echo "Checked public/: ok."
 }
 

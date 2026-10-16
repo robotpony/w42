@@ -1,5 +1,7 @@
 ---
 title: Food is good.
+aliases:
+  - /food/
 ---
 
 I like to cook. I like to eat. It's a grand arrangement.

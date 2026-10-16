@@ -1,18 +1,19 @@
 baseURL = 'https://warpedvisions.org/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'warpedvisions.org'
 theme = 'w42'
 
-buildDrafts = true
-disableLiveReload = true
+# Drafts never reach public/: preview passes -D, production builds skip them,
+# and tools/publish.sh check fails if one slips through.
+buildDrafts = false
 
 [params]
-description = '[ESSAYS](/), [RECIPES](/food), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
+mainSections = ['blog']
+description = '[ESSAYS](/), [RECIPES](/pages/food/), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
 footer.text = "[@robotpony mas.to](https://mas.to/@robotpony)"
 disableSpecial1stPost = true
 defaultTheme = "light"
-# Set here so the theme's rss.xml never falls back to site.Author, which
-# Hugo removed (the build fails on it from v0.15x on).
+# Used for RSS and meta author.
 author = "Bruce Alderson"
 
 warpedScript = "https://cdn.warpedvisions.org/warped.js"
@@ -20,14 +21,32 @@ warpedStyle = "https://cdn.warpedvisions.org/warped.css"
 
 # newContentEditor = "ia"
 
-[cover]
-hidden = false 
+[params.cover]
+hidden = false
 hiddenInList = false
-hiddenInSingle = false 
+hiddenInSingle = false
+
+[menu]
+[[menu.main]]
+name = 'Essays'
+url = '/blog/'
+weight = 10
+[[menu.main]]
+name = 'Food'
+url = '/pages/food/'
+weight = 20
+[[menu.main]]
+name = 'Projects'
+url = '/projects/'
+weight = 30
+[[menu.main]]
+name = 'About'
+url = '/pages/about-bruce-alderson/'
+weight = 40
 
 [security]
   [security.exec]
-    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^npx$', '^postcss$', '^tailwindcss$', '^vim$']
+    allow = ['^(dart-)?sass(-embedded)?$', '^git$', '^vim$']
 
 [services]
 [services.googleAnalytics]

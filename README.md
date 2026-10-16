@@ -22,7 +22,7 @@ make deploy
 - `/content/projects/` - Maker projects and art
 - `/content/pages/` - Static pages (about, style guide)
 
-Not site content: `projects/` (Obsidian project notes) and `trash/` (retired drafts). Hugo builds neither.
+Not site content: `trash/` (retired drafts). Hugo doesn't build it. `projects/` is gitignored: the warped-todo Obsidian plugin writes project notes there when this folder is opened as a vault.
 
 ## Theme
 
@@ -46,7 +46,8 @@ The site uses a custom Hugo theme called "w42" (located in `themes/w42/`):
 - Google Analytics integration
 - Light theme by default
 - Year-based content organization
-- Drafts hidden from the home list and RSS (but still built; see PLAN.md)
+- Drafts are preview-only: `make preview` shows them, production builds skip them
+- Security headers in `static/.htaccess` (HSTS, nosniff, frame and permissions policy); CSP is a meta tag from the theme
 
 ## Building and deploying
 
@@ -54,10 +55,10 @@ The site uses a custom Hugo theme called "w42" (located in `themes/w42/`):
 - `make build` — build the static site to `public/`
 - `make deploy` — build, check, then rsync `public/` to the server (`tools/publish.sh`)
 
-`tools/publish.sh` is the single entry point behind `make build`/`make deploy`; it also has subcommands not wired into the Makefile:
+`tools/publish.sh` is the single entry point behind `make build`/`make deploy`; it also has subcommands:
 
-- `tools/publish.sh check` — sanity-check the current `public/` (catches dev-server output like `localhost:1313` or `livereload.js` before it ships)
-- `tools/publish.sh dry-run` — build, check, and show what rsync would change without touching the server
+- `tools/publish.sh check` (`make check`) — sanity-check the current `public/`: fails on dev-server output (`localhost:1313`, `livereload.js`) or any draft post
+- `tools/publish.sh dry-run` (`make dry-run`) — build, check, and show what rsync would change without touching the server
 - `tools/publish.sh deploy` — check and deploy the current `public/` without rebuilding
 
 ### Setup (per machine)
@@ -76,7 +77,7 @@ Host warpedvisions
 
 ### Why `--renderToMemory` in preview
 
-`hugo.toml` sets `buildDrafts = true`, so a plain `hugo server` writes draft content straight into `public/`. Since `make deploy` rsyncs `public/`, a running preview could ship drafts that were only ever meant to be served locally. `tools/preview.sh` passes `--renderToMemory` so the dev server never touches `public/` — that directory only ever holds real builds.
+`hugo.toml` sets `buildDrafts = false`, and preview passes `-D`. A plain `hugo server -D` writes those drafts straight into `public/`, and `make deploy` rsyncs `public/`, so a running preview could ship drafts that were only ever meant to be served locally. `tools/preview.sh` passes `--renderToMemory` so the dev server never touches `public/`, and `tools/publish.sh check` refuses to deploy a `public/` that contains drafts.
 
 ## Development Notes
 
@@ -89,6 +90,6 @@ Host warpedvisions
 
 - **URL**: https://warpedvisions.org/
 - **Author**: Bruce Alderson
-- **Social**: [@robotpony.bsky.social](https://bsky.app/profile/robotpony.bsky.social)
+- **Social**: [@robotpony@mas.to](https://mas.to/@robotpony)
 - **Hosting**: Dreamhost (20+ years and counting)
 - **Generator**: Hugo (previously Wordpress, Jekyll, Movable Type, Blosxom, and many others)

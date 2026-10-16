@@ -1,79 +1,48 @@
 # Plan
 
-Review of the site, setup, and theme (2026-10-15, Hugo v0.166.0). Ordered by risk. Check items off as they land; move decisions into the item once made.
+Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items first; done items stay as a record until the next cleanup.
 
-## 1. Drafts ship to production (decide first)
+## Open
 
-`hugo.toml` sets `buildDrafts = true`, and `tools/publish.sh build` runs plain `hugo --minify`, so every draft is rendered and rsynced. The theme only hides drafts from the home list and RSS (`themes/w42/layouts/_default/list.html`, `rss.xml`). They still appear in:
+- [ ] **Commit the theme.** Theme changes are in the `themes/w42` working tree (submodule `robotpony/hugo-WarpedPaperMod`). Commit and push there, then commit the new submodule pointer here.
+- [ ] **Verify after the next deploy:** `curl -sI https://warpedvisions.org/` shows `strict-transport-security` and `x-content-type-options` (from `static/.htaccess`); `/food/` still lands on the food page; recipe covers render.
+- [ ] **Turn off `debug: true` in the CDN `warped.js`** (warped.js repo). It logs to every visitor's console.
+- [ ] **Drafts with `date: ""`**: `content/blog/2026/boring-is-where-ai-earns-its-keep.md` and others. They no longer reach production, but they sort oddly in preview and fail `/lint`. Give them dates when they're scheduled.
+- [ ] **`archetypes/log-format.md`** is an Obsidian template (`{{title}}`, `{{date}}`), not a Hugo archetype; `hugo new --kind log-format` would fail. Move it to the vault's templates folder, or rewrite it with Hugo syntax.
+- [ ] **Deploy host in committed files**: `tools/config.toml.example` and the README name the real deploy user and host. Swap in placeholders if the repo is public.
+- [ ] **TASKS.md**: fold the rest into this file, or keep it for writing tasks only.
 
-- `/blog/` and its pagination (e.g. `product-managers-are-just-storytellers` on `/blog/`)
-- every tag page they're tagged with
-- `sitemap.xml`
-- direct URLs, with `robots: index, follow`
+## Decided
 
-The `--renderToMemory` guard in `tools/preview.sh` only protects against the dev server; the production build itself includes drafts.
+- Search stays off. The theme keeps the templates; enabling it later needs `[outputs] home = ['HTML','RSS','JSON']` and a `layout: search` page.
+- `trash/` stays in the repo as an archive of retired drafts.
+- Food stays at `content/pages/food/`; `/food/` is an alias.
+- `warped.js`/`warped.css` come from `cdn.warpedvisions.org`; the theme no longer carries a copy.
 
-Pick one:
+## Done (2026-10-15)
 
-- [ ] **A. Drafts stay local (recommended).** Set `buildDrafts = false` in `hugo.toml`. Preview already passes `-D`. Add a `check` in `tools/publish.sh` that fails if any built page came from a `draft: true` file.
-- [ ] **B. Unlisted posts.** Keep drafts out of builds (as A), and for posts you want live-but-hidden use Hugo's `build: { list: never }` front matter. It removes the page from every list, tag page, RSS, and sitemap at once, without theme template filters. Then remove the ad hoc `Draft` filters from `list.html` and `rss.xml`.
+Drafts:
 
-Related:
+- [x] `buildDrafts = false`. Preview still shows drafts (`-D`). Before, every draft was built and deployed, and showed on `/blog/`, tag pages, and `sitemap.xml`.
+- [x] `tools/publish.sh check` fails if any draft's page exists in `public/` (uses `hugo list drafts`).
 
-- [ ] Several drafts have `date: ""`. Give them real or placeholder dates so ordering and `/lint` work.
-- [ ] Close the TASKS.md item "Add proper draft mode" once this lands.
+Site:
 
-## 2. Content and repo hygiene
+- [x] `languageCode` → `locale`; `mainSections = ['blog']`; header menu (Essays, Food, Projects, About).
+- [x] `[cover]` moved under `[params]`, where the theme reads it.
+- [x] Removed `disableLiveReload` (`--renderToMemory` covers the reason it existed); pruned the exec allowlist to sass, git, vim.
+- [x] Tagline links `/pages/food/`; `/food/` alias added.
+- [x] Recipe images moved from `static/` into their page bundles, so Hugo processes them (responsive srcset).
+- [x] Removed `content/pages/_index 1.md` (Finder duplicate), `static/code.txt`, committed `resources/_gen/`, and `projects/` (warped-todo plugin output). `resources/` and `projects/` are gitignored.
+- [x] `static/.htaccess` sends HSTS (no `includeSubDomains`/`preload`), nosniff, `X-Frame-Options`, and `Permissions-Policy`, wrapped in `<IfModule mod_headers.c>`.
+- [x] `make check` and `make dry-run` targets.
+- [x] README, CLAUDE.md, `/publish` command doc updated to match.
 
-- [ ] Delete `content/pages/_index 1.md`, a Finder copy of the home page intro. It builds a stray `/pages/_index-1/`.
-- [ ] `resources/_gen/` is committed (image cache). Add `resources/` to `.gitignore` and `git rm -r --cached resources`.
-- [ ] `trash/` is committed (8 old drafts). Keep it (and say so in the README) or move it out of the repo.
-- [ ] Root `projects/` holds Obsidian project notes, not site content (site projects live in `content/projects/`). Name them in the README so they aren't mistaken for content, or move them to the vault.
-- [ ] `static/` has stray recipe images (`mac-cheese-beaners-1980s.png`, `spaghetti-1980s.png`) and `code.txt`. Move the images into their recipe bundles; check whether `code.txt` is still needed.
-- [ ] `archetypes/log-format.md` uses Obsidian/Templater syntax (`{{title}}`, `{{date}}`). Hugo treats files in `archetypes/` as Go templates, so `hugo new --kind log-format` fails. Move it to the vault's templates folder.
-- [ ] Food lives at `content/pages/food/` (built at `/pages/food/`), but the tagline links `/food`. It works live today only because the server answers `/food/` by some means outside this repo. Either move the section to `content/food/` or add `aliases: [/food/]`, so the link doesn't depend on server state.
-- [ ] Decide the social link: README says Bluesky (`@robotpony.bsky.social`), the footer in `hugo.toml` says Mastodon (`mas.to/@robotpony`).
+Theme:
 
-## 3. Config (`hugo.toml`)
-
-- [ ] `languageCode` is deprecated (v0.158). Rename it to `locale = 'en-ca'` (or `en-us`).
-- [ ] Set `mainSections = ['blog']` explicitly in `[params]`. Today Hugo infers it from the biggest section.
-- [ ] No `[menu]` is defined, so the header renders an empty `<ul id="menu">`. Add a menu (Essays / Food / Projects / About) or drop the element from the theme.
-- [ ] Search is advertised but off: there's no search page and no JSON home output. Either enable it (`[outputs] home = ['HTML','RSS','JSON']` plus a `content/search.md` with `layout: search`) or stop claiming it.
-- [ ] `disableLiveReload = true` was a guard against livereload ending up in `public/`. `--renderToMemory` covers that now, so live reload can come back for preview.
-- [ ] Prune `security.exec.allow`: `npx`, `postcss`, `tailwindcss`, and `go` aren't used.
-
-## 4. Theme (`themes/w42`, submodule `robotpony/hugo-WarpedPaperMod`)
-
-Build blockers, coming soon:
-
-- [ ] `.Language.LanguageDirection` (baseof.html) and `.Language.LanguageCode` (rss.xml) are deprecated in v0.158. Switch to `.Language.Direction` and `.Language.Locale`.
-- [ ] `rss.xml` still falls back to `site.Author`, which Hugo removed. It only works because `hugo.toml` sets `params.author`. Remove the fallback branches from the theme.
-
-Correctness:
-
-- [ ] `warped.js` has two diverging copies: the theme's `assets/js/warped.js` (76 lines) and the CDN copy at `cdn.warpedvisions.org` (a different, larger version with `debug: true`). The site loads the CDN copy. Pick one source of truth, and turn `debug` off in production.
-- [ ] `head.html` falls back to `css/warped.css`, which doesn't exist in the theme. The CSS lives only on the CDN.
-- [ ] `security.html` sends HSTS, `X-Content-Type-Options`, `X-XSS-Protection`, and `Permissions-Policy` as `<meta http-equiv>`. Browsers ignore all of these as meta tags, and the live site sends none of them as headers. Move them to a `static/.htaccess` (Dreamhost is Apache) and keep only CSP and referrer in meta. Drop `X-XSS-Protection` (obsolete). The CSP also lists `'unsafe-inline'` twice.
-
-Cleanup:
-
-- [ ] `go.mod` declares `module github.com/adityatelange/hugo-PaperMod`. Rename it to the fork.
-- [ ] Lineage is told three ways: theme README says "based on hugo-paper", `theme.toml` says ported from Paper, docs say PaperMod. It's a PaperMod fork (which forked Paper); say that once.
-- [ ] `theme.toml` `homepage` points at a GitHub Pages site that doesn't exist; `min_version` and the error in `baseof.html` still say "hugo-PaperMod".
-- [ ] 45 i18n files for an English-only site. Optional: keep `en.yaml` only.
-- [ ] Theme `CLAUDE.md` describes `assets/css/warped.css` and the dark-mode toggle as core. Update it after the warped.js/css decision.
-
-## 5. Tooling
-
-- [ ] Add `make check`, `make dry-run`, and `make lint` targets so the documented `tools/publish.sh` subcommands are reachable from make.
-- [ ] `tools/publish.sh check` should also fail on draft output (after section 1).
-- [ ] `tools/config.toml.example` and the README include the real deploy user and host. Fine for a private repo; swap in placeholders if the repo is public.
-- [ ] Staged deletion of root `deploy.sh` plus untracked `tools/` and `Makefile`: commit them together so history shows the move.
-
-## 6. Docs
-
-Done in this pass: README and CLAUDE.md now match the repo (food path, year range, search, vim claim, `projects/` and `trash/`). Still to do:
-
-- [ ] Fold TASKS.md into this file and delete it, or keep TASKS.md for writing tasks only.
-- [ ] Update the theme README and CLAUDE.md after section 4.
+- [x] `.Language.LanguageDirection` → `.Direction`, `.Language.LanguageCode` → `.Locale`; min Hugo 0.158.0. The build has no deprecation warnings.
+- [x] Removed the `site.Author` fallbacks from `rss.xml`.
+- [x] Removed the stale `assets/js/warped.js` and the dead `css/warped.css` fallback.
+- [x] `security.html`: dropped meta tags browsers ignore (HSTS, nosniff, XSS, Permissions-Policy) and the duplicate `'unsafe-inline'`.
+- [x] `go.mod` module name, `theme.toml` homepage and lineage, README lineage, CLAUDE.md.
+- [x] i18n trimmed to `en.yaml`.
