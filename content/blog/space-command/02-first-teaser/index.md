@@ -1,7 +1,7 @@
 ---
 title: "The first Space Command teaser"
 date: 2026-10-17T09:00:00
-draft: true
+draft: false
 slug: the-first-space-command-teaser
 tags:
   - space-command

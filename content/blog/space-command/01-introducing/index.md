@@ -1,7 +1,7 @@
 ---
 title: "Space Command: a Mac sidebar for plain-text projects"
 date: 2026-10-17
-draft: true
+draft: false
 slug: space-command-a-mac-sidebar-for-plain-text-projects
 tags:
   - space-command
@@ -20,7 +20,6 @@ The tool started as an Obsidian plugin, warped-command, both as a way to cut my 
 
 That meant moving up a level. The plugin knew one vault. Space Command scans the folders you point it at, finds the repos, vaults, and blogs inside them, and watches them for changes.
 
-[AUTHOR CHECK: a line or two on what the plugin couldn't do that pushed you out of Obsidian, if you want it here.]
 
 ## What it reads
 
@@ -48,7 +47,6 @@ The palette is warm and earthy, and every colour has a job. Terracotta is urgent
 
 Leaf green is reserved for `#focus`, and it shows up once per screen. If you see it, that's the thing.
 
-[IMAGE: the palette, or a screenshot of Today with one #focus item in Leaf. marketing/palette-social.html has both themes.]
 
 ## Where it's at
 
@@ -58,7 +56,6 @@ What works: the parsing core, the index and file watcher, the checked writer wit
 
 What doesn't exist yet: the rest of the Tasks tab, the Posts and Clipboard tabs, onboarding, a proper testing pass, licensing, and a signed download. There's no release date.
 
-[AUTHOR CHECK: mention the pace (about 325 commits and 25 versions in three days)? It's true, but it pulls the post toward how it was built. That story may belong in the boring-is-where-AI-earns-its-keep post.]
 
 ## Following along
 
