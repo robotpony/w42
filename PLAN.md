@@ -4,19 +4,23 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 
 ## Open
 
-- [ ] **Commit the theme.** Theme changes are in the `themes/w42` working tree (submodule `robotpony/hugo-WarpedPaperMod`). Commit and push there, then commit the new submodule pointer here.
-- [ ] **Verify after the next deploy:** `curl -sI https://warpedvisions.org/` shows `strict-transport-security` and `x-content-type-options` (from `static/.htaccess`); `/food/` still lands on the food page; recipe covers render.
+- [x] **Commit the theme.** Theme changes are in the `themes/w42` working tree (submodule `robotpony/hugo-WarpedPaperMod`). Commit and push there, then commit the new submodule pointer here. #focus
+- [x] **Verify after the next deploy:** `curl -sI https://warpedvisions.org/` shows `strict-transport-security` and `x-content-type-options` (from `static/.htaccess`); `/food/` still lands on the food page; recipe covers render.
 - [ ] **Turn off `debug: true` in the CDN `warped.js`** (warped.js repo). It logs to every visitor's console.
 - [ ] **Drafts with `date: ""`**: `content/blog/2026/boring-is-where-ai-earns-its-keep.md` and others. They no longer reach production, but they sort oddly in preview and fail `/lint`. Give them dates when they're scheduled.
 - [ ] **`archetypes/log-format.md`** is an Obsidian template (`{{title}}`, `{{date}}`), not a Hugo archetype; `hugo new --kind log-format` would fail. Move it to the vault's templates folder, or rewrite it with Hugo syntax.
 - [ ] **Deploy host in committed files**: `tools/config.toml.example` and the README name the real deploy user and host. Swap in placeholders if the repo is public.
-- [ ] **TASKS.md**: fold the rest into this file, or keep it for writing tasks only.
+- [x] **TASKS.md** folded in here (2026-10-17); the Claude test and `hugo new` items were done (`/post-new` and friends).
+- [ ] **Retire `/pages/food`.** Export its 13 recipes (`content/pages/food`, incl. `2024/` and `older/`) to `~/writing/not-a-chef` as drafts, remove the section, and redirect `/pages/food/` and `/food/` to bruce-loves-to-cook.warpedvisions.org in `static/.htaccess`.
+- [ ] **404 page**: a text adventure like not-a-chef's (`~/writing/not-a-chef/layouts/404.html`), set in a cluttered maker's shop. Theme change (the theme's `404.html` is stock), so it goes to the theme agent.
+- [ ] **Tag the 18 untagged posts** from the existing tag set. Propose a table first; Bruce approves before any edits.
+- [ ] **Test at phone width**: the section RSS link against long centred titles, inline title icons (post h1s, cards, mid-title placement), the description, and body-text icons.
 
 ## Decided
 
 - Search stays off. The theme keeps the templates; enabling it later needs `[outputs] home = ['HTML','RSS','JSON']` and a `layout: search` page.
 - `trash/` stays in the repo as an archive of retired drafts.
-- Food stays at `content/pages/food/`; `/food/` is an alias.
+- Food moves to the cookbook site (bruce-loves-to-cook.warpedvisions.org, the not-a-chef repo); `/pages/food/` and `/food/` will redirect there (2026-10-17).
 - `warped.js`/`warped.css` come from `cdn.warpedvisions.org`; the theme no longer carries a copy.
 
 ## Done (2026-10-15)

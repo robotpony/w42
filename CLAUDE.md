@@ -104,4 +104,4 @@ Same pattern as ~/writing/not-a-chef:
 
 ## Current Tasks
 
-See PLAN.md (site, setup, and theme fixes) and TASKS.md.
+See PLAN.md (site, setup, theme fixes, and tasks).

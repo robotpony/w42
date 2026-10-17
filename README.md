@@ -38,7 +38,6 @@ The site uses a custom Hugo theme called "w42" (located in `themes/w42/`):
 - `hugo.toml` - Site configuration
 - `CLAUDE.md` - AI assistant guidance for code editing
 - `PLAN.md` - Site, setup, and theme fixes
-- `TASKS.md` - Development todo list
 - `Makefile` / `tools/` - Build, preview, and deploy scripts
 
 ## Features
