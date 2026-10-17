@@ -8,3 +8,6 @@
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
 </IfModule>
+
+# Hugo's 404 page (the theme's workshop text adventure).
+ErrorDocument 404 /404.html
