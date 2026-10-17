@@ -52,7 +52,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 ### Configuration
 - **hugo.toml** contains all site configuration
 - `buildDrafts = false`: drafts are preview-only (`tools/preview.sh` passes `-D`); `tools/publish.sh check` fails if a draft lands in `public/`
-- Header menu (`[menu.main]`) and `mainSections = ['blog']` are set in hugo.toml
+- `mainSections = ['blog']` is set in hugo.toml; there's no header menu (the site description links the sections)
 - Security headers live in `static/.htaccess`; CSP is a meta tag in the theme's `security.html`
 - Google Analytics integration (G-77V9MKYGJ8)
 - Custom CSS/JS paths configured

@@ -26,24 +26,6 @@ hidden = false
 hiddenInList = false
 hiddenInSingle = false
 
-[menu]
-[[menu.main]]
-name = 'Essays'
-url = '/blog/'
-weight = 10
-[[menu.main]]
-name = 'Food'
-url = '/pages/food/'
-weight = 20
-[[menu.main]]
-name = 'Projects'
-url = '/projects/'
-weight = 30
-[[menu.main]]
-name = 'About'
-url = '/pages/about-bruce-alderson/'
-weight = 40
-
 [security]
   [security.exec]
     allow = ['^(dart-)?sass(-embedded)?$', '^git$', '^vim$']
