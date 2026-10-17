@@ -11,9 +11,9 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 - [ ] **`archetypes/log-format.md`** is an Obsidian template (`{{title}}`, `{{date}}`), not a Hugo archetype; `hugo new --kind log-format` would fail. Move it to the vault's templates folder, or rewrite it with Hugo syntax.
 - [ ] **Deploy host in committed files**: `tools/config.toml.example` and the README name the real deploy user and host. Swap in placeholders if the repo is public.
 - [x] **TASKS.md** folded in here (2026-10-17); the Claude test and `hugo new` items were done (`/post-new` and friends).
-- [ ] **Retire `/pages/food`.** Export its 13 recipes (`content/pages/food`, incl. `2024/` and `older/`) to `~/writing/not-a-chef` as drafts, remove the section, and redirect `/pages/food/` and `/food/` to bruce-loves-to-cook.warpedvisions.org in `static/.htaccess`.
-- [ ] **404 page**: a text adventure like not-a-chef's (`~/writing/not-a-chef/layouts/404.html`), set in a cluttered maker's shop. Theme change (the theme's `404.html` is stock), so it goes to the theme agent.
-- [ ] **Tag the 18 untagged posts** from the existing tag set. Propose a table first; Bruce approves before any edits.
+- [x] **Retire `/pages/food`** (2026-10-17). 8 of the 13 went to not-a-chef as Test-kitchen drafts (uncommitted there for Bruce); 5 already existed there and were skipped. Was: Export its 13 recipes (`content/pages/food`, incl. `2024/` and `older/`) to `~/writing/not-a-chef` as drafts, remove the section, and redirect `/pages/food/` and `/food/` to bruce-loves-to-cook.warpedvisions.org in `static/.htaccess`.
+- [x] **404 page** (theme 8a11b6b, `ErrorDocument` in `.htaccess`): a text adventure like not-a-chef's (`~/writing/not-a-chef/layouts/404.html`), set in a cluttered maker's shop. Theme change (the theme's `404.html` is stock), so it goes to the theme agent.
+- [x] **Tag the 19 untagged posts** (approved and done) from the existing tag set. Propose a table first; Bruce approves before any edits.
 - [ ] **Test at phone width**: the section RSS link against long centred titles, inline title icons (post h1s, cards, mid-title placement), the description, and body-text icons.
 
 ## Decided

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Hugo static site for warpedvisions.org, a personal blog focused on essays, recipes, and maker projects. The site uses a custom Hugo theme called "w42" (located in themes/w42/), which is based on PaperMod with significant customizations for high readability and clean design.
+This is a Hugo static site for warpedvisions.org, a personal blog focused on essays and maker projects. The site uses a custom Hugo theme called "w42" (located in themes/w42/), which is based on PaperMod with significant customizations for high readability and clean design.
 
 ## Development Commands
 
@@ -23,9 +23,8 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 **Content creation:**
 - `hugo new` uses `$EDITOR` (`newContentEditor` is commented out in hugo.toml); `vim` is in the exec allowlist
 - Blog posts go in `content/blog/YYYY/` following year-based organization. Posts with images are page bundles (`<slug>/index.md` with images beside it); a series gets a subfolder (`content/blog/2026/not-a-chef/`)
-- Recipes go in `content/pages/food/` (built at `/pages/food/`)
+- Recipes live on the cookbook site (bruce-loves-to-cook.warpedvisions.org, repo `~/writing/not-a-chef`), not here; `/food/` and `/pages/food/` redirect there (`static/.htaccess`)
 - Projects go in `content/projects/`
-- Recipes with images are page bundles too (cover image beside `index.md`)
 
 **Deployment:**
 - `make deploy` - Build, check, and rsync `public/` to the remote server (`tools/publish.sh`)
@@ -37,7 +36,6 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 ### Site Structure
 - **Content organized by type and year:**
   - `content/blog/` - Blog posts organized by year (2008-2026)
-  - `content/pages/food/` - Recipes and cooking content
   - `content/projects/` - Maker projects and art
   - `content/pages/` - Static pages (about, etc.)
 - **Not site content:** `trash/` holds retired drafts. Root `projects/` is gitignored (the warped-todo Obsidian plugin writes notes there); never add it back.
@@ -78,7 +76,6 @@ Blog posts use Hugo front matter with:
 
 ### Content Types
 - **Essays** - Long-form writing about technology, productivity, design
-- **Recipes** - Structured cooking content with images
 - **Projects** - Art, maker projects, technical experiments
 - **HOWTOs** - Technical tutorials and guides
 
