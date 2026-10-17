@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- The ␣⌘ mark: white on Sage. Drawn as paths so it doesn't depend on a font. -->
+  <rect width="64" height="64" rx="14" fill="#1398b9"/>
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ␣: an open box, sitting on ⌘'s baseline -->
+    <path d="M9.5 36.5v6.5h13v-6.5" stroke-width="3.6"/>
+    <!-- ⌘ (place-of-interest sign), on a 24-unit grid scaled up -->
+    <path transform="translate(27 17) scale(1.25)" stroke-width="2.6"
+      d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+  </g>
+</svg>
