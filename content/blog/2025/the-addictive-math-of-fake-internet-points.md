@@ -3,6 +3,8 @@ slug: the-addictive-math-of-fake-internet-points
 title: The addictive math of fake internet points 
 date: '2025-08-24T11:05:06-07:00'
 draft: false
+tags:
+  - productivity
 ---
 
 

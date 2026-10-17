@@ -3,6 +3,9 @@ slug: 'the-comfort-of-home-bases-for-creative-work'
 title: 'The comfort of home bases for creative work'
 date: '2025-08-25T10:00:01-07:00'
 draft: false
+tags:
+  - workflow
+  - productivity
 ---
 
 <img src="https://images.warpedvisions.org/2025/08/a-home-office-space.jpg" alt="A comfy home office" />

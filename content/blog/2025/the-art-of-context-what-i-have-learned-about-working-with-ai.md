@@ -3,6 +3,9 @@ slug: the-art-of-context-what-i-have-elarned-about-working-with-ai
 title: "The Art of context: what I’ve learned about working with AI"
 date: 2025-07-21T21:27:07Z
 draft: false
+tags:
+  - ai
+  - workflow
 ---
 
 I sat down a few weeks ago to ask Claude to help me analyze some user feedback data. I spent fifteen minutes crafting what I thought was the perfect prompt:

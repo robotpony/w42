@@ -3,6 +3,9 @@ slug: 'product-managers-are-just-storytellers'
 title: 'Product managers are just storytellers'
 date: '2025-12-26T21:19:03-08:00'
 draft: true
+tags:
+  - methodology
+  - writing
 ---
 
 I was sitting in a roadmap review meeting a few years back when someone asked the question that cracked everything open: "Why are we even building this?"

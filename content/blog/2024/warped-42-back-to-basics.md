@@ -3,6 +3,10 @@ slug: 'warped-42-back-to-basics'
 title: 'Warped 42: back to basics'
 date: '2024-12-24T09:55:46-08:00'
 draft: false
+tags:
+  - meta
+  - publishing
+  - hugo
 ---
 
 This is the 42nd version of my personal website and weblog, once again self-hosted at [Dreamhost](https://dreamhost.com). I use the site as a forcing function; a way to learn various languages and tools, and a kick to get back into the habit of writing and publishing. 

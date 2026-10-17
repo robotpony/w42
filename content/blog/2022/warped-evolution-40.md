@@ -3,6 +3,9 @@ slug: warped-v40
 title: Warped v40
 date: 2022-02-19T03:54:06Z
 draft: false
+tags:
+  - meta
+  - publishing
 ---
 
 This is the 40th evolution of [warpedvisions.org](https://warpedvisions.org). It's now running on [WriteFreely](https://github.com/writefreely/writefreely),  hosted by [Write.as](https://write.as). WriteFreely is a minimalist writing platform built on Go, LESS, and plain old vanilla Javascript. It's a speedy platform that feels nice to write in.

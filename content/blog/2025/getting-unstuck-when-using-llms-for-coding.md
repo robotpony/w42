@@ -3,6 +3,9 @@ slug: 'getting-unstuck-when-using-llms-for-coding'
 title: 'Getting unstuck when using LLMs for coding'
 date: '2025-08-16T16:51:26-07:00'
 draft: false
+tags:
+  - ai
+  - programming
 ---
 
 Your AI coding assistant hasn't gotten worse; you've just hit the ceiling of what your current approach can handle. "My LLM coding tools have been serving me hot garbage lately" is a complaint I see weekly on Reddit. Same tool, same developer, suddenly worse results.

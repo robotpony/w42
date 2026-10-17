@@ -3,6 +3,9 @@ slug: using-fonts-with-ligatures-to-improve-readability
 title: Using fonts with ligatures to improve readability
 date: 2021-03-01T00:22:52Z
 draft: false
+tags:
+  - tools
+  - design
 ---
 
 I set up a new dev laptop for myself over the Christmas holidays. I took the opportunity to burn down my old environment and to survey the 2021 tool landscape, which included testing out various terminals and setups, editors, and fonts. This year I discovered [Fira Code](https://github.com/tonsky/FiraCode), a tidy little monospace font that supports ligatures.

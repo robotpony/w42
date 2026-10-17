@@ -3,6 +3,9 @@ slug: 'how-i-use-ai-tools-and-how-they-are-changing-software-development'
 title: 'How I use AI tools, and how they are changing software development'
 date: '2025-08-07T14:14:30-07:00'
 draft: false
+tags:
+  - ai
+  - software-development
 ---
 
 <img src="https://images.warpedvisions.org/2025/07/ai-dream-wide.jpg" alt="AI Image" />

@@ -3,6 +3,9 @@ slug: 'hitting-the-wall-at-ai-speed'
 title: "The hidden cost of AI-assisted development: cognitive fatigue"
 date: '2025-08-10T15:27:03-07:00'
 draft: false
+tags:
+  - ai
+  - productivity
 ---
 
 <img src="https://images.warpedvisions.org/2025/10/watercolour-clouds-dripping.jpg" alt="AI showing complexity and fatique" />

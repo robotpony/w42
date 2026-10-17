@@ -3,6 +3,9 @@ slug: how-we-write-headlines-is-changing
 title: How we write headlines is changing
 date: 2022-02-27T00:19:44Z
 draft: false
+tags:
+  - writing
+  - design
 ---
 
 I find trends in style guidelines interesting, especially when shared style guides lag language usage in the wild. I have observed a shift in headline style from _Title Case_ to _Sentence case_ in the majority of commercial publications online. I've also found a general improvement in clarity from the most reliable publishers, mostly due to well understood in house style guidelines.

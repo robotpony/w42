@@ -3,6 +3,8 @@ slug: the-things-we-dont-say-out-loud
 title: The things we don’t say out loud
 date: 2024-03-29T21:27:07Z
 draft: false
+tags:
+  - writing
 ---
 
 There is a point in your career where you start to weigh what you want to say with what you can and should say. If you’re not

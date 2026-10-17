@@ -3,6 +3,9 @@ slug: imposter-syndrom-is-real
 title: Imposter syndrome is real
 date: 2022-12-07T00:40:09Z
 draft: false
+tags:
+  - writing
+  - productivity
 ---
 
 I have a reminder on my TODO list that haunts me weekly:

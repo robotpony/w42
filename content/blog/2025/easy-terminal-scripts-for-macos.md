@@ -3,6 +3,10 @@ slug: 'easy-terminal-scripts-for-macos'
 title: 'Lazy terminal scripts for macOS'
 date: '2025-08-04T12:38:58-07:00'
 draft: false
+tags:
+  - tools
+  - mac
+  - howto
 ---
 
 After thirty-something years of working in terminals, I've developed a pretty strong bias toward doing things from the command line. It can be faster for me to navigate around using scripts and shortcuts than clicking through GUI hierarchies. The muscle memory is there, the automation possibilities are endless, and frankly, it just feels more direct.

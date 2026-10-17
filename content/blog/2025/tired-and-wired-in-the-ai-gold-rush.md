@@ -3,6 +3,8 @@ slug: wired-tired-in-the-ai-gold-rush
 title: "Wired, tired in the AI gold rush"
 date: '2025-09-11T12:00:00-07:00'
 draft: false
+tags:
+  - ai
 ---
 
 We've been watching the AI gold rush unfold for the past two years now, and honestly? It's giving me serious déjà vu. Remember the early days of mobile apps when everyone and their cousin was building a flashlight app? Or when "on the blockchain" was supposedly going to revolutionize everything from grocery shopping to dental records?

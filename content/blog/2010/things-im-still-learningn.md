@@ -3,6 +3,9 @@ slug: things-im-still-learning
 title: Things I'm still learning, 2010 edition
 date: 2010-12-11T00:15:30Z
 draft: false
+tags:
+  - programming
+  - lists
 ---
 
 2010 has come and gone. I've shipped a few projects, each a number of times. I've registered dozens of domain names and dropped a few of the older ones. I've started (but not finished) a dozen spare time projects. I've had hundreds of new ideas, and a few of them were even interesting. I've learned a lot, but not enough (it's never enough). I've expanded my horizons and gotten stuck in ruts. I've gained weight and I've lost weight.
