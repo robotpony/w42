@@ -7,7 +7,7 @@ tags:
   - space-command
   - mac
   - tools
-description: "The first teaser for Space Command: mark one thing #focus and it leads every view."
+description: "Mark one thing #focus, and it leads every view."
 ---
 The first teaser for Space Command, the Mac sidebar I'm building for the plans and TODOs I already keep in plain text.
 
