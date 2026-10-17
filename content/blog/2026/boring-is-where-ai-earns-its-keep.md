@@ -40,7 +40,7 @@ The feedback loop is short. You feel the friction daily, so you notice it quickl
 
 Some tasks don't fit neatly into what Claude Code can do on its own. They need native Obsidian integration: a sidebar panel, a hotkey, a command palette entry. That's where building a plugin made sense.
 
-Space Command started as an answer to one specific problem. [PERSONAL ANECDOTE: The specific pain point — TODO/IDEAS capture, the focus problem, what was going wrong before you had the plugin]
+{{< space-command >}} started as an answer to one specific problem. [PERSONAL ANECDOTE: The specific pain point — TODO/IDEAS capture, the focus problem, what was going wrong before you had the plugin]
 
 Building it was faster than I expected because Claude Code handled most of the Obsidian API work. I described what I wanted; it found the right hooks; I reviewed and adjusted. The ratio of thinking time to execution time shifted noticeably.
 

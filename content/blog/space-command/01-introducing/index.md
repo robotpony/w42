@@ -3,22 +3,24 @@ title: "Space Command: a Mac sidebar for plain-text projects"
 date: 2026-10-17
 draft: false
 slug: space-command-a-mac-sidebar-for-plain-text-projects
+icon: /images/space-command-icon.svg
+iconFor: Space Command
 tags:
   - space-command
   - mac
   - tools
   - workflow
-description: "Space Command (␣⌘) is a native Mac sidebar that reads the plain-text projects you already keep and shows you the one thing to do next. It's pre-alpha, and I use it every day."
+description: "Space Command is a native Mac sidebar that reads the plain-text projects you already keep and shows you the one thing to do next. It's pre-alpha, and I use it every day."
 ---
-Your projects already live in plain text. Space Command reads them and shows you the one thing to do next.
+Your projects already live in plain text. {{< space-command >}} reads them and shows you the one thing to do next.
 
-**Space Command** (␣⌘) is a native macOS sidebar app. It sits at the edge of your screen, a click from the menu bar, and works on your files where they are: Git repos, notes vaults, and Hugo blogs. Nothing to import, no second copy to keep in sync, and nothing leaves your Mac.
+**{{< space-command >}}** is a native macOS sidebar app. It sits at the edge of your screen, a click from the menu bar, and works on your files where they are: Git repos, notes vaults, and Hugo blogs. Nothing to import, no second copy to keep in sync, and nothing leaves your Mac.
 
 ## Where it came from
 
 The tool started as an Obsidian plugin, warped-command, both as a way to cut my teeth on scratching an itch with Claude and as something I've wanted to build for a very long time. Obsidian is great, but I started wanting the features closer to the rest of my tools, so I re-imagined it as a macOS app.
 
-That meant moving up a level. The plugin knew one vault. Space Command scans the folders you point it at, finds the repos, vaults, and blogs inside them, and watches them for changes.
+That meant moving up a level. The plugin knew one vault. {{< space-command >}} scans the folders you point it at, finds the repos, vaults, and blogs inside them, and watches them for changes.
 
 
 ## What it reads
@@ -50,7 +52,7 @@ Leaf green is reserved for `#focus`, and it shows up once per screen. If you see
 
 ## Where it's at
 
-Space Command is pre-alpha. I started the app on October 15th, and I use it every day on my own folders.
+{{< space-command >}} is pre-alpha. I started the app on October 15th, and I use it every day on my own folders.
 
 What works: the parsing core, the index and file watcher, the checked writer with undo, Ideas, the projects board, Today, and opening any item at its line in the right editor.
 
@@ -59,6 +61,6 @@ What doesn't exist yet: the rest of the Tasks tab, the Posts and Clipboard tabs,
 
 ## Following along
 
-Launch news and dev notes will land here, in this series. If you only want the Space Command posts, there's a [feed for just this series](/blog/space-command/index.xml). The [teaser site](https://space-command.ca/) has the short version.
+Launch news and dev notes will land here, in this series. If you only want the {{< space-command >}} posts, there's a [feed for just this series](/blog/space-command/index.xml). The [teaser site](https://space-command.ca/) has the short version.
 
 Built in Canada 🇨🇦.

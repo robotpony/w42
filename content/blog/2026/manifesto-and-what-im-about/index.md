@@ -32,7 +32,7 @@ Almost everything I make starts, and ends up, as Markdown. Recipes, tasks, blog 
 - The not-a-chef rule: "A recipe should look natural in any text editor." Pages have to read as plain text, render in Obsidian and Hugo, and still be parseable by tools.
 - Warped Command reads `#todo`, `#idea`, and `#principle` tags straight out of my notes. It doesn't import them into a database.
 - Thwarter, my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
-- Space Command takes the same idea outside Obsidian, for people who'll never install it.
+- {{< space-command >}} takes the same idea outside Obsidian, for people who'll never install it.
 
 [PERSONAL: when did plain text become a conviction? Blosxom, losing work to a proprietary format, the tape drive story from the working-with-me page?]
 

@@ -13,7 +13,7 @@ description: ""
 
 Outline:
 - I'm working on a set of Obsidian plugins to tweak how I write notes, essays, blog posts, etc.
-- Space Command is a tool for TODOs and IDEAs, that helps with focus using #focus and priority tags
+- {{< space-command >}} is a tool for TODOs and IDEAs, that helps with focus using #focus and priority tags
 	- focus allows for ideas and future tasks to be recorded, but
 	- the current focus is clear so we can return to it quickly
 	- the tool also has some basic AI features like review text, define word, etc.
