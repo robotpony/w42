@@ -11,3 +11,6 @@
 
 # Hugo's 404 page (the theme's workshop text adventure).
 ErrorDocument 404 /404.html
+
+# Recipes moved to the cookbook site (2026-10-17).
+RedirectMatch 301 ^/(pages/)?food(/.*)?$ https://bruce-loves-to-cook.warpedvisions.org/
