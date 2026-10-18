@@ -4,4 +4,7 @@ description: Launch news and dev notes for Space Command, a Mac sidebar that rea
 ShowRssButtonInSectionTermList: true
 icon: /images/space-command-icon.svg
 iconFor: Space Command
+cascade:
+  params:
+    hiddenInHomeList: true
 ---
