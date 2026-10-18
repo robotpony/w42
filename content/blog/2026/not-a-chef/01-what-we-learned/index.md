@@ -26,22 +26,12 @@ Changes this pass:
 - Reader quotes are unattributed.
 - Facts come from the not-a-chef git log and agent (teardowns, lettuce, food safety, handoff, scope-creep share). Still open: the blocked batch import (nothing on record), the token figure (repo has only "under a month of Pro tokens"), and the public name.
 
-Open: [AUTHOR DECISION] "Not a Chef" vs "Bruce loves to cook" as the public name. This draft uses "Not a Chef" for the project and links the site.
+The site's stats, the reader quotes and "why bother" moved to post 0 (bruce-loves-to-cook-is-live). The public name is Bruce loves to cook (or Bruce ❤️ cook).
 -->
 
-I spent the last few months building [Not a Chef](https://bruce-loves-to-cook.ca/), our family cookbook, with Claude Code. It's a Hugo site, edited in Obsidian, with 223 recipes, 17 essays, 28 method pages, 14 reference pages and 39 engineering-style food log pages.
-
-The notes from readers have been the best part:
-
-> *It makes me want to click things, which is the opposite of most recipe sites I visit.*
-
-> *Win the fridge! I learned that phrase from you and use it all the time.*
-
-> *"Garbage plates" got a much-needed laugh out of me at 5:30pm on a Monday evening.*
+I spent the last few months building [Bruce loves to cook](https://bruce-loves-to-cook.ca/), our family cookbook, with Claude Code. [What's in it](/blog/2026/not-a-chef/bruce-loves-to-cook-is-live/) has its own post. This one is about how it got built.
 
 Readers don't see the 554 commits behind it. I scaffolded it in early June, then spent a slow summer migrating recipes. The real build took about four weeks this fall, ending in what I'm calling *build 1*. The busiest day had 79 commits.
-
-Why bother? The Google Docs cookbook was good enough for years, but it was never going to be smart, and it never read as a website to my kids. I wanted the structure a document can't give you, and something that belonged on the internet.
 
 I kept commits small and wrote the *why* into each message, so the log reads back like a diary. That's where most of this list came from, and the posts linked at the end go deeper.
 

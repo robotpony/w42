@@ -28,7 +28,7 @@ The cost, plainly: about two to three weeks full time, under a month of Pro toke
 ## Sections
 
 1. **What it cost.** The numbers above, plus the slow summer of content work that came first. [AUTHOR CHECK: does the $25 include hosting or domain?]
-2. **Who uses it.** Family and friends. The "want to click things" quote, briefly, since post 1 opened with it.
+2. **Who uses it.** Family and friends. The "want to click things" quote, briefly, since post 0 opened with it.
 3. **Who it left behind.** His wife edits in Google Drive; recipes get moved over by hand. [PERSONAL ANECDOTE: anything she's said about the finished site]
 4. **Who should build one.** Only someone who wants a high-traffic, perfect-looking cookbook: the modern printed cookbook. Everyone else should keep the shared doc.
 
