@@ -20,7 +20,7 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 
 - [x] **Cookbook domain move** (2026-10-18): links now point to https://bruce-loves-to-cook.ca, in `hugo.toml`, `data/projects.yaml`, `static/.htaccess` (`/food/` redirects straight there), README, CLAUDE.md, the two 2026 posts, and the `/food` links in About and the 2024 back-to-basics post. Goes live with the next deploy.
 
-- [ ] **After the next deploy** (2026-10-18 review): upgrade Hugo 0.166 → 0.168 and rebuild for warnings; turn off the empty `categories` taxonomy (9 posts carry `categories: []`, and `/categories/` is in the sitemap); convert the WordPress `((footnote))` markup in the 2008 Boost post to Markdown footnotes.
+- [x] **After the next deploy** (2026-10-18 review, branch `site-review-cleanup`): Hugo 0.166 → 0.168 (output identical apart from the generator tag, no warnings); `categories` taxonomy off and the 9 empty `categories: []` fields dropped (`/categories/` leaves the sitemap); the 2008 Boost post's `((footnote))` markup is now Markdown footnotes.
 
 ## Decided
 
