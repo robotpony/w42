@@ -19,15 +19,13 @@ The alpha is running on my own repos, vaults, and Hugo sites now, and I'm findin
 
 It lives in the menu bar and opens as a sidebar with three tabs: Tasks, Posts, and Clipboard. These shots come from a made-up demo world, so the projects are invented, but the panels are real.
 
-{{< figure src="space-command-today.png" width="380" alt="Space Command's Today view in the light palette, with a focus card at the top, then a list of tasks and an idea." caption="**Today.** The focus card leads, then the day's tasks and an idea." >}}
-
-{{< figure src="space-command-projects.png" width="380" alt="The All projects board, listing projects with a coloured health dot, a plan phase, and an eight-week activity strip for each." caption="**All projects.** Every project, busiest first, with its health dot, plan phase, and eight weeks of activity." >}}
-
-{{< figure src="space-command-project.png" width="380" alt="The sourdough-book project, with a health card above its tasks and a plan grouped by phase." caption="**One project.** sourdough-book's health card, then its tasks and its plan by phase." >}}
-
-{{< figure src="space-command-posts.png" width="380" alt="The Posts tab, showing a Hugo site's draft, followed by its published posts." caption="**Posts.** A Hugo site's drafts, then its published posts." >}}
-
-{{< figure src="space-command-clipboard.png" width="380" alt="The Clipboard tab, listing recent copies with a suggested clean-up for each; the newest is expanded and offers Unwrap." caption="**Clipboard.** Recent copies, each with a suggested clean-up. The newest is open, offering Unwrap." >}}
+{{< carousel >}}
+![Space Command's Today view in the light palette, with a focus card at the top, then a list of tasks and an idea.](space-command-today.png "**Today.** The focus card leads, then the day's tasks and an idea.")
+![The All projects board, listing projects with a coloured health dot, a plan phase, and an eight-week activity strip for each.](space-command-projects.png "**All projects.** Every project, busiest first, with its health dot, plan phase, and eight weeks of activity.")
+![The sourdough-book project, with a health card above its tasks and a plan grouped by phase.](space-command-project.png "**One project.** sourdough-book's health card, then its tasks and its plan by phase.")
+![The Posts tab, showing a Hugo site's draft, followed by its published posts.](space-command-posts.png "**Posts.** A Hugo site's drafts, then its published posts.")
+![The Clipboard tab, listing recent copies with a suggested clean-up for each; the newest is expanded and offers Unwrap.](space-command-clipboard.png "**Clipboard.** Recent copies, each with a suggested clean-up. The newest is open, offering Unwrap.")
+{{< /carousel >}}
 
 ## How it works
 
