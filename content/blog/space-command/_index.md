@@ -7,4 +7,5 @@ iconFor: Space Command
 cascade:
   params:
     hiddenInHomeList: true
+    seriesTag: space-command
 ---

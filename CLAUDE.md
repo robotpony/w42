@@ -62,6 +62,7 @@ Blog posts use Hugo front matter with:
 - `title` and `date`
 - `draft: false` for published posts
 - Tags for categorization
+- A series sets `seriesTag` in its `_index.md` cascade (see `content/blog/space-command/_index.md`): that tag leads the post footer, tinted, and links to the series page
 - All content uses a-style-guide-for-bruce.md as a style guide, including formatting headers and titles
 
 ## Key Features
