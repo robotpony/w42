@@ -8,7 +8,6 @@ tags:
   - obsidian
   - tools
   - workflow
-categories: []
 description: ""
 ---
 

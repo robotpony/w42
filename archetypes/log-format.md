@@ -5,6 +5,5 @@ draft: true
 slug: 
 tags:
   - log
-categories: []
 description: ""
 ---

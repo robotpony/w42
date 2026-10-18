@@ -7,7 +7,6 @@ tags:
   - ai
   - claude-code
   - not-a-chef
-categories: []
 description: ""
 ---
 

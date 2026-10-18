@@ -10,6 +10,10 @@ buildDrafts = false
 [pagination]
 pagerSize = 5
 
+# Tags only: categories were never used.
+[taxonomies]
+tag = 'tags'
+
 [params]
 mainSections = ['blog']
 description = '[ESSAYS](/), [RECIPES](https://bruce-loves-to-cook.ca/), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'

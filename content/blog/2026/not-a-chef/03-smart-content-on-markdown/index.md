@@ -8,7 +8,6 @@ tags:
   - obsidian
   - markdown
   - not-a-chef
-categories: []
 description: ""
 ---
 

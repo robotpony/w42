@@ -8,7 +8,6 @@ tags:
   - claude-code
   - workflow
   - not-a-chef
-categories: []
 description: ""
 ---
 
