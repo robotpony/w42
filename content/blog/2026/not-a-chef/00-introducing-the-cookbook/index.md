@@ -14,15 +14,14 @@ description: ""
 OUTLINE: Post 0 of 5, the teaser that opens the Not a Chef series. Type: Quick Observation / release announcement, 400-700 words.
 Core argument: the family cookbook is a real website now, and here's what's in it and why it's worth a look. The how-it-was-built story belongs to posts 1-5; this one points at them.
 Split from post 1: its opening (the site stats, reader quotes and "why bother") now lives here, and post 1 links back.
-Name: Bruce loves to cook in titles and prose; Bruce ❤️ cook is the playful form, for the body only.
+Name: Bruce loves to cook, everywhere. No short or emoji form.
 -->
 
 ## Headline options
 
 1. Bruce loves to cook, our family cookbook, is live
-2. Bruce ❤️ cook (title-safe? the app-name rule keeps titles plain, so likely body only)
-3. Our family cookbook moved out of Google Docs
-4. A cookbook that wants you to click things
+2. Our family cookbook moved out of Google Docs
+3. A cookbook that wants you to click things
 
 ## Opening hook
 

@@ -26,7 +26,7 @@ Changes this pass:
 - Reader quotes are unattributed.
 - Facts come from the not-a-chef git log and agent (teardowns, lettuce, food safety, handoff, scope-creep share). Still open: the blocked batch import (nothing on record), the token figure (repo has only "under a month of Pro tokens"), and the public name.
 
-The site's stats, the reader quotes and "why bother" moved to post 0 (bruce-loves-to-cook-is-live). The public name is Bruce loves to cook (or Bruce ❤️ cook).
+The site's stats, the reader quotes and "why bother" moved to post 0 (bruce-loves-to-cook-is-live). The public name is Bruce loves to cook, with no short form.
 -->
 
 I spent the last few months building [Bruce loves to cook](https://bruce-loves-to-cook.ca/), our family cookbook, with Claude Code. [What's in it](/blog/2026/not-a-chef/bruce-loves-to-cook-is-live/) has its own post. This one is about how it got built.
