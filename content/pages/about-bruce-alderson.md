@@ -22,5 +22,5 @@ Here are some of the things I've:
 - [worked on](https://www.linkedin.com/in/bruce-alderson),
 - [carved](https://www.instagram.com/warpedvisionsdotorg/),
 - [drawn](http://robotpony.ca/2012/08/microwave-dinners.html),
-- [cooked](/food), and
+- [cooked](https://bruce-loves-to-cook.ca/), and
 - [captured](https://www.instagram.com/bruce.alderson/).

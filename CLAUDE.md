@@ -23,7 +23,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 **Content creation:**
 - `hugo new` uses `$EDITOR` (`newContentEditor` is commented out in hugo.toml); `vim` is in the exec allowlist
 - Blog posts go in `content/blog/YYYY/` following year-based organization. Posts with images are page bundles (`<slug>/index.md` with images beside it); a series gets a subfolder (`content/blog/2026/not-a-chef/`)
-- Recipes live on the cookbook site (bruce-loves-to-cook.warpedvisions.org, repo `~/writing/not-a-chef`), not here; `/food/` and `/pages/food/` redirect there (`static/.htaccess`)
+- Recipes live on the cookbook site (bruce-loves-to-cook.ca, repo `~/writing/not-a-chef`), not here; `/food/` and `/pages/food/` redirect there (`static/.htaccess`)
 - Projects go in `content/projects/`
 
 **Deployment:**

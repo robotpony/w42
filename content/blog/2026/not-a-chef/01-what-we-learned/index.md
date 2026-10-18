@@ -30,7 +30,7 @@ Changes this pass:
 Open: [AUTHOR DECISION] "Not a Chef" vs "Bruce loves to cook" as the public name. This draft uses "Not a Chef" for the project and links the site.
 -->
 
-I spent the last few months building [Not a Chef](https://bruce-loves-to-cook.warpedvisions.org/), our family cookbook, with Claude Code. It's a Hugo site, edited in Obsidian, with 223 recipes, 17 essays, 28 method pages, 14 reference pages and 39 engineering-style food log pages.
+I spent the last few months building [Not a Chef](https://bruce-loves-to-cook.ca/), our family cookbook, with Claude Code. It's a Hugo site, edited in Obsidian, with 223 recipes, 17 essays, 28 method pages, 14 reference pages and 39 engineering-style food log pages.
 
 The notes from readers have been the best part:
 

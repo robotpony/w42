@@ -12,7 +12,7 @@ categories: []
 description: ""
 ---
 
-I spent three weeks this summer building [Bruce Loves to Cook](https://bruce-loves-to-cook.warpedvisions.org/), a recipe site built on Hugo and Obsidian, using Claude Code. The final stats:
+I spent three weeks this summer building [Bruce Loves to Cook](https://bruce-loves-to-cook.ca/), a recipe site built on Hugo and Obsidian, using Claude Code. The final stats:
 
 - 220 recipes,
 - 6 essays, and

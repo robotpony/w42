@@ -19,4 +19,4 @@ This year I ported the content from Write.as to a self-hosted Hugo setup, which 
 
 While I've always hoped to have more time to write, I think I can instead look at my desire to write as a metric for how healthy my perspective is, and strive to balance life and work stresses better. Sometimes changing tooling helps get me back in the groove of organizing my thoughts into tokens and essays.
 
-I have added a few new categories to the latest version of the site, to track my obsession with [food](/food/), and my love of [makery](/projects). At some point I want to take my personal cookbook and publish it using Hugo, and I have a project started to built out some custom tools for Hugo and Google Docs to get the content into a nicer shape.
+I have added a few new categories to the latest version of the site, to track my obsession with [food](https://bruce-loves-to-cook.ca/), and my love of [makery](/projects). At some point I want to take my personal cookbook and publish it using Hugo, and I have a project started to built out some custom tools for Hugo and Google Docs to get the content into a nicer shape.

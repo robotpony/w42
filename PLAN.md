@@ -18,13 +18,13 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 
 - [x] **"Things I've made" sidebar** (planned 2026-10-18). `data/projects.yaml` lists Space Command, Scorekeep, and the cookbook. It shows on index pages and About (`showProjects: true`), never on essays. It sits below the content at every width (above the pager on index pages); icons and names only on phones. The right-margin placement and the minimize bar were dropped. Theme a57de4b, cc14b4b, 64e0b72, c8f69de, bc4c40d. Bruce approved it as is (2026-10-18); renaming projects-sidebar in the theme is still open.
 
-- [ ] **Cookbook domain move** (2026-10-18): bruce-loves-to-cook.warpedvisions.org becomes https://bruce-loves-to-cook.ca (not-a-chef `docs/PLAN.md`, "Domain move"). Once the new domain serves over HTTPS, swap the old host in `hugo.toml`, `data/projects.yaml`, `static/.htaccess` (`/food/` redirects), README, CLAUDE.md, and the two 2026 posts (`building-a-recipe-site-with-claude-code.md`, `not-a-chef/01-what-we-learned`). Old links stay safe meanwhile if the old domain 301s. #focus
+- [x] **Cookbook domain move** (2026-10-18): links now point to https://bruce-loves-to-cook.ca, in `hugo.toml`, `data/projects.yaml`, `static/.htaccess` (`/food/` redirects straight there), README, CLAUDE.md, the two 2026 posts, and the `/food` links in About and the 2024 back-to-basics post. Goes live with the next deploy.
 
 ## Decided
 
 - Search stays off. The theme keeps the templates; enabling it later needs `[outputs] home = ['HTML','RSS','JSON']` and a `layout: search` page.
 - `trash/` stays in the repo as an archive of retired drafts.
-- Food moves to the cookbook site (bruce-loves-to-cook.warpedvisions.org, the not-a-chef repo); `/pages/food/` and `/food/` will redirect there (2026-10-17).
+- Food moves to the cookbook site (bruce-loves-to-cook.ca, the not-a-chef repo); `/pages/food/` and `/food/` will redirect there (2026-10-17).
 - Essay pages carry no sidebars or promos, out of respect for readers. Index pages and About can (2026-10-18).
 - `warped.js`/`warped.css` come from `cdn.warpedvisions.org`; the theme no longer carries a copy.
 

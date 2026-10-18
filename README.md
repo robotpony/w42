@@ -1,6 +1,6 @@
 # warpedvisions.org
 
-A personal site by Bruce Alderson featuring essays on craft, makery, and software, along with creative projects (recipes moved to bruce-loves-to-cook.warpedvisions.org). The site has been continuously evolving since before "weblogs" existed, serving as both a creative outlet and testing ground for new tools and techniques.
+A personal site by Bruce Alderson featuring essays on craft, makery, and software, along with creative projects (recipes moved to bruce-loves-to-cook.ca). The site has been continuously evolving since before "weblogs" existed, serving as both a creative outlet and testing ground for new tools and techniques.
 
 ## Quick Start
 

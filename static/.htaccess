@@ -13,4 +13,4 @@
 ErrorDocument 404 /404.html
 
 # Recipes moved to the cookbook site (2026-10-17).
-RedirectMatch 301 ^/(pages/)?food(/.*)?$ https://bruce-loves-to-cook.warpedvisions.org/
+RedirectMatch 301 ^/(pages/)?food(/.*)?$ https://bruce-loves-to-cook.ca/

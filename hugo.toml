@@ -12,7 +12,7 @@ pagerSize = 5
 
 [params]
 mainSections = ['blog']
-description = '[ESSAYS](/), [RECIPES](https://bruce-loves-to-cook.warpedvisions.org/), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
+description = '[ESSAYS](/), [RECIPES](https://bruce-loves-to-cook.ca/), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
 footer.text = "[@robotpony mas.to](https://mas.to/@robotpony)"
 disableSpecial1stPost = true
 defaultTheme = "light"
