@@ -18,6 +18,8 @@ disableSpecial1stPost = true
 defaultTheme = "light"
 # Used for RSS and meta author.
 author = "Bruce Alderson"
+# Default share image (og:image, twitter:card) for pages without their own.
+images = ["images/og-default.png"]
 
 warpedScript = "https://cdn.warpedvisions.org/warped.js"
 warpedStyle = "https://cdn.warpedvisions.org/warped.css"
