@@ -18,6 +18,8 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 
 - [ ] **"Things I've made" sidebar** (planned 2026-10-18). `data/projects.yaml` lists Space Command, Scorekeep, and the cookbook. It shows on index pages and About (`showProjects: true`), never on essays. In the right margin on wide screens; inline after the 5th entry below that; icons and names only on phones. On wide screens it minimizes to a bar at the bottom of the window, remembered in localStorage. Theme a57de4b, cc14b4b, 64e0b72; desktop checked. Waiting on Bruce's phone and tablet check in dev tools.
 
+- [ ] **Cookbook domain move** (2026-10-18): bruce-loves-to-cook.warpedvisions.org becomes https://bruce-loves-to-cook.ca (not-a-chef `docs/PLAN.md`, "Domain move"). Once the new domain serves over HTTPS, swap the old host in `hugo.toml`, `data/projects.yaml`, `static/.htaccess` (`/food/` redirects), README, CLAUDE.md, and the two 2026 posts (`building-a-recipe-site-with-claude-code.md`, `not-a-chef/01-what-we-learned`). Old links stay safe meanwhile if the old domain 301s.
+
 ## Decided
 
 - Search stays off. The theme keeps the templates; enabling it later needs `[outputs] home = ['HTML','RSS','JSON']` and a `layout: search` page.
