@@ -16,7 +16,7 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 - [x] **Tag the 19 untagged posts** (approved and done) from the existing tag set. Propose a table first; Bruce approves before any edits.
 - [ ] **Test at phone width**: the section RSS link against long centred titles, inline title icons (post h1s, cards, mid-title placement), the description, and body-text icons.
 
-- [ ] **"Things I've made" sidebar** (planned 2026-10-18). `data/projects.yaml` lists Space Command, Scorekeep, and the cookbook. It shows on index pages and About (`showProjects: true`), never on essays. In the right margin on wide screens; inline after the 5th entry below that; icons and names only on phones. Theme partial requested from the theme agent; bump the submodule and test at three widths.
+- [ ] **"Things I've made" sidebar** (planned 2026-10-18). `data/projects.yaml` lists Space Command, Scorekeep, and the cookbook. It shows on index pages and About (`showProjects: true`), never on essays. In the right margin on wide screens; inline after the 5th entry below that; icons and names only on phones. On wide screens it minimizes to a bar at the bottom of the window, remembered in localStorage. Theme a57de4b, cc14b4b, 64e0b72; desktop checked. Waiting on Bruce's phone and tablet check in dev tools.
 
 ## Decided
 
