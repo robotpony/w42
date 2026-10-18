@@ -3,8 +3,6 @@ title: "Space Command: a Mac sidebar for plain-text projects"
 date: 2026-10-17
 draft: false
 slug: space-command-a-mac-sidebar-for-plain-text-projects
-icon: /images/space-command-icon.svg
-iconFor: Space Command
 tags:
   - space-command
   - mac

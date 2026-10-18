@@ -3,8 +3,6 @@ title: "The first Space Command teaser"
 date: 2026-10-17T09:00:00
 draft: false
 slug: the-first-space-command-teaser
-icon: /images/space-command-icon.svg
-iconFor: Space Command
 tags:
   - space-command
   - mac
