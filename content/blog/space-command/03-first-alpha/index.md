@@ -9,9 +9,9 @@ tags:
   - space-command
   - mac
   - tools
-description: "The first alpha of Space Command is running on my own folders, with help docs for anyone curious how it works."
+description: "Five panels from the Mac app, running on my own folders, plus help docs for anyone curious how it works."
 ---
-The first alpha of {{< space-command >}} is in playtest. It's the Mac app that grew out of warped-command, my Obsidian plugin, but it works across all my folders instead of one vault. It reads the plans, TODOs, ideas, and posts I keep in plain text and shows me the one thing to do next.
+{{< space-command >}} is in playtest. It's the Mac app that grew out of warped-command, my Obsidian plugin, but it works across all my folders instead of one vault. It reads the plans, TODOs, ideas, and posts I keep in plain text and shows me the one thing to do next.
 
 The alpha is running on my own repos, vaults, and Hugo sites now, and I'm finding the rough edges. There's no public download yet, and it needs macOS 26.
 
