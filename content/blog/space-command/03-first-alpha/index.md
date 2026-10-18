@@ -13,7 +13,7 @@ description: "The first alpha of Space Command is running on my own folders, wit
 ---
 The first alpha of {{< space-command >}} is in playtest. It's the Mac app that grew out of warped-command, my Obsidian plugin, but it works across all my folders instead of one vault. It reads the plans, TODOs, ideas, and posts I keep in plain text and shows me the one thing to do next.
 
-Build 0.57.0 is running on my own repos, vaults, and Hugo sites now, and I'm finding the rough edges. There's no public download yet.
+The alpha is running on my own repos, vaults, and Hugo sites now, and I'm finding the rough edges. There's no public download yet, and it needs macOS 26.
 
 ## A tour in five panels
 
@@ -23,9 +23,9 @@ It lives in the menu bar and opens as a sidebar with three tabs: Tasks, Posts, a
 
 {{< figure src="space-command-projects.png" width="380" alt="The All projects board, listing projects with a coloured health dot, a plan phase, and an eight-week activity strip for each." caption="**All projects.** Every project, busiest first, with its health dot, plan phase, and eight weeks of activity." >}}
 
-{{< figure src="space-command-project.png" width="380" alt="The sourdough-book project, with a health card and a plan grouped by phase above its task list." caption="**One project.** The sourdough-book project's health card and plan by phase sit above its tasks." >}}
+{{< figure src="space-command-project.png" width="380" alt="The sourdough-book project, with a health card above its tasks and a plan grouped by phase." caption="**One project.** sourdough-book's health card, then its tasks and its plan by phase." >}}
 
-{{< figure src="space-command-posts.png" width="380" alt="The Posts tab, showing a Hugo site's drafts with their working notes, followed by its published posts." caption="**Posts.** A Hugo site's drafts, with their working notes, then its published posts." >}}
+{{< figure src="space-command-posts.png" width="380" alt="The Posts tab, showing a Hugo site's draft, followed by its published posts." caption="**Posts.** A Hugo site's drafts, then its published posts." >}}
 
 {{< figure src="space-command-clipboard.png" width="380" alt="The Clipboard tab, listing recent copies with a suggested clean-up for each; the newest is expanded and offers Unwrap." caption="**Clipboard.** Recent copies, each with a suggested clean-up. The newest is open, offering Unwrap." >}}
 
