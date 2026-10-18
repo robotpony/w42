@@ -7,18 +7,19 @@ tags:
   - space-command
   - mac
   - tools
-description: "Five panels from the Mac app, running on my own folders, plus help docs for anyone curious how it works."
+description: "Six views of the Mac app, running on my own folders, plus help docs for anyone curious how it works."
 ---
 {{< space-command >}} is in playtest. It's the Mac app that grew out of warped-command, my Obsidian plugin, but it works across all my folders instead of one vault. It reads the plans, TODOs, ideas, and posts I keep in plain text and shows me the one thing to do next.
 
 The alpha is running on my own repos, vaults, and Hugo sites now, and I'm finding the rough edges. There's no public download yet, and it needs macOS 26.
 
-## A tour in five panels
+## A tour in six views
 
 It lives in the menu bar and opens as a sidebar with three tabs: Tasks, Posts, and Clipboard. These shots come from a made-up demo world, so the projects are invented, but the panels are real.
 
 {{< carousel >}}
 ![Space Command's Today view in the light palette, with a focus card at the top, then a list of tasks and an idea.](space-command-today.png "**Today.** The focus card leads, then the day's tasks and an idea.")
+![The scope menu, listing Today, All tasks, and All projects, then each project with a green or amber health dot, then checked Tasks and Ideas filters.](space-command-scope-menu.png "**Scope menu.** Jump to Today, every task, or one project, each with its health at a glance, and choose whether tasks, ideas, or both show.")
 ![The All projects board, listing projects with a coloured health dot, a plan phase, and an eight-week activity strip for each.](space-command-projects.png "**All projects.** Every project, busiest first, with its health dot, plan phase, and eight weeks of activity.")
 ![The sourdough-book project, with a health card above its tasks and a plan grouped by phase.](space-command-project.png "**One project.** sourdough-book's health card, then its tasks and its plan by phase.")
 ![The Posts tab, showing a Hugo site's draft, followed by its published posts.](space-command-posts.png "**Posts.** A Hugo site's drafts, then its published posts.")
