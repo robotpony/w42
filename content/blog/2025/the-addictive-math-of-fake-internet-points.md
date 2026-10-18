@@ -66,7 +66,7 @@ The key is recognizing when you're optimizing for points versus optimizing for t
 
 Points can motivate consistency, document progress, and connect you with like-minded obsessives. But they're a means, not an end. The real value emerges in the conversations, the techniques you learn, and the gradual improvement of your actual craft.
 
-<img src="http://images.warpedvisions.org/2025/08/double-griddle-deluxe.jpg" alt="Burgers are tasty" />
+<img src="https://images.warpedvisions.org/2025/08/double-griddle-deluxe.jpg" alt="Burgers are tasty" />
 
 
 I still post my burger photos, and I still check the likes. But somewhere along the way, the points became less important than perfecting that smash technique and connecting with fellow burger nerds. The fake internet points got me in the door, everything else keeps me in the kitchen.
