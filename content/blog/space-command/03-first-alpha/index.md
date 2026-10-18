@@ -1,7 +1,7 @@
 ---
 title: "Space Command's first alpha is in playtest"
 date: 2026-10-18
-draft: true
+draft: false
 slug: space-command-first-alpha-in-playtest
 icon: /images/space-command-icon.svg
 iconFor: Space Command
