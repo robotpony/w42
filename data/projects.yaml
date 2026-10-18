@@ -5,6 +5,7 @@ items:
   - name: Space Command
     url: /blog/space-command/
     icon: /images/space-command-icon.svg
+    icon_dark: /images/space-command-icon-dark.svg
     blurb: A Mac sidebar that shows the one thing to do next.
   - name: Scorekeep
     url: https://scorekeep.warpedvisions.org/
