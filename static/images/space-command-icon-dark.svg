@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <!-- The ␣⌘ mark in Charcoal, the app icon's dark appearance. For pages that set their own theme (the social images); favicon.svg follows the system. Drawn as paths so it doesn't depend on a font. -->
-  <style>.tile{fill:url(#dark)} .edge{stroke:#fff;stroke-opacity:.12} .space{stroke:#1398b9} .cmd{stroke:#e5c7a9}</style>
+  <style>.tile{fill:url(#dark)} .edge{stroke:#fff;stroke-opacity:.22} .space{stroke:#1398b9} .cmd{stroke:#e5c7a9}</style>
   <defs>
     <linearGradient id="dark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3c3731"/><stop offset="1" stop-color="#221f1b"/></linearGradient>
     <linearGradient id="light" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf9"/><stop offset="1" stop-color="#ebe3d8"/></linearGradient>
   </defs>
   <rect class="tile" width="64" height="64" rx="14"/>
-  <!-- A hairline edge, so the tile holds its shape on a page of its own colour. -->
-  <rect class="edge" x=".5" y=".5" width="63" height="63" rx="13.5" fill="none"/>
+  <!-- An edge, so the tile holds its shape on a page of its own colour, down to text size (strengthened 2026-10-18 for 16–24 px). -->
+  <rect class="edge" x=".75" y=".75" width="62.5" height="62.5" rx="13.25" fill="none" stroke-width="1.5"/>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
     <!-- ␣: an open box on ⌘'s baseline, as heavy as ⌘ and 2 units closer to it (app icon round 2) -->
     <path class="space" d="M11.5 36v7h13v-7" stroke-width="4.4"/>
