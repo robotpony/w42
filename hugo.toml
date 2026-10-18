@@ -7,6 +7,9 @@ theme = 'w42'
 # and tools/publish.sh check fails if one slips through.
 buildDrafts = false
 
+[pagination]
+pagerSize = 5
+
 [params]
 mainSections = ['blog']
 description = '[ESSAYS](/), [RECIPES](https://bruce-loves-to-cook.warpedvisions.org/), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
