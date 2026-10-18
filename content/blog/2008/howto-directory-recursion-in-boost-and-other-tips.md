@@ -9,7 +9,7 @@ tags:
 ---
 
 
-Boost's [Filesystem](http://www.boost.org/doc/libs/1_35_0/libs/filesystem/doc/index.htm) library is an incredible resource: it abstracts paths, directories, and `stat` results.  It simplifies coding shell problems in C++, it's portable, and is maintained by a large community of contributors. The one downside of Boost is that some of its newer libraries are poorly documented. ((Something I want to contribute to.))  Until I have time to get involved in the Boost project, I'm going to post examples here.
+Boost's [Filesystem](http://www.boost.org/doc/libs/1_35_0/libs/filesystem/doc/index.htm) library is an incredible resource: it abstracts paths, directories, and `stat` results.  It simplifies coding shell problems in C++, it's portable, and is maintained by a large community of contributors. The one downside of Boost is that some of its newer libraries are poorly documented.[^1]  Until I have time to get involved in the Boost project, I'm going to post examples here.
 
 *Traversing a directory tree*
 
@@ -25,7 +25,7 @@ for ( boost::filesystem::recursive_directory_iterator end, dir("./");
 }
 {{</highlight>}}
 
-The example starts in the current working directory, and prints all of the file names (and directories) in `inode` order. ((Later I'll try to post an example that uses the `stat` features to dump extra information.))
+The example starts in the current working directory, and prints all of the file names (and directories) in `inode` order.[^2]
 
 _Notes:_
 
@@ -66,3 +66,6 @@ Things that are great about `boost::filesystem`'s approach:
 - It mirrors Perl/*sh functionality, something most developers should know well.
 - It throws errors (`filesystem_error`), allowing for some really clean, transactional code.
 - And, it abstracts paths that work on Win32, OSX, Unix, and Linux variants.
+
+[^1]: Something I want to contribute to.
+[^2]: Later I'll try to post an example that uses the `stat` features to dump extra information.
