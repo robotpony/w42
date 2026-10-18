@@ -16,11 +16,14 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 - [x] **Tag the 19 untagged posts** (approved and done) from the existing tag set. Propose a table first; Bruce approves before any edits.
 - [ ] **Test at phone width**: the section RSS link against long centred titles, inline title icons (post h1s, cards, mid-title placement), the description, and body-text icons.
 
+- [ ] **"Things I've made" sidebar** (planned 2026-10-18). `data/projects.yaml` lists Space Command, Scorekeep, and the cookbook. It shows on index pages and About (`showProjects: true`), never on essays. In the right margin on wide screens; inline after the 5th entry below that; icons and names only on phones. Theme partial requested from the theme agent; bump the submodule and test at three widths.
+
 ## Decided
 
 - Search stays off. The theme keeps the templates; enabling it later needs `[outputs] home = ['HTML','RSS','JSON']` and a `layout: search` page.
 - `trash/` stays in the repo as an archive of retired drafts.
 - Food moves to the cookbook site (bruce-loves-to-cook.warpedvisions.org, the not-a-chef repo); `/pages/food/` and `/food/` will redirect there (2026-10-17).
+- Essay pages carry no sidebars or promos, out of respect for readers. Index pages and About can (2026-10-18).
 - `warped.js`/`warped.css` come from `cdn.warpedvisions.org`; the theme no longer carries a copy.
 
 ## Done (2026-10-15)
