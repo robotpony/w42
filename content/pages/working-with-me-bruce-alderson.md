@@ -5,7 +5,7 @@ date: "2025-07-23T15:30:01-07:00"
 draft: false
 ---
 
-When I was 8, a flakey tape drive ate three weeks of BASIC code. One minute I had a working text adventure game where you could explore a haunted mansion. The next I had magnetic spaghetti and a valuable lesson about the nature of software.
+When I was 10, a flakey tape drive ate three weeks of BASIC code. One minute I had a working text adventure game where you could explore a haunted mansion. The next I had magnetic spaghetti and a valuable lesson about the nature of software.
 
 That tape drive[^1] taught me something fundamental: the thinking that goes into your software *is* the software. The code is just one representation of that thinking. After losing my third program to that temperamental piece of hardware, I started writing everything down first. Design notes, flow charts drawn on graph paper, detailed maps of game worlds. When the tape drive inevitably failed again, I could rebuild from my notes in a fraction of the time.
 
