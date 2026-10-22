@@ -1,3 +1,6 @@
 [submodule "themes/w42"]
 	path = themes/w42
 	url = git@github.com:robotpony/hugo-WarpedPaperMod.git
+[submodule "cdn"]
+	path = cdn
+	url = git@github.com:robotpony/warped.js.git

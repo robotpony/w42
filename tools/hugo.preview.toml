@@ -1,0 +1,45 @@
+# Preview-only config, layered on hugo.toml by tools/preview.sh
+# (--config hugo.toml,tools/hugo.preview.toml). Builds never read it.
+#
+# Serves warped.js, warped.css, and their fonts from the cdn/ submodule
+# (robotpony/warped.js) at /cdn/, so a preview works offline. The live site
+# loads them from cdn.warpedvisions.org (hugo.toml).
+
+[params]
+warpedScript = "/cdn/warped.js"
+warpedStyle = "/cdn/warped.css"
+
+# Declaring a mount replaces Hugo's default project mounts, so they're
+# listed again here.
+[[module.mounts]]
+source = "content"
+target = "content"
+
+[[module.mounts]]
+source = "data"
+target = "data"
+
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+
+[[module.mounts]]
+source = "i18n"
+target = "i18n"
+
+[[module.mounts]]
+source = "archetypes"
+target = "archetypes"
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.mounts]]
+source = "cdn"
+target = "static/cdn"
+files = ["warped.js", "warped.css", "fonts/*.woff2"]

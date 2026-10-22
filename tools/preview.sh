@@ -100,6 +100,16 @@ open_browser() {
 # The reading list: cached unless asked (fresh or daily)
 tools/goodreads.sh "$READING"
 
+# warped.js, warped.css, and the fonts come from the cdn/ submodule, so the
+# preview works offline (tools/hugo.preview.toml). Without the submodule it
+# falls back to the CDN, as a build does.
+CONFIG=(--config hugo.toml)
+if [ -f cdn/warped.js ]; then
+  CONFIG=(--config hugo.toml,tools/hugo.preview.toml)
+else
+  echo "note: cdn/ isn't checked out (git submodule update --init cdn); branding loads from the CDN." >&2
+fi
+
 open_browser &
 
 # -D: drafts. hugo.toml has buildDrafts = false, so only the preview shows them.
@@ -117,4 +127,4 @@ open_browser &
 # public/. `make deploy` rsyncs public/, so a running preview could ship
 # drafts that were only ever meant to be served locally. Keep the server in
 # memory so public/ only ever holds real builds.
-exec hugo server -D ${FUTURE[@]+"${FUTURE[@]}"} --disableFastRender --renderToMemory --bind 0.0.0.0
+exec hugo server "${CONFIG[@]}" -D ${FUTURE[@]+"${FUTURE[@]}"} --disableFastRender --renderToMemory --bind 0.0.0.0
