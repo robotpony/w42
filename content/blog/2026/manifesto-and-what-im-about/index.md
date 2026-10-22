@@ -70,7 +70,7 @@ I also encountered a number of text-y tools at the time, including [Blosxom](htt
 
 I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale imitations of it, but then I found [*Hugo*](https://gohugo.io/). Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
 
-Finally, text is truly incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
+Finally, text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
 ## Writing is how I think
 
@@ -80,9 +80,7 @@ That tape drive ate every copy of everything I wrote, so I reimplemented most ga
 
 CLAUDE.md files are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
 
-- Link: [the fight for clarity and beauty in writing](/blog/2015/the-fight-for-clarity-and-beauty-in-writing/)
-- Link: [working with me](/pages/working-with-me-bruce-alderson/), for the whole tape drive story
-- Link: [how I rekindled my love of writing](/blog/2025/how-i-rekindled-my-love-of-writing-with-a-tireless-robot-editor/)
+I've written more about [the fight for clarity and beauty in writing](/blog/2015/the-fight-for-clarity-and-beauty-in-writing/) and about [how a tireless robot editor rekindled my love of writing](/blog/2025/how-i-rekindled-my-love-of-writing-with-a-tireless-robot-editor/). The whole tape drive story is on my [working with me](/pages/working-with-me-bruce-alderson/) page.
 
 ## Show the work
 
@@ -104,9 +102,9 @@ I remember helping a number of people learn SQL. SQL is a powerfully dense and o
 
 My way of teaching is to write. I can write and be frustrated, and not influence anyone negatively. I just put that frustration into my writing and redraft. Once written, I can teach effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short.
 
-The recipes are where this works best. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as do equipment, dietary needs, and so on.
+The recipes are where this works best. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be exact. Ingredients differ, conditions like humidity differ, as do equipment, dietary needs, and so on.
 
-- From the recipe-maker notes: teaching people to cook, and making it easier to do it well, "is a way to make a difference for many people."
+As my recipe-maker notes put it, teaching people to cook, and making it easier to do it well, "is a way to make a difference for many people."
 
 ## Own the press
 
@@ -135,21 +133,22 @@ From my game-making principles: be emotive, be funny, be fun. Lean into constrai
 - Scorekeep's goal: "it should feel like what it is: paper." Buttery smooth over feature-complete.
 - "Things that teach. Things that make you smile."
 
-Fun also needs [feeding the muse](/blog/2025/burnout-is-a-repetitive-strain-injury/#feeding-the-muse), and scrolling rarely does it. Feeds are built for [fake internet points](/blog/2025/the-addictive-math-of-fake-internet-points/), not ideas.
+Fun also needs [feeding the muse](/blog/2025/burnout-is-a-repetitive-strain-injury/#feeding-the-muse), and scrolling rarely does it. Feeds are built to farm [fake internet points](/blog/2025/the-addictive-math-of-fake-internet-points/).
 
 ## Craft, inch by inch
 
 I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen I know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where I stop thinking about the tools and think about the food.
 
-[#todo Expand: who we are is had inch by inch, failure by failure (from the about page). Craft is fit, finish, and small steps, with text as one example. Tie the sections together without summarizing them.]
+Who we are is had inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
 
 ## What this means for what's next
 
-[#todo CLOSE: you want essay form, so skip the checklist. End on reflection: the 10-year-old with the notebook and the person writing CLAUDE.md files are doing the same thing. Then point forward to Space Command as the concrete next thing ([the series](/blog/space-command/), alpha in playtest). The about page already covers who you are, so this close can be about the habits. If the profanity moves out of the opening, this is a good place for it.]
+The 10-year-old with a notebook beside a tape drive and the person writing CLAUDE.md files are doing the same thing. Both write the design down first, because the machine will forget it. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way; I only noticed it looking back over this year.
+
+So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text I've already written. I'll keep writing about it here first. If any of it sparks something for you, write about it on your own site and link back.
 
 <!--
 More links to consider:
-- /blog/2025/the-comfort-of-home-bases-for-creative-work/
 - /blog/2026/not-a-chef/smart-content-on-plain-markdown/
 - /pages/about-bruce-alderson/
 -->
