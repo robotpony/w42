@@ -4,7 +4,7 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 ## Open
 
 - [ ] **Bring back "carved" on the About page**: it linked the retired warpedvisionsdotorg Instagram, so it's out of the "things I've" list for now. Return it when the carvings have a home (a projects page, a gallery, or posts), linked between "worked on" and "drawn".
-- [ ] **Turn off `debug: true` in the CDN `warped.js`** (warped.js repo). It logs to every visitor's console.
+- [x] **Turn off `debug: true` in the CDN `warped.js`** (warped.js ad1ba82, deployed 2026-10-22 by the warped.js agent, which now owns that repo). The same deploy self-hosted the fonts; w42 serves them from the `cdn/` submodule in preview, and the theme (eccbda1) dropped Google Fonts.
 - [ ] **Drafts with `date: ""`**: `content/blog/2026/boring-is-where-ai-earns-its-keep.md` and others. They no longer reach production, but they sort oddly in preview and fail `/lint`. Give them dates when they're scheduled.
 - [ ] **`archetypes/log-format.md`** is an Obsidian template (`{{title}}`, `{{date}}`), not a Hugo archetype; `hugo new --kind log-format` would fail. Move it to the vault's templates folder, or rewrite it with Hugo syntax.
 - [ ] **Deploy host in committed files**: `tools/config.toml.example` and the README name the real deploy user and host. Swap in placeholders if the repo is public.
