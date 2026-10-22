@@ -48,7 +48,7 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 ----
 
 ```timeline
-1982 Atari BASIC
+1983 Atari BASIC
 1994 *The UNIX Philosophy*
 1996 Carmack's `.plan` files
 2002 Blosxom
