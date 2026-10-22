@@ -45,7 +45,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - **Theme architecture (themes/w42/):**
   - Based on PaperMod with custom "Warped" branding
   - Modular CSS in `assets/css/` (core/, common/, extended/)
-  - Branding JS/CSS and the fonts load from `cdn.warpedvisions.org` on the live site (`warpedScript`/`warpedStyle` in hugo.toml). The preview serves them from the `cdn/` submodule (robotpony/warped.js, `~/projects/sites/warped.js`) through `tools/hugo.preview.toml`, so it works offline. After deploying warped.js to the CDN, bump `cdn/` here so the preview matches
+  - Branding JS/CSS and the fonts load from `cdn.warpedvisions.org` on the live site (`warpedScript`/`warpedStyle` in hugo.toml). The preview serves them from the `cdn/` submodule (robotpony/warped.js, `~/projects/sites/warped.js`) through `tools/hugo.preview.toml`, so it works offline. After each warped.js CDN deploy (the warped.js agent owns that repo), bump `cdn/` here and set `?v=<commit>` on `warpedScript`/`warpedStyle` in hugo.toml, so the preview matches and visitors' 2-day caches miss
   - Hugo templates in `layouts/`
   - English-only `i18n/` (other translations were removed); the theme needs Hugo 0.158.0 or later
 

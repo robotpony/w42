@@ -25,8 +25,10 @@ author = "Bruce Alderson"
 # Default share image (og:image, twitter:card) for pages without their own.
 images = ["images/og-default.png"]
 
-warpedScript = "https://cdn.warpedvisions.org/warped.js"
-warpedStyle = "https://cdn.warpedvisions.org/warped.css"
+# ?v= is the warped.js commit on the CDN, which caches for 2 days; change it
+# with each CDN deploy, along with the cdn/ submodule
+warpedScript = "https://cdn.warpedvisions.org/warped.js?v=ad1ba82"
+warpedStyle = "https://cdn.warpedvisions.org/warped.css?v=ad1ba82"
 
 # newContentEditor = "ia"
 
