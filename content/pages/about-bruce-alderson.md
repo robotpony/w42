@@ -18,7 +18,7 @@ Here are some of the things I've:
 
 - [written](/),
 - [blurted](https://mas.to/@robotpony) [out](https://bsky.app/profile/robotpony.bsky.social),
-- [read](/reading/) and [saved](https://www.instapaper.com/p/robotpony),
+- [read](/reading/),
 - [built](https://github.com/robotpony),
 - [worked on](https://www.linkedin.com/in/bruce-alderson),
 - [carved](https://www.instagram.com/warpedvisionsdotorg/),
