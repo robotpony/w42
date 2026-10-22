@@ -1,4 +1,4 @@
 ---
-title: Books I’ve read, newest first.
+title: Books I’ve read
 outputs: [html]
 ---
