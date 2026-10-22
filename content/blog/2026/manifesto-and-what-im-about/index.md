@@ -118,8 +118,12 @@ The pipeline really matters to me. I was very proficient with WordPress from my 
 
 I learned this again on [Write.as](https://write.as). In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): publish on your own site first, and syndicate elsewhere.
 
-```text
-Markdown in git → Hugo → public/ → rsync → Dreamhost
+```flow
+Markdown | in git
+Hugo
+public/
+rsync
+Dreamhost
 ```
 
 ## Make it fun
