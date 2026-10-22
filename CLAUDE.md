@@ -20,6 +20,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - `/post-new` - stub a new post as a page bundle
 - `/image-add` - add photos or screenshots to a post's bundle (`tools/add-image.sh` for photos)
 - `/lint` - check post front matter, images, links, and leftover drafting markers
+- `/reading` - pull the reading list from Goodreads now and commit any change
 
 **Content creation:**
 - `hugo new` uses `$EDITOR` (`newContentEditor` is commented out in hugo.toml); `vim` is in the exec allowlist
