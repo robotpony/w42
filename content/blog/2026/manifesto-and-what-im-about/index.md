@@ -14,18 +14,7 @@ description: "" # #todo one line, e.g. "Plain text, showing the work, and making
 
 #focus
 
-<!--
-DRAFT NOTES (delete before publishing)
-- Type: philosophical essay, 2000-3000 words. Each section is a belief, backed by things built this year.
-- Scheduled the Tuesday after the bruce-loves-to-cook series ends (Nov 17). Move it if needed.
-- Title options: "What I'm about" / "A manifesto for plain text and play" / "Things I believe, and the stuff I built to prove it"
-- Lines in quotes come from your notes (~/writing/me, ~/writing/not-a-chef). Keep them, rework them, or cut them.
-- Source goal: ~/writing/me/log/2026-October.md
--->
-
-I have, yet again, revived WarpedVisions. It's been my blog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, less a few stints on hosted blog tools. But this post isn't about that, it's about me rediscovering who I am. I am a writer. I make software. And I fucking love text, words, and transforming them into magical things.
-
-[#todo OPENING: the style guide keeps profanity out of opening paragraphs; save "fucking" for one later beat (the close?). "This post isn't about that, it's about..." is a not-X-but-Y setup; just say what it's about. Consider stating the beliefs as a numbered list up top (or at the close) so the manifesto reads as one, then let each section argue its line.]
+I have, yet again, revived WarpedVisions. It's been my blog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, less a few stints on hosted blog tools. But this post isn't about that, it's about me rediscovering who I am. I am a writer. I make software. And I love text, playing with words, and transforming them both into magical things.
 
 I looked back at what I've built and written since spring: a cookbook, a scorekeeping app, a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine. Different shapes, same handful of beliefs underneath. This is my attempt to write those beliefs down, mostly so I can check my next project against them.
 
@@ -38,7 +27,23 @@ Almost everything I make starts, and ends up, as Markdown. Designs, specificatio
 - Thwarter, my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
 - And all of my blogs, comics, and repos live in text. It is the only truly durable format.
 
-[#todo EXAMPLE: show, don't tell. A 6-10 line recipe or PLAN.md snippet with `#todo` tags in a code block proves "looks natural in any text editor" faster than the bullets do.]
+Here's part of a plan from Space Command's demo world, a sourdough book in progress:
+
+```markdown
+## Drafting
+
+- [x] Chapter 1 · Flour
+- [x] Chapter 2 · Water and salt
+- [ ] Chapter 3 · Starters
+- [x] Chapter 4 · Mixing and folding
+- [x] Chapter 5 · The first rise
+- [x] Chapter 6 · Shaping
+- [x] Chapter 7 · Proofing in the fridge
+- [ ] Chapter 8 · Baking in a Dutch oven #focus
+- [ ] Chapter 9 · When it goes wrong
+```
+
+That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it needs no tag, and `#focus` marks the chapter I'm on now. In any other note, a `#todo` at the end of a line does the same job. It reads fine in `vim`, renders in Obsidian and on GitHub, and Space Command still finds every open item.
 
 My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. Text is raw power.
 
