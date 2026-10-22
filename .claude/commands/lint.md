@@ -11,6 +11,6 @@ Check all `.md` files under `content/blog/` (or only the path given). For each f
 5. `title` is sentence case (first word and proper nouns only), per the blog-writing skill
 6. In a page bundle (`<folder>/index.md`), every image the post links (`![...](name.png)`) exists in the bundle, and every image in the bundle is linked from the post
 7. Links to other posts (`/blog/...`) point at a post that exists under `content/`; note any target that's still a draft or future-dated, since it will 404 once this post is live
-8. Leftover drafting markers in a post that isn't a draft (`draft: false` or no `draft`): `[PERSONAL ANECDOTE`, `[AUTHOR CHECK`, `[AUTHOR DECISION`, `[DETAIL PENDING`, `[IMAGE:`, `TODO`
+8. Leftover drafting markers in a post that isn't a draft (`draft: false` or no `draft`): `[PERSONAL ANECDOTE`, `[AUTHOR CHECK`, `[AUTHOR DECISION`, `[DETAIL PENDING`, `[IMAGE:`, `TODO`, and Space Command tags (`#todo`, `#focus`) outside code spans and code blocks, since posts can mention the tags in backticks
 
 Report files with issues, grouped by severity (build-breaking first). Files that pass cleanly should be summarized as a count, not listed individually.
