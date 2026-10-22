@@ -8,7 +8,7 @@ showReading: true
 ---
 
 
-Hi, I'm Bruce Alderson.
+Hi, I'm [Bruce Alderson](https://brucealderson.ca).
 
 I design and craft software for fun and profit. I also write and make artful things using various methods and tools.
 
