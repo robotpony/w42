@@ -4,6 +4,7 @@ title: About Me
 date: 2024-12-15T22:30:56Z
 draft: false
 showProjects: true
+showReading: true
 ---
 
 
