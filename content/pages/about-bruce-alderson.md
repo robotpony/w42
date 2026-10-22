@@ -21,7 +21,6 @@ Here are some of the things I've:
 - [read](/reading/),
 - [built](https://github.com/robotpony),
 - [worked on](https://www.linkedin.com/in/bruce-alderson),
-- [carved](https://www.instagram.com/bruce.alderson/),
 - [drawn](https://robotpony.ca/2012/08/microwave-dinners.html),
 - [cooked](https://bruce-loves-to-cook.ca/), and
 - [captured](https://www.instagram.com/bruce.alderson/).
