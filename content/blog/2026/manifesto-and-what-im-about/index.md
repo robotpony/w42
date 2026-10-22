@@ -9,7 +9,7 @@ tags:
   - teaching
   - making
   - publishing
-description: "" # #todo one line, e.g. "Plain text, showing the work, and making things fun: what I believe, and what I built this year to prove it."
+description: "What I believe about text, teaching, and making things, and what this year's projects taught me."
 ---
 
 #focus
@@ -70,25 +70,15 @@ I also encountered a number of text-y tools at the time, including [Blosxom](htt
 
 I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale imitations of it, but then I found [*Hugo*](https://gohugo.io/). Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
 
-Finally, text is truly incremental, especially when paired with source control. Other systems can do this, but the modes are separated by human time to find them rather than the immediacy of the terminal. Yes, I realize the terminal is not great for all users, but for me it's home.
-
-[#todo CLARITY: "the modes are separated by human time to find them" doesn't parse. Do you mean other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away? Say that.]
+Finally, text is truly incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
 ## Writing is how I think
 
-My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain what the difference is.
+My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB and a previous-generation tape drive, the bane of my childhood. The drive ate tapes, often the low-quality ones I could afford at 10 years old from Radio Shack, so I saved each game I wrote several times, wrote down its design, and sketched out its interfaces, down to the bit for custom fonts and sprites.
 
-With that 600XL, not only did I get a whopping 16 KB, I got a previous-generation tape drive. That tape drive was the bane of my childhood. It was also a blessing in disguise. The drive ate tapes, often the sort of low-quality tapes I could afford to buy at 10 years old from Radio Shack. I developed a habit of saving each game I wrote several times, writing down its design, and sketching out its interfaces. In the 8-bit era, sketching interfaces was often down to the bit, for custom fonts and sprites.
+That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. I wrote dozens, all of them lost to time. The notebook survived when the tape didn't, and somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
-Writing down design and requirements was the first real lesson I learned. That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. I had all the time in the world, and my brain worked best when my fingers were attached to the keyboard. I learned to type, and I learned the ins and outs of BASIC, then ASM for those machines. I wrote dozens of games, all of which are lost to time.
-
-I use this same pattern now, except that I use source control, and I rarely reimplement except to experiment. But I always write down design. I always mock up user and programmatic interfaces.
-
-[#todo NARRATIVE: the tape drive story is the best thing in the post, and it's about losing work, not thinking. Land the turn: writing it down started as insurance against the tape, and became the way you figure out what to build. One sentence connecting "the notebook survived when the tape didn't" to "writing is how I think" makes the header earn itself.]
-
-[#todo TRIM: keep this telling short and let the link below carry the full story (three weeks of code, the haunted mansion, magnetic spaghetti).]
-
-[#todo MISSING: AI as writing partner. You link the robot editor post, but say nothing here about how writing to Claude (CLAUDE.md, specs, prompts) is the same habit as the 600XL notebook: write the design down first. It's a strong bridge from 1984 to now.]
+CLAUDE.md files are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
 
 - Link: [the fight for clarity and beauty in writing](/blog/2015/the-fight-for-clarity-and-beauty-in-writing/)
 - Link: [working with me](/pages/working-with-me-bruce-alderson/), for the whole tape drive story
@@ -102,37 +92,35 @@ The usual way to write a cookbook is to hide the work. Being me, I'd rather not 
 - Repos carry their plans, bug lists, and decision logs in the open.
 - Working with AI is part of the work, so the prompts and CLAUDE.md files get shown too.
 
-[#todo RESEARCH: research is showing the work before it's finished. One paragraph, maybe "try several, compare honestly, write down why". Material: comparing batches of recipes side by side to find the best one (how-to-find-great-recipes); dailyweather's notes on Environment Canada feeds; prototyping four looks for Scorekeep before choosing one.]
+Research is showing the work before it's finished. I try several, compare honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one, notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and four looks for Scorekeep before choosing one.
 
-[#todo PERSONAL: what showing the work has gotten you. Feedback, accountability, people learning from the messy middle?]
+Showing the work keeps me accountable. The game jam's weekly posts meant there was always something to show, so I kept shipping.
 
 ## Teach by writing it down
 
 I like to say that *"I love to teach, I think."* Sometimes I'm uncertain, because I'm also impatient, and it's easy to forget how I got to understanding something. You need to remember your path to describe a path to people learning, and those darned paths change with each generation of tools and humans. But I do like to teach, I think.
 
-I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's incredibly efficient when used properly, which requires some math-y thinking, some background, and a bunch of experience. I've always struggled to teach this to beginners. I suspect I've never thought deeply about, or developed a clear plan for, teaching them.
+I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's incredibly efficient when used properly, which requires some math-y thinking, some background, and a bunch of experience. I've always struggled to teach this to beginners. I suspect I've never thought deeply about, or developed a clear plan for, teaching them. Teaching it live, I'd forgotten my own path; writing it down is how I find it again.
 
 My way of teaching is to write. I can write and be frustrated, and not influence anyone negatively. I just put that frustration into my writing and redraft. Once written, I can teach effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short.
 
-I also explain methods. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as do equipment, dietary needs, and so on.
+The recipes are where this works best. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as do equipment, dietary needs, and so on.
 
 - From the recipe-maker notes: teaching people to cook, and making it easier to do it well, "is a way to make a difference for many people."
-
-[#todo ARC: SQL is the failure (taught live, impatient, having forgotten your own path), writing is the fix (drafting absorbs the frustration, and the written lesson remembers the path), and the recipes are the payoff (methods that make cooking easier for people you'll never meet). The pieces are in order now: give the SQL paragraph its turn into the writing one, and reword "I also explain methods" to land as the payoff. Close on the recipe-maker quote.]
 
 ## Own the press
 
 This site has been running for close to 30 years, on more engines than I can list (see [about the site](/pages/about-warpedvisions-dot-org/)). It's always been my testing ground. Today it's Hugo, my own theme, a few scripts, and rsync to the same host I've used for decades.
 
-- The site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose: if you want to respond, write something of your own. It gets *you* writing. It also produces less noise for me.
+- The site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose: if you want to respond, write something of your own.
 
 The pipeline really matters to me. I was very proficient with WordPress from my agency days, but I never found a productive writing flow for it. I was always fighting the web UI. I couldn't `grep` it, and I couldn't see it locally without a lot of setup. That opaqueness runs against the grain of how I think.
 
-[#todo TRIM: the comments bullet now links the about page, which makes the full case ("you taking the time to write a response somewhere, linking back to me"), so this bullet can stay to one line.]
+I learned this again on [Write.as](https://write.as). In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): publish on your own site first, and syndicate elsewhere.
 
-[#todo MISSING: why owning it matters beyond workflow. Platforms that folded or changed under you (Tumblr? Write.as? Twitter?), and the IndieWeb idea of publishing on your own site first (POSSE). One concrete loss story would carry this section.]
-
-[#todo DIAGRAM: the pipeline in one line or a small graph: Markdown in a git repo → Hugo → public/ → rsync → Dreamhost. It makes "no magic, all text" visible.]
+```text
+Markdown in git → Hugo → public/ → rsync → Dreamhost
+```
 
 ## Make it fun
 
@@ -143,15 +131,17 @@ From my game-making principles: be emotive, be funny, be fun. Lean into constrai
 - Scorekeep's goal: "it should feel like what it is: paper." Buttery smooth over feature-complete.
 - "Things that teach. Things that make you smile."
 
-[#todo PERSONAL: "feed the muse", and why scrolling usually doesn't.]
+Fun also needs [feeding the muse](/blog/2025/burnout-is-a-repetitive-strain-injury/#feeding-the-muse), and scrolling rarely does it. Feeds are built for [fake internet points](/blog/2025/the-addictive-math-of-fake-internet-points/), not ideas.
 
 ## Craft, inch by inch
 
-[#todo Expand: simplicity as things fitting _just so_ (from the about page). Who we are is had inch by inch, failure by failure. Craft is fit, finish, and small steps, with text as one example. Tie the sections together without summarizing them.]
+I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen I know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where I stop thinking about the tools and think about the food.
+
+[#todo Expand: who we are is had inch by inch, failure by failure (from the about page). Craft is fit, finish, and small steps, with text as one example. Tie the sections together without summarizing them.]
 
 ## What this means for what's next
 
-[#todo CLOSE: you want essay form, so skip the checklist. End on reflection: the 10-year-old with the notebook and the person writing CLAUDE.md files are doing the same thing. Then point forward with one concrete next thing (Space Command, warped-next, more writing). The about page already covers who you are, so this close can be about the habits. If the profanity moves out of the opening, this is a good place for it.]
+[#todo CLOSE: you want essay form, so skip the checklist. End on reflection: the 10-year-old with the notebook and the person writing CLAUDE.md files are doing the same thing. Then point forward to Space Command as the concrete next thing ([the series](/blog/space-command/), alpha in playtest). The about page already covers who you are, so this close can be about the habits. If the profanity moves out of the opening, this is a good place for it.]
 
 <!--
 More links to consider:
