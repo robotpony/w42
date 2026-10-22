@@ -20,7 +20,10 @@ Here are some of the things I've:
 - [blurted](https://mas.to/@robotpony) [out](https://bsky.app/profile/robotpony.bsky.social),
 - [read](/reading/),
 - [built](https://github.com/robotpony),
+- [made](https://space-command.ca),
 - [worked on](https://www.linkedin.com/in/bruce-alderson),
 - [drawn](https://robotpony.ca/2012/08/microwave-dinners.html),
 - [cooked](https://bruce-loves-to-cook.ca/), and
 - [captured](https://www.instagram.com/bruce.alderson/).
+
+Say hello at [bruce.alderson@gmail.com](mailto:bruce.alderson@gmail.com).
