@@ -70,6 +70,10 @@ I also encountered a number of text-y tools at the time, including Blosxom, the 
 
 I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale comparisons of it, but then I found *Hugo*. Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
 
+Finally, text is truly incremental, especially when paired with source control. Other systems can do this, but the modes are separated by human time to find them rather than the immediacy of the terminal. Yes, I realize the terminal is not great for all users, but for me it's home.
+
+[#todo CLARITY: "the modes are separated by human time to find them" doesn't parse. Do you mean other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away? Say that. ]
+
 ## Writing is how I think
 
 My first real computer was an Atari 600XL. I usually tell people it was a 800XL, which I got a few years later, so I don't have to explain what the difference is.
@@ -82,28 +86,27 @@ I use this same pattern now, except that I use source control, and I rarely reim
 
 [#todo NARRATIVE: the tape drive story is the best thing in the post, and it's about losing work, not thinking. Land the turn: writing it down started as insurance against the tape, and became the way you figure out what to build. One sentence connecting "the notebook survived when the tape didn't" to "writing is how I think" makes the header earn itself.]
 
-[#todo OVERLAP: /pages/working-with-me-bruce-alderson/ already tells this story ("When I was 8, a flakey tape drive ate three weeks of BASIC code", the haunted mansion text adventure). Here you're 10. Pick one age. Then either keep this telling short and link that page, or borrow its sharper details (three weeks of code, magnetic spaghetti) so the two don't read as rival drafts.]
+[#todo TRIM: keep this telling short and let the link below carry the full story (three weeks of code, the haunted mansion, magnetic spaghetti).]
 
 [#todo MISSING: AI as writing partner. You link the robot editor post, but say nothing here about how writing to Claude (CLAUDE.md, specs, prompts) is the same habit as the 600XL notebook: write the design down first. It's a strong bridge from 1984 to now.]
 
 - Link: [the fight for clarity and beauty in writing](/blog/2015/the-fight-for-clarity-and-beauty-in-writing/)
+- Link: [working with me](/pages/working-with-me-bruce-alderson/), for the whole tape drive story
 - Link: [how I rekindled my love of writing](/blog/2025/how-i-rekindled-my-love-of-writing-with-a-tireless-robot-editor/)
 
 ## Show the work
 
 The usual way to write a cookbook is to hide the work. Being me, I'd rather not hide the design and development of recipes. The bruce-loves-to-cook recipes that aren't finished are marked **Test kitchen**, and they're published on purpose. A recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
-I also explain methods. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like Kenji and Chef John. Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as does equipment, dietary needs, and so on.
-
 - Game jam rule 4: post your updates online weekly, including specs, and prompts if used.
 - Repos carry their plans, bug lists, and decision logs in the open.
 - Working with AI is part of the work, so the prompts and CLAUDE.md files get shown too.
 
-[#todo STRUCTURE: the recipe material (Test kitchen, methods over recipes) is strong, but this section slides into "teach methods", which belongs in the next section. Keep "show the work" about publishing the unfinished; move the Kenji/Chef John paragraph to "Teach by making it easier".]
+[#todo RESEARCH: research is showing the work before it's finished. One paragraph, maybe "try several, compare honestly, write down why". Material: comparing batches of recipes side by side to find the best one (how-to-find-great-recipes); dailyweather's notes on Environment Canada feeds; prototyping four looks for Scorekeep before choosing one.]
 
 [#todo PERSONAL: what showing the work has gotten you. Feedback, accountability, people learning from the messy middle?]
 
-## Teach by making it easier
+## Teach by writing it down
 
 I like to say that *"I love to teach, I think."* Sometimes I'm uncertain as I'm also impatient, and it's easy to forget how I got to understanding something. You need to remember your path to describe a path to people learning, and those darned paths change with each generation of tools and humans. But I do like to teach, I think.
 
@@ -111,9 +114,11 @@ I remember helping a number of people learn SQL. SQL is an powerfully dense and 
 
 My way of teaching is to write. I can write and be frustrated, and not influence anyone negatively. I just put that frustration into my writing and redraft. Once written, I can teach effectively, but those lesson plans are where the real effort is. Well, that, and in keeping those lesson plans up to date where they fall short.
 
+I also explain methods. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like Kenji and Chef John. Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as does equipment, dietary needs, and so on.
+
 - From the recipe-maker notes: teaching people to cook, and making it easier to do it well, "is a way to make a difference for many people."
 
-[#todo MISMATCH: the header says "making it easier", but the body says you teach by writing, and the SQL story ends on a failure with no turn. SUGGESTION: rename the section "Teach by writing it down" and give it this arc: (1) SQL is the failure: you taught it live, impatient, having forgotten your own path. (2) The fix is writing: drafting absorbs the frustration, and the written lesson remembers the path you've forgotten. (3) The success is the recipes: moving "methods over recipes" (Kenji, Chef John, humidity) here shows writing that makes cooking easier for people you'll never meet. Close on the recipe-maker quote. That keeps "I love to teach, I think," turns the SQL admission into the reason for the belief, and gives "making it easier" a concrete payoff.]
+[#todo ARC: SQL is the failure (taught live, impatient, having forgotten your own path), writing is the fix (drafting absorbs the frustration, and the written lesson remembers the path), and the recipes are the payoff (methods that make cooking easier for people you'll never meet). The pieces are in order now: give the SQL paragraph its turn into the writing one, and reword "I also explain methods" to land as the payoff. Close on the recipe-maker quote.]
 
 ## Own the press
 
@@ -129,12 +134,6 @@ The pipeline really matters to me. I was very proficient with WordPress from my 
 
 [#todo DIAGRAM: the pipeline in one line or a small graph: Markdown in a git repo → Hugo → public/ → rsync → Dreamhost. It makes "no magic, all text" visible.]
 
-## Research in the open
-
-[#todo GAP: no direct statement in your notes yet. Material to draw on: comparing batches of recipes side by side to find the best one (how-to-find-great-recipes); dailyweather's notes on Environment Canada feeds; prototyping four looks for Scorekeep before choosing one. What's the belief? Maybe "try several, compare honestly, write down why".]
-
-[#todo OPTION: if this one won't come, fold it into "Show the work" (research is showing the work before it's finished) rather than forcing a thin section. Seven beliefs is plenty.]
-
 ## Make it fun
 
 From my game-making principles: be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.
@@ -148,20 +147,15 @@ From my game-making principles: be emotive, be funny, be fun. Lean into constrai
 
 ## Craft, inch by inch
 
-[#todo Expand: simplicity as things fitting _just so_ (from the about page). Who we are is had inch by inch, failure by failure. Tie the sections together without summarizing them.]
-
-Finally, text is truly incremental, especially when paired with source control. Other systems can do this, but the modes are separated by human time to find them rather than the immediacy of the terminal. Yes, I realize the terminal is not great for all users, but for me it's home.
-
-[#todo CLARITY: "the modes are separated by human time to find them" doesn't parse. Do you mean other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away? Say that. This paragraph also belongs in "Plain text is the foundation"; this section should be about craft (fit, finish, small steps), with text as one example.]
+[#todo Expand: simplicity as things fitting _just so_ (from the about page). Who we are is had inch by inch, failure by failure. Craft is fit, finish, and small steps, with text as one example. Tie the sections together without summarizing them.]
 
 ## What this means for what's next
 
-[#todo CLOSE: you want essay form, so skip the checklist. End on reflection: the 8-year-old with the notebook and the person writing CLAUDE.md files are doing the same thing. Then point forward with one concrete next thing (Space Command, warped-next, more writing). The about page already covers who you are, so this close can be about the habits. If the profanity moves out of the opening, this is a good place for it.]
+[#todo CLOSE: you want essay form, so skip the checklist. End on reflection: the 10-year-old with the notebook and the person writing CLAUDE.md files are doing the same thing. Then point forward with one concrete next thing (Space Command, warped-next, more writing). The about page already covers who you are, so this close can be about the habits. If the profanity moves out of the opening, this is a good place for it.]
 
 <!--
 More links to consider:
 - /blog/2025/the-comfort-of-home-bases-for-creative-work/
 - /blog/2026/not-a-chef/smart-content-on-plain-markdown/
 - /pages/about-bruce-alderson/
-- /pages/working-with-me-bruce-alderson/
 -->
