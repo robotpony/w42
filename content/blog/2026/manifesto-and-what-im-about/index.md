@@ -29,7 +29,7 @@ Almost everything I make starts, and ends up, as Markdown. Designs, specificatio
 
 Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
 
-{{< tabs >}}
+{{< tabs layout="side" >}}
 {{< tab "Text" >}}
 ```markdown
 ## Drafting
@@ -51,8 +51,6 @@ Here's part of a plan from Space Command's demo world, a sourdough book in progr
 {{< /tabs >}}
 
 That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it needs no tag, and `#focus` marks the chapter I'm on now. In any other note, a `#todo` at the end of a line does the same job. It reads fine in `vim`, renders in Obsidian and on GitHub, and Space Command folds the finished work away so only what's left shows, `#focus` tag and all.
-
-----
 
 ```timeline
 1983 Atari BASIC
