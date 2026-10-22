@@ -22,9 +22,9 @@ I looked back at what I've built and written since spring: a cookbook, a scoreke
 
 Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is plain text: no API, no auth, no special SDK. It opens in any editor, it diffs in git, and it'll still be readable long after today's tools are gone.
 
-- The not-a-chef (now bruce-loves-to-cook) rule transformed my cookbook and recipe development: *"A recipe should look natural in any text editor."* Pages have to read as plain text, render in Obsidian and Hugo, and still be parseable by tools. It's fast, easy, and it gets out of my way.
-- Space Command is a macOS app that finds and manages `PLAN.md` files, via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my source and my text files, and not something else.
-- Thwarter, my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
+- The not-a-chef (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) rule transformed my cookbook and recipe development: *"A recipe should look natural in any text editor."* Pages have to read as plain text, render in Obsidian and Hugo, and still be parseable by tools. It's fast, easy, and it gets out of my way.
+- [Space Command](https://space-command.ca/) is a macOS app that finds and manages `PLAN.md` files, via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my source and my text files, and not something else.
+- [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
 - And all of my blogs, comics, and repos live in text. It is the only truly durable format.
 
 Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
@@ -66,9 +66,9 @@ My love of text started a long time ago, but the real inspiration was [John Carm
 
 I even learned `vim` at the time, something I've never regretted. It's as outdated now as it was then, but it really leans on what text does well. I learned to stack piped commands, write scripts in *Perl*, *Python*, and *Ruby*. Ruby at the time was a toy, well before it powered Web 2.0, but it felt text-y to me.
 
-I also encountered a number of text-y tools at the time, including Blosxom, the first truely great blogging tool. Sure, there was Blogger and Movable Type, but owning your content in a format you can search and script was something I new was special.
+I also encountered a number of text-y tools at the time, including [Blosxom](http://www.blosxom.com/), the first truely great blogging tool. Sure, there was Blogger and Movable Type, but owning your content in a format you can search and script was something I new was special.
 
-I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale comparisons of it, but then I found *Hugo*. Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
+I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale comparisons of it, but then I found [*Hugo*](https://gohugo.io/). Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
 
 Finally, text is truly incremental, especially when paired with source control. Other systems can do this, but the modes are separated by human time to find them rather than the immediacy of the terminal. Yes, I realize the terminal is not great for all users, but for me it's home.
 
@@ -96,7 +96,7 @@ I use this same pattern now, except that I use source control, and I rarely reim
 
 ## Show the work
 
-The usual way to write a cookbook is to hide the work. Being me, I'd rather not hide the design and development of recipes. The bruce-loves-to-cook recipes that aren't finished are marked **Test kitchen**, and they're published on purpose. A recipe is closer to source code than scripture: it has versions, bugs, and fixes.
+The usual way to write a cookbook is to hide the work. Being me, I'd rather not hide the design and development of recipes. The bruce-loves-to-cook recipes that aren't finished are marked [**Test kitchen**](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. A recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
 - Game jam rule 4: post your updates online weekly, including specs, and prompts if used.
 - Repos carry their plans, bug lists, and decision logs in the open.
@@ -114,7 +114,7 @@ I remember helping a number of people learn SQL. SQL is an powerfully dense and 
 
 My way of teaching is to write. I can write and be frustrated, and not influence anyone negatively. I just put that frustration into my writing and redraft. Once written, I can teach effectively, but those lesson plans are where the real effort is. Well, that, and in keeping those lesson plans up to date where they fall short.
 
-I also explain methods. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like Kenji and Chef John. Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as does equipment, dietary needs, and so on.
+I also explain methods. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as does equipment, dietary needs, and so on.
 
 - From the recipe-maker notes: teaching people to cook, and making it easier to do it well, "is a way to make a difference for many people."
 
@@ -124,11 +124,11 @@ I also explain methods. I didn't start to grok cooking until I realized the meth
 
 This site has been running for close to 30 years, on more engines than I can list (see [about the site](/pages/about-warpedvisions-dot-org/)). It's always been my testing ground. Today it's Hugo, my own theme, a few scripts, and rsync to the same host I've used for decades.
 
-- The site has no comments, on purpose: if you want to respond, write something of your own. It gets *you* writing. It also produced less noise for me.
+- The site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose: if you want to respond, write something of your own. It gets *you* writing. It also produced less noise for me.
 
 The pipeline really matters to me. I was very proficient with WordPress from my agency days, but I never found a productive writing flow for it. I was always fighting the web UI. I couldn't `grep` it, I couldn't see it locally without a lot of setup. That opaqueness runs against the grain of how I think.
 
-[#todo OVERLAP: /pages/about-warpedvisions-dot-org/ already makes the no-comments case ("you taking the time to write a response somewhere, linking back to me"). Link it from the comments bullet rather than restating it.]
+[#todo TRIM: the comments bullet now links the about page, which makes the full case ("you taking the time to write a response somewhere, linking back to me"), so this bullet can stay to one line.]
 
 [#todo MISSING: why owning it matters beyond workflow. Platforms that folded or changed under you (Tumblr? Write.as? Twitter?), and the IndieWeb idea of publishing on your own site first (POSSE). One concrete loss story would carry this section.]
 
@@ -138,8 +138,8 @@ The pipeline really matters to me. I was very proficient with WordPress from my 
 
 From my game-making principles: be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.
 
-- The summer game jam: four weeks rebuilding games I played and wrote between 1980 and 1985, on PICO-8, Picotron, TIC-80, and pygame.
-- Retro desktop demos, LED displays, a CD player nobody needs.
+- [The summer game jam](https://github.com/robotpony/game-jams): four weeks rebuilding games I played and wrote between 1980 and 1985, on PICO-8, Picotron, TIC-80, and pygame.
+- [Retro desktop demos](https://github.com/robotpony/retro-demos), LED displays, a CD player nobody needs.
 - Scorekeep's goal: "it should feel like what it is: paper." Buttery smooth over feature-complete.
 - "Things that teach. Things that make you smile."
 
