@@ -14,9 +14,9 @@ description: "" # #todo one line, e.g. "Plain text, showing the work, and making
 
 #focus
 
-I have, yet again, revived WarpedVisions. It's been my blog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, less a few stints on hosted blog tools. But this post isn't about that, it's about me rediscovering who I am. I am a writer. I make software. And I love text, playing with words, and transforming them both into magical things.
+I have, yet again, revived WarpedVisions. It's been my blog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, except for a few stints on hosted blog tools. But this post isn't about that; it's about me rediscovering who I am. I am a writer. I make software. And I love text, playing with words, and transforming them both into magical things.
 
-I looked back at what I've built and written since spring: a cookbook, a scorekeeping app, a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine. Different shapes, same handful of beliefs underneath. This is my attempt to write those beliefs down, mostly so I can check my next project against them.
+I looked back at what I've built and written since spring: [a cookbook](https://bruce-loves-to-cook.ca/), a scorekeeping app, a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine. Different shapes, same handful of beliefs underneath. This is my attempt to write those beliefs down, mostly so I can check my next project against them.
 
 ## Plain text is the foundation
 
@@ -62,27 +62,27 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 2022 Hugo
 ```
 
-My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking was revolutionary to me. I learned that text is raw power.
+My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, was revolutionary to me. I learned that text is raw power.
 
-I even learned `vim` at the time, something I've never regretted. It's as outdated now as it was then, but it really leans on what text does well. I learned to stack piped commands, write scripts in *Perl*, *Python*, and *Ruby*. Ruby at the time was a toy, well before it powered Web 2.0, but it felt text-y to me.
+I even learned `vim` at the time, something I've never regretted. It's as outdated now as it was then, but it really leans on what text does well. I learned to stack piped commands and to write scripts in *Perl*, *Python*, and *Ruby*. Ruby at the time was a toy, well before it powered Web 2.0, but it felt text-y to me.
 
-I also encountered a number of text-y tools at the time, including [Blosxom](http://www.blosxom.com/), the first truely great blogging tool. Sure, there was Blogger and Movable Type, but owning your content in a format you can search and script was something I new was special.
+I also encountered a number of text-y tools at the time, including [Blosxom](http://www.blosxom.com/), the first truly great blogging tool. Sure, there were Blogger and Movable Type, but owning your content in a format you can search and script was something I knew was special.
 
-I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale comparisons of it, but then I found [*Hugo*](https://gohugo.io/). Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
+I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale imitations of it, but then I found [*Hugo*](https://gohugo.io/). Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
 
 Finally, text is truly incremental, especially when paired with source control. Other systems can do this, but the modes are separated by human time to find them rather than the immediacy of the terminal. Yes, I realize the terminal is not great for all users, but for me it's home.
 
-[#todo CLARITY: "the modes are separated by human time to find them" doesn't parse. Do you mean other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away? Say that. ]
+[#todo CLARITY: "the modes are separated by human time to find them" doesn't parse. Do you mean other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away? Say that.]
 
 ## Writing is how I think
 
-My first real computer was an Atari 600XL. I usually tell people it was a 800XL, which I got a few years later, so I don't have to explain what the difference is.
+My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain what the difference is.
 
-With that 600XL, not only did I get a whopping 16kb, I got a previous-generation tape drive. That tape drive was the bane of my childhood. It was also a blessing in disguise. The drive at tapes, often the sort of low quality tapes I could afford to buy at 10 years old from Radio Shack. I developed a habit of saving the games I wrote several times, and writing down the design, and to sketch out the interfaces. In the 8-bit era, sketcking interfaces was often down to the bit, for custom fonts and sprites.
+With that 600XL, not only did I get a whopping 16 KB, I got a previous-generation tape drive. That tape drive was the bane of my childhood. It was also a blessing in disguise. The drive ate tapes, often the sort of low-quality tapes I could afford to buy at 10 years old from Radio Shack. I developed a habit of saving each game I wrote several times, writing down its design, and sketching out its interfaces. In the 8-bit era, sketching interfaces was often down to the bit, for custom fonts and sprites.
 
-Writing down design and requirements was the first real lesson I learned. That tape drive ate every copy of everything I wrote, so I re-implemented most games several times. I had all the time in the world and my brain worked best when my fingers were attached to the keyboard. I learned to type, and I learned the ins and outs of BASIC, then ASM for those machines.  I wrote dozens of games, all of which are lost to time.
+Writing down design and requirements was the first real lesson I learned. That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. I had all the time in the world, and my brain worked best when my fingers were attached to the keyboard. I learned to type, and I learned the ins and outs of BASIC, then ASM for those machines. I wrote dozens of games, all of which are lost to time.
 
-I use this same pattern now, except that I use source control, and I rarely reimplement except to experiment. But I always write down design. I always mock up user and programatic interfaces.
+I use this same pattern now, except that I use source control, and I rarely reimplement except to experiment. But I always write down design. I always mock up user and programmatic interfaces.
 
 [#todo NARRATIVE: the tape drive story is the best thing in the post, and it's about losing work, not thinking. Land the turn: writing it down started as insurance against the tape, and became the way you figure out what to build. One sentence connecting "the notebook survived when the tape didn't" to "writing is how I think" makes the header earn itself.]
 
@@ -108,13 +108,13 @@ The usual way to write a cookbook is to hide the work. Being me, I'd rather not 
 
 ## Teach by writing it down
 
-I like to say that *"I love to teach, I think."* Sometimes I'm uncertain as I'm also impatient, and it's easy to forget how I got to understanding something. You need to remember your path to describe a path to people learning, and those darned paths change with each generation of tools and humans. But I do like to teach, I think.
+I like to say that *"I love to teach, I think."* Sometimes I'm uncertain, because I'm also impatient, and it's easy to forget how I got to understanding something. You need to remember your path to describe a path to people learning, and those darned paths change with each generation of tools and humans. But I do like to teach, I think.
 
-I remember helping a number of people learn SQL. SQL is an powerfully dense and obtuse language for asking questions about structured data. It's incredibly efficient when used properly, which requires some math-y thinking, some background, and a bunch of experience. I've always struggled to teach this to beginners. I expect that I've never thought deeply about or developed a clear plan for beginners.
+I remember helping a number of people learn SQL. SQL is a powerfully dense and obtuse language for asking questions about structured data. It's incredibly efficient when used properly, which requires some math-y thinking, some background, and a bunch of experience. I've always struggled to teach this to beginners. I suspect I've never thought deeply about, or developed a clear plan for, teaching them.
 
-My way of teaching is to write. I can write and be frustrated, and not influence anyone negatively. I just put that frustration into my writing and redraft. Once written, I can teach effectively, but those lesson plans are where the real effort is. Well, that, and in keeping those lesson plans up to date where they fall short.
+My way of teaching is to write. I can write and be frustrated, and not influence anyone negatively. I just put that frustration into my writing and redraft. Once written, I can teach effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short.
 
-I also explain methods. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as does equipment, dietary needs, and so on.
+I also explain methods. I didn't start to grok cooking until I realized the methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be truly exact. Ingredients differ, conditions like humidity differ, as do equipment, dietary needs, and so on.
 
 - From the recipe-maker notes: teaching people to cook, and making it easier to do it well, "is a way to make a difference for many people."
 
@@ -124,9 +124,9 @@ I also explain methods. I didn't start to grok cooking until I realized the meth
 
 This site has been running for close to 30 years, on more engines than I can list (see [about the site](/pages/about-warpedvisions-dot-org/)). It's always been my testing ground. Today it's Hugo, my own theme, a few scripts, and rsync to the same host I've used for decades.
 
-- The site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose: if you want to respond, write something of your own. It gets *you* writing. It also produced less noise for me.
+- The site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose: if you want to respond, write something of your own. It gets *you* writing. It also produces less noise for me.
 
-The pipeline really matters to me. I was very proficient with WordPress from my agency days, but I never found a productive writing flow for it. I was always fighting the web UI. I couldn't `grep` it, I couldn't see it locally without a lot of setup. That opaqueness runs against the grain of how I think.
+The pipeline really matters to me. I was very proficient with WordPress from my agency days, but I never found a productive writing flow for it. I was always fighting the web UI. I couldn't `grep` it, and I couldn't see it locally without a lot of setup. That opaqueness runs against the grain of how I think.
 
 [#todo TRIM: the comments bullet now links the about page, which makes the full case ("you taking the time to write a response somewhere, linking back to me"), so this bullet can stay to one line.]
 
@@ -138,7 +138,7 @@ The pipeline really matters to me. I was very proficient with WordPress from my 
 
 From my game-making principles: be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.
 
-- [The summer game jam](https://github.com/robotpony/game-jams): four weeks rebuilding games I played and wrote between 1980 and 1985, on PICO-8, Picotron, TIC-80, and pygame.
+- [The summer game jam](https://github.com/robotpony/game-jams): four weeks [rebuilding games](/blog/2025/the-feels-of-nostalgia-can-drive-great-design/) I played and wrote between 1980 and 1985, on [PICO-8](/blog/2022/playing-with-the-pico-8-fantasy-console/), Picotron, TIC-80, and pygame.
 - [Retro desktop demos](https://github.com/robotpony/retro-demos), LED displays, a CD player nobody needs.
 - Scorekeep's goal: "it should feel like what it is: paper." Buttery smooth over feature-complete.
 - "Things that teach. Things that make you smile."
