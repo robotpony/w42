@@ -1,0 +1,13 @@
+{{- /* One page per finished book in data/reading.json, so the theme's
+  reading/list.html can paginate them. The pages never render on their own,
+  and they list only here: never in site-wide lists, feeds, or the sitemap.
+  The Goodreads link is book_url, since a page's url would set its address. */ -}}
+{{- range where hugo.Data.reading.books "shelf" "read" }}
+{{- $.AddPage (dict
+  "path" .id
+  "title" .title
+  "dates" (dict "date" (time.AsTime .date))
+  "params" (dict "author" .author "rating" .rating "book_url" .url "cover" .cover)
+  "build" (dict "render" "never" "list" "local")
+) }}
+{{- end }}
