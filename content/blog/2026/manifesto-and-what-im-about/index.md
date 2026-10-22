@@ -45,17 +45,25 @@ Here's part of a plan from Space Command's demo world, a sourdough book in progr
 
 That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it needs no tag, and `#focus` marks the chapter I'm on now. In any other note, a `#todo` at the end of a line does the same job. It reads fine in `vim`, renders in Obsidian and on GitHub, and Space Command still finds every open item.
 
-My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. Text is raw power.
+----
+
+```timeline
+1982 Atari BASIC
+1994 *The UNIX Philosophy*
+1996 Carmack's `.plan` files
+2002 Blosxom
+~2008 WordPress, a detour
+~2015 Hugo, first look
+2022 Hugo
+```
+
+My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking was revolutionary to me. I learned that text is raw power.
 
 I even learned `vim` at the time, something I've never regretted. It's as outdated now as it was then, but it really leans on what text does well. I learned to stack piped commands, write scripts in *Perl*, *Python*, and *Ruby*. Ruby at the time was a toy, well before it powered Web 2.0, but it felt text-y to me.
 
-I also encountered a number of text-y tools at the time, including Blosxom, the first truely great blogging tool. I built a few versions of it, once it was no longer cool. My versions were pale comparisons of it, but then I found *Hugo*. Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
+I also encountered a number of text-y tools at the time, including Blosxom, the first truely great blogging tool. Sure, there was Blogger and Movable Type, but owning your content in a format you can search and script was something I new was special.
 
-[#todo CARMACK: "we read these like they were important" is the line; use it. A sentence on what that felt like (a working game developer thinking out loud in a text file, and a crowd of us checking it like a newspaper) shows why text felt like power, instead of asserting it.]
-
-[#todo FACT: "the first truly great blogging tool" invites pushback (Blogger 1999 and Movable Type 2001 predate Blosxom's 2002); "the first blogging tool I truly loved" is true and safer.]
-
-[#todo DIAGRAM: a timeline of the text lineage: Atari BASIC → Carmack's .plan → Unix pipes/vim → Blosxom → WordPress detour → Hugo. It'd also give this long section a spine; right now it drifts from belief into reminiscence.]
+I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale comparisons of it, but then I found *Hugo*. Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
 
 ## Writing is how I think
 
