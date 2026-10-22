@@ -7,18 +7,21 @@
 #   tools/publish.sh check      sanity-check the current public/
 #   tools/publish.sh dry-run    build, check, show what rsync would change
 #   tools/publish.sh deploy     check and deploy the current public/ (no rebuild)
+#
+# Builds pull the reading list from Goodreads at most daily; READING=fresh
+# pulls it now, READING=cached skips it (make build READING=fresh).
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
 usage() {
-  sed -n '5,9p' "$0" | sed 's/^# \{0,1\}//'
+  sed -n '5,12p' "$0" | sed 's/^# \{0,1\}//'
 }
 
 # --cleanDestinationDir: drop anything in public/ this build didn't write
 # (old drafts, deleted pages) so rsync --delete can't ship it.
 build() {
-  tools/goodreads.sh
+  tools/goodreads.sh "${READING:-daily}"
   echo "Building site..."
   hugo --minify --cleanDestinationDir
 }

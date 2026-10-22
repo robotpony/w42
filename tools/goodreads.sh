@@ -4,8 +4,12 @@
 # Both are committed, so the site builds from the cache and never from
 # Goodreads. The theme's reading partial shows the newest few.
 #
-#   tools/goodreads.sh            fetch now
-#   tools/goodreads.sh --daily    fetch only if the last fetch was a day ago
+#   tools/goodreads.sh [fresh]    fetch now
+#   tools/goodreads.sh daily      fetch only if the last fetch was a day ago
+#   tools/goodreads.sh cached     don't fetch; say how old the cache is
+#
+# preview.sh and publish.sh pass $READING here: previews default to cached
+# and builds to daily, and READING=fresh pulls now (make preview READING=fresh).
 #
 # The cache only grows: a book that leaves the feeds keeps its entry (a book
 # no longer on currently-reading loses that shelf, so it stops showing as
@@ -18,9 +22,21 @@ cd "$(dirname "$0")/.."
 USER_ID=111965143
 STAMP=resources/.goodreads-fetched
 
-if [ "${1:-}" = "--daily" ] && [ -n "$(find "$STAMP" -mtime -1 2>/dev/null)" ]; then
-  exit 0
-fi
+case "${1:-fresh}" in
+  fresh) ;;
+  daily|--daily)
+    [ -z "$(find "$STAMP" -mtime -1 2>/dev/null)" ] || exit 0
+    ;;
+  cached)
+    if [ -f "$STAMP" ]; then
+      echo "Reading list: cached, fetched $(date -r "$STAMP" '+%Y-%m-%d %H:%M'); READING=fresh pulls it now."
+    else
+      echo "Reading list: cached; READING=fresh pulls it now."
+    fi
+    exit 0
+    ;;
+  *) echo "usage: tools/goodreads.sh [fresh|daily|cached]" >&2; exit 1 ;;
+esac
 
 mkdir -p assets/reading resources
 if python3 -I - "$USER_ID" <<'EOF'

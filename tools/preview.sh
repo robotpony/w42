@@ -5,6 +5,10 @@
 #   tools/preview.sh all          drafts and future-dated posts
 #   tools/preview.sh [all] POST   open POST: a file, a bundle folder, or part
 #                                 of a content path (e.g. a slug)
+#   tools/preview.sh fresh ...    pull the reading list from Goodreads first
+#
+# The reading list comes from its committed cache unless asked: `fresh`, or
+# READING=fresh (or daily) in the environment (make preview READING=fresh).
 #
 # A future-dated target post turns on `all` by itself, since Hugo won't
 # serve it otherwise.
@@ -12,12 +16,14 @@ set -euo pipefail
 
 FUTURE=()
 POST=""
+READING="${READING:-cached}"
 for arg in "$@"; do
   case "$arg" in
     all) FUTURE=(-F) ;;
-    -*) echo "usage: tools/preview.sh [all] [post]" >&2; exit 1 ;;
+    fresh) READING=fresh ;;
+    -*) echo "usage: tools/preview.sh [all] [fresh] [post]" >&2; exit 1 ;;
     *)
-      [ -z "$POST" ] || { echo "usage: tools/preview.sh [all] [post]" >&2; exit 1; }
+      [ -z "$POST" ] || { echo "usage: tools/preview.sh [all] [fresh] [post]" >&2; exit 1; }
       POST="$arg"
       ;;
   esac
@@ -91,8 +97,8 @@ open_browser() {
   done
 }
 
-# Refresh the reading list from Goodreads at most once a day
-tools/goodreads.sh --daily
+# The reading list: cached unless asked (fresh or daily)
+tools/goodreads.sh "$READING"
 
 open_browser &
 

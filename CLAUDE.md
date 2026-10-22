@@ -12,7 +12,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - `make preview` - Restart the dev server (`tools/preview.sh`) with drafts, in memory, and open it in Chrome
 - `make preview-all` - Same, plus future-dated (scheduled) posts (`tools/preview.sh all`)
 - `make build` - Build static site to /public directory (`tools/publish.sh build`)
-- `make reading` - Refresh the Goodreads reading cache (`tools/goodreads.sh`): `data/reading.json` and covers in `assets/reading/`, both committed. Builds refresh it first, preview at most daily, and a deploy commits any change ("Updates the reading list.")
+- `make reading` - Refresh the Goodreads reading cache (`tools/goodreads.sh`): `data/reading.json` and covers in `assets/reading/`, both committed. `READING` sets when a run pulls from Goodreads: `cached` (never), `daily` (if the last pull is a day old), or `fresh` (now). Previews default to cached and builds to daily; `make preview READING=fresh`, `tools/preview.sh fresh`, or `/preview fresh` pulls now. A deploy commits any change ("Updates the reading list.")
 
 **Claude commands** (`.claude/commands/`, same pattern as ~/writing/not-a-chef):
 - `/preview [all] [post]` - start the dev server and open the newest post (or the one named); `all`, `/preview-all`, or a future-dated target adds future-dated posts
