@@ -9,7 +9,7 @@ tags:
   - teaching
   - making
   - publishing
-description: ""
+description: "" # #todo one line, e.g. "Plain text, showing the work, and making things fun: what I believe, and what I built this year to prove it."
 ---
 <!--
 DRAFT NOTES (delete before publishing)
@@ -22,6 +22,8 @@ DRAFT NOTES (delete before publishing)
 
 I have, yet again, revived WarpedVisions. It's been my blog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, less a few stints on hosted blog tools. But this post isn't about that, it's about me rediscovering who I am. I am a writer. I make software. And I fucking love text, words, and transforming them into magical things.
 
+[#todo OPENING: the style guide keeps profanity out of opening paragraphs; save "fucking" for one later beat (the close?). "This post isn't about that, it's about..." is a not-X-but-Y setup; just say what it's about. Consider stating the beliefs as a numbered list up top (or at the close) so the manifesto reads as one, then let each section argue its line.]
+
 I looked back at what I've built and written since spring: a cookbook, a scorekeeping app, a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine. Different shapes, same handful of beliefs underneath. This is my attempt to write those beliefs down, mostly so I can check my next project against them.
 
 ## Plain text is the foundation
@@ -33,11 +35,17 @@ Almost everything I make starts, and ends up, as Markdown. Designs, specificatio
 - Thwarter, my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
 - And all of my blogs, comics, and repos live in text. It is the only truly durable format.
 
+[#todo EXAMPLE: show, don't tell. A 6-10 line recipe or PLAN.md snippet with `#todo` tags in a code block proves "looks natural in any text editor" faster than the bullets do.]
+
 My love of text started a long time ago, but the real inspiration was John Carmack's `.plan` file (#todo link history). Around that time I read a book called *The Unix Way* (#todo find link), which cemented the principles. I was already working in text, but these set the foundation in my mind. Text is raw power.
 
 I even learned `vim` at the time, something I've never regretted. It's as outdated now as it was then, but it really leans on what text does well. I learned to stack piped commands, write scripts in *Perl*, *Python*, and *Ruby*. Ruby at the time was a toy, well before it powered Web 2.0, but it felt text-y to me.
 
 I also encountered a number of text-y tools at the time, including Blosxom, the first truely great blogging tool. I built a few versions of it, once it was no longer cool. My versions were pale comparisons of it, but then I found *Hugo*. Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
+
+[#todo FACT: there's no well-known book called *The Unix Way*. Likely candidates: Mike Gancarz's *The UNIX Philosophy* (1995) or Eric Raymond's *The Art of Unix Programming* (2003). The Carmack `.plan` era (late 90s) fits Gancarz better. Also "the first truly great blogging tool" invites pushback (Blogger 1999, Movable Type 2001 predate Blosxom's 2002); "the first blogging tool I truly loved" is true and safer.]
+
+[#todo DIAGRAM: a timeline of the text lineage: Atari BASIC → Carmack's .plan → Unix pipes/vim → Blosxom → WordPress detour → Hugo. It'd also give this long section a spine; right now it drifts from belief into reminiscence.]
 
 ## Writing is how I think
 
@@ -48,6 +56,10 @@ With that 600XL, not only did I get a whopping 16kb, I got a previous-generation
 Writing down design and requirements was the first real lesson I learned. That tape drive ate every copy of everything I wrote, so I re-implemented most games several times. I had all the time in the world and my brain worked best when my fingers were attached to the keyboard. I learned to type, and I learned the ins and outs of BASIC, then ASM for those machines.  I wrote dozens of games, all of which are lost to time.
 
 I use this same pattern now, except that I use source control, and I rarely reimplement except to experiment. But I always write down design. I always mock up user and programatic interfaces.
+
+[#todo NARRATIVE: the tape drive story is the best thing in the post, and it's about losing work, not thinking. Land the turn: writing it down started as insurance against the tape, and became the way you figure out what to build. One sentence connecting "the notebook survived when the tape didn't" to "writing is how I think" makes the header earn itself. Do you still have any of those notebooks or graph-paper sprite sheets? A photo would be great here.]
+
+[#todo MISSING: AI as writing partner. You link the robot editor post, but say nothing here about how writing to Claude (CLAUDE.md, specs, prompts) is the same habit as the 600XL notebook: write the design down first. It's a strong bridge from 1984 to now.]
 
 - Link: [the fight for clarity and beauty in writing](/blog/2015/the-fight-for-clarity-and-beauty-in-writing/)
 - Link: [how I rekindled my love of writing](/blog/2025/how-i-rekindled-my-love-of-writing-with-a-tireless-robot-editor/)
@@ -62,6 +74,8 @@ I also explain methods. I didn't start to grok cooking until I realized the meth
 - Repos carry their plans, bug lists, and decision logs in the open.
 - Working with AI is part of the work, so the prompts and CLAUDE.md files get shown too.
 
+[#todo STRUCTURE: the recipe material (Test kitchen, methods over recipes) is strong, but this section slides into "teach methods", which belongs in the next section. Keep "show the work" about publishing the unfinished; move the Kenji/Chef John paragraph to "Teach by making it easier".]
+
 [#todo PERSONAL: what showing the work has gotten you. Feedback, accountability, people learning from the messy middle?]
 
 ## Teach by making it easier
@@ -74,6 +88,8 @@ My way of teaching is to write. I can write and be frustrated, and not influence
 
 - From the recipe-maker notes: teaching people to cook, and making it easier to do it well, "is a way to make a difference for many people."
 
+[#todo MISMATCH: the header promises "making it easier", but the body is about teaching through writing, and the SQL story ends on a failure with no turn. Either resolve it (what would a beginner's SQL lesson look like now? what did you learn?) or swap SQL for a story where making it easier worked: recipe methods, Space Command's no-format-to-adopt rule, a tool that removed a step for someone. "Making it easier" is the belief; show one thing you made easier.]
+
 ## Own the press
 
 This site has been running for close to 30 years, on more engines than I can list (see [about the site](/pages/about-warpedvisions-dot-org/)). It's always been my testing ground. Today it's Hugo, my own theme, a few scripts, and rsync to the same host I've used for decades.
@@ -82,9 +98,15 @@ This site has been running for close to 30 years, on more engines than I can lis
 
 The pipeline really matters to me. I was very proficient with WordPress from my agency days, but I never found a productive writing flow for it. I was always fighting the web UI. I couldn't `grep` it, I couldn't see it locally without a lot of setup. That opaqueness runs against the grain of how I think.
 
+[#todo MISSING: why owning it matters beyond workflow. Platforms that folded or changed under you (Tumblr? Write.as? Twitter?), and the IndieWeb idea of publishing on your own site first (POSSE). One concrete loss story would carry this section.]
+
+[#todo DIAGRAM: the pipeline in one line or a small graph: Markdown in a git repo → Hugo → public/ → rsync → Dreamhost. It makes "no magic, all text" visible.]
+
 ## Research in the open
 
 [#todo GAP: no direct statement in your notes yet. Material to draw on: comparing batches of recipes side by side to find the best one (how-to-find-great-recipes); dailyweather's notes on Environment Canada feeds; prototyping four looks for Scorekeep before choosing one. What's the belief? Maybe "try several, compare honestly, write down why".]
+
+[#todo OPTION: if this one won't come, fold it into "Show the work" (research is showing the work before it's finished) rather than forcing a thin section. Seven beliefs is plenty.]
 
 ## Make it fun
 
@@ -102,6 +124,8 @@ From my game-making principles: be emotive, be funny, be fun. Lean into constrai
 [#todo Expand: simplicity as things fitting _just so_ (from the about page). Who we are is had inch by inch, failure by failure. Tie the sections together without summarizing them.]
 
 Finally, text is truly incremental, especially when paired with source control. Other systems can do this, but the modes are separated by human time to find them rather than the immediacy of the terminal. Yes, I realize the terminal is not great for all users, but for me it's home.
+
+[#todo CLARITY: "the modes are separated by human time to find them" doesn't parse. Do you mean other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away? Say that. This paragraph also belongs in "Plain text is the foundation"; this section should be about craft (fit, finish, small steps), with text as one example.]
 
 ## What this means for what's next
 
