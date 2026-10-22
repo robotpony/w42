@@ -27,8 +27,10 @@ Almost everything I make starts, and ends up, as Markdown. Designs, specificatio
 - Thwarter, my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
 - And all of my blogs, comics, and repos live in text. It is the only truly durable format.
 
-Here's part of a plan from Space Command's demo world, a sourdough book in progress:
+Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
 
+{{< tabs >}}
+{{< tab "Text" >}}
 ```markdown
 ## Drafting
 
@@ -42,8 +44,13 @@ Here's part of a plan from Space Command's demo world, a sourdough book in progr
 - [ ] Chapter 8 · Baking in a Dutch oven #focus
 - [ ] Chapter 9 · When it goes wrong
 ```
+{{< /tab >}}
+{{< tab "In Space Command" >}}
+![Space Command's plan view for the sourdough book: one finished phase folded into a single line, then Drafting at 6 of 9 with chapters 3, 8, and 9 left, and a #focus chip on chapter 8](space-command-plan.png)
+{{< /tab >}}
+{{< /tabs >}}
 
-That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it needs no tag, and `#focus` marks the chapter I'm on now. In any other note, a `#todo` at the end of a line does the same job. It reads fine in `vim`, renders in Obsidian and on GitHub, and Space Command still finds every open item.
+That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it needs no tag, and `#focus` marks the chapter I'm on now. In any other note, a `#todo` at the end of a line does the same job. It reads fine in `vim`, renders in Obsidian and on GitHub, and Space Command folds the finished work away so only what's left shows, `#focus` tag and all.
 
 ----
 
