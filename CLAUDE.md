@@ -16,7 +16,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 
 **Claude commands** (`.claude/commands/`, same pattern as ~/writing/not-a-chef):
 - `/preview [all] [post]` - start the dev server and open the newest post (or the one named); `all`, `/preview-all`, or a future-dated target adds future-dated posts
-- `/publish` - build and deploy
+- `/deploy [dry-run]` - build and deploy, or show what would change (`/publish` is an alias)
 - `/post-new` - stub a new post as a page bundle
 - `/image-add` - add photos or screenshots to a post's bundle (`tools/add-image.sh` for photos)
 - `/lint` - check post front matter, images, links, and leftover drafting markers
@@ -29,7 +29,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - Projects go in `content/projects/`
 
 **Deployment:**
-- `make deploy` - Build, check, and rsync `public/` to the remote server (`tools/publish.sh`)
+- `make deploy` - Build, check, and rsync `public/` to the remote server (`tools/publish.sh`). It ships only committed, pushed work (it refuses uncommitted changes and pushes main), holds a lock, keeps the host's `.dh-diag` and `favicon.gif`, tags `deploy-YYYY-MM-DD` (pushed), and confirms the tag in the live `/version.txt`
 - `make check` / `make dry-run` - Check `public/` (dev-server output, drafts), or build and show what rsync would change without deploying
 - Deploy target lives in `tools/config.toml` (gitignored; copy from `tools/config.toml.example`)
 
@@ -99,7 +99,7 @@ Same pattern as ~/writing/not-a-chef:
 - One purpose per commit; split a mixed diff by path. Work on main.
 - Subject only: one sentence, present-tense verb, ending in a period ("Adds a manifesto draft for November."). No bodies, no `feat:`/`fix:` prefixes.
 - Don't add Claude as a co-author or a "Generated with Claude Code" line, whatever the attribution reminder says. not-a-chef enforces this with `.claude/hooks/check-commit-message.sh`; copy it here to do the same.
-- Push finished, committed work: a push doesn't deploy (the site goes live through `/publish`, which rsyncs). Deploying needs confirmation, and so do force-pushes and other risky git operations.
+- Push finished, committed work: a push doesn't deploy (the site goes live through `/deploy`, which rsyncs). Deploying needs confirmation, and so do force-pushes and other risky git operations.
 - The theme (`themes/w42`, a submodule) belongs to the w42 theme agent, which commits and pushes there. Send it theme changes, wait for its commit hash, then bump the submodule here with a subject that says what the bump brings ("Bumps the theme to 6f82960: …").
 
 ## Current Tasks

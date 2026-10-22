@@ -10,12 +10,17 @@
 #
 # Builds pull the reading list from Goodreads at most daily; READING=fresh
 # pulls it now, READING=cached skips it (make build READING=fresh).
+#
+# A deploy ships only committed, pushed work: it refuses uncommitted changes
+# (the reading cache aside, which it commits), pushes, and holds a lock so two
+# sessions can't deploy at once. tools/deploy.sh then tags it and checks the
+# live site.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
 usage() {
-  sed -n '5,12p' "$0" | sed 's/^# \{0,1\}//'
+  sed -n '5,17p' "$0" | sed 's/^# \{0,1\}//'
 }
 
 # --cleanDestinationDir: drop anything in public/ this build didn't write
@@ -78,10 +83,56 @@ commit_reading() {
   fi
 }
 
-# Content that isn't committed still publishes; say so, but don't block.
+# One deploy at a time: a second session waits up to 10 minutes. A lock whose
+# process is gone is taken over.
+LOCK=resources/.deploy.lock
+lock() {
+  mkdir -p resources
+  local waited=0
+  until mkdir "$LOCK" 2>/dev/null; do
+    if ! kill -0 "$(cat "$LOCK/pid" 2>/dev/null)" 2>/dev/null; then
+      rm -rf "$LOCK"
+      continue
+    fi
+    if (( waited == 0 )); then echo "Waiting for another deploy to finish..."; fi
+    if (( waited >= 600 )); then
+      echo "error: another deploy has held $LOCK for 10 minutes." >&2
+      exit 1
+    fi
+    sleep 5
+    waited=$((waited + 5))
+  done
+  echo $$ > "$LOCK/pid"
+  trap 'rm -rf "$LOCK"' EXIT
+}
+
+# Uncommitted work doesn't ship. The reading cache is the exception: the
+# build refreshes it and commit_reading commits it. Untracked files inside
+# the theme submodule don't count.
+require_clean() {
+  local dirty
+  dirty=$(git status --porcelain --ignore-submodules=untracked -- . \
+    ':!data/reading.json' ':!assets/reading')
+  if [[ -n "$dirty" ]]; then
+    echo "error: uncommitted changes; commit them before deploying:" >&2
+    echo "$dirty" | sed 's/^/  /' >&2
+    exit 1
+  fi
+}
+
+# What goes live is on GitHub too.
+push() {
+  git push -q
+  if [[ -n "$(git rev-list @{u}..HEAD)" ]]; then
+    echo "error: HEAD isn't on origin after the push." >&2
+    exit 1
+  fi
+}
+
+# Content that isn't committed still shows in a dry run; say so.
 warn_dirty() {
   if [[ -n "$(git status --porcelain -- content 2>/dev/null)" ]]; then
-    echo "note: content/ has uncommitted changes; they will be published."
+    echo "note: content/ has uncommitted changes; a deploy refuses them until they're committed."
   fi
 }
 
@@ -89,10 +140,12 @@ cmd="${1:-all}"
 
 case "$cmd" in
   all)
-    warn_dirty
+    lock
+    require_clean
     build
     check
     commit_reading
+    push
     tools/deploy.sh
     ;;
   build)
@@ -108,7 +161,10 @@ case "$cmd" in
     tools/deploy.sh --dry-run
     ;;
   deploy)
+    lock
+    require_clean
     check
+    push
     tools/deploy.sh
     ;;
   -h|--help|help)
