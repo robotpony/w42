@@ -11,6 +11,9 @@ tags:
   - publishing
 description: "" # #todo one line, e.g. "Plain text, showing the work, and making things fun: what I believe, and what I built this year to prove it."
 ---
+
+#focus
+
 <!--
 DRAFT NOTES (delete before publishing)
 - Type: philosophical essay, 2000-3000 words. Each section is a belief, backed by things built this year.
@@ -37,13 +40,15 @@ Almost everything I make starts, and ends up, as Markdown. Designs, specificatio
 
 [#todo EXAMPLE: show, don't tell. A 6-10 line recipe or PLAN.md snippet with `#todo` tags in a code block proves "looks natural in any text editor" faster than the bullets do.]
 
-My love of text started a long time ago, but the real inspiration was John Carmack's `.plan` file (#todo link history). Around that time I read a book called *The Unix Way* (#todo find link), which cemented the principles. I was already working in text, but these set the foundation in my mind. Text is raw power.
+My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. Text is raw power.
 
 I even learned `vim` at the time, something I've never regretted. It's as outdated now as it was then, but it really leans on what text does well. I learned to stack piped commands, write scripts in *Perl*, *Python*, and *Ruby*. Ruby at the time was a toy, well before it powered Web 2.0, but it felt text-y to me.
 
 I also encountered a number of text-y tools at the time, including Blosxom, the first truely great blogging tool. I built a few versions of it, once it was no longer cool. My versions were pale comparisons of it, but then I found *Hugo*. Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
 
-[#todo FACT: there's no well-known book called *The Unix Way*. Likely candidates: Mike Gancarz's *The UNIX Philosophy* (1995) or Eric Raymond's *The Art of Unix Programming* (2003). The Carmack `.plan` era (late 90s) fits Gancarz better. Also "the first truly great blogging tool" invites pushback (Blogger 1999, Movable Type 2001 predate Blosxom's 2002); "the first blogging tool I truly loved" is true and safer.]
+[#todo CARMACK: "we read these like they were important" is the line; use it. A sentence on what that felt like (a working game developer thinking out loud in a text file, and a crowd of us checking it like a newspaper) shows why text felt like power, instead of asserting it.]
+
+[#todo FACT: "the first truly great blogging tool" invites pushback (Blogger 1999 and Movable Type 2001 predate Blosxom's 2002); "the first blogging tool I truly loved" is true and safer.]
 
 [#todo DIAGRAM: a timeline of the text lineage: Atari BASIC → Carmack's .plan → Unix pipes/vim → Blosxom → WordPress detour → Hugo. It'd also give this long section a spine; right now it drifts from belief into reminiscence.]
 
@@ -57,7 +62,9 @@ Writing down design and requirements was the first real lesson I learned. That t
 
 I use this same pattern now, except that I use source control, and I rarely reimplement except to experiment. But I always write down design. I always mock up user and programatic interfaces.
 
-[#todo NARRATIVE: the tape drive story is the best thing in the post, and it's about losing work, not thinking. Land the turn: writing it down started as insurance against the tape, and became the way you figure out what to build. One sentence connecting "the notebook survived when the tape didn't" to "writing is how I think" makes the header earn itself. Do you still have any of those notebooks or graph-paper sprite sheets? A photo would be great here.]
+[#todo NARRATIVE: the tape drive story is the best thing in the post, and it's about losing work, not thinking. Land the turn: writing it down started as insurance against the tape, and became the way you figure out what to build. One sentence connecting "the notebook survived when the tape didn't" to "writing is how I think" makes the header earn itself.]
+
+[#todo OVERLAP: /pages/working-with-me-bruce-alderson/ already tells this story ("When I was 8, a flakey tape drive ate three weeks of BASIC code", the haunted mansion text adventure). Here you're 10. Pick one age. Then either keep this telling short and link that page, or borrow its sharper details (three weeks of code, magnetic spaghetti) so the two don't read as rival drafts.]
 
 [#todo MISSING: AI as writing partner. You link the robot editor post, but say nothing here about how writing to Claude (CLAUDE.md, specs, prompts) is the same habit as the 600XL notebook: write the design down first. It's a strong bridge from 1984 to now.]
 
@@ -88,7 +95,7 @@ My way of teaching is to write. I can write and be frustrated, and not influence
 
 - From the recipe-maker notes: teaching people to cook, and making it easier to do it well, "is a way to make a difference for many people."
 
-[#todo MISMATCH: the header promises "making it easier", but the body is about teaching through writing, and the SQL story ends on a failure with no turn. Either resolve it (what would a beginner's SQL lesson look like now? what did you learn?) or swap SQL for a story where making it easier worked: recipe methods, Space Command's no-format-to-adopt rule, a tool that removed a step for someone. "Making it easier" is the belief; show one thing you made easier.]
+[#todo MISMATCH: the header says "making it easier", but the body says you teach by writing, and the SQL story ends on a failure with no turn. SUGGESTION: rename the section "Teach by writing it down" and give it this arc: (1) SQL is the failure: you taught it live, impatient, having forgotten your own path. (2) The fix is writing: drafting absorbs the frustration, and the written lesson remembers the path you've forgotten. (3) The success is the recipes: moving "methods over recipes" (Kenji, Chef John, humidity) here shows writing that makes cooking easier for people you'll never meet. Close on the recipe-maker quote. That keeps "I love to teach, I think," turns the SQL admission into the reason for the belief, and gives "making it easier" a concrete payoff.]
 
 ## Own the press
 
@@ -97,6 +104,8 @@ This site has been running for close to 30 years, on more engines than I can lis
 - The site has no comments, on purpose: if you want to respond, write something of your own. It gets *you* writing. It also produced less noise for me.
 
 The pipeline really matters to me. I was very proficient with WordPress from my agency days, but I never found a productive writing flow for it. I was always fighting the web UI. I couldn't `grep` it, I couldn't see it locally without a lot of setup. That opaqueness runs against the grain of how I think.
+
+[#todo OVERLAP: /pages/about-warpedvisions-dot-org/ already makes the no-comments case ("you taking the time to write a response somewhere, linking back to me"). Link it from the comments bullet rather than restating it.]
 
 [#todo MISSING: why owning it matters beyond workflow. Platforms that folded or changed under you (Tumblr? Write.as? Twitter?), and the IndieWeb idea of publishing on your own site first (POSSE). One concrete loss story would carry this section.]
 
@@ -129,7 +138,7 @@ Finally, text is truly incremental, especially when paired with source control. 
 
 ## What this means for what's next
 
-[#todo CLOSE: how you'll use this list. Possibly a short checklist you hold new projects to. Or point at what's coming: Space Command, warped-next, more writing. End on action, not summary.]
+[#todo CLOSE: you want essay form, so skip the checklist. End on reflection: the 8-year-old with the notebook and the person writing CLAUDE.md files are doing the same thing. Then point forward with one concrete next thing (Space Command, warped-next, more writing). The about page already covers who you are, so this close can be about the habits. If the profanity moves out of the opening, this is a good place for it.]
 
 <!--
 More links to consider:
