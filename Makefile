@@ -1,4 +1,4 @@
-.PHONY: build check dry-run preview preview-all deploy publish
+.PHONY: build check dry-run preview preview-all deploy publish reading
 
 build:
 	tools/publish.sh build
@@ -19,3 +19,6 @@ deploy: publish
 
 publish:
 	tools/publish.sh
+
+reading:
+	tools/goodreads.sh

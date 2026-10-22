@@ -18,6 +18,7 @@ usage() {
 # --cleanDestinationDir: drop anything in public/ this build didn't write
 # (old drafts, deleted pages) so rsync --delete can't ship it.
 build() {
+  tools/goodreads.sh
   echo "Building site..."
   hugo --minify --cleanDestinationDir
 }
@@ -64,6 +65,16 @@ for row in csv.DictReader(sys.stdin):
   echo "Checked public/: ok."
 }
 
+# A deploy commits the reading cache the build just refreshed, so what goes
+# live is in git.
+commit_reading() {
+  if [[ -n "$(git status --porcelain -- data/reading.json assets/reading)" ]]; then
+    git add -- data/reading.json assets/reading
+    git commit -q -m "Updates the reading list." -- data/reading.json assets/reading
+    echo "Committed the updated reading list."
+  fi
+}
+
 # Content that isn't committed still publishes; say so, but don't block.
 warn_dirty() {
   if [[ -n "$(git status --porcelain -- content 2>/dev/null)" ]]; then
@@ -78,6 +89,7 @@ case "$cmd" in
     warn_dirty
     build
     check
+    commit_reading
     tools/deploy.sh
     ;;
   build)

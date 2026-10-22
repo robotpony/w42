@@ -91,6 +91,9 @@ open_browser() {
   done
 }
 
+# Refresh the reading list from Goodreads at most once a day
+tools/goodreads.sh --daily
+
 open_browser &
 
 # -D: drafts. hugo.toml has buildDrafts = false, so only the preview shows them.
