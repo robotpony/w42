@@ -13,7 +13,7 @@
 #
 # The cache only grows: a book that leaves the feeds keeps its entry (a book
 # no longer on currently-reading loses that shelf, so it stops showing as
-# "reading now"). A failed fetch warns and leaves the cache alone; it never
+# "reading now"). Two editions of one book merge into the newest. A failed fetch warns and leaves the cache alone; it never
 # fails a build.
 set -euo pipefail
 
@@ -140,7 +140,21 @@ for b, path in zip(fresh, paths):
         cache[b["id"]] = b
 
 books = sorted(cache.values(), key=lambda b: (b["date"], b["id"]), reverse=True)
-out = {"profile": f"https://www.goodreads.com/user/show/{user}", "books": books}
+
+# Two Goodreads editions of one book (same title and author on the same
+# shelf) keep only the newest entry, and the older edition's cover goes
+seen, merged = set(), []
+for b in books:
+    key = (b["title"].lower(), b["author"], b["shelf"])
+    if b["shelf"] and key in seen:
+        if b["cover"] and os.path.exists(f"assets/{b['cover']}"):
+            os.remove(f"assets/{b['cover']}")
+        continue
+    seen.add(key)
+    merged.append(b)
+books = merged
+
+out ={"profile": f"https://www.goodreads.com/user/show/{user}", "books": books}
 with open(DATA, "w") as fh:
     json.dump(out, fh, indent=1, ensure_ascii=False)
     fh.write("\n")
