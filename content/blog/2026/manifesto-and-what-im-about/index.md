@@ -203,7 +203,7 @@ Owning the press means I set the rules, and Warped [has no comments](/pages/abou
 
 The pipeline matters to me. A writing tool I can't `grep`, or see locally, runs against the grain of how I think. I learned this again on [Write.as](https://write.as), the second detour. In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): *publish on your own site first, and syndicate elsewhere.*
 
-## Fun is found by playing
+## Craft is found by playing
 
 From my game-making principles: *be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.* Those read well on paper, but I only learned what they mean by playtesting.
 
@@ -216,11 +216,9 @@ I had the last two summers off, and the rest of what I made followed the same ru
 - Scorekeep's goal: *"it should feel like what it is: paper."* Buttery smooth over feature-complete.
 - From my notes on toy software: *"Things that teach. Things that make you smile."*
 
-## Craft happens inch by inch
+Play is how I find what's fun; craft is how I get it to fit. I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen you know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where you stop thinking about the tools and think about the food. It's an instrument that becomes part of your fingers. And it's where I do my best work.
 
-I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen you know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where you stop thinking about the tools and think about the food. It's an instrument that becomes part of your fingers. And it's where I do my best work.
-
-We become who we are inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
+We become who we are inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a game tuned one playtest at a time, a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
 
 ## What I leave out
 
