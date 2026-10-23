@@ -78,6 +78,8 @@ I also encountered a number of text-y tools at the time, including [Blosxom](htt
 
 Finally, text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
+Add a short paragraph on Claude and LLMs making text the interface again ("text reborn"), linking the 2025 AI posts. #todo
+
 ## Writing is how I think
 
 My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB and a previous-generation tape drive, the bane of my childhood. The drive ate tapes, often the low-quality ones I could afford at 10 years old from Radio Shack, so I saved each game I wrote several times, wrote down its design, and sketched out its interfaces, down to the bit for custom fonts and sprites.
