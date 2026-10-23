@@ -8,5 +8,6 @@ cascade:
   params:
     hiddenInHomeList: true
     seriesTag: space-command
+    showDescription: true
     images: ["images/space-command-share.png"]
 ---
