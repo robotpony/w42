@@ -127,7 +127,7 @@ Enter the new world of LLMs. Text is king again. LLMs read and write plain text 
 
 **My take**: Text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
-**Where text falls short**: music, art, and photos don't live in text, though my notes about them do (as do musical annotations). And plain files can feel hostile to anyone who doesn't live in a terminal. Obsidian helps there, as a friendlier face on the same files, and Space Command is my attempt at another.
+**Where text falls short**: music, art, and photos don't live in text, though my notes about them do. I play piano from my own notes on chords and timing more often than from sheet music. And plain files can feel hostile to anyone who doesn't live in a terminal. Obsidian helps there, as a friendlier face on the same files, and Space Command is my attempt at another.
 
 ## Writing is how I think
 
@@ -135,7 +135,7 @@ Saving extra copies helped, sometimes. A chewed tape could be cut and re-attache
 
 Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
-Markdown files like `PLAN.md` and `DESIGN.md` are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
+My projects' text files are that notebook again, with `PLAN.md` and `DESIGN.md` at the core. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
 
 ```flow
 row: 1983
@@ -144,7 +144,7 @@ Notebook | the design
 Rebuild
 row: 2026
 Session | forgets everything
-`CLAUDE.md` | the design
+`PLAN.md` | the design
 Rebuild
 caption: Both machines forget; the notes don't
 ```
@@ -173,7 +173,7 @@ I have a theory that good practices are always good practices, so writing things
 
 Text is fundamental to teaching. It's core to learning, too.
 
-I like to say that *"I love to teach, I think,"* because I'm not always certain of it. I'm occasionally impatient, and it's easy to forget how I got to understanding something. To teach something, you need to remember the path you took to learn it, and those darned paths change with each generation of tools and humans. But I do like to teach, *I think*.
+I like to say that *"I like to teach, I think,"* because I'm not always certain of it. I'm occasionally impatient, and it's easy to forget how I got to understanding something. To teach something, you need to remember the path you took to learn it, and those darned paths change with each generation of tools and humans. But I do like to teach, *I think*.
 
 I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some knowledge of history, and a bunch of experience. I've always struggled to teach SQL to beginners, and JOINs were the hardest part.
 
@@ -229,10 +229,10 @@ When it comes to text and design, there are a few rules I follow:
 - No comments; a reply is better as a post.
 - I avoid tools with data I can't `grep`, and the source of truth for written things doesn't hide in a database.
 - I don't hide my work, the prompts, or the failures.
-- I don't use LLMs to write, as they write average text at best. I use LLMs to review drafts against [a style guide](/pages/a-style-guide-for-bruce/), which fits their ability to classify text well.
+- LLMs don't write my posts; they review drafts against [my style guide](/pages/a-style-guide-for-bruce/), and I decide what changes.
 
 ## What this means for what's next
 
-The 10-year-old with a notebook beside his wonky tape drive and the person writing `CLAUDE.md` files are doing the same thing. Both write the design down first, because the machine will forget it one way or another. For that matter, so will the human. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
+The 10-year-old with a notebook beside his wonky tape drive and the person writing `PLAN.md` files are doing the same thing. Both write the design down first, because the machine will forget it one way or another. For that matter, so will the human. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
 
 So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first. If any of it sparks something for you, write about it on your own site or socials and link back.
