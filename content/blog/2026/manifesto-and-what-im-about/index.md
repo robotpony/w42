@@ -25,18 +25,18 @@ I revived WarpedVisions again this fall. It's been my weblog since 1996 or so, w
 
 And who am I?
 
-1. I am a writer and I love words and text.
+1. I'm a writer, and I love words and text.
 2. I make software.
 3. I tinker. I make art, I cook, and I make music.
 4. And I teach.
 
-I looked back at what I've built this year: [a cookbook](https://bruce-loves-to-cook.ca/), a [`#todo` tool](https://space-command.ca), a [scorekeeping app](https://scorekeep.warpedvisions.org), a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine, and a bunch of small tools and curios. Different shapes, all with the same handful of beliefs under them. This is my attempt to write the principles down, mostly so I can check myself and my next projects against them.
+I looked back at what I've built this year: [a cookbook](https://bruce-loves-to-cook.ca/), a [`#todo` tool](https://space-command.ca), a [scorekeeping app](https://scorekeep.warpedvisions.org), a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine, and a bunch of small tools and curios. Different shapes, all with the same handful of beliefs under them. This is my attempt to write the principles down, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down, because machines forget, and so do I.
 
 ## Plain text is the foundation
 
 Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
 
-**Text reads naturally**. My not-a-chef project (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text. The rule that drove the work:
+**Text reads naturally**. My not-a-chef project (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development, which moved from paper to Google Docs to Hugo and Markdown. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text. The rule that drove the work:
 
 > *A recipe should look natural in any text editor.*
 
@@ -123,7 +123,7 @@ I even took the time to get comfortable in `vim`, something I've never regretted
 
 Then came [Blosxom](http://www.blosxom.com/), the first blogging tool I loved, because it kept posts as files I could search and script. Gruber first released *Markdown* in 2004 as a plugin for it and Movable Type. I built a few pale imitations of Blosxom after it went unmaintained. Warped ran on WordPress for years after that; I'd used it since its early days. I was always fighting its web UI, which I couldn't `grep` or see locally, until I remembered [*Hugo*](https://gohugo.io/). Apart from one more detour, it's been home since.
 
-Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text. My cookbook evolved from paper to Google Docs to Hugo and Markdown.
+Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text.
 
 **My take**: Text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
@@ -131,7 +131,7 @@ Enter the new world of LLMs. Text is king again. LLMs read and write plain text 
 
 ## Writing is how I think
 
-Saving extra copies helped, sometimes. A chewed tape could be cut and re-attached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of games, tools, and curios, all of them lost to time.
+Saving extra copies helped, sometimes. A chewed tape could be cut and reattached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of games, tools, and curios, all of them lost to time.
 
 Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
@@ -173,7 +173,7 @@ I have a theory that good practices are always good practices, so writing things
 
 Text is fundamental to teaching. It's core to learning, too.
 
-I like to say that *"I like to teach, I think,"* because I'm not always certain of it. I'm occasionally impatient, and it's easy to forget how I got to understanding something. To teach something, you need to remember the path you took to learn it, and those darned paths change with each generation of tools and humans. But I do like to teach, *I think*.
+I like to say that *"I like to teach, I think,"* because I'm not always certain of it. I'm occasionally impatient, and it's easy to forget how I came to understand something. To teach something, you need to remember the path you took to learn it, and those darned paths change with each generation of tools and humans. But I do like to teach, *I think*.
 
 I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some knowledge of history, and a bunch of experience. I've always struggled to teach SQL to beginners, and JOINs were the hardest part.
 
@@ -181,7 +181,7 @@ When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat inc
 
 My approach to teaching is to write first. When I write, I can be frustrated and not influence anyone negatively. I just put that frustration back into my writing and redraft. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
 
-The recipes are where this works best for me. I didn't start to grok cooking until I understood that methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be exact. Ingredients, humidity, equipment, and dietary needs all vary.
+The recipes are where this works best for me. I didn't start to grok cooking until I understood that methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, because recipes are rarely exact. Ingredients, humidity, equipment, and dietary needs all vary.
 
 As my [recipe notes](https://bruce-loves-to-cook.ca/the-food-log/) put it, teaching people to cook, and making it easier to do it well, *"is a way to make a real difference for many people."*
 
@@ -232,4 +232,6 @@ When it comes to text and design, there are a few rules I follow:
 
 The 10-year-old with a notebook beside his wonky tape drive and the person writing `PLAN.md` files are doing the same thing. Both write the design down first, because the machine will forget it one way or another. For that matter, so will the human. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
 
-So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first. If any of it sparks something for you, write about it on your own site or socials and link back.
+So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first, and I'll keep checking each new tool against the same filter: if it isn't good practice without an LLM, it isn't good practice with one.
+
+If any of it sparks something for you, write about it on your own site or socials and link back.
