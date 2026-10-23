@@ -1,6 +1,6 @@
 ---
 slug: manifesto-and-what-im-about
-title: "Manifesto and what I'm about"
+title: "Manifesto and what I'm about #focus"
 date: 2026-11-24
 draft: true
 tags:
@@ -9,25 +9,30 @@ tags:
   - teaching
   - making
   - publishing
-description: "What I believe about text, teaching, and making things, and what this year's projects taught me."
+description: What I believe about text, teaching, and making things, and what this year's projects taught me.
 ---
 
-#focus
+I have, yet again, revived WarpedVisions. It's been my webblog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, except for a few stints on hosted blog tools. But this post isn't about that; it's about me rediscovering who I am. I am a writer. I make software. And I love text, playing with words, and transforming them both into magical things.
 
-I have, yet again, revived WarpedVisions. It's been my blog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, except for a few stints on hosted blog tools. But this post isn't about that; it's about me rediscovering who I am. I am a writer. I make software. And I love text, playing with words, and transforming them both into magical things.
-
-I looked back at what I've built and written since spring: [a cookbook](https://bruce-loves-to-cook.ca/), a scorekeeping app, a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine. Different shapes, same handful of beliefs underneath. This is my attempt to write those beliefs down, mostly so I can check my next project against them.
+I looked back at what I've built and written since spring: [a cookbook](https://bruce-loves-to-cook.ca/), a scorekeeping app, a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine. Different shapes, same handful of beliefs underneath. This is my attempt to write these principles down, mostly so I can check my next project against them.
 
 ## Plain text is the foundation
 
-Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is plain text: no API, no auth, no special SDK. It opens in any editor, it diffs in git, and it'll still be readable long after today's tools are gone.
+Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is plain text: no API, no auth, no special SDK. It opens in any editor, it diffs in git, and it will be readable long after today's tools are gone.
 
-- The not-a-chef (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) rule transformed my cookbook and recipe development: *"A recipe should look natural in any text editor."* Pages have to read as plain text, render in Obsidian and Hugo, and still be [parseable by tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). It's fast, easy, and it gets out of my way.
-- [Space Command](https://space-command.ca/) is a macOS app that finds and manages `PLAN.md` files, via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my source and my text files, and not something else.
-- [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
-- And all of my blogs, comics, and repos live in text. It is the only truly durable format.
+**Text reads naturally**. My not-a-chef (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) rule transformed my cookbook and recipe development: 
 
-Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
+> *"A recipe should look natural in any text editor."* 
+
+Pages must read well as plain text. They also must render in Obsidian and Hugo, and still be [parseable by tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). It's fast, easy, and it gets out of my way.
+
+**Text, specifically, my text is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds and manages `PLAN.md` files, via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my source and my text files, and not something else.
+
+**Text defines the world**.  [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
+
+And all of my blogs, comics, and repos live in text. It is the only truly durable format.
+
+**Real life example**: Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
 
 {{< tabs layout="side" >}}
 {{< tab "Text" >}}
@@ -52,6 +57,8 @@ Here's part of a plan from Space Command's demo world, a sourdough book in progr
 
 That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it needs no tag, and `#focus` marks the chapter I'm on now. In any other note, a `#todo` at the end of a line does the same job. It reads fine in `vim`, renders in Obsidian and on GitHub, and Space Command folds the finished work away so only what's left shows, `#focus` tag and all.
 
+## Text and me, over the years
+
 ```timeline
 1983 Atari BASIC
 1994 *The UNIX Philosophy*
@@ -60,6 +67,7 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 ~2008 WordPress, a detour
 ~2015 Hugo, first look
 2022 Hugo
+2025 Claude and LLMs, text reborn
 ```
 
 My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, was revolutionary to me. I learned that text is raw power.
@@ -146,8 +154,3 @@ Who we are is had inch by inch, failure by failure, and craft works the same way
 The 10-year-old with a notebook beside a tape drive and the person writing CLAUDE.md files are doing the same thing. Both write the design down first, because the machine will forget it. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way; I only noticed it looking back over this year.
 
 So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text I've already written. I'll keep writing about it here first. If any of it sparks something for you, write about it on your own site and link back.
-
-<!--
-More links to consider:
-- /pages/about-bruce-alderson/
--->
