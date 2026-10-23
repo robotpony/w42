@@ -11,12 +11,15 @@ tags:
   - publishing
 description: What I believe about text, teaching, and making things, and what this year's projects taught me.
 ---
+My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB and a previous-generation Atari 410 tape drive, the older and clunkier one. 
 
-My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB and a previous-generation Atari 410 tape drive, the older and clunkier one. It was the bane of my childhood. The drive ate tapes, the sort of low-quality ones I could afford at 10 years old, bought in bulk from Radio Shack. I learned to save each program I wrote several times, write down its design, and sketch out its interfaces. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
+That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality ones I could afford at 10 years old, bought in bulk from Radio Shack. I learned to save each program I wrote several times, write down its design in a notebook, and sketch out its interfaces. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
 
 The notebook survived when the tape didn't, and I'm still writing things down.
 
-I have revived WarpedVisions, again. It's been my weblog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, except for a few stints on hosted blog tools. But this post isn't about that; it's about me rediscovering who I am:
+## Rediscovering who I am
+
+I've revived WarpedVisions, again. It's been my weblog since the mid-90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, except for a few stints on hosted blog tools. But this post isn't about that; it's about rediscovering who I am:
 
 1. I am a writer. 
 2. I make software. 
@@ -29,17 +32,17 @@ I looked back at what I've built this year: [a cookbook](https://bruce-loves-to-
 
 Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, no special SDK. It opens in any editor, it diffs in git, and it will be readable long after today's tools are gone.
 
-**Text reads naturally**. One rule from my not-a-chef project (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development. It builds a nicely shaped recipe book, including diagrams that are driven by very simple ASCII text. One principle that drove the work was:
+**Text reads naturally**. My not-a-chef project (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development. It builds a nicely shaped recipe book, including diagrams drawn from very simple ASCII text. The rule that drove the work:
 
 > *"A recipe should look natural in any text editor."*
 
 Pages must read well as plain text. They also must render in Obsidian and Hugo, and still be [parseable by tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). Text is fast, easy, and it gets out of my way.
 
-**Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds and manages `PLAN.md` files, via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my source and my text files, and not something else. It's a nerd's tool, but it fits my neurospicy brain nicely.
+**Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds and manages `PLAN.md` files via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my source and my text files, and not something else. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
 **Text defines the world**. [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
 
-**Long live text**. And all of my blogs, comics, and repos live in text. It is the only truly durable format.
+**Long live text**. All of my blogs, comics, and repos live in text. It is the only truly durable format.
 
 **Want an example?** Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
 
@@ -69,6 +72,7 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 ## Text is part of my history
 
 ```timeline
+1980 The school's one computer
 1983 Atari BASIC
 1995 *The UNIX Philosophy*
 1996 Carmack's `.plan` files
@@ -80,15 +84,15 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 2025 *Claude and LLMs, text reborn*
 ```
 
-My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, was revolutionary to me. And that text was universal, and it can be *piped* to various tools with ease. I learned that text is raw power.
+My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, was revolutionary to me. So was the idea that text is universal, and can be *piped* from tool to tool. I learned that text is raw power.
 
 I even took the time to get comfortable in `vim`, something I've never regretted. It's as outdated now as it was then, but it really leans on what text does well. I learned to stack piped commands and to write scripts in *Perl*, *Python*, `sed`, and *Ruby*. 
 
-I also encountered a number of text-y publishing tools at the time, including [Blosxom](http://www.blosxom.com/), the first truly great blogging tool. Sure, there were Blogger and Movable Type, but owning your content in a format you can search and script was something I knew was special. And even Movable Type used text to drive formatting, along with formats like *Textile* and, later, *Markdown*.
+I also encountered a number of text-y publishing tools at the time, including [Blosxom](http://www.blosxom.com/), the first truly great blogging tool. Sure, there were Blogger and Movable Type, but owning your content in a format you can search and script was something I knew was special. Even Movable Type ran on text filters like *Textile*, and Gruber first released *Markdown* in 2004 as a plugin for Movable Type and Blosxom.
 
 I built a few versions of Blosxom myself, after it was uncool and no longer maintained, all pale imitations of it. I used WordPress for a few years, after several projects for my non-profit clients. I was always fighting the web UI. I couldn't `grep` it, and I couldn't see it locally without a lot of setup. It sufficed, until I remembered [*Hugo*](https://gohugo.io/). Hugo is fast, it lives on Markdown, and it extends and themes easily. I prototyped a version of my blog in it, and apart from one detour, it's been home since.
 
-Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text. My cookbook evolved from paper, to Google Docs, to Hugo and Markdown. I use Obsidian or VS Code to edit, and Hugo to publish, Claude to review, and now Space Command ties it all together.
+Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text. My cookbook evolved from paper, to Google Docs, to Hugo and Markdown. I use Obsidian or VS Code to edit, Hugo to publish, and Claude to review; now Space Command ties it all together.
 
 **My take**: Text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
@@ -110,11 +114,11 @@ This idea falls out of how we build software:
 
 **Repos carry their plans**, bug lists, and decision logs in the open.
 
-**Don't hide your tooling**. Working with AI is part of the work, so the prompts and CLAUDE.md files get shown too.
+**Don't hide your tooling**. Working with AI is part of the work, so the prompts and `CLAUDE.md` files get shown too.
 
 Research is showing the work before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like. 
 
-Showing the work keeps me accountable. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that you've developed, tested, and approved.
+Showing the work keeps me accountable. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed, tested, and approved.
 
 I have a theory that good practices are always good practices, so writing things down, being transparent, and publishing regularly fit nicely. The corollary is true, too, and there are a lot of anti-practices around using LLMs that are clearly not good practices. It's a great filter, for what it's worth.
 
@@ -124,7 +128,7 @@ Text is fundamental to teaching. It's core to learning, too.
 
 I like to say that *"I love to teach, I think,"* because I'm not always certain of that fact. I'm occasionally impatient, and it's easy to forget how I got to understanding something. You need to remember your path to teach, and those darned paths change with each generation of tools and humans. But I do like to teach, I think.
 
-I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some history, and a bunch of experience. I've always struggled to teach this to beginners. I suspect I've never thought deeply enough about it, or developed a clear plan for teaching it. 
+I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some history, and a bunch of experience. I've always struggled to teach this to beginners. I suspect I've never thought deeply enough about it, or developed a clear plan for teaching it. Teaching it live, I'd forgotten my own path; writing it down is how I find it again.
 
 My way of teaching is to write first. I can write and be frustrated, and not influence anyone negatively. I just put that frustration back into my writing and redraft. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
 
@@ -146,7 +150,7 @@ Dreamhost
 
 My blog [has no comments](/pages/about-warpedvisions-dot-org/), for good reason. I encourage people to respond by writing something of their own. This, of course, raises the bar and prevents a lot of silliness.
 
-The pipeline really matters to me. A writing tool I can't `grep`, or see locally, runs against the grain of how I think. I learned this again on [Write.as](https://write.as), the detour. In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): *publish on your own site first, and syndicate elsewhere.*
+The pipeline really matters to me. A writing tool I can't `grep`, or see locally, runs against the grain of how I think. I learned this again on [Write.as](https://write.as), the second detour. In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): *publish on your own site first, and syndicate elsewhere.*
 
 ## Make it fun
 
@@ -158,6 +162,8 @@ I learned a bit about fun this summer:
 - [Retro desktop demos](https://github.com/robotpony/retro-demos), LED displays, a CD player nobody needs.
 - Scorekeep's goal: "it should feel like what it is: paper." Buttery smooth over feature-complete.
 - *"Things that teach. Things that make you smile."*
+
+The real lesson was playtesting. I wrote a space game and kept iterating on it until I found it fun. It's been a long time since I was able to do that.
 
 ## Craft, inch by inch
 
