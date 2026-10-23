@@ -47,7 +47,9 @@ For example, here's part of my [simple gravy](https://bruce-loves-to-cook.ca/rec
 ````markdown
 ## Mechanic
 
-A roux is equal parts fat and flour by weight. Use about **1:5 roux to liquid** (for example, 50 g roux to 250 ml liquid). A darker roux tastes nuttier but thickens slightly less.
+A roux is equal parts fat and flour by weight. Use about **1:5 roux 
+to liquid** (for example, 50 g roux to 250 ml liquid). A darker roux 
+tastes nuttier but thickens slightly less.
 
 ```formula
 butter flour | Roux   | 1
@@ -103,6 +105,15 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 
 ## Text is part of my history
 
+
+My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, rewired how I built things. So did the idea that text is universal, and can be *piped* from tool to tool.
+
+I even took the time to get comfortable in `vim`, something I've never regretted. It looked dated then and still does, but it leans on what text does well. I learned to stack piped commands and to write scripts in Perl, Python, `sed`, and Ruby.
+
+Then came [Blosxom](http://www.blosxom.com/), the first blogging tool I loved, because it kept posts as files I could search and script. Gruber first released *Markdown* in 2004 as a plugin for it and Movable Type. I built a few pale imitations of Blosxom after it went unmaintained. Warped ran on WordPress for years after that; I'd used it since its early days. I was always fighting its web UI, which I couldn't `grep` or see locally, until I remembered [*Hugo*](https://gohugo.io/). Apart from one more detour, it's been home since.
+
+Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text.
+
 ```timeline
 1980 The school's one computer
 1983 Atari BASIC
@@ -117,13 +128,6 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 2025 *Claude and LLMs, text reborn*
 ```
 
-My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, rewired how I built things. So did the idea that text is universal, and can be *piped* from tool to tool.
-
-I even took the time to get comfortable in `vim`, something I've never regretted. It looked dated then and still does, but it leans on what text does well. I learned to stack piped commands and to write scripts in Perl, Python, `sed`, and Ruby.
-
-Then came [Blosxom](http://www.blosxom.com/), the first blogging tool I loved, because it kept posts as files I could search and script. Gruber first released *Markdown* in 2004 as a plugin for it and Movable Type. I built a few pale imitations of Blosxom after it went unmaintained. Warped ran on WordPress for years after that; I'd used it since its early days. I was always fighting its web UI, which I couldn't `grep` or see locally, until I remembered [*Hugo*](https://gohugo.io/). Apart from one more detour, it's been home since.
-
-Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text.
 
 **My take**: Text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
@@ -170,8 +174,10 @@ When an agent needs a decision from me, it copies its questions to the clipboard
 ```text
 ␣⌘ Questions · commander · 2026-10-23 · in warped-space-command
 
-7. With the panel closed, should a copy go to the place last in view, or to All copies only? (A) last in view (B) All copies only
-8. Should Space Command for Obsidian tag its copies with the note's folder, so they file under the right project? Yes or no.
+7. With the panel closed, should a copy go to the place last in view, 
+   or to All copies only? (A) last in view (B) All copies only
+8. Should Space Command for Obsidian tag its copies with the note's 
+   folder, so they file under the right project? Yes or no.
 ```
 {{< /tab >}}
 {{< tab "In Space Command" >}}
