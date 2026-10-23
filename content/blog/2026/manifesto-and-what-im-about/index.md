@@ -42,7 +42,7 @@ Almost everything I make starts, and ends up, as Markdown. Designs, specificatio
 
 For example, here's part of my [simple gravy](https://bruce-loves-to-cook.ca/recipes/simple-chicken-pork-and-beef-gravy/) recipe, as text and as the site shows it:
 
-{{< tabs layout="side" >}}
+{{< tabs layout="stack" >}}
 {{< tab "Text" >}}
 ````markdown
 ## Mechanic
