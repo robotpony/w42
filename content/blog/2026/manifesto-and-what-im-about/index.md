@@ -194,8 +194,7 @@ Text editor | edit
 Markdown | in git
 Claude | review
 Hugo | build
-rsync
-Dreamhost
+rsync | to Dreamhost
 caption: Space Command watches the plans across all of it
 ```
 
