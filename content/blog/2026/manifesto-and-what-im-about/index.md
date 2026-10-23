@@ -13,13 +13,13 @@ description: What I believe about text, teaching, and making things, and what th
 ---
 My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB of RAM and a previous-generation Atari 410 tape drive, the older and clunkier one.
 
-That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality ones I could afford at 10 years old, bought in bulk from Radio Shack. The worst one took a linear, horizontal scroller I'd written, along with every sprite I'd drawn for it. I learned to save each program I wrote several times, write down its design in a notebook, and sketch out its interfaces. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
+That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality ones I could afford at 10 years old, bought in bulk from Radio Shack. The worst one took a linear, horizontal scroller I'd written, along with every sprite I'd drawn for it. I learned to save each program I wrote several times, on a second tape when I had one, write down its design in a notebook, and sketch out its interfaces. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
 
 The notebook survived when the tape didn't, and I'm still writing things down.
 
 ## Searching for my spark
 
-I've revived WarpedVisions, again. It's been my weblog since the mid-90s, when it was more of a Kottke-style link log. It's lived on Dreamhost all along, apart from a few stints on hosted blog tools. But this post isn't about that; it's about rediscovering who I am:
+I've revived WarpedVisions, again. It's been my weblog since 1996, when it was more of a link log, a couple of years before Kottke started his. It's lived on Dreamhost all along, apart from a few stints on hosted blog tools. But this post isn't about that; it's about rediscovering who I am:
 
 1. I am a writer, and I love words and text.
 2. I make software.
@@ -116,7 +116,7 @@ My love of text started a long time ago, but the real inspiration was [John Carm
 
 I even took the time to get comfortable in `vim`, something I've never regretted. It looked dated then and still does, but it really leans on what text does well. I learned to stack piped commands and to write scripts in Perl, Python, `sed`, and Ruby.
 
-Then came [Blosxom](http://www.blosxom.com/), the first truly great blogging tool, because it kept posts as files I could search and script. Gruber first released *Markdown* in 2004 as a plugin for it and Movable Type. I built a few pale imitations of Blosxom after it went unmaintained, and I'd used WordPress since its early days, so Warped ran on it for a good number of years. I was always fighting its web UI, which I couldn't `grep` or see locally, until I remembered [*Hugo*](https://gohugo.io/). Apart from one detour, it's been home since.
+Then came [Blosxom](http://www.blosxom.com/), the first truly great blogging tool, because it kept posts as files I could search and script. Gruber first released *Markdown* in 2004 as a plugin for it and Movable Type. I built a few pale imitations of Blosxom after it went unmaintained, and I'd used WordPress since its early days, so Warped ran on it for a good number of years. I was always fighting its web UI, which I couldn't `grep` or see locally, until I remembered [*Hugo*](https://gohugo.io/). Apart from one more detour, it's been home since.
 
 Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text. My cookbook evolved from paper, to Google Docs, to Hugo and Markdown. I use Obsidian or VS Code to edit, Hugo to publish, and Claude to review; now Space Command ties it all together.
 
@@ -126,7 +126,9 @@ Enter the new world of LLMs. Text is king again. LLMs read and write plain text 
 
 ## Writing is how I think
 
-That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. Tape is linear, so when the drive chewed one spot, the whole tape usually went with it, extra copies and all. I wrote dozens of games, tools, and curios, all of them lost to time. Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
+The extra copies helped, sometimes. A chewed tape could be cut and re-attached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of games, tools, and curios, all of them lost to time.
+
+Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
 `CLAUDE.md` files are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
 
@@ -168,10 +170,10 @@ As my [recipe notes](https://bruce-loves-to-cook.ca/the-food-log/) put it, teach
 
 ## I own the press
 
-This site has been running for close to 30 years, on more engines than I can list (see [about the site](/pages/about-warpedvisions-dot-org/)). It's always been my testing ground. Today it's Hugo, my own custom theme, a few scripts, and rsync to publish it to the same host I've used for decades.
+This site has been running for 30 years, on more engines than I can list (see [about the site](/pages/about-warpedvisions-dot-org/)). It's always been my testing ground. Today it's Hugo, my own custom theme, a few scripts, and rsync to publish it to the same host I've used for decades.
 
 ```flow
-Obsidian or VS Code | edit
+Text editor | edit
 Markdown | in git
 Claude | review
 Hugo | build
@@ -202,6 +204,15 @@ I had the last two summers off, and the rest of what I made followed the same ru
 As I've always said, I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen I know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where I stop thinking about the tools and think about the food. It's an instrument that becomes one with your fingers. And it's the place I like to be. (Fix the switch from "I" to "your", and firm up the last sentence.) #todo
 
 We become who we are inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
+
+## What I leave out
+
+A few refusals fall out of all of this:
+
+- No comments; a reply is better as a post.
+- No tool I can't `grep`, and no database I can't see.
+- No hiding the work, the prompts, or the failures.
+- No ghostwriter. Claude edits, and it doesn't author: it reviews my drafts against [a style guide I wrote](/pages/a-style-guide-for-bruce/), and the ideas, the stories, and the final say stay mine.
 
 ## What this means for what's next
 
