@@ -36,7 +36,7 @@ Almost everything I make starts, and ends up, as Markdown. Designs, specificatio
 
 > *"A recipe should look natural in any text editor."*
 
-Pages must read well as plain text. They also must render in Obsidian and Hugo, and still be [parseable by tools](https://bruce-loves-to-cook.ca/). Text is fast, easy, and it gets out of my way.
+Pages must read well as plain text. They also must render in Obsidian and Hugo, and still be [parseable by tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). Text is fast, easy, and it gets out of my way.
 
 **Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds and manages `PLAN.md` files via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
@@ -106,7 +106,7 @@ That tape drive ate every copy of everything I wrote, so I reimplemented most ga
 
 ## Showing the work
 
-The usual way to write a cookbook is to hide the work. Being me, I'd rather not hide the design and development of recipes. The bruce-loves-to-cook recipes that aren't finished are marked [**Test kitchen**](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. A recipe is closer to source code than scripture: it has versions, bugs, and fixes.
+The usual way to write a cookbook is to hide the work. Being me, I'd rather not hide the design and development of recipes. The bruce-loves-to-cook recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. A recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
 This idea falls out of how we build software:
 
@@ -160,14 +160,14 @@ I had the last two summers off, and I learned a bit about fun:
 
 - [The summer game jam](https://github.com/robotpony/game-jams): four weeks [rebuilding games](/blog/2025/the-feels-of-nostalgia-can-drive-great-design/) I played and wrote between 1980 and 1985, on [PICO-8](/blog/2022/playing-with-the-pico-8-fantasy-console/), Picotron, TIC-80, and pygame.
 - [Retro desktop demos](https://github.com/robotpony/retro-demos), LED displays, a CD player nobody needs.
-- Scorekeep's goal: "it should feel like what it is: paper." Buttery smooth over feature-complete.
+- Scorekeep's goal: *"it should feel like what it is: paper."* Buttery smooth over feature-complete.
 - *"Things that teach. Things that make you smile."*
 
 The real lesson was playtesting. I wrote a space game, [Gyri #4](https://jams.warpedvisions.org/), a Galaga-style shooter where the ship and enemies move along concentric arcs, and I kept iterating on it until I found it fun. It's been a long time since I was able to do that.
 
 ## Craft, inch by inch
 
-As I've always said, I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen I know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where I stop thinking about the tools and think about the food.
+As I've always said, I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen I know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where I stop thinking about the tools and think about the food. It's an instrument that becomes one with your fingers. And it's the place I like to be.
 
 We become who we are inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
 
