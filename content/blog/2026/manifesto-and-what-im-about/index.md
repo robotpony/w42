@@ -12,27 +12,35 @@ tags:
 description: What I believe about text, teaching, and making things, and what this year's projects taught me.
 ---
 
-I have, yet again, revived WarpedVisions. It's been my webblog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, except for a few stints on hosted blog tools. But this post isn't about that; it's about me rediscovering who I am. I am a writer. I make software. And I love text, playing with words, and transforming them both into magical things.
+I have, yet again, revived WarpedVisions. It's been my weblog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, except for a few stints on hosted blog tools. But this post isn't about that; it's about me rediscovering who I am. I am a writer. I make software. And I love text, playing with words, and transforming them both into magical things.
 
-I looked back at what I've built and written since spring: [a cookbook](https://bruce-loves-to-cook.ca/), a scorekeeping app, a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine. Different shapes, same handful of beliefs underneath. This is my attempt to write these principles down, mostly so I can check my next project against them.
+I looked back at what I've built and written since spring: [a cookbook](https://bruce-loves-to-cook.ca/), a scorekeeping app, a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine. Different shapes, same handful of beliefs underneath. This is my attempt to write these principles down, mostly so I can check my next project against them. The short version:
+
+1. [Plain text is the foundation](#plain-text-is-the-foundation)
+2. [Writing is how I think](#writing-is-how-i-think)
+3. [Show the work](#show-the-work)
+4. [Teach by writing it down](#teach-by-writing-it-down)
+5. [Own the press](#own-the-press)
+6. [Make it fun](#make-it-fun)
+7. [Craft, inch by inch](#craft-inch-by-inch)
 
 ## Plain text is the foundation
 
 Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is plain text: no API, no auth, no special SDK. It opens in any editor, it diffs in git, and it will be readable long after today's tools are gone.
 
-**Text reads naturally**. My not-a-chef (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) rule transformed my cookbook and recipe development: 
+**Text reads naturally**. My not-a-chef (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) rule transformed my cookbook and recipe development:
 
-> *"A recipe should look natural in any text editor."* 
+> *"A recipe should look natural in any text editor."*
 
 Pages must read well as plain text. They also must render in Obsidian and Hugo, and still be [parseable by tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). It's fast, easy, and it gets out of my way.
 
-**Text, specifically, my text is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds and manages `PLAN.md` files, via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my source and my text files, and not something else.
+**Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds and manages `PLAN.md` files, via `#todo`, `#idea`, and `#focus` tags straight out of my notes. The source of truth is my source and my text files, and not something else.
 
-**Text defines the world**.  [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
+**Text defines the world**. [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
 
 And all of my blogs, comics, and repos live in text. It is the only truly durable format.
 
-**Real life example**: Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
+**Real-life example**: Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
 
 {{< tabs layout="side" >}}
 {{< tab "Text" >}}
@@ -61,12 +69,13 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 
 ```timeline
 1983 Atari BASIC
-1994 *The UNIX Philosophy*
+1995 *The UNIX Philosophy*
 1996 Carmack's `.plan` files
 2002 Blosxom
 ~2008 WordPress, a detour
 ~2015 Hugo, first look
-2022 Hugo
+2022 Write.as
+2024 Hugo, for good
 2025 *Claude and LLMs, text reborn*
 ```
 
@@ -76,15 +85,15 @@ I even learned `vim` at the time, something I've never regretted. It's as outdat
 
 I also encountered a number of text-y tools at the time, including [Blosxom](http://www.blosxom.com/), the first truly great blogging tool. Sure, there were Blogger and Movable Type, but owning your content in a format you can search and script was something I knew was special.
 
-I used WordPress for a few years, after several projects for my non-profit clients. It's powerful, but a bit slow to write in. It sufficed, until I remembered Hugo. I prototyped a version of my blog in Hugo and haven't looked back.
+I built a few versions of Blosxom myself once it was no longer maintained, all pale imitations of it. Then I used WordPress for a few years, after several projects for my non-profit clients. I was very proficient with it from my agency days, but I never found a productive writing flow. I was always fighting the web UI. I couldn't `grep` it, and I couldn't see it locally without a lot of setup. It sufficed, until I remembered [*Hugo*](https://gohugo.io/). Hugo is fast, it lives on Markdown, and it extends and themes easily. I prototyped a version of my blog in it, and apart from one detour, it's been home since.
 
-Enter the new world of LLMs. Text is king again, and I've moved all of my notes and thinking back into text. My cookbook evolved from paper, to Google Docs, to Hugo and Markdown. I use Obsidian or VSCode to edit, and Hugo to publish. And now I use Space Command to tie it all together.
+Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text. My cookbook evolved from paper, to Google Docs, to Hugo and Markdown. I use Obsidian or VS Code to edit, and Hugo to publish, and now Space Command ties it all together.
 
 **My take**: Text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
 ## Writing is how I think
 
-My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB and a previous-generation tape drive, the bane of my childhood. The drive ate tapes, often the low-quality ones I could afford at 10 years old from Radio Shack, so I saved each game I wrote several times, wrote down its design, and sketched out its interfaces, down to the bit for custom fonts and sprites.
+My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB and a previous-generation Atari 410 tape drive, the older and clunkier one, the bane of my childhood. The drive ate tapes, often the low-quality ones I could afford at 10 years old from Radio Shack, so I saved each game I wrote several times, wrote down its design, and sketched out its interfaces, down to the bit for custom fonts and sprites.
 
 That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. I wrote dozens, all of them lost to time. The notebook survived when the tape didn't, and somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
@@ -104,7 +113,7 @@ This idea falls out of how we build software:
 
 **Don't hide your tooling**. Working with AI is part of the work, so the prompts and CLAUDE.md files get shown too.
 
-Research is showing the work before it's finished. I try several, compare honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one, notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and four looks for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command that let to something I really like.
+Research is showing the work before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one, notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and four looks for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command that led to something I really like.
 
 Showing the work keeps me accountable. The game jam's weekly posts meant there was always something to show, so I kept shipping.
 
@@ -134,13 +143,9 @@ rsync
 Dreamhost
 ```
 
-My blog site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose, too. I encourage people to respond by writigng something of their own. This of course makes the bar higher and prevents a lot of silliness. 
+My blog site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose, too. I encourage people to respond by writing something of their own. This, of course, raises the bar and prevents a lot of silliness.
 
-I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale imitations of it, but then I found [*Hugo*](https://gohugo.io/). Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
-
-The pipeline really matters to me. I was very proficient with WordPress from my agency days, but I never found a productive writing flow for it. I was always fighting the web UI. I couldn't `grep` it, and I couldn't see it locally without a lot of setup. That opaqueness runs against the grain of how I think.
-
-I learned this again on [Write.as](https://write.as). In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): publish on your own site first, and syndicate elsewhere.
+The pipeline really matters to me. A writing tool I can't `grep`, or see locally, runs against the grain of how I think. I learned this again on [Write.as](https://write.as), the detour. In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): publish on your own site first, and syndicate elsewhere.
 
 ## Make it fun
 
