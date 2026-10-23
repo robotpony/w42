@@ -174,6 +174,9 @@ When an agent needs a decision from me, it copies its questions to the clipboard
 8. Should Space Command for Obsidian tag its copies with the note's folder, so they file under the right project? Yes or no.
 ```
 {{< /tab >}}
+{{< tab "In Space Command" >}}
+![Space Command's Clipboard tab showing the two questions as a Q&A tile: answer chips A and B under question 7 with B chosen, Yes and No under question 8 with Yes chosen, and Copy Answers at the bottom](clipboard-questions.png)
+{{< /tab >}}
 {{< /tabs >}}
 
 Research is the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
