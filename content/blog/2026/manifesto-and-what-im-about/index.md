@@ -1,5 +1,5 @@
 ---
-slug: manifesto-and-what-im-about
+slug: what-im-about-in-plain-text
 title: "What I'm about, in plain text #focus"
 date: 2026-10-24
 draft: true
@@ -30,13 +30,13 @@ And who am I?
 3. I tinker. I make art, I cook, and I make music.
 4. And I teach.
 
-I looked back at what I've built this year: [a cookbook](https://bruce-loves-to-cook.ca/), a [`#todo` tool](https://space-command.ca), a [scorekeeping app](https://scorekeep.warpedvisions.org), a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine, and a bunch of small tools and curios. Different shapes, all with the same handful of beliefs under them. This is my attempt to write the principles down, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down, because machines forget, and so do I.
+I looked back at what I've built this year: [a cookbook](https://bruce-loves-to-cook.ca/), a [TODO tool](https://space-command.ca), a [scorekeeping app](https://scorekeep.warpedvisions.org), a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine, and a bunch of small tools and curios. Different shapes, all with the same handful of beliefs under them. This is my attempt to write the principles down, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down, because machines forget, and so do I.
 
 ## Plain text is the foundation
 
 Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
 
-**Text reads naturally**. My not-a-chef project (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development, which moved from paper to Google Docs to Hugo and Markdown. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text. The rule that drove the work:
+**Text reads naturally**. My not-a-chef project (now [♥︎ Bruce loves to cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development, which moved from paper to Google Docs to Hugo and Markdown. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text. The rule that drove the work:
 
 > *A recipe should look natural in any text editor.*
 
@@ -163,6 +163,19 @@ This idea falls out of how we build software:
 
 **Don't hide the tooling**. Working with AI is part of the work, so the prompts and `CLAUDE.md` files get shown too. This helps you remember, and can help teach others.
 
+When an agent needs a decision from me, it copies its questions to the clipboard as plain text, numbered, with the answers it expects. Space Command's Clipboard tab picks them up:
+
+{{< tabs layout="stack" >}}
+{{< tab "Text" >}}
+```text
+␣⌘ Questions · commander · 2026-10-23 · in warped-space-command
+
+7. With the panel closed, should a copy go to the place last in view, or to All copies only? (A) last in view (B) All copies only
+8. Should Space Command for Obsidian tag its copies with the note's folder, so they file under the right project? Yes or no.
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 Research is the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
 Showing the work keeps me accountable. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
@@ -208,7 +221,7 @@ From my game-making principles: *be emotive, be funny, be fun. Lean into constra
 
 I wrote a space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-style shooter (a Galaga descendant) where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to play in code like that. What made it work was keeping playtesting and engineering logs, and reflecting on them daily.
 
-I had the last two summers off, and the rest of what I made followed the same pattern: play first, then tune it until it's fun.
+I had the last two summers off, and the rest of what I made worked that way too: play first, then tune it until it's fun. A few of them:
 
 - [The summer game jam](https://github.com/robotpony/game-jams): four weeks [rebuilding games](/blog/2025/the-feels-of-nostalgia-can-drive-great-design/) I played and wrote between 1980 and 1985, on [PICO-8](/blog/2022/playing-with-the-pico-8-fantasy-console/), Picotron, TIC-80, and pygame.
 - [Retro desktop demos](https://github.com/robotpony/retro-demos), LED displays, a CD player nobody needs.
