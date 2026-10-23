@@ -11,32 +11,36 @@ tags:
   - publishing
 description: What I believe about text, teaching, and making things, and what this year's projects taught me.
 ---
-My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB of RAM and a previous-generation Atari 410 tape drive, the older and clunkier one.
+My first real computer was an Atari 600XL. I usually tell people it was an 800, so I don't have to explain the difference between models. With the 600XL I got a whopping 16 KB of RAM, a Centipede cartridge, and a previous-generation Atari 410 tape drive.
 
-That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality ones I could afford at 10 years old, bought in bulk from Radio Shack. The worst one took a horizontal scroller I'd written, along with every sprite I'd drawn for it. I learned to save each program I wrote several times, on a second tape when I had one. I also wrote down its design in a notebook and sketched out its interfaces. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
+That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality ones I could afford at 10 years old, always purchased in 10-packs at Radio Shack. The most devastating loss was when the drive munched on my last copy of a horizontal scroller I'd written, along with every sprite I'd drawn for it. From those experiences, I learned to save each program I wrote several times, on multiple tapes when I had spares. It was never enough.
 
-The notebook survived when the tape didn't, and I'm still writing things down.
+I also learned to write designs in a notebook and sketch interfaces in detail. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
+
+That notebook survived when the tape didn't, and I'm still writing things down to this day.
 
 ## Searching for my spark
 
-I've revived WarpedVisions again. It's been my weblog since 1996, when it was more of a link log, a couple of years before Kottke started his. It's lived on Dreamhost all along, apart from a few stints on hosted blog tools. But this post isn't about that; it's about rediscovering who I am:
+I revived WarpedVisions again this fall. It's been my weblog since 1996 or so, when it was more of a link log. That was a couple of years before Kottke started his, but he did the link thing better than I did. So Warped became a place for me to collect essays and HOWTOs. The site has lived on Dreamhost all along, apart from a few stints on hosted blog tools. But this post isn't about that; it's about rediscovering who I am.
 
-1. I am a writer, and I love words and text.
+And who am I?
+
+1. I am a writer and I love words and text.
 2. I make software.
-3. I love to tinker. I make art, I cook, and I make music.
-4. And I teach, I think.
+3. I tinker. I make art, I cook, and I make music.
+4. And I teach.
 
 I looked back at what I've built this year: [a cookbook](https://bruce-loves-to-cook.ca/), a [`#todo` tool](https://space-command.ca), a [scorekeeping app](https://scorekeep.warpedvisions.org), a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine, and a bunch of small tools and curios. Different shapes, all with the same handful of beliefs under them. This is my attempt to write the principles down, mostly so I can check myself and my next projects against them.
 
 ## Plain text is the foundation
 
-Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, no special SDK. It opens in any editor, it diffs in git, and it will be readable long after today's tools are gone.
+Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
 
 **Text reads naturally**. My not-a-chef project (now [bruce-loves-to-cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text. The rule that drove the work:
 
-> *"A recipe should look natural in any text editor."*
+> *A recipe should look natural in any text editor.*
 
-Here's part of my [simple gravy](https://bruce-loves-to-cook.ca/recipes/simple-chicken-pork-and-beef-gravy/), as text and as the site shows it:
+For example, here's part of my [simple gravy](https://bruce-loves-to-cook.ca/recipes/simple-chicken-pork-and-beef-gravy/) recipe, as text and as the site shows it:
 
 {{< tabs layout="side" >}}
 {{< tab "Text" >}}
@@ -72,7 +76,7 @@ Pages must read well as plain text. They must also render in Obsidian and Hugo, 
 
 **Long live text**. My blogs and comics live in text, and so does every repo. It's the most durable format I know.
 
-**Want an example?** Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
+**Want another example?** Here's part of a plan from Space Command's demo world, a sourdough book in progress, as text and as the app shows it:
 
 {{< tabs layout="side" >}}
 {{< tab "Text" >}}
@@ -123,7 +127,7 @@ Enter the new world of LLMs. Text is king again. LLMs read and write plain text 
 
 **My take**: Text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
-**Where text falls short**: music, art, and photos don't live in text, though my notes about them do. And plain files can feel hostile to anyone who doesn't live in a terminal. Obsidian helps there, as a friendlier face on the same files, and Space Command is my attempt at another.
+**Where text falls short**: music, art, and photos don't live in text, though my notes about them do (as do musical annotations). And plain files can feel hostile to anyone who doesn't live in a terminal. Obsidian helps there, as a friendlier face on the same files, and Space Command is my attempt at another.
 
 ## Writing is how I think
 
@@ -131,7 +135,7 @@ Saving extra copies helped, sometimes. A chewed tape could be cut and re-attache
 
 Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
-`CLAUDE.md` files are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
+Markdown files like `PLAN.md` and `DESIGN.md` are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
 
 ```flow
 row: 1983
@@ -157,7 +161,7 @@ This idea falls out of how we build software:
 
 **Repos carry their plans**, bug lists, and decision logs in the open.
 
-**Don't hide your tooling**. Working with AI is part of the work, so the prompts and `CLAUDE.md` files get shown too.
+**Don't hide the tooling**. Working with AI is part of the work, so the prompts and `CLAUDE.md` files get shown too. This helps you remember, and can help teach others.
 
 Research is the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
@@ -169,13 +173,13 @@ I have a theory that good practices are always good practices, so writing things
 
 Text is fundamental to teaching. It's core to learning, too.
 
-I like to say that *"I love to teach, I think,"* because I'm not always certain of it. I'm occasionally impatient, and it's easy to forget how I got to understanding something. You need to remember your path to teach, and those darned paths change with each generation of tools and humans. But I do like to teach, I think.
+I like to say that *"I love to teach, I think,"* because I'm not always certain of it. I'm occasionally impatient, and it's easy to forget how I got to understanding something. To teach something, you need to remember the path you took to learn it, and those darned paths change with each generation of tools and humans. But I do like to teach, *I think*.
 
-I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some history, and a bunch of experience. I've always struggled to teach it to beginners, and JOINs are always the hardest part.
+I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some knowledge of history, and a bunch of experience. I've always struggled to teach SQL to beginners, and JOINs were the hardest part.
 
-When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. Teaching it live, I forget my own path; writing it down is how I find it again.
+When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. When I tried to teach it live, I'd forget my own path; writing it down is how I found it again.
 
-My way of teaching is to write first. I can write and be frustrated, and not influence anyone negatively. I just put that frustration back into my writing and redraft. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
+My approach to teaching is to write first. When I write, I can be frustrated and not influence anyone negatively. I just put that frustration back into my writing and redraft. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
 
 The recipes are where this works best for me. I didn't start to grok cooking until I understood that methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, as recipes can rarely be exact. Ingredients, humidity, equipment, and dietary needs all vary.
 
@@ -195,7 +199,7 @@ Dreamhost
 caption: Space Command watches the plans across all of it
 ```
 
-My blog [has no comments](/pages/about-warpedvisions-dot-org/), for good reason. I encourage people to respond by writing something of their own. This, of course, raises the bar and prevents a lot of silliness.
+Owning the press means I set the rules, and Warped [has no comments](/pages/about-warpedvisions-dot-org/) for good reason. Instead I encourage people to respond by writing something of their own. This, of course, raises the bar and prevents a lot of silliness.
 
 The pipeline matters to me. A writing tool I can't `grep`, or see locally, runs against the grain of how I think. I learned this again on [Write.as](https://write.as), the second detour. In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): *publish on your own site first, and syndicate elsewhere.*
 
@@ -203,7 +207,7 @@ The pipeline matters to me. A writing tool I can't `grep`, or see locally, runs 
 
 From my game-making principles: *be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.* Those read well on paper, but I only learned what they mean by playtesting.
 
-I wrote a space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-style shooter (Galaga's descendant) where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to do that.
+I wrote a space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-style shooter (a Galaga descendant) where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to play in code like that. What made it work was keeping playtesting and engineering logs, and reflecting on them daily.
 
 I had the last two summers off, and the rest of what I made followed the same rule:
 
@@ -214,21 +218,21 @@ I had the last two summers off, and the rest of what I made followed the same ru
 
 ## Craft happens inch by inch
 
-As I've always said, I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen I know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where I stop thinking about the tools and think about the food. It's an instrument that becomes one with your fingers. And it's the place I like to be. (Fix the switch from "I" to "your", and firm up the last sentence.) #todo
+I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen you know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where you stop thinking about the tools and think about the food. It's an instrument that becomes part of your fingers. And it's where I do my best work.
 
 We become who we are inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
 
 ## What I leave out
 
-A few refusals fall out of all of this:
+When it comes to text and design, there are a few rules I follow:
 
 - No comments; a reply is better as a post.
-- No tool I can't `grep`, and no database I can't see.
-- No hiding the work, the prompts, or the failures.
-- No ghostwriter. Claude edits, and it doesn't author: it reviews my drafts against [a style guide I wrote](/pages/a-style-guide-for-bruce/), and the ideas, the stories, and the final say stay mine.
+- I avoid tools with data I can't `grep`, and the source of truth for written things doesn't hide in a database.
+- I don't hide my work, the prompts, or the failures.
+- I don't use LLMs to write, as they write average text at best. I use LLMs to review drafts against [a style guide](/pages/a-style-guide-for-bruce/), which fits their ability to classify text well.
 
 ## What this means for what's next
 
-The 10-year-old with a notebook beside a tape drive and the person writing `CLAUDE.md` files are doing the same thing. Both write the design down first, because the machine will forget it. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way; I only noticed it looking back over this year.
+The 10-year-old with a notebook beside his wonky tape drive and the person writing `CLAUDE.md` files are doing the same thing. Both write the design down first, because the machine will forget it one way or another. For that matter, so will the human. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
 
-So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text I've already written. I'll keep writing about it here first. If any of it sparks something for you, write about it on your own site and link back.
+So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first. If any of it sparks something for you, write about it on your own site or socials and link back.
