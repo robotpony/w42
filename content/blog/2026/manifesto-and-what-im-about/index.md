@@ -190,7 +190,7 @@ The pipeline really matters to me. A writing tool I can't `grep`, or see locally
 
 From my game-making principles: *be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.* Those read well on paper, but I only learned what they mean by playtesting.
 
-I wrote a space game, [Gyri #4](https://jams.warpedvisions.org/), a Galaga-style shooter where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to do that.
+I wrote a space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-style shooter (Galaga's descendant) where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to do that.
 
 I had the last two summers off, and the rest of what I made followed the same rule:
 
