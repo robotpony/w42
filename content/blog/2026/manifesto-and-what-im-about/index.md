@@ -17,7 +17,7 @@ That tape drive was the bane of my childhood. It ate tapes, the sort of low-qual
 
 The notebook survived when the tape didn't, and I'm still writing things down.
 
-## Rediscovering who I am
+## Searching for my spark
 
 I've revived WarpedVisions, again. It's been my weblog since the mid-90s, when it was more of a Kottke-style link log. It's lived on Dreamhost all along, apart from a few stints on hosted blog tools. But this post isn't about that; it's about rediscovering who I am:
 
@@ -36,8 +36,10 @@ Almost everything I make starts, and ends up, as Markdown. Designs, specificatio
 
 > *"A recipe should look natural in any text editor."*
 
-Here's part of my [simple gravy](https://bruce-loves-to-cook.ca/recipes/simple-chicken-pork-and-beef-gravy/), straight from the file:
+Here's part of my [simple gravy](https://bruce-loves-to-cook.ca/recipes/simple-chicken-pork-and-beef-gravy/), as text and as the site shows it:
 
+{{< tabs layout="side" >}}
+{{< tab "Text" >}}
 ````markdown
 ## Mechanic
 
@@ -56,6 +58,11 @@ bar: yes
 - 25 g flour
 - 250 ml stock and pan drippings, combined
 ````
+{{< /tab >}}
+{{< tab "On the site" >}}
+![The gravy recipe on bruce-loves-to-cook.ca: ingredients as a checklist on the left, and the Mechanic in the sidebar with the 1:5 roux formula drawn as icons, numbers, and a bar](gravy-recipe.png)
+{{< /tab >}}
+{{< /tabs >}}
 
 Pages must read well as plain text. They also must render in Obsidian and Hugo, and still be [parseable by tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). Text is fast and easy, and it gets out of my way.
 
@@ -173,7 +180,7 @@ Dreamhost
 caption: Space Command watches the plans across all of it
 ```
 
-My blog [has no comments](/pages/about-warpedvisions-dot-org/), for good reason. I encourage people to respond by writing something of their own. This, of course, raises the bar and prevents a lot of silliness. (State the reason, or cut "for good reason.") #todo
+My blog [has no comments](/pages/about-warpedvisions-dot-org/), for good reason. I encourage people to respond by writing something of their own. This, of course, raises the bar and prevents a lot of silliness. 
 
 The pipeline really matters to me. A writing tool I can't `grep`, or see locally, runs against the grain of how I think. I learned this again on [Write.as](https://write.as), the second detour. In 2022 I [moved the site there](/blog/2022/warped-v40/), which meant hand-importing 60 posts over about 10 hours of evenings and cleaning up the Markdown that 17 generations of WordPress and Pandoc left behind. In 2024 I [ported it back to Hugo](/blog/2024/warped-42-back-to-basics/) in about a day, and since then it's lived as plain text in a repo I own. That's the IndieWeb idea of [POSSE](https://indieweb.org/POSSE): *publish on your own site first, and syndicate elsewhere.*
 
