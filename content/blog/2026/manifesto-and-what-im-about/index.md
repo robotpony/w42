@@ -1,6 +1,6 @@
 ---
 slug: manifesto-and-what-im-about
-title: "Manifesto and what I'm about #focus"
+title: "What I'm about, in plain text #focus"
 date: 2026-10-24
 draft: true
 tags:
@@ -208,7 +208,7 @@ From my game-making principles: *be emotive, be funny, be fun. Lean into constra
 
 I wrote a space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-style shooter (a Galaga descendant) where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to play in code like that. What made it work was keeping playtesting and engineering logs, and reflecting on them daily.
 
-I had the last two summers off, and the rest of what I made followed the same rule:
+I had the last two summers off, and the rest of what I made followed the same pattern: play first, then tune it until it's fun.
 
 - [The summer game jam](https://github.com/robotpony/game-jams): four weeks [rebuilding games](/blog/2025/the-feels-of-nostalgia-can-drive-great-design/) I played and wrote between 1980 and 1985, on [PICO-8](/blog/2022/playing-with-the-pico-8-fantasy-console/), Picotron, TIC-80, and pygame.
 - [Retro desktop demos](https://github.com/robotpony/retro-demos), LED displays, a CD player nobody needs.
