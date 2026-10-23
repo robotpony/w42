@@ -119,7 +119,7 @@ Enter the new world of LLMs. Text is king again. LLMs read and write plain text 
 
 ## Writing is how I think
 
-That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. I wrote dozens of games, tools, and curios, all of them lost to time. Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
+That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. Tape is linear, so when the drive chewed one spot, the whole tape usually went with it, extra copies and all. I wrote dozens of games, tools, and curios, all of them lost to time. Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
 `CLAUDE.md` files are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
 
