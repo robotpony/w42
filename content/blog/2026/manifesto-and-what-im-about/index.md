@@ -12,6 +12,10 @@ tags:
 description: What I believe about text, teaching, and making things, and what this year's projects taught me.
 ---
 
+My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB and a previous-generation Atari 410 tape drive, the older and clunkier one. It was the bane of my childhood. The drive ate tapes, the sort of low-quality ones I could afford at 10 years old, bought in bulk from Radio Shack. I learned to save each program I wrote several times, write down its design, and sketch out its interfaces. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
+
+The notebook survived when the tape didn't, and I'm still writing things down.
+
 I have revived WarpedVisions, again. It's been my weblog since the 90s, when it was more of a Kottke-style link log. It still lives on Dreamhost, except for a few stints on hosted blog tools. But this post isn't about that; it's about me rediscovering who I am:
 
 1. I am a writer. 
@@ -90,9 +94,7 @@ Enter the new world of LLMs. Text is king again. LLMs read and write plain text 
 
 ## Writing is how I think
 
-My first real computer was an Atari 600XL. I usually tell people it was an 800XL, which I got a few years later, so I don't have to explain the difference. With the 600XL I got a whopping 16 KB and a previous-generation Atari 410 tape drive, the older and clunkier one. It was the bane of my childhood. The drive ate tapes, the sort of low-quality ones I could afford at 10 years old, bought in bulk from Radio Shack. I learned to save each program I wrote several times, write down its design, and sketch out its interfaces. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
-
-That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. I wrote dozens of games, tools, and curios, all of them lost to time. The notebook survived when the tape didn't, and somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
+That tape drive ate every copy of everything I wrote, so I reimplemented most games several times. I wrote dozens of games, tools, and curios, all of them lost to time. Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
 `CLAUDE.md` files are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
 
