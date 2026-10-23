@@ -67,7 +67,7 @@ That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it 
 ~2008 WordPress, a detour
 ~2015 Hugo, first look
 2022 Hugo
-2025 Claude and LLMs, text reborn
+2025 *Claude and LLMs, text reborn*
 ```
 
 My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, was revolutionary to me. I learned that text is raw power.
@@ -76,9 +76,11 @@ I even learned `vim` at the time, something I've never regretted. It's as outdat
 
 I also encountered a number of text-y tools at the time, including [Blosxom](http://www.blosxom.com/), the first truly great blogging tool. Sure, there were Blogger and Movable Type, but owning your content in a format you can search and script was something I knew was special.
 
-Finally, text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
+I used WordPress for a few years, after several projects for my non-profit clients. It's powerful, but a bit slow to write in. It sufficed, until I remembered Hugo. I prototyped a version of my blog in Hugo and haven't looked back.
 
-Add a short paragraph on Claude and LLMs making text the interface again ("text reborn"), linking the 2025 AI posts. #todo
+Enter the new world of LLMs. Text is king again, and I've moved all of my notes and thinking back into text. My cookbook evolved from paper, to Google Docs, to Hugo and Markdown. I use Obsidian or VSCode to edit, and Hugo to publish. And now I use Space Command to tie it all together.
+
+**My take**: Text is incremental, especially when paired with source control. Other tools have undo and history, but they're buried in menus, while `git log` and `diff` are one command away. And the commands are richer: you can see the reasons for changes, tag and branch to show progression, and remix easily. You never really lose changes. Yes, I realize the terminal is not great for all users, but for me it's home.
 
 ## Writing is how I think
 
@@ -88,23 +90,29 @@ That tape drive ate every copy of everything I wrote, so I reimplemented most ga
 
 CLAUDE.md files are that notebook again. An AI tool forgets everything between sessions, the way the tape forgot my games, so I write the design down first and it rebuilds from there. It's the same lesson, about 40 years later.
 
-I've written more about [the fight for clarity and beauty in writing](/blog/2015/the-fight-for-clarity-and-beauty-in-writing/) and about [how a tireless robot editor rekindled my love of writing](/blog/2025/how-i-rekindled-my-love-of-writing-with-a-tireless-robot-editor/). The whole tape drive story is on my [working with me](/pages/working-with-me-bruce-alderson/) page.
+*I've written more about [the fight for clarity and beauty in writing](/blog/2015/the-fight-for-clarity-and-beauty-in-writing/) and about [how a tireless robot editor rekindled my love of writing](/blog/2025/how-i-rekindled-my-love-of-writing-with-a-tireless-robot-editor/). The whole tape drive story is on my [working with me](/pages/working-with-me-bruce-alderson/) page.*
 
 ## Show the work
 
 The usual way to write a cookbook is to hide the work. Being me, I'd rather not hide the design and development of recipes. The bruce-loves-to-cook recipes that aren't finished are marked [**Test kitchen**](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. A recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
-- Game jam rule 4: post your updates online weekly, including specs, and prompts if used.
-- Repos carry their plans, bug lists, and decision logs in the open.
-- Working with AI is part of the work, so the prompts and CLAUDE.md files get shown too.
+This idea falls out of how we build software:
 
-Research is showing the work before it's finished. I try several, compare honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one, notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and four looks for Scorekeep before choosing one.
+**Game jam rule 4**: post your updates online weekly, including specs, and prompts if used.
+
+**Repos carry their plans**, bug lists, and decision logs in the open.
+
+**Don't hide your tooling**. Working with AI is part of the work, so the prompts and CLAUDE.md files get shown too.
+
+Research is showing the work before it's finished. I try several, compare honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one, notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and four looks for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command that let to something I really like.
 
 Showing the work keeps me accountable. The game jam's weekly posts meant there was always something to show, so I kept shipping.
 
 ## Teach by writing it down
 
-I like to say that *"I love to teach, I think."* Sometimes I'm uncertain, because I'm also impatient, and it's easy to forget how I got to understanding something. You need to remember your path to describe a path to people learning, and those darned paths change with each generation of tools and humans. But I do like to teach, I think.
+Text is fundamental to teaching and learning, too. I love to learn, and I love to teach (I think).
+
+When I say that *"I love to teach, I think,"* it's because I'm not always certain of that fact. I'm occasionally impatient, and it's easy to forget how I got to understanding something. You need to remember your path to describe a path to people learning, and those darned paths change with each generation of tools and humans. But I do like to teach, I think.
 
 I remember helping a number of people learn SQL. SQL is a powerfully dense and obscure language for asking questions about structured data. It's incredibly efficient when used properly, which requires some math-y thinking, some background, and a bunch of experience. I've always struggled to teach this to beginners. I suspect I've never thought deeply about, or developed a clear plan for, teaching them. Teaching it live, I'd forgotten my own path; writing it down is how I find it again.
 
@@ -126,7 +134,7 @@ rsync
 Dreamhost
 ```
 
-- The site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose: if you want to respond, write something of your own.
+My blog site [has no comments](/pages/about-warpedvisions-dot-org/), on purpose, too. I encourage people to respond by writigng something of their own. This of course makes the bar higher and prevents a lot of silliness. 
 
 I built a few versions of Blosxom myself, too, once it was no longer maintained. My versions were pale imitations of it, but then I found [*Hugo*](https://gohugo.io/). Hugo is fast. It lives on Markdown. It extends and themes easily, and it was so much better than *WordPress*.
 
@@ -137,6 +145,8 @@ I learned this again on [Write.as](https://write.as). In 2022 I [moved the site 
 ## Make it fun
 
 From my game-making principles: be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.
+
+I learned a bit about fun this summer:
 
 - [The summer game jam](https://github.com/robotpony/game-jams): four weeks [rebuilding games](/blog/2025/the-feels-of-nostalgia-can-drive-great-design/) I played and wrote between 1980 and 1985, on [PICO-8](/blog/2022/playing-with-the-pico-8-fantasy-console/), Picotron, TIC-80, and pygame.
 - [Retro desktop demos](https://github.com/robotpony/retro-demos), LED displays, a CD player nobody needs.
