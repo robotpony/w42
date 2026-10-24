@@ -13,32 +13,47 @@ description: What I believe about text, teaching, and making things, and what th
 ---
 My first real computer was an Atari 600XL. I usually tell people it was an 800, so I don't have to explain the difference between models. With the 600XL I got a whopping 16 KB of RAM, a Centipede cartridge, and a previous-generation Atari 410 tape drive.
 
-That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality ones I could afford at 10 years old, always purchased in 10-packs at Radio Shack. The most devastating loss was when the drive munched on my last copy of a horizontal scroller I'd written, along with every sprite I'd drawn for it. From those experiences, I learned to save each program I wrote several times, on multiple tapes when I had spares. It was never enough.
+That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality cassettes that a 10 year old boy could afford, always purchased in 10-packs at Radio Shack. The most devastating loss was when the drive destroyed my last copy of a horizontal scroller I'd written, along with every sprite I'd drawn for it. From those experiences, I learned to save each program I wrote several times, on multiple tapes when I had spares. It was never enough.
 
 I also learned to write designs in a notebook and sketch interfaces in detail. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
 
-That notebook survived when the tape didn't, and I'm still writing things down to this day.
+That notebook survived when the tape didn't, and I'm still writing things down to this day. Unfortunately my notebooks haven't survived the 40 years since, but the way of thinking has always stuck with me.
 
 ## Searching for my spark
 
-I revived WarpedVisions again this fall. It's been my weblog since 1996 or so, when it was more of a link log. That was a couple of years before Kottke started his, but he did the link thing better than I did. So Warped became a place for me to collect essays and HOWTOs. The site has lived on Dreamhost all along, apart from a few stints on hosted blog tools. But this post isn't about that; it's about rediscovering who I am.
+That boy had a spark that has haunted me all of my life. It's great when it's there, but its frustrating and painful when it's not. It was dimmer than normal this summer, so took some time off and enjoyed the mild weather, long walks, exploring the local beaches, and a lengthy Pacific ocean vacation. And I found that spark again by remembering where I started. 
+
+I'm writing again, which is one of the signs that I'm excited about what I'm doing. I've rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. And it's great to find that spark again, I just had to remember who I am.
 
 And who am I?
 
-1. I'm a writer, and I love words and text.
-2. I make software.
-3. I tinker. I make art, I cook, and I make music.
-4. And I teach.
+1. *I'm a writer. I love words and text.*
+2. *I make software.*
+3. *I tinker. I make art, I cook, and I make music.*
+4. *And I teach.*
 
-I looked back at what I've built this year: [a cookbook](https://bruce-loves-to-cook.ca/), a [TODO tool](https://space-command.ca), a [scorekeeping app](https://scorekeep.warpedvisions.org), a pile of Obsidian plugins, a summer game jam, a weather tool, a text adventure engine, and a bunch of small tools and curios. Different shapes, all with the same handful of beliefs under them. This is my attempt to write the principles down, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down, because machines forget, and so do I.
+I looked back at what I've built this year: 
+- [an online cookbook](https://bruce-loves-to-cook.ca/) and [tools for making cookbooks](https://github.com/robotpony/hugo-theme-fugu) using Markdown and Hugo, 
+- a nerdy, texty [TODO tool](https://space-command.ca), 
+- a minimalist [scorekeeping app](https://scorekeep.warpedvisions.org) for scoring games played in real life, 
+- a pile of Obsidian plugins,
+- a summer [game jam](https://github.com/robotpony/game-jams) of [several fun little games](https://jams.warpedvisions.org), 
+- a command-line [weather tool](https://github.com/robotpony/dailyweather), 
+- an RFC for the obscure GEDCOM format (genealogy files) and some [terminal tools](https://github.com/robotpony/ftree),
+- started (again) on a texty [text adventure engine](https://github.com/robotpony/thwarter), 
+- and a bunch of other [small](https://github.com/robotpony/peep) tools and curios. 
+
+These projects all had different shapes but were all stitched together with the same handful of beliefs. Between doing and reflecting I remembered who I am. This is my attempt to capture some of the principles I found, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down and thinking about them, because machines forget, and so do I.
 
 ## Plain text is the foundation
 
-Almost everything I make starts, and ends up, as Markdown. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
+Almost everything I make starts, and ends up, as Markdown these days. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
 
-**Text reads naturally**. My not-a-chef project (now [♥︎ Bruce loves to cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development, which moved from paper to Google Docs to Hugo and Markdown. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text. The rule that drove the work:
+**Text reads naturally**. My not-a-chef project (now [♥︎ Bruce loves to cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development, which moved from paper to Google Docs to Hugo and Markdown. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text. 
 
-> *A recipe should look natural in any text editor.*
+The rule that drove the cookbook project was simple:
+
+> *A recipe should look **natural** in any text editor.*
 
 For example, here's part of my [simple gravy](https://bruce-loves-to-cook.ca/recipes/simple-chicken-pork-and-beef-gravy/) recipe, as text and as the site shows it:
 
@@ -70,7 +85,7 @@ bar: yes
 {{< /tab >}}
 {{< /tabs >}}
 
-Pages must read well as plain text. They must also render in Obsidian and Hugo, and still be [parseable by tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). Text is fast and easy, and it gets out of my way.
+Pages must read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). Text is fast and easy, and it gets out of my way.
 
 **Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
@@ -103,14 +118,15 @@ Pages must read well as plain text. They must also render in Obsidian and Hugo, 
 
 That's the whole format. Every checkbox in a `PLAN.md` is already a task, so it needs no tag, and `#focus` marks the chapter I'm on now. In any other note, a `#todo` at the end of a line does the same job. It reads fine in `vim`, VS Code, Obsidian, and even renders well on GitHub. Space Command slurps up all of those tasks and folds my finished work away so only what's left shows, `#focus` tag and all.
 
-## Text is part of my history
+## Text is a key part of my history
 
-
-My love of text started a long time ago, but the real inspiration was [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, rewired how I built things. So did the idea that text is universal, and can be *piped* from tool to tool.
+My love of text started a long time ago, but the real inspiration started with [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan). Around that time I read Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy), which cemented the principles. I was already working in text, but these set the foundation in my mind. The idea that text could define everything, including raw design thinking, rewired how I built things. So did the idea that text is universal, and can be *piped* from tool to tool.
 
 I even took the time to get comfortable in `vim`, something I've never regretted. It looked dated then and still does, but it leans on what text does well. I learned to stack piped commands and to write scripts in Perl, Python, `sed`, and Ruby.
 
-Then came [Blosxom](http://www.blosxom.com/), the first blogging tool I loved, because it kept posts as files I could search and script. Gruber first released *Markdown* in 2004 as a plugin for it and Movable Type. I built a few pale imitations of Blosxom after it went unmaintained. Warped ran on WordPress for years after that; I'd used it since its early days. I was always fighting its web UI, which I couldn't `grep` or see locally, until I remembered [*Hugo*](https://gohugo.io/). Apart from one more detour, it's been home since.
+I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones were all based in text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
+
+One highlight was [Blosxom](http://www.blosxom.com/), the first blogging that kept posts as simple files I could search and script. Gruber first released *Markdown* in 2004 as a plugin for it and Movable Type. I built a few pale imitations of Blosxom after it went unmaintained. Then Warped ran on WordPress for years after that; as I had used it for client work since its early days. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, it's been home since.
 
 Enter the new world of LLMs. Text is king again. LLMs read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text.
 
@@ -153,8 +169,6 @@ Rebuild
 caption: Both machines forget; the notes don't
 ```
 
-*I've written more about [the fight for clarity and beauty in writing](/blog/2015/the-fight-for-clarity-and-beauty-in-writing/) and about [how a tireless robot editor rekindled my love of writing](/blog/2025/how-i-rekindled-my-love-of-writing-with-a-tireless-robot-editor/). The whole tape drive story is on my [working with me](/pages/working-with-me-bruce-alderson/) page.*
-
 ## Unfinished work is worth showing
 
 The usual way to write a cookbook is to hide the work. Being me, I'd rather not hide the design and development of recipes. The bruce-loves-to-cook recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. A recipe is closer to source code than scripture: it has versions, bugs, and fixes.
@@ -169,15 +183,17 @@ This idea falls out of how we build software:
 
 When an agent needs a decision from me, it copies its questions to the clipboard as plain text, numbered, with the answers it expects. Space Command's Clipboard tab picks them up:
 
-{{< tabs layout="stack" >}}
+{{< tabs layout="side" >}}
 {{< tab "Text" >}}
 ```text
 ␣⌘ Questions · commander · 2026-10-23 · in warped-space-command
 
-7. With the panel closed, should a copy go to the place last in view, 
-   or to All copies only? (A) last in view (B) All copies only
-8. Should Space Command for Obsidian tag its copies with the note's 
-   folder, so they file under the right project? Yes or no.
+7. With the panel closed, should a copy go to
+   the place last in view, or to All copies
+   only? (A) last in view (B) All copies only
+8. Should Space Command for Obsidian tag its
+   copies with the note's folder, so they file
+   under the right project? Yes or no.
 ```
 {{< /tab >}}
 {{< tab "In Space Command" >}}
@@ -192,6 +208,8 @@ Showing the work keeps me accountable. The game jam's weekly posts meant there w
 I have a theory that good practices are always good practices, so writing things down, being transparent, and publishing regularly fit together. The reverse holds too: a lot of the ways people use LLMs fail that test. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The test makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
 ## Teaching starts with writing
+
+Everything I've learned started with reading. Computin
 
 Text is fundamental to teaching. It's core to learning, too.
 
