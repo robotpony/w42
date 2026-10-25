@@ -4,6 +4,7 @@ Site, setup, and theme review (started 2026-10-15, Hugo v0.166.0). Open items fi
 ## Open
 
 - [ ] **Review banner image options** (`tools/IMAGES.md`): `tools/banner.sh` generates banners with OpenAI but needs an API key. A local option (ComfyUI with SDXL, or Draw Things) is written up with three open decisions. #todo
+- [ ] **Essay idea: the LLM filter cuts both ways** (from the manifesto draft, 2026-10-25). "If it isn't good practice without an LLM, it isn't good practice with one" also cuts the other way: a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest of them: no design written down, nothing to check the result against, and nothing to rebuild from. #idea
 - [ ] **Bring back "carved" on the About page**: it linked the retired warpedvisionsdotorg Instagram, so it's out of the "things I've" list for now. Return it when the carvings have a home (a projects page, a gallery, or posts), linked between "worked on" and "drawn".
 - [x] **Turn off `debug: true` in the CDN `warped.js`** (warped.js ad1ba82, deployed 2026-10-22 by the warped.js agent, which now owns that repo). The same deploy self-hosted the fonts; w42 serves them from the `cdn/` submodule in preview, and the theme (eccbda1) dropped Google Fonts.
 - [ ] **Drafts with `date: ""`**: `content/blog/2026/boring-is-where-ai-earns-its-keep.md` and others. They no longer reach production, but they sort oddly in preview and fail `/lint`. Give them dates when they're scheduled.
