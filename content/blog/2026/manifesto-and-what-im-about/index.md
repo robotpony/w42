@@ -93,7 +93,7 @@ bar: yes
 
 Pages read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/).
 
-**Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
+**Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely. Here's a sample plan, modelled on the one for my cookbook:
 
 {{< tabs layout="side" >}}
 {{< tab "Text" >}}
@@ -133,7 +133,7 @@ These cemented the principles I was already discovering. Seeing others use text 
 
 Text is more than just programming, too. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based in text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
 
-I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool that kept posts as simple files. John Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type. I moved Warped to WordPress for years after that, as I'd used it for client work. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
+I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool that kept posts as simple files. John Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type, and I started writing my posts in it. I moved Warped to WordPress for years after that, as I'd used it for client work. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
 
 Enter the world of LLMs, or, as I like to call them, BFLMs. Text is king again. LLM agents read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text.
 
