@@ -18,13 +18,13 @@ My first real computer was an Atari 600XL. I usually tell people it was an 800, 
 
 That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality cassettes that a 10-year-old boy could afford, always purchased in 10-packs at Radio Shack. The most devastating loss was when the drive destroyed my last copy of a horizontal scroller I'd written, along with every sprite I'd drawn for it. From those experiences, I learned to save each program I wrote several times, on multiple tapes when I had spares. It was never enough.
 
-I also learned to write designs in a notebook and sketch interfaces in detail. I even sketched fonts and sprites, calculated down to the bit level, so I could encode them in the bytes the machine expected.
+I also learned to write designs in a notebook and sketch interfaces in detail. I even sketched fonts and sprites and worked them out down to the bit level, so I could encode them in the bytes the machine expected.
 
 That notebook survived when the tape didn't, and I'm still writing things down to this day. Thinking a design through by writing it down has stuck with me ever since.
 
 ## Searching for my spark
 
-That boy had a fire in him that has driven me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame had grown dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again by reflecting, and by remembering where I started.
+That boy had a fire in him that has driven me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame was dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again by reflecting, and by remembering where I started.
 
 I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. It's great to find that inspiration again; I just had to remember who I am.
 
@@ -81,7 +81,7 @@ bar: yes
 {{< /tab >}}
 {{< /tabs >}}
 
-Pages read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](https://bruce-loves-to-cook.ca/).
+Recipes read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](https://bruce-loves-to-cook.ca/).
 
 **Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
@@ -146,7 +146,7 @@ Enter the world of LLMs. Text is king again. AI agents read and write plain text
 
 ### Writing is how I think
 
-For that boy, saving extra copies helped. Well, some of the time at least. A chewed tape could be cut and reattached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of those games, as well as tools, and curios, all of them lost to time.
+For that boy, saving extra copies helped. Well, some of the time at least. A chewed tape could be cut and reattached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of those games, as well as tools and curios, all of them lost to time.
 
 Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write out the design, and I always mock up user and programmatic interfaces.
 
@@ -170,13 +170,13 @@ caption: Both machines forget; the notes don't
 
 These days most of the software I make is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
 
-I use these tools from the terminal, piping them into other small tools, or called from an agent, which continues to process them with simple text tools. The point is that they're small and contained, with simple inputs, a clear invocation, and clear outputs.
+I run these tools from the terminal and pipe them into other small tools, or an agent calls them and works on the output with more simple text tools. The point is that they're small and contained, with simple inputs, a clear invocation, and clear outputs.
 
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
 ### Unfinished work is worth showing
 
-Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I choose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I chose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
 Showing the work keeps me accountable, and it's useful for teaching. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
