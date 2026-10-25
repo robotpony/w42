@@ -18,7 +18,7 @@ My first real computer was an Atari 600XL. I usually tell people it was an 800, 
 
 That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality cassettes that a 10-year-old boy could afford, always purchased in 10-packs at Radio Shack. The most devastating loss was when the drive destroyed my last copy of a horizontal scroller I'd written, along with every sprite I'd drawn for it. From those experiences, I learned to save each program I wrote several times, on multiple tapes when I had spares. It was never enough.
 
-I also learned to write designs in a notebook and sketch interfaces in detail. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
+I also learned to write designs in a notebook and sketch interfaces in detail. I even sketched fonts and sprites, calculated down to the bit level, so I could encode them in the bytes the machine expected.
 
 That notebook survived when the tape didn't, and I'm still writing things down to this day. Thinking a design through by writing it down has stuck with me ever since.
 
@@ -32,7 +32,7 @@ And who am I?
 
 1. *I'm a writer. I love words and text.*
 2. *I make software.*
-3. *I make art, I cook, I make music.*
+3. *I tinker with art, food, and music.*
 4. *And I teach.*
 
 In my time off, I tinkered and built things. Looking back, I found some clear patterns. Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of threads: writing, publishing, and terminal tools, each driven and defined by text. Finding something I'd lost, something core to who I am, was what I needed. I feel excited again.
@@ -146,7 +146,7 @@ Enter the world of LLMs. Text is king again. AI agents read and write plain text
 
 ### Writing is how I think
 
-For that boy, saving extra copies helped. Well, some of the time at least. A chewed tape could be cut and reattached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of games, tools, and curios, all of them lost to time.
+For that boy, saving extra copies helped. Well, some of the time at least. A chewed tape could be cut and reattached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of those games, as well as tools, and curios, all of them lost to time.
 
 Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write out the design, and I always mock up user and programmatic interfaces.
 
@@ -170,13 +170,13 @@ caption: Both machines forget; the notes don't
 
 These days most of the software I make is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
 
-I use these tools from the terminal, piping them into other small tools, or an agent calls them. The point is that they're small and contained, with simple inputs, a clear invocation, and clear outputs.
+I use these tools from the terminal, piping them into other small tools, or called from an agent, which continues to process them with simple text tools. The point is that they're small and contained, with simple inputs, a clear invocation, and clear outputs.
 
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
 ### Unfinished work is worth showing
 
-Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I choose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
 Showing the work keeps me accountable, and it's useful for teaching. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
