@@ -24,7 +24,7 @@ That notebook survived when the tape didn't, and I'm still writing things down t
 
 ## Searching for my spark
 
-That boy had a fire in him that has driven me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame had grown dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again, with some reflection and by remembering where I started.
+That boy had a fire in him that has driven me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame had grown dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again by reflecting, and by remembering where I started.
 
 I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. It's great to find that inspiration again; I just had to remember who I am.
 
@@ -35,7 +35,7 @@ And who am I?
 3. *I tinker. I make art, I cook, I make music.*
 4. *And I teach.*
 
-In my time off, I tinkered and built things. Looking back, I found some clear patterns. Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of threads: writing, publishing, and terminal tools, each driven and defined by text. That feeling of finding something that was lost, something core to who you are was needed. I feel excited again.
+In my time off, I tinkered and built things. Looking back, I found some clear patterns. Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of threads: writing, publishing, and terminal tools, each driven and defined by text. Finding something I'd lost, something core to who I am, was what I needed. I feel excited again.
 
 This is my attempt to capture some of the principles I found, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down and thinking about them, because machines forget, and so do I.
 
@@ -85,7 +85,7 @@ Pages read well as plain text. They also need to work well in Obsidian and Hugo,
 
 **Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
-Here's a mock sample plan, modelled on how I developed that cookbook:
+Here's a sample plan, modelled on how I developed that cookbook:
 
 {{< tabs layout="side" >}}
 {{< tab "Text" >}}
@@ -123,7 +123,7 @@ My love of text started a long time ago, but two things stand out:
 
 These cemented the principles I was already discovering. Seeing others use text to define everything, including raw design thinking, rewired how I built things. So did the idea that text is universal, and can be *piped* from tool to tool.
 
-Text is reaches past programming, too. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based in plain text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
+Text reaches past programming, too. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based on plain text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
 
 I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool I used that kept posts as simple files. John Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type, and I started writing my posts in it. After that, I ran Warped on WordPress for years, since I'd used it for client work. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
 
@@ -168,21 +168,21 @@ caption: Both machines forget; the notes don't
 
 ### Small tools speak text
 
-These days most of it is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
+These days most of the software I make is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
 
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
 ### Unfinished work is worth showing
 
-Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual pad for keeping score for card and dice games, before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
 Showing the work keeps me accountable, and it's useful for teaching. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
 Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to replace a lot of what designers, artists, and typesetters used to do by hand.
 
-Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided that I would rather not hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
+Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided not to hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
-I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs fail that test. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The test makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
+I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The principle makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
 ## I tinker
 
@@ -208,9 +208,9 @@ I like to say that *"I like to teach, I think,"* because I'm not always certain 
 
 I remember helping a number of people learn SQL. SQL is a dense, terse language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some knowledge of history, and a bunch of experience. I've always struggled to teach SQL to beginners, and JOINs were the hardest part.
 
-When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. Whenever I've taught it live, I'd forget; writing it down is how I found it again. And writing things down is how I found myself again, too.
+When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. Whenever I taught it live, I'd forget my own path; writing it down is how I found it again. And writing things down is how I found myself again, too.
 
-Now my approach to teaching is to write first. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
+Now my approach to teaching is to write first. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and fixing them where they fall short. And they will.
 
 ### Methods are key
 
