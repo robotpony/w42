@@ -184,8 +184,6 @@ I run these tools from the terminal and pipe them into other small tools, or an 
 
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
-### Good practice doesn't change with the tools
-
 I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together, and that makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
 ## I tinker
