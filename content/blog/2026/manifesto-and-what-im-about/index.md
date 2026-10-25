@@ -20,32 +20,22 @@ That tape drive was the bane of my childhood. It ate tapes, the sort of low-qual
 
 I also learned to write designs in a notebook and sketch interfaces in detail. I even sketched fonts and sprites down to the bit level, so I could encode them in the bytes the machine expected.
 
-That notebook survived when the tape didn't, and I'm still writing things down to this day. And thinking a design through by writing it down has stuck with me ever since.
-
-<!-- #todo And: "And thinking a design through…" (fold into the previous sentence, or cut "And"). -->
+That notebook survived when the tape didn't, and I'm still writing things down to this day. Thinking a design through by writing it down has stuck with me ever since.
 
 ## Searching for my spark
 
-That boy had a fire in him that has haunted me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Sometime in the last few years, that flame was dimmer than it's ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. And I found that spark again, all by remembering where I started.
+That boy had a fire in him that has driven me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame had grown dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again, with some reflection and by remembering where I started.
 
-<!-- #todo Grammar: a fire doesn't haunt ("a fire in him that has followed me all my life"); "that flame was dimmer than it's ever been" → "had grown dimmer than it had ever been"; cut "all" from "all by remembering". And: "And I found that spark again" (cut "And", or keep it for the turn). -->
-
-I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. And it's great to find that inspiration again; I just had to remember who I am.
-
-<!-- #todo And: "And it's great to find that inspiration again" (cut "And"). -->
+I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. It's great to find that inspiration again; I just had to remember who I am.
 
 And who am I?
-
-<!-- #todo And: "And who am I?" (keep it as a beat, or "So who am I?"). -->
 
 1. *I'm a writer. I love words and text.*
 2. *I make software.*
 3. *I tinker. I make art, I cook, I make music.*
 4. *And I teach.*
 
-In my time off, I tinkered and built things. Looking back, I found some clear patterns. Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of threads: writing, publishing, and terminal tools, each driven and defined by text. And in this exploration, I felt that feeling again. *I was excited.*
-
-<!-- #todo And: "And in this exploration, I felt that feeling again" (cut "And in this exploration,"). -->
+In my time off, I tinkered and built things. Looking back, I found some clear patterns. Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of threads: writing, publishing, and terminal tools, each driven and defined by text. That feeling of finding something that was lost, something core to who you are was needed. I feel excited again.
 
 This is my attempt to capture some of the principles I found, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down and thinking about them, because machines forget, and so do I.
 
@@ -53,9 +43,7 @@ This is my attempt to capture some of the principles I found, mostly so I can ch
 
 ### Plain text is the foundation
 
-Almost everything I make starts, and ends up, as Markdown these days. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
-
-<!-- #todo Grammar: make the list parallel: "it needs no API, no auth, and no SDK." -->
+Almost everything I make starts, and ends up, as Markdown these days. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it needs no API, no auth, and no SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
 
 **Text reads naturally**. Building my cookbook ([Bruce loves to cook](https://bruce-loves-to-cook.ca/)) changed how I develop recipes. They moved from paper to Google Docs to Hugo and Markdown, and the site now builds a well-shaped recipe book, including diagrams drawn from plain ASCII text.
 
@@ -135,9 +123,7 @@ My love of text started a long time ago, but two things stand out:
 
 These cemented the principles I was already discovering. Seeing others use text to define everything, including raw design thinking, rewired how I built things. So did the idea that text is universal, and can be *piped* from tool to tool.
 
-Text is more than just programming. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based in plain text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
-
-<!-- #todo Grammar: "Text is more than just programming" reads oddly; try "Text reaches past programming, too." And: "And the durable ones" (cut "And": "The durable ones, the really durable ones…"). -->
+Text is reaches past programming, too. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based in plain text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
 
 I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool I used that kept posts as simple files. John Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type, and I started writing my posts in it. After that, I ran Warped on WordPress for years, since I'd used it for client work. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
 
@@ -182,17 +168,13 @@ caption: Both machines forget; the notes don't
 
 ### Small tools speak text
 
-I create software, and these days most of it is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
-
-<!-- #todo Grammar: "I create software" repeats the heading; start with "These days most of what I make is small." -->
+These days most of it is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
 
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
 ### Unfinished work is worth showing
 
-Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a scorekeeping pad for real-world games based on keeping score on paper, before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
-
-<!-- #todo Grammar: "scorekeeping pad … based on keeping score on paper" says score twice; try "a scorekeeping app for tabletop games, modelled on a paper score pad". And: "And the 50+ mocks" (cut "And", or join with "and" to the Scorekeep sentence). -->
+Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual pad for keeping score for card and dice games, before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
 Showing the work keeps me accountable, and it's useful for teaching. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
@@ -200,9 +182,7 @@ Text can be useful to normal people too. It can drive publishing and teaching to
 
 Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided that I would rather not hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
-I have a theory that good practice doesn't change with the tools, so writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs fail that test. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The test makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
-
-<!-- #todo Grammar: "so" doesn't follow (try "I have a theory that good practice doesn't change with the tools. Writing things down, working in the open, and publishing regularly were good practice on paper, and they still are."); "fail that test" points at a test not yet stated, so move the filter line up or say "don't hold up". -->
+I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs fail that test. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The test makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
 ## I tinker
 
@@ -212,9 +192,7 @@ From my game-making principles: *be emotive, be funny, be fun. Lean into constra
 
 I wrote a tiny space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-style shooter where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to play in code like that. What made it work was keeping playtesting and engineering logs, and reflecting on them regularly.
 
-Play is how I find what's fun; craft is how I get it to fit. I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen you know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where you stop thinking about the tools and think about the food. It's an instrument that becomes part of your fingers. And it's where I do my best work.
-
-<!-- #todo And: "And it's where I do my best work" (keep it to close the run of "It's", or cut "And"). -->
+Play is how I find what's fun; craft is how I get it to fit. I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen you know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where you stop thinking about the tools and think about the food. It's an instrument that becomes part of your fingers. And that is where I do my best work.
 
 We become who we are inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a game tuned one playtest at a time, a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
 
@@ -222,9 +200,7 @@ We become who we are inch by inch, failure by failure, and craft works the same 
 
 ### Teaching starts with writing
 
-Most of the things I've learned started with reading. Personal computing was still newish for my generation, and I learned about it through magazines and textbooks. I read everything I could, even if I didn't have the history or math to understand it. And it's still the first place I go to learn about something.
-
-<!-- #todo And: "And it's still the first place I go" (cut "And": "Reading is still…"). -->
+Most of the things I've learned started with reading. Personal computing was still newish for my generation, and I learned about it through magazines and textbooks. I read everything I could, even if I didn't have the history or math to understand it. Reading is still the first place I go to learn about something.
 
 Text is core to learning, and it's a fundamental part of teaching.
 
@@ -232,13 +208,9 @@ I like to say that *"I like to teach, I think,"* because I'm not always certain 
 
 I remember helping a number of people learn SQL. SQL is a dense, terse language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some knowledge of history, and a bunch of experience. I've always struggled to teach SQL to beginners, and JOINs were the hardest part.
 
-When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. When I tried to teach it live, I'd forget my own path; writing it down is how I found it again. And writing things down is how I found myself again, too.
-
-<!-- #todo Grammar: "When I tried to teach it live, I'd forget" → "Whenever I taught it live, I'd forget". And: "And writing things down is how I found myself again" (keep: it's the emotional beat). -->
+When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. Whenever I've taught it live, I'd forget; writing it down is how I found it again. And writing things down is how I found myself again, too.
 
 Now my approach to teaching is to write first. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
-
-<!-- #todo And: "And they will." (keep: the punchline). -->
 
 ### Methods are key
 
