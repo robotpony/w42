@@ -26,6 +26,8 @@ That notebook survived when the tape didn't, and I'm still writing things down t
 
 That boy had a fire in him that has haunted me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Sometime in the last few years, that flame was dimmer than it's ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. And I found that spark again, all by remembering where I started.
 
+<!-- #todo Grammar: a fire doesn't haunt ("a fire in him that has followed me all my life"); "that flame was dimmer than it's ever been" → "had grown dimmer than it had ever been"; cut "all" from "all by remembering". -->
+
 I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. And it's great to find that inspiration again; I just had to remember who I am.
 
 And who am I?
@@ -44,6 +46,8 @@ This is my attempt to capture some of the principles I found, mostly so I can ch
 ### Plain text is the foundation
 
 Almost everything I make starts, and ends up, as Markdown these days. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
+
+<!-- #todo Grammar: make the list parallel: "it needs no API, no auth, and no SDK." -->
 
 **Text reads naturally**. Building my cookbook ([Bruce loves to cook](https://bruce-loves-to-cook.ca/)) changed how I develop recipes. They moved from paper to Google Docs to Hugo and Markdown, and the site now builds a well-shaped recipe book, including diagrams drawn from plain ASCII text.
 
@@ -125,6 +129,8 @@ These cemented the principles I was already discovering. Seeing others use text 
 
 Text is more than just programming. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based in plain text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
 
+<!-- #todo Grammar: "Text is more than just programming" reads oddly; try "Text reaches past programming, too." -->
+
 I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool I used that kept posts as simple files. John Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type, and I started writing my posts in it. After that, I ran Warped on WordPress for years, since I'd used it for client work. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
 
 Enter the world of LLMs. Text is king again. AI agents read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text.
@@ -166,13 +172,19 @@ caption: Both machines forget; the notes don't
 
 ## I make software
 
+### Small tools speak text
+
 I create software, and these days most of it is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
+
+<!-- #todo Grammar: "I create software" repeats the heading; start with "These days most of what I make is small." -->
 
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
 ### Unfinished work is worth showing
 
 Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a scorekeeping pad for real-world games based on keeping score on paper, before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+
+<!-- #todo Grammar: "scorekeeping pad … based on keeping score on paper" says score twice; try "a scorekeeping app for tabletop games, modelled on a paper score pad". -->
 
 Showing the work keeps me accountable, and it's useful for teaching. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
@@ -181,6 +193,8 @@ Text can be useful to normal people too. It can drive publishing and teaching to
 Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided that I would rather not hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
 I have a theory that good practice doesn't change with the tools, so writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs fail that test. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The test makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
+
+<!-- #todo Grammar: "so" doesn't follow (try "I have a theory that good practice doesn't change with the tools. Writing things down, working in the open, and publishing regularly were good practice on paper, and they still are."); "fail that test" points at a test not yet stated, so move the filter line up or say "don't hold up". -->
 
 ## I tinker
 
@@ -207,6 +221,8 @@ I like to say that *"I like to teach, I think,"* because I'm not always certain 
 I remember helping a number of people learn SQL. SQL is a dense, terse language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some knowledge of history, and a bunch of experience. I've always struggled to teach SQL to beginners, and JOINs were the hardest part.
 
 When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. When I tried to teach it live, I'd forget my own path; writing it down is how I found it again. And writing things down is how I found myself again, too.
+
+<!-- #todo Grammar: "When I tried to teach it live, I'd forget" → "Whenever I taught it live, I'd forget". -->
 
 Now my approach to teaching is to write first. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
 
