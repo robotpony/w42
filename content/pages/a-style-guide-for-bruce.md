@@ -260,6 +260,8 @@ This dramatic negation pattern is pure AI: "It's not just about efficiency. It's
 
 **Fix:** State what something *is* without the theatrical setup. If you need contrast, use it sparingly and make it meaningful.
 
+**For human writers:** it's a tell because AI uses it without support, contrasting against something nobody said. When you choose it for effect and the contrast is real, it's fine. Treat this as a suggestion to consider, not a hard rule.
+
 ### 3. Stop relying on transition crutches
 
 AI leans heavily on a small set of transitions: "However," "Moreover," "On the other hand," "Furthermore," "In addition." Using these occasionally is fine; leading every third paragraph with them is a tell.
@@ -271,6 +273,8 @@ AI leans heavily on a small set of transitions: "However," "Moreover," "On the o
 Listing things in threes consistently ("quality, reliability, and innovation" / "fast, efficient, and scalable") makes prose predictable. It's good rhetoric used sparingly, but AI overuses it.
 
 **Fix:** Vary your list lengths. Sometimes two items. Sometimes four. Break the pattern.
+
+**For human writers:** AI reaches for three by reflex, padding lists the content doesn't support. A triple you chose, where each item earns its place, is fine. Treat this as a suggestion to consider, not a hard rule.
 
 ### 5. Eliminate vague intensifiers and filler phrases
 
