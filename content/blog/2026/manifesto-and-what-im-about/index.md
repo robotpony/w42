@@ -164,6 +164,16 @@ Rebuild
 caption: Both machines forget; the notes don't
 ```
 
+### Unfinished work is worth showing
+
+Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), my terminal forecast tool, and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I chose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+
+Showing the work keeps me accountable, and it's useful for teaching. Weekly devlogs meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
+
+Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to replace a lot of what designers, artists, and typesetters used to do by hand.
+
+Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided not to hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
+
 ## I make software
 
 ### Small tools speak text
@@ -174,19 +184,11 @@ I run these tools from the terminal and pipe them into other small tools, or an 
 
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
-### Unfinished work is worth showing
+### Good practice doesn't change with the tools
 
-Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I chose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest of them. There's no design written down, nothing to check the result against, and nothing to rebuild from.
 
-Showing the work keeps me accountable, and it's useful for teaching. Weekly devlogs meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
-
-Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to replace a lot of what designers, artists, and typesetters used to do by hand.
-
-Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided not to hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
-
-I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The principle makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
-
-<!-- #todo Question: give the filter ("if it isn't good practice without an LLM…") its own H3 under "I make software", and move "Unfinished work is worth showing" to "I'm a writer"? (A) yes, restructure (Recommended: your sharpest idea gets a heading and the software section stops wandering), or (B) keep the current order? -->
+The principle makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
 ## I tinker
 
