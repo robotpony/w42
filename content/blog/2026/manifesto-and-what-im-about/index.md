@@ -21,7 +21,7 @@ That notebook survived when the tape didn't, and I'm still writing things down t
 
 ## Searching for my spark
 
-That boy had a spark that has haunted me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Sometime in the last few years my spark was dimmer than its ever been, so I took some time off to enjoy the beautiful weather, long walks, exploring the local beaches, and a lengthy Pacific Ocean vacation. And I found that spark again, all by remembering where I started. 
+That boy had a spark that has haunted me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Sometime in the last few years my spark was dimmer than it's ever been, so I took some time off to enjoy the beautiful weather, long walks, the local beaches, and a lengthy Pacific Ocean vacation. And I found that spark again, all by remembering where I started.
 
 I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. And it's great to find that spark again; I just had to remember who I am.
 
@@ -32,19 +32,19 @@ And who am I?
 3. *I tinker. I make art, I cook, and I make music.*
 4. *And I teach.*
 
-I took the time to tinker and build again, and looking back on what I've built I found some clear patterns. I built several things this summer:
+I took the time to tinker and build again, and looking back, I found some clear patterns. This summer I made:
 
-- [an online cookbook](https://bruce-loves-to-cook.ca/) and (being me) [tools for making cookbooks](https://github.com/robotpony/hugo-theme-fugu) in Markdown and Hugo, 
-- a nerdy, text [TODO tool](https://space-command.ca), 
-- a minimalist [scorekeeping app](https://scorekeep.warpedvisions.org) for scoring games played in real life, 
+- [an online cookbook](https://bruce-loves-to-cook.ca/) and (being me) [tools for making cookbooks](https://github.com/robotpony/hugo-theme-fugu) in Markdown and Hugo,
+- a nerdy, text [TODO tool](https://space-command.ca),
+- a minimalist [scorekeeping app](https://scorekeep.warpedvisions.org) for scoring games played in real life,
 - a pile of Obsidian plugins (that I've since deprecated),
-- a series of [tiny games](https://jams.warpedvisions.org) in a summer [game jam](https://github.com/robotpony/game-jams) 
-- a command-line [weather tool](https://github.com/robotpony/dailyweather), 
+- a series of [tiny games](https://jams.warpedvisions.org) in a summer [game jam](https://github.com/robotpony/game-jams),
+- a command-line [weather tool](https://github.com/robotpony/dailyweather),
 - some [terminal tools](https://github.com/robotpony/ftree) for genealogy files (GEDCOM),
-- a texty [text adventure engine](https://github.com/robotpony/thwarter), 
-- and a bunch of other [small](https://github.com/robotpony/peep) tools and curios. 
+- a texty [text adventure engine](https://github.com/robotpony/thwarter),
+- and a bunch of other [small](https://github.com/robotpony/peep) tools and curios.
 
-Each project served its own purpuse and had its own shape, but were all stitched together with the same handful of beliefs; writing, publishing, terminal tools, each driven and defined by text. And in this exploration, I felt that feeling again. I was excited.
+Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of beliefs; writing, publishing, terminal tools, each driven and defined by text. And in this exploration, I felt that feeling again. I was excited.
 
 This is my attempt to capture some of the principles I found, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down and thinking about them, because machines forget, and so do I.
 
@@ -52,7 +52,7 @@ This is my attempt to capture some of the principles I found, mostly so I can ch
 
 Almost everything I make starts, and ends up, as Markdown these days. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
 
-**Text reads naturally**. My not-a-chef project (now [♥︎ Bruce loves to cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development, which moved from paper to Google Docs to Hugo and Markdown. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text. 
+**Text reads naturally**. My not-a-chef project (now [♥︎ Bruce loves to cook](https://bruce-loves-to-cook.ca/)) transformed my cookbook and recipe development, which moved from paper to Google Docs to Hugo and Markdown. It builds a well-shaped recipe book, including diagrams drawn from plain ASCII text.
 
 The rule that drove the cookbook project was simple:
 
@@ -65,8 +65,8 @@ For example, here's part of my [simple gravy](https://bruce-loves-to-cook.ca/rec
 ````markdown
 ## Mechanic
 
-A roux is equal parts fat and flour by weight. Use about **1:5 roux 
-to liquid** (for example, 50 g roux to 250 ml liquid). A darker roux 
+A roux is equal parts fat and flour by weight. Use about **1:5 roux
+to liquid** (for example, 50 g roux to 250 ml liquid). A darker roux
 tastes nuttier but thickens slightly less.
 
 ```formula
@@ -88,7 +88,7 @@ bar: yes
 {{< /tab >}}
 {{< /tabs >}}
 
-Pages read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/). 
+Pages read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](/blog/2026/not-a-chef/smart-content-on-plain-markdown/).
 
 **Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
@@ -121,18 +121,18 @@ Pages read well as plain text. They also need to work well in Obsidian and Hugo,
 
 A programmer who loves text isn't abnormal. We work in it daily. What's special is that for some of us it becomes part of how our brains work.
 
-My love of text started a long time ago, but two thinks stand out:
+My love of text started a long time ago, but two things stand out:
 
 1. [John Carmack's `.plan` files](https://github.com/oliverbenns/john-carmack-plan)
-2. And Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy)
+2. Mike Gancarz's [*The UNIX Philosophy*](https://www.goodreads.com/en/book/show/633070.The_UNIX_Philosophy)
 
 These cemented the principles I was already discovering. Seeing others use text to define everything, including raw design thinking, rewired how I built things. So did the idea that text is universal, and can be *piped* from tool to tool.
 
-Text is more than just programming, too. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based in text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved. 
+Text is more than just programming, too. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based in text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
 
-I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool that kept posts as simple files . Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type. I moved Warped to WordPress for years after that, as I'd used it for client work. It never reallyI was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
+I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool that kept posts as simple files. John Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type. I moved Warped to WordPress for years after that, as I'd used it for client work. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
 
-Enter the world of LLMs, or as I like to call them BFLM. Text is king again. LLM agents read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text.
+Enter the world of LLMs, or, as I like to call them, BFLMs. Text is king again. LLM agents read and write plain text natively, so my notes, plans, and specs double as their working context, with no export or API in between. I've moved all of my notes and thinking back into text.
 
 ```timeline
 1980 The school's one computer
@@ -154,7 +154,7 @@ For that boy, saving extra copies helped. Well, some of the time at least. A che
 
 Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write down the design, and I always mock up user and programmatic interfaces.
 
-My current projects. use text files as that notebook again. I keep `PLAN.md` and various  `DESIGN.md` files at the core of most work. An AI tool forgets everything between sessions, not too different from the way the tape forgot my games, so I write the design down first and those agents rebuild their context from there. It's a similiar lesson, ~40 years later.
+My current projects use text files as that notebook again. I keep `PLAN.md` and various `DESIGN.md` files at the core of most work. An AI tool forgets everything between sessions, not too different from the way the tape forgot my games, so I write the design down first and those agents rebuild their context from there. It's a similar lesson, ~40 years later.
 
 ```flow
 row: 1983
@@ -170,9 +170,9 @@ caption: Both machines forget; the notes don't
 
 ## Unfinished work is worth showing
 
-Text can be useful to normal people too. It can drive publishing and teaching tool, and can be automated to replace a lot of what we previously did by hand with design, artists, and manual typesetting.
+Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to replace a lot of what we previously did by hand with designers, artists, and manual typesetting.
 
-Cookbooks are great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided that I would rather not hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
+Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided that I would rather not hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
 And the research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
@@ -198,7 +198,7 @@ Text is core to learning, and it's a fundamental part of teaching.
 
 I like to say that *"I like to teach, I think,"* because I'm not always certain of it. I'm occasionally impatient, and it's easy to forget how I came to understand something. To teach something, you need to remember the path you took to learn it, and those darned paths change with each generation of tools and humans. But I do like to teach, *I think*.
 
-I remember helping a number of people learn SQL. SQL is a powerfully dense and terse language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some knowledge of history, and a bunch of experience. I've always struggled to teach SQL to beginners, and JOINs were the hardest part.
+I remember helping a number of people learn SQL. SQL is a dense, terse language for asking questions about structured data. It's efficient when used properly, which requires some math-y thinking, some knowledge of history, and a bunch of experience. I've always struggled to teach SQL to beginners, and JOINs were the hardest part.
 
 When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. When I tried to teach it live, I'd forget my own path; writing it down is how I found it again. And writing things down is how I found myself again, too.
 
@@ -208,7 +208,7 @@ The recipes are where this works best for me. I didn't start to grok cooking unt
 
 ## What this means for what's next
 
-I found that spark again when I realized that the 10-year-old with a notebook beside his wonky tape drive and the person writing `PLAN.md` files were doing the same thing. We both write design down first, because the machine will forget it one way or another. For that matter, so will the human. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
+I found that spark again when I realized that the 10-year-old with a notebook beside his wonky tape drive and the person writing `PLAN.md` files were doing the same thing. We both write the design down first, because the machine will forget it one way or another. For that matter, so will the human. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
 
 So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first, and I'll keep checking each new tool against the same filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
