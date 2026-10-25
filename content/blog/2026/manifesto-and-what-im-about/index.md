@@ -35,6 +35,8 @@ And who am I?
 3. *I tinker. I make art, I cook, I make music.*
 4. *And I teach.*
 
+<!-- #todo Question: art and music aren't covered by the "I tinker" section. (A) add a sentence on each, using your examples, or (B) trim this list to what the essay covers (Recommended: it's shorter and keeps the promise)? -->
+
 In my time off, I tinkered and built things. Looking back, I found some clear patterns. Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of threads: writing, publishing, and terminal tools, each driven and defined by text. Finding something I'd lost, something core to who I am, was what I needed. I feel excited again.
 
 This is my attempt to capture some of the principles I found, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down and thinking about them, because machines forget, and so do I.
@@ -87,6 +89,8 @@ Pages read well as plain text. They also need to work well in Obsidian and Hugo,
 
 Here's a sample plan, modelled on how I developed that cookbook:
 
+<!-- #todo Question: is this sourdough plan real or made up? The cookbook has no chapters, so readers may think you wrote a sourdough book. (A) made up, so say so, or (B) real, so name the project? -->
+
 {{< tabs layout="side" >}}
 {{< tab "Text" >}}
 ```markdown
@@ -124,6 +128,8 @@ My love of text started a long time ago, but two things stand out:
 These cemented the principles I was already discovering. Seeing others use text to define everything, including raw design thinking, rewired how I built things. So did the idea that text is universal, and can be *piped* from tool to tool.
 
 Text reaches past programming, too. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based on plain text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
+
+<!-- #todo Question: the timeline starts in 1996, so should "almost 30 years" be "30 years this year"? (yes/no) -->
 
 I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool I used that kept posts as simple files. John Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type, and I started writing my posts in it. After that, I ran Warped on WordPress for years, since I'd used it for client work. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
 
@@ -170,6 +176,8 @@ caption: Both machines forget; the notes don't
 
 These days most of the software I make is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
 
+<!-- #todo Question: add a short shell pipe example here (dailyweather piped into grep or an agent) to prove the Gancarz point? (yes/no, Recommended yes: it's the cheapest way to show it) -->
+
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
 ### Unfinished work is worth showing
@@ -183,6 +191,8 @@ Text can be useful to normal people too. It can drive publishing and teaching to
 Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided not to hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
 I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The principle makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
+
+<!-- #todo Question: give the filter ("if it isn't good practice without an LLM…") its own H3 under "I make software", and move "Unfinished work is worth showing" to "I'm a writer"? (A) yes, restructure (Recommended: your sharpest idea gets a heading and the software section stops wandering), or (B) keep the current order? -->
 
 ## I tinker
 
