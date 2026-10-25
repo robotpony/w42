@@ -12,7 +12,8 @@ tags:
 description: What I believe about text, teaching, and making things, and what this year's projects taught me.
 ---
 
-<img src="https://images.warpedvisions.org/2026/10/cassette-tape-spark.jpg" alt="Watercolour of tangled cassette tape unspooling from blue into an orange spark" />
+<img src="cassette-tape-spark.jpg" alt="Watercolour of tangled cassette tape unspooling from blue into an orange spark" />
+
 My first real computer was an Atari 600XL. I usually tell people it was an 800, so I don't have to explain the difference between models. With the 600XL I got a whopping 16 KB of RAM, a Centipede cartridge, and a previous-generation Atari 410 tape drive.
 
 That tape drive was the bane of my childhood. It ate tapes, the sort of low-quality cassettes that a 10-year-old boy could afford, always purchased in 10-packs at Radio Shack. The most devastating loss was when the drive destroyed my last copy of a horizontal scroller I'd written, along with every sprite I'd drawn for it. From those experiences, I learned to save each program I wrote several times, on multiple tapes when I had spares. It was never enough.
