@@ -88,6 +88,8 @@ This style guide captures patterns from 20+ years of technical writing about sof
 * Rhetorical questions to prompt reflection  
 * References to specific years/timeframes to ground experiences
 
+**Intentional repetition**: You repeat key ideas on purpose: say it, explain it, vary it, then punch it again. A repeated line or a callback to the opening is a writing mechanic, not an error, so editors and AI tools shouldn't cut it. Only accidental repeats, like introducing the same tool twice, need fixing.
+
 **Research integration with footnotes**: You're now incorporating academic sources and studies with proper footnoting, adding credibility while maintaining conversational tone.
 
 **Evolutionary and biological metaphors**: The crab evolution piece shows a new comfort with extended scientific metaphors to explain technical concepts.
