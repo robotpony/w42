@@ -45,7 +45,7 @@ This is my attempt to capture some of the principles I found, mostly so I can ch
 
 Almost everything I make starts, and ends up, as Markdown these days. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it needs no API, no auth, and no SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
 
-**Text reads naturally**. Building my cookbook ([Bruce loves to cook](https://bruce-loves-to-cook.ca/)) changed how I develop recipes. They moved from paper to Google Docs to Hugo and Markdown, and the site now builds a well-shaped recipe book, including diagrams drawn from plain ASCII text.
+I love how plain text reads naturally. Building my cookbook ([Bruce loves to cook](https://bruce-loves-to-cook.ca/)) changed how I develop recipes. They moved from paper to Google Docs to Hugo and Markdown, and the site now builds a well-shaped recipe book, including diagrams drawn from plain ASCII text.
 
 The rule that drove the cookbook project was simple:
 
@@ -81,9 +81,9 @@ bar: yes
 {{< /tab >}}
 {{< /tabs >}}
 
-Recipes read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](https://github.com/robotpony/hugo-theme-fugu).
+The recipes read nicely in any text editor. They also work well in Obsidian and Hugo, and have been easy to [automate with simple tools](https://github.com/robotpony/hugo-theme-fugu).
 
-**Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
+Text, specifically my text, is sacred. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
 Here's a sample plan, a simplified version of how I developed my cookbook:
 
@@ -108,9 +108,9 @@ Here's a sample plan, a simplified version of how I developed my cookbook:
 {{< /tab >}}
 {{< /tabs >}}
 
-**Text defines the world**. [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
+Text defines worlds: [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
 
-**Long live text**. My blogs and comics live in text, and so does every repo. It's the most durable format I know.
+Long live text! My blogs and comics live in text, and so does every repo. It's the most durable format I know.
 
 ### Text defined my journey
 
@@ -187,8 +187,6 @@ Even Space Command, the biggest thing I built this year, is a small tool at hear
 ### Good practice doesn't change with the tools
 
 I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together, and that makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
-
-<!-- #idea Its own essay: the filter cuts the other way, too, and a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest of them: no design written down, nothing to check the result against, and nothing to rebuild from. -->
 
 ## I tinker
 
