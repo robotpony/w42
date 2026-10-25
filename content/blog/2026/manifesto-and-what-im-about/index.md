@@ -177,7 +177,7 @@ caption: Both machines forget; the notes don't
 
 I make software, and these days most of it is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
 
-[YOUR WORDS: what peep does, and a time one of these small tools slotted into something bigger without changes.]
+<!-- #todo In your words: what peep does, and a time one of these small tools slotted into something bigger without changes. -->
 
 Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
 
