@@ -178,7 +178,7 @@ Even Space Command, the biggest thing I built this year, is a small tool at hear
 
 Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I chose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
-Showing the work keeps me accountable, and it's useful for teaching. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
+Showing the work keeps me accountable, and it's useful for teaching. Weekly devlogs meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
 Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to replace a lot of what designers, artists, and typesetters used to do by hand.
 
@@ -194,7 +194,7 @@ I have a theory that good practice doesn't change with the tools. Writing things
 
 From my game-making principles: *be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.* Those read well on paper, but I only learned what they mean by playtesting.
 
-I wrote a tiny space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-style shooter where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to play in code like that. What made it work was keeping playtesting and engineering logs, and reflecting on them regularly.
+For a game jam, I wrote a tiny space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-style shooter where the ship and enemies move along concentric arcs, and I kept iterating on it. It only became fun once I added variation and particle effects. It's been a long time since I was able to play in code like that. What made it work was keeping playtesting and engineering logs, and reflecting on them regularly.
 
 Play is how I find what's fun; craft is how I get it to fit. I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen you know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where you stop thinking about the tools and think about the food. It's an instrument that becomes part of your fingers. And that is where I do my best work.
 
@@ -216,7 +216,7 @@ When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat inc
 
 Now my approach to teaching is to write first. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and fixing them where they fall short. And they will.
 
-### Methods are key
+### Methods beat recipes
 
 The recipes are where this works best for me. I didn't start to grok cooking until I understood that methods were more important to learn than recipes. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, because recipes are rarely exact. Ingredients, humidity, equipment, and dietary needs all vary.
 
