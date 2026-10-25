@@ -24,7 +24,7 @@ That notebook survived when the tape didn't, and I'm still writing things down t
 
 ## Searching for my spark
 
-That boy had a fire in him that has driven me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame was dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again by reflecting, and by remembering where I started.
+That boy had a fire in him that has driven me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame was dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again by reflecting, and by going back to where I started: writing things down, in plain text.
 
 I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. It's great to find that inspiration again; I just had to remember who I am.
 
@@ -81,7 +81,7 @@ bar: yes
 {{< /tab >}}
 {{< /tabs >}}
 
-Recipes read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](https://bruce-loves-to-cook.ca/).
+Recipes read well as plain text. They also need to work well in Obsidian and Hugo, and still be easy to [automate with simple tools](https://github.com/robotpony/hugo-theme-fugu).
 
 **Text, specifically my text, is sacred**. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
@@ -186,9 +186,9 @@ Even Space Command, the biggest thing I built this year, is a small tool at hear
 
 ### Good practice doesn't change with the tools
 
-I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest of them. There's no design written down, nothing to check the result against, and nothing to rebuild from.
+I have a theory that good practice doesn't change with the tools. Writing things down, being transparent, and publishing regularly fit together, and that makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
-The principle makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
+<!-- #idea Its own essay: the filter cuts the other way, too, and a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest of them: no design written down, nothing to check the result against, and nothing to rebuild from. -->
 
 ## I tinker
 
@@ -228,5 +228,5 @@ That's why the gravy recipe above leads with its Mechanic. Learn the 1:5 ratio a
 
 I found that spark again when I realized that the 10-year-old with a notebook beside his wonky tape drive and the person writing `PLAN.md` files were doing the same thing. Both of us write the design down first, because the machine will forget it one way or another. For that matter, so will the human. Both of us keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
 
-So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first, and I'll keep checking each new tool against the same filter: if it isn't good practice without an LLM, it isn't good practice with one.
+So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first, in plain text, where all of this started.
 
