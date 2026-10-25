@@ -85,7 +85,7 @@ The recipes read nicely in any text editor. They also work well in Obsidian and 
 
 Text, specifically my text, is sacred. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
-Here's a sample plan, a simplified version of how I developed my cookbook:
+Here's a sample plan I used while testing Space Command. It's a simplified version of how I developed my cookbook:
 
 {{< tabs layout="side" >}}
 {{< tab "Text" >}}
