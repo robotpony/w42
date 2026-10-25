@@ -32,9 +32,8 @@ And who am I?
 
 1. *I'm a writer. I love words and text.*
 2. *I make software.*
-3. *I tinker.*
-4. *I make art, I cook, I make music.*
-5. *And I teach.*
+3. *I make art, I cook, I make music.*
+4. *And I teach.*
 
 In my time off, I tinkered and built things. Looking back, I found some clear patterns. Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of threads: writing, publishing, and terminal tools, each driven and defined by text. Finding something I'd lost, something core to who I am, was what I needed. I feel excited again.
 
