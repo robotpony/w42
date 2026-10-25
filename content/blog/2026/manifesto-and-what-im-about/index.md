@@ -22,15 +22,21 @@ I also learned to write designs in a notebook and sketch interfaces in detail. I
 
 That notebook survived when the tape didn't, and I'm still writing things down to this day. And thinking a design through by writing it down has stuck with me ever since.
 
+<!-- #todo And: "And thinking a design through…" (fold into the previous sentence, or cut "And"). -->
+
 ## Searching for my spark
 
 That boy had a fire in him that has haunted me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Sometime in the last few years, that flame was dimmer than it's ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. And I found that spark again, all by remembering where I started.
 
-<!-- #todo Grammar: a fire doesn't haunt ("a fire in him that has followed me all my life"); "that flame was dimmer than it's ever been" → "had grown dimmer than it had ever been"; cut "all" from "all by remembering". -->
+<!-- #todo Grammar: a fire doesn't haunt ("a fire in him that has followed me all my life"); "that flame was dimmer than it's ever been" → "had grown dimmer than it had ever been"; cut "all" from "all by remembering". And: "And I found that spark again" (cut "And", or keep it for the turn). -->
 
 I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. And it's great to find that inspiration again; I just had to remember who I am.
 
+<!-- #todo And: "And it's great to find that inspiration again" (cut "And"). -->
+
 And who am I?
+
+<!-- #todo And: "And who am I?" (keep it as a beat, or "So who am I?"). -->
 
 1. *I'm a writer. I love words and text.*
 2. *I make software.*
@@ -38,6 +44,8 @@ And who am I?
 4. *And I teach.*
 
 In my time off, I tinkered and built things. Looking back, I found some clear patterns. Each project served its own purpose and had its own shape, but they were all stitched together with the same handful of threads: writing, publishing, and terminal tools, each driven and defined by text. And in this exploration, I felt that feeling again. *I was excited.*
+
+<!-- #todo And: "And in this exploration, I felt that feeling again" (cut "And in this exploration,"). -->
 
 This is my attempt to capture some of the principles I found, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down and thinking about them, because machines forget, and so do I.
 
@@ -129,7 +137,7 @@ These cemented the principles I was already discovering. Seeing others use text 
 
 Text is more than just programming. I've run this weblog for almost 30 years, and it's lived in dozens of tools and formats. And the durable ones, the really durable ones, were all based in plain text. I started with hand-coded HTML, and I tried tool after tool until I found what I really loved.
 
-<!-- #todo Grammar: "Text is more than just programming" reads oddly; try "Text reaches past programming, too." -->
+<!-- #todo Grammar: "Text is more than just programming" reads oddly; try "Text reaches past programming, too." And: "And the durable ones" (cut "And": "The durable ones, the really durable ones…"). -->
 
 I especially loved [Blosxom](http://www.blosxom.com/), the first blogging tool I used that kept posts as simple files. John Gruber released *Markdown* in 2004 as a plugin for Blosxom and Movable Type, and I started writing my posts in it. After that, I ran Warped on WordPress for years, since I'd used it for client work. I was always fighting its web UI for my personal sites, as I couldn't `grep` or see my posts locally. Then I remembered seeing [*Hugo*](https://gohugo.io/), and I made the switch. Apart from one more detour, Hugo has been home since.
 
@@ -184,7 +192,7 @@ Even Space Command, the biggest thing I built this year, is a small tool at hear
 
 Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep, a scorekeeping pad for real-world games based on keeping score on paper, before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
-<!-- #todo Grammar: "scorekeeping pad … based on keeping score on paper" says score twice; try "a scorekeeping app for tabletop games, modelled on a paper score pad". -->
+<!-- #todo Grammar: "scorekeeping pad … based on keeping score on paper" says score twice; try "a scorekeeping app for tabletop games, modelled on a paper score pad". And: "And the 50+ mocks" (cut "And", or join with "and" to the Scorekeep sentence). -->
 
 Showing the work keeps me accountable, and it's useful for teaching. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
@@ -206,6 +214,8 @@ I wrote a tiny space game, [Gyri #4](https://jams.warpedvisions.org/), a Gyruss-
 
 Play is how I find what's fun; craft is how I get it to fit. I believe simplicity is possible in anything, where simple means things fit _just so_. It's [a kitchen you know by heart](/blog/2025/the-comfort-of-home-bases-for-creative-work/), where you stop thinking about the tools and think about the food. It's an instrument that becomes part of your fingers. And it's where I do my best work.
 
+<!-- #todo And: "And it's where I do my best work" (keep it to close the run of "It's", or cut "And"). -->
+
 We become who we are inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a game tuned one playtest at a time, a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
 
 ## And I teach
@@ -213,6 +223,8 @@ We become who we are inch by inch, failure by failure, and craft works the same 
 ### Teaching starts with writing
 
 Most of the things I've learned started with reading. Personal computing was still newish for my generation, and I learned about it through magazines and textbooks. I read everything I could, even if I didn't have the history or math to understand it. And it's still the first place I go to learn about something.
+
+<!-- #todo And: "And it's still the first place I go" (cut "And": "Reading is still…"). -->
 
 Text is core to learning, and it's a fundamental part of teaching.
 
@@ -222,9 +234,11 @@ I remember helping a number of people learn SQL. SQL is a dense, terse language 
 
 When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat incorrectly. Even so, the page showed me the gap: I'd never thought deeply enough about JOINs, or planned how to teach them. When I tried to teach it live, I'd forget my own path; writing it down is how I found it again. And writing things down is how I found myself again, too.
 
-<!-- #todo Grammar: "When I tried to teach it live, I'd forget" → "Whenever I taught it live, I'd forget". -->
+<!-- #todo Grammar: "When I tried to teach it live, I'd forget" → "Whenever I taught it live, I'd forget". And: "And writing things down is how I found myself again" (keep: it's the emotional beat). -->
 
 Now my approach to teaching is to write first. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
+
+<!-- #todo And: "And they will." (keep: the punchline). -->
 
 ### Methods are key
 
