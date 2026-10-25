@@ -20,7 +20,7 @@ That tape drive was the bane of my childhood. It ate tapes, the sort of low-qual
 
 I also learned to write designs in a notebook and sketch interfaces in detail. I even sketched fonts and sprites and worked them out down to the bit level, so I could encode them in the bytes the machine expected.
 
-That notebook survived when the tape didn't, and I'm still writing things down to this day. Thinking a design through by writing it down has stuck with me ever since.
+That notebook survived when the tape didn't. Thinking a design through on paper has stuck with me ever since.
 
 ## Searching for my spark
 
@@ -81,7 +81,7 @@ bar: yes
 {{< /tab >}}
 {{< /tabs >}}
 
-The recipes read nicely in any text editor. They also work well in Obsidian and Hugo, and have been easy to [automate with simple tools](https://github.com/robotpony/hugo-theme-fugu).
+The recipes also work well in Obsidian and Hugo, and have been easy to [automate with simple tools](https://github.com/robotpony/hugo-theme-fugu).
 
 Text, specifically my text, is sacred. [Space Command](https://space-command.ca/) is a macOS app that finds the `PLAN.md` files and `#todo`, `#idea`, and `#focus` tags in my notes, and manages them. The source of truth is my text files, not a database I can't see. It's a nerd's tool, but it fits my neurospicy brain nicely.
 
@@ -166,7 +166,7 @@ caption: Both machines forget; the notes don't
 
 ### Unfinished work is worth showing
 
-Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), my terminal forecast tool, and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I chose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+Research is just work, shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on the weather feeds for dailyweather, and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I chose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
 Showing the work keeps me accountable, and it's useful for teaching. Weekly devlogs meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
