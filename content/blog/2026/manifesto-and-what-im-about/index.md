@@ -222,4 +222,3 @@ I found that spark again when I realized that the 10-year-old with a notebook be
 
 So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first, and I'll keep checking each new tool against the same filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
-If any of it sparks something for you, write about it on your own site or socials and link back.
