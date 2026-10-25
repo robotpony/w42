@@ -51,7 +51,9 @@ Each project served its own purpose and had its own shape, but they were all sti
 
 This is my attempt to capture some of the principles I found, mostly so I can check myself and my next projects against them. Nearly all of it comes down to writing things down and thinking about them, because machines forget, and so do I.
 
-## Plain text is the foundation
+## I'm a writer
+
+### Plain text is the foundation
 
 Almost everything I make starts, and ends up, as Markdown these days. Designs, specifications, recipes, tasks, blog posts, game briefs, comics, and even interactive fiction. Markdown is a form of structured plain text: it has no API, no auth, and requires no special SDK. It opens in any text editor, it diffs nicely in git, and it will be readable long after today's tools are gone.
 
@@ -120,7 +122,7 @@ Pages read well as plain text. They also need to work well in Obsidian and Hugo,
 
 **Long live text**. My blogs and comics live in text, and so does every repo. It's the most durable format I know.
 
-## Text defined my journey
+### Text defined my journey
 
 A programmer who loves text isn't abnormal. We work in it daily. What's special is that for some of us it becomes part of how our brains work.
 
@@ -151,7 +153,7 @@ Enter the world of LLMs, or, as I like to call them, BFLMs. Text is king again. 
 2025 *Claude and LLMs, text reborn*
 ```
 
-## Writing is how I think
+### Writing is how I think
 
 For that boy, saving extra copies helped. Well, some of the time at least. A chewed tape could be cut and reattached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of games, tools, and curios, all of them lost to time.
 
@@ -171,19 +173,25 @@ Rebuild
 caption: Both machines forget; the notes don't
 ```
 
-## Unfinished work is worth showing
+## I make software
 
-Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to replace a lot of what we previously did by hand with designers, artists, and manual typesetting.
+I make software, and these days most of it is small. [dailyweather](https://github.com/robotpony/dailyweather) prints the forecast from Environment Canada's feeds, and [ftree](https://github.com/robotpony/ftree) reads genealogy files in the terminal. Each does one thing and speaks text, so they're easy to script, pipe, and hand to an agent. That's Gancarz's book again, three decades on.
 
-Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided that I would rather not hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
+[YOUR WORDS: what peep does, and a time one of these small tools slotted into something bigger without changes.]
 
-And the research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+Even Space Command, the biggest thing I built this year, is a small tool at heart: it reads my text files and gets out of the way.
+
+### Unfinished work is worth showing
+
+Research is just the work shown before it's finished. I try several versions, compare them honestly, and write down why: [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on Environment Canada's feeds for [dailyweather](https://github.com/robotpony/dailyweather), and I developed four visual treatments for Scorekeep before choosing one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
 Showing the work keeps me accountable, and it's useful for teaching. The game jam's weekly posts meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
 I have a theory that good practices are always good practices, so writing things down, being transparent, and publishing regularly fit together. The same principle cuts the other way, too, and a lot of the ways people use LLMs fail that test. Vibe coding a whole app from a single prompt is the silliest. There's no design written down, nothing to check the result against, and nothing to rebuild from. The test makes a good filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
-## Craft is found by playing
+## I tinker
+
+### Craft is found by playing
 
 From my game-making principles: *be emotive, be funny, be fun. Lean into constraints, limits, and plot holes.* Those read well on paper, but I only learned what they mean by playtesting.
 
@@ -193,7 +201,15 @@ Play is how I find what's fun; craft is how I get it to fit. I believe simplicit
 
 We become who we are inch by inch, failure by failure, and craft works the same way. It's fit and finish, done in small steps: a game tuned one playtest at a time, a recipe that stays in the test kitchen until it earns its way out, a heading nudged closer to the paragraph it belongs to, a commit that does one thing. Text makes those steps cheap, and git keeps every one of them, so I can afford to fail a lot on the way to _just so_.
 
-## Teaching starts with writing
+### Test kitchen recipes
+
+Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to replace a lot of what we previously did by hand with designers, artists, and manual typesetting.
+
+Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided that I would rather not hide the design and development of recipes. Recipes that aren't finished are marked [*Test kitchen*](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
+
+## And I teach
+
+### Teaching starts with writing
 
 Most of the things I've learned started with reading. Personal computing was still newish for my generation, and I learned about it through magazines and textbooks. I read everything I could, even if I didn't have the history or math to understand it. And it's still the first place I go to learn about something.
 
@@ -207,13 +223,16 @@ When I finally wrote it down, I explained JOINs with Venn diagrams, somewhat inc
 
 Now my approach to teaching is to write first. Once I've written it, I can iterate and teach more effectively, but those lesson plans are where the real effort is. Well, that and keeping those lesson plans up to date where they fall short. And they will.
 
+### Methods are key
+
 The recipes are where this works best for me. I didn't start to grok cooking until I understood that methods were key. The French figured this out forever ago, and of course I had to rediscover it through chefs like [Kenji](https://kenjilopezalt.com/) and [Chef John](https://www.foodwishes.com/). Showing methods teaches people how to adapt, because recipes are rarely exact. Ingredients, humidity, equipment, and dietary needs all vary.
 
-## What this means for what's next
+That's why the gravy recipe above leads with its Mechanic. Learn the 1:5 ratio and you can thicken whatever is in the pan, with or without the recipe.
+
+## What's next
 
 I found that spark again when I realized that the 10-year-old with a notebook beside his wonky tape drive and the person writing `PLAN.md` files were doing the same thing. We both write the design down first, because the machine will forget it one way or another. For that matter, so will the human. Both keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
 
 So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first, and I'll keep checking each new tool against the same filter: if it isn't good practice without an LLM, it isn't good practice with one.
 
 If any of it sparks something for you, write about it on your own site or socials and link back.
-
