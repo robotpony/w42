@@ -24,7 +24,7 @@ That notebook survived when the tape didn't. Thinking a design through on paper 
 
 ## Searching for my spark
 
-That boy had a fire in him that has driven me all of my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame was dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again by reflecting, and by going back to where I started: writing things down, in plain text.
+That boy had a fire that has driven me all my life. It's great when it's there, but it's frustrating and painful when it's not. Recently that flame was dimmer than it had ever been, so I took some time off to enjoy the beautiful weather: long walks, the local beaches, and a lengthy Pacific Ocean vacation. I found that spark again by reflecting, and by going back to where I started: writing things down, in plain text.
 
 I'm writing daily now, a strong signal that I'm excited about what I'm doing again. I rediscovered my inner coder and tinkerer, now backed by years of managing products, designs, and teams of people building them. These days I don't need the huge teams of years past, but the principles are the same. It's great to find that inspiration again; I just had to remember who I am.
 
@@ -166,11 +166,11 @@ caption: Both machines forget; the notes don't
 
 ### Unfinished work is worth showing
 
-Research is just work, shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on the weather feeds for dailyweather, and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I chose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
+Research is just work, shown before it's finished. I try several versions, compare them honestly, and write down why: I test [batches of recipes side by side](https://bruce-loves-to-cook.ca/essays/technique-essays/how-to-find-great-recipes/) to find the best one. I take careful notes on the weather feeds for my weather tool, dailyweather, and I developed four visual treatments for Scorekeep, a virtual score pad for card and dice games, before I chose one. And the [50+ mocks](https://space-command.ca/mocks/) in Space Command led to something I really like.
 
 Showing the work keeps me accountable, and it's useful for teaching. Weekly devlogs meant there was always something to show, so I kept shipping. It also makes the work transparent to agents, which can reference a source of truth that I've developed and tested.
 
-Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to replace a lot of what designers, artists, and typesetters used to do by hand.
+Text can be useful to normal people too. It can drive publishing and teaching tools, and can be automated to handle a lot of the layout and typesetting that used to be done by hand.
 
 Cookbooks are a great example. The typical way to write a cookbook is to hide the work. Following Carmack's `.plan` file approach of writing about design, I decided not to hide the design and development of recipes. Recipes that aren't finished are marked [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), and they're published on purpose. To me, a recipe is closer to source code than scripture: it has versions, bugs, and fixes.
 
