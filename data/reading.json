@@ -2,6 +2,19 @@
  "profile": "https://www.goodreads.com/user/show/111965143",
  "books": [
   {
+   "id": "633070",
+   "title": "The UNIX Philosophy",
+   "full_title": "The UNIX Philosophy",
+   "author": "Mike Gancarz",
+   "rating": 0,
+   "read": "",
+   "added": "2026-10-22",
+   "date": "2026-10-22",
+   "shelf": "read",
+   "url": "https://www.goodreads.com/book/show/633070",
+   "cover": "reading/633070.jpg"
+  },
+  {
    "id": "63889384",
    "title": "National Dish",
    "full_title": "National Dish: Around the World in Search of Food, History, and the Meaning of Home",
@@ -110,7 +123,7 @@
    "title": "The Intentional Organization",
    "full_title": "The Intentional Organization: A Leadership and Management Guide",
    "author": "Sara Hicks",
-   "rating": 4,
+   "rating": 5,
    "read": "2026-01-01",
    "added": "2026-10-22",
    "date": "2026-01-01",
