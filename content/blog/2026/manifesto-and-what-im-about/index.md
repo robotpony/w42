@@ -148,7 +148,7 @@ Enter the world of LLMs. Text is king again. AI agents read and write plain text
 
 For that boy, saving extra copies helped. Well, some of the time at least. A chewed tape could be cut and reattached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of those games, as well as tools and curios, all of them lost to time.
 
-The notebooks are long gone now, but the pages looked something like this: a ship worked out bit by bit, then turned into the bytes Atari BASIC expected.
+The pages looked something like this: a ship worked out bit by bit, then turned into the bytes Atari BASIC expected.
 
 ```text
 ##......  192
