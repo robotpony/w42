@@ -148,21 +148,6 @@ Enter the world of LLMs. Text is king again. AI agents read and write plain text
 
 For that boy, saving extra copies helped. Well, some of the time at least. A chewed tape could be cut and reattached to its spindle, and a copy on a second tape was safer still. But the cheap tapes and that drive always failed eventually, so I reimplemented most games several times. I wrote dozens of those games, as well as tools and curios, all of them lost to time.
 
-A notebook page looked something like this: a ship worked out bit by bit, then turned into the bytes the machine expected.
-
-```text
-##......  192
-.###....  112
-.#####..  124
-########  255
-########  255
-.#####..  124
-.###....  112
-##......  192
-
-DATA 192,112,124,255,255,124,112,192
-```
-
 Somewhere along the way the notes stopped being a backup and became how I figure out what to build. I use the same pattern now, except that source control has replaced the extra copies. I always write out the design, and I always mock up user and programmatic interfaces.
 
 My current projects use text files as that notebook again. I keep `PLAN.md` and various `DESIGN.md` files at the core of most work. AI agents forget everything between sessions, not unlike the way the tape forgot my games, so I write the design down first and they rebuild their context from there. It's a similar lesson, ~40 years later.
