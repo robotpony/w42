@@ -53,8 +53,8 @@ The rule that drove the cookbook project was simple:
 
 For example, here's a short version of my [simple gravy](https://bruce-loves-to-cook.ca/recipes/simple-chicken-pork-and-beef-gravy/) recipe, as text and as the site shows it:
 
-{{< tabs layout="stack" >}}
-{{< tab "Text" >}}
+`````tabs {layout="stack"}
+tab: Text
 ````markdown
 ## Mechanic
 
@@ -75,11 +75,10 @@ bar: yes
 - 25 g flour
 - 250 ml stock and pan drippings, combined
 ````
-{{< /tab >}}
-{{< tab "On the site" >}}
+
+tab: On the site
 ![The gravy recipe on bruce-loves-to-cook.ca: ingredients as a checklist on the left, and the Mechanic in the sidebar with the 1:5 roux formula drawn as icons, numbers, and a bar](gravy-recipe.png)
-{{< /tab >}}
-{{< /tabs >}}
+`````
 
 The recipes also work well in Obsidian and Hugo, and have been easy to [automate with simple tools](https://github.com/robotpony/hugo-theme-fugu).
 
@@ -87,8 +86,8 @@ Text, specifically my text, is sacred. [Space Command](https://space-command.ca/
 
 Here's a sample plan I used while testing Space Command. It's a simplified version of how I developed my cookbook:
 
-{{< tabs layout="side" >}}
-{{< tab "Text" >}}
+````tabs {layout="side"}
+tab: Text
 ```markdown
 ## Drafting
 
@@ -102,11 +101,10 @@ Here's a sample plan I used while testing Space Command. It's a simplified versi
 - [ ] Chapter 8 · Baking in a Dutch oven #focus
 - [ ] Chapter 9 · When it goes wrong
 ```
-{{< /tab >}}
-{{< tab "In Space Command" >}}
+
+tab: In Space Command
 ![Space Command's plan view for the sourdough book: one finished phase folded into a single line, then Drafting at 6 of 9 with chapters 3, 8, and 9 left, and a #focus chip on chapter 8](space-command-plan.png)
-{{< /tab >}}
-{{< /tabs >}}
+````
 
 Text defines worlds: [Thwarter](https://github.com/robotpony/thwarter), my interactive fiction engine, builds stories from Markdown and front matter, the same way Hugo builds a site.
 
