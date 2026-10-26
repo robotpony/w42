@@ -1,8 +1,8 @@
 ---
 slug: what-im-about-in-plain-text
-title: "What I'm about, in plain text #focus"
-date: 2026-10-24
-draft: true
+title: "What I'm about, in plain text"
+date: 2026-10-25
+draft: false
 tags:
   - writing
   - markdown
