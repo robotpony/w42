@@ -12,7 +12,7 @@ tags:
 description: What I believe about text, teaching, and making things, and what this year's projects taught me.
 ---
 
-<img src="cassette-tape-spark.jpg" alt="Watercolour of tangled cassette tape unspooling from blue into an orange spark" />
+<img src="https://images.warpedvisions.org/2026/10/cassette-tape-spark.jpg" alt="Watercolour of tangled cassette tape unspooling from blue into an orange spark" />
 
 My first real computer was an Atari 600XL. I usually tell people it was an 800, so I don't have to explain the difference between models. With the 600XL I got a whopping 16 KB of RAM, a Centipede cartridge, and a previous-generation Atari 410 tape drive.
 
