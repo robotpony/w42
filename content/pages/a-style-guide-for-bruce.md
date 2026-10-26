@@ -157,6 +157,7 @@ Minimize em-dashes—prefer commas, semicolons, or colons when they work equally
 ## Other Rules
 
 * **Dates**: ask about dates and don't assume the current year
+* **Artifacts from the past**: show only real ones (a photo, a scan, the actual old code). Editors and AI tools shouldn't recreate a childhood sprite, notebook page, or listing "to show what it looked like": a stand-in isn't accurate enough to be useful, and it reads as made up. If nothing survives, describe it in prose.
 
 ## Voice Evolution
 
