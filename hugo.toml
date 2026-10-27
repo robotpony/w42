@@ -68,3 +68,8 @@ tabWidth = 4
 [markup.goldmark.renderer]
 unsafe = true
 
+
+# The theme imports hugo-warped (the shared fence parsers); this maps it to the
+# themes/hugo-warped submodule instead of fetching it.
+[module]
+replacements = "github.com/robotpony/hugo-warped -> hugo-warped"
