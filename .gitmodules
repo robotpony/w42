@@ -4,3 +4,6 @@
 [submodule "cdn"]
 	path = cdn
 	url = git@github.com:robotpony/warped.js.git
+[submodule "themes/hugo-warped"]
+	path = themes/hugo-warped
+	url = https://github.com/robotpony/hugo-warped
