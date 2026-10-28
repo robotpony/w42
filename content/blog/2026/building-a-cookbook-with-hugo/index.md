@@ -11,10 +11,9 @@ tags:
 description: ""
 ---
 
-## cookbook story Tasks #todo 
+## BLtC warped post #todo 
 
-- [x] needs front-mater #focus
-
+- [ ] 
 
 ## Outline
 
