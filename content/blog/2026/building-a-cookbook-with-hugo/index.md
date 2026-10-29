@@ -21,10 +21,7 @@ My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 
 | Essays | 18 |
 | Reference pages | 15 |
 | Food log entries | 38 |
-| Methods (pan sauces, stock, ratios, foil packets, reverse searing) | 5 |
-| Blueprints (burgers, chicken sandwiches, poke, one-pan pasta, muesli) | 5 |
-| Blueprint parts | 21 |
-| Builds | 26 |
+| Methods | 57 |
 | Pages built | 597 |
 | Build time | about 1 second |
 
