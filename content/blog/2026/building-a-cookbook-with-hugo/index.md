@@ -117,28 +117,33 @@ None of this is necessary for a simple cookbook. But these are the families of t
 
 <!-- #todo In your words: an example of cooking from a pattern rather than a recipe (a pan sauce on a weeknight, a stock from scraps) -->
 
-The burgers are the clearest example. I've been chasing my favourite burger for more than 20 years, and a burger is a stack of decisions: the bun, the sauce, the patty, and what goes where. Here's the Whopper build as text, beside the drawing the site makes from it:
+The burgers are the clearest example. I've been chasing my favourite burger for more than 20 years, and a burger is a stack of decisions: the bun, the sauce, the patty, and what goes where. Here's [the Bruce burger](https://bruce-loves-to-cook.ca/methods/burgers/builds/bruce-burger/), the one I make at home, as text and as the site draws it:
 
 ````tabs {layout="side"}
 tab: Text
 ```stack
-bun-top + mayo     | Sesame bun, mayo           | soft, rich
-lettuce-chunks     | Iceberg, torn              | cool crunch
-tomato             | Vine-ripe tomato           | juicy, acid
-ketchup            | Ketchup                    | sweet
-onion-raw          | White onion rings          | sharp
-pickle             | Dill pickle chips          | sour
-patty-thin-grilled | Flame-grilled patty, 115 g | smoke, salt
-bun-base + mayo    | Sesame bun, mayo           | rich, barrier
+bun-top + mayo   | Toasted bun, mayo         | soft, rich
+lettuce-shredded | Shredded lettuce          | cold crunch
+tomato           | Thin tomato               | juicy, acid
+mustard          | Mustard                   | sharp
+pickle           | Double-sour pickles       | sour
+onion-fried      | Onion sautéed in beef fat | sweet
+patty-thin       | Thin patty, 140 g         | salt, fat, savoury
+onion-raw        | Raw purple onion          | sharp
+bun-base + mayo  | Toasted bun, mayo         | rich, barrier
 ```
 
 tab: On the site
-![The Whopper build's stack drawing: the burger exploded into layers from top to bottom (sesame bun with mayo, torn iceberg, tomato, ketchup, white onion rings, dill pickle chips, a flame-grilled patty, and the bottom bun with mayo), each labelled with its role and taste](whopper-build.png)
+![The Bruce burger's stack drawing: the burger exploded into layers from top to bottom (toasted bun with mayo, shredded lettuce, thin tomato, mustard, double-sour pickles, onion sautéed in beef fat, a thin 140 g patty, raw purple onion, and the bottom bun with mayo), each labelled with its role and taste](bruce-burger-build.png)
 ````
+
+<!-- #todo the Bruce burger screenshots (bruce-burger-build.png and -dark) are coming from the not-a-chef agent; check the image once they land -->
 
 Each line is one layer: a part, what it is, and what it does for the bite. The site draws the stack from those lines and nothing else. That's the rule the diagram formats follow: *a diagram must not add anything the text doesn't say.* If the drawing knows something, the text has to say it first, so the text never loses anything when it's read raw.
 
-<!-- #todo In your words: the burger story, 20+ years of it (where it started, what changed, which build is closest to "the one") -->
+It starts from the Whopper: one wide patty with everything cold stacked on top. The technique comes from the White Spot burger: a thin griddled patty, seasoned after it cooks. Every part is there because I tested the alternatives and they lost. Two onions, raw for sharpness and sautéed in the beef fat for sweetness. Double-sour pickles, the strongest sour on the burger. Mustard instead of ketchup, since the onions bring the sweetness now.
+
+<!-- #todo In your words: the burger story, 20+ years of it (where it started, what changed, which test settled it); link [The quest for the perfect burger](https://bruce-loves-to-cook.ca/essays/cooking-reflections/the-quest-for-the-perfect-burger/) or retell a piece of it -->
 
 Then chicken burgers. And stocks. And pan sauces. Wait a minute, I fucking love cooking.
 
