@@ -64,14 +64,6 @@ Here's an excerpt of my Asian slaw dressing, first as I write it, then as the si
 `````tabs
 tab: Text
 ````markdown
----
-title: Asian slaw dressing
-tags: [salads, quick, vegan, dairy-free, dressings]
-servings: 6–8 (makes ~200 ml)
-prep_time: 5 min
-cuisine: Asian
----
-
 ## Mechanic
 
 A **weight-based emulsified dressing** at 2:1 oil to acid.
@@ -94,7 +86,7 @@ tab: On the site
 ![The Asian slaw dressing recipe on bruce-loves-to-cook.ca: ingredients as a checklist with highlighted gram amounts and a settings button for scaling and units on the left, and in the sidebar the source and times, To serve, and the Mechanic with the 2:1 oil-to-acid formula drawn as a bottle and a flask, numbers, and a bar labelled By weight](slaw-dressing.png)
 `````
 
-The front matter is ordinary YAML: tags, servings, times, and cuisine. The `## Mechanic` section is the idea behind the recipe, here a 2:1 ratio of oil to acid by weight, and the `formula` block under it is a diagram written as text. On the site, the Mechanic moves into the sidebar and draws as a bottle and a flask with a bar under them. The ingredients become a checklist you can tick off while cooking, with scaling and a metric/imperial switch.
+The `## Mechanic` section is the idea behind the recipe, here a 2:1 ratio of oil to acid by weight, and the `formula` block under it is a diagram written as text. On the site, the Mechanic moves into the sidebar and draws as a bottle and a flask with a bar under them. The ingredients become a checklist you can tick off while cooking, with scaling and a metric/imperial switch.
 
 None of that is in the text. The text stays a recipe you could print, paste into an email, or read in any editor.
 
