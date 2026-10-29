@@ -12,7 +12,7 @@ tags:
 description: What I believe about text, teaching, and making things, and what this year's projects taught me.
 banner:
   src: 2026/10/cassette-tape-spark.jpg
-  alt: "AI-generated watercolour banner, made with an AI image generator from a prompt by Bruce: a cassette on the left, tangled in its own unspooled tape, which ribbons right through blue and teal washes into orange and red and ends in a bright spark"
+  alt: "AI-generated watercolour banner, made with OpenAI's image API from a prompt by Bruce: a cassette on the left, tangled in its own unspooled tape, which ribbons right through blue and teal washes into orange and red and ends in a bright spark"
   width: 1600
   height: 640
 ---
