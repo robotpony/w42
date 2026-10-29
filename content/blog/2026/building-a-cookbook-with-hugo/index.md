@@ -12,20 +12,9 @@ description: ""
 ---
 <img src="https://images.warpedvisions.org/2026/10/cookbook-text-to-burger.jpg" alt="AI-generated watercolour banner, made with OpenAI's image API from a prompt by Bruce: a simplified notebook sketch of a burger's layers on the left bleeds through blue and teal washes into an exploded burger on the right (bun, shredded lettuce, pickles, a griddled patty, and the bottom bun) in warm orange and red" />
 
-My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, all of them Markdown files, built into a site with Hugo.
+My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, plus essays, methods, and engineering style food logs, all of them Markdown files, built into a site with Hugo.
 
-| What | Count |
-| --- | ---: |
-| Recipes (dishes) | 221 |
-| Drinks | 8 |
-| Essays | 18 |
-| Reference pages | 15 |
-| Food log entries | 38 |
-| Methods | 57 |
-| Pages built | 597 |
-| Build time | about 1 second |
-
-I meant to move some recipes out of Google Docs. Instead I built methods, blueprints, and burger builds, things no simple cookbook needs, and somewhere in the middle of it I remembered why I keep a cookbook at all.
+I originally planned to move a subset of recipes out of Google Docs into a simple cookbook. Instead I built the whole thing, plus methods, blueprints, and burger builds, things no simple cookbook needs, and somewhere in the middle of it I remembered why I keep a cookbook at all.
 
 <!-- #todo In your words: a sharper opening line or scene (the moment you looked up and the "simple" cookbook had blueprints) -->
 
