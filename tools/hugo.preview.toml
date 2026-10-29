@@ -4,10 +4,16 @@
 # Serves warped.js, warped.css, and their fonts from the cdn/ submodule
 # (robotpony/warped.js) at /cdn/, so a preview works offline. The live site
 # loads them from cdn.warpedvisions.org (hugo.toml).
+#
+# Serves images-host files (banners and in-body images on
+# images.warpedvisions.org) from the local images repo at
+# /images.warpedvisions.org/, through the theme's imagesURL param. That's
+# about 77M, held in the server's memory.
 
 [params]
 warpedScript = "/cdn/warped.js"
 warpedStyle = "/cdn/warped.css"
+imagesURL = "/images.warpedvisions.org"
 
 # Declaring a mount replaces Hugo's default project mounts, so they're
 # listed again here.
@@ -43,3 +49,8 @@ target = "static"
 source = "cdn"
 target = "static/cdn"
 files = ["warped.js", "warped.css", "fonts/*.woff2"]
+
+[[module.mounts]]
+source = "/Users/mx/projects/sites/images.warpedvisions.org"
+target = "static/images.warpedvisions.org"
+files = ["20[0-9][0-9]/*/*.{jpg,jpeg,png,gif,webp}"]
