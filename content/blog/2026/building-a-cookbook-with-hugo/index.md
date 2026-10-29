@@ -156,11 +156,13 @@ Not everything is a method. Some of it is a principle, like [Win the fridge](htt
 The cookbook is three themes and a dialect.
 
 ```flow
-Site | branding
-Fugu | the cookbook
-Blowfish | the base
+Site theme   | branding
+Recipe theme | recipe-ness
+Base theme   | core services and sizing
 caption: Where Hugo looks for a template, first to last
 ```
+
+<!-- #todo In your words: maybe an aside here, that this is a lot like layering food (a digression, and a stretch; cut it if it stays one) -->
 
 The site's config starts with one line:
 
