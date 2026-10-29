@@ -1,5 +1,5 @@
 ---
-title: Building a cookbook with Hugo
+title: "B♥2C: building a cookbook with Hugo"
 date: 2026-10-28
 draft: true
 slug: building-a-cookbook-with-hugo
@@ -10,18 +10,6 @@ tags:
   - not-a-chef
 description: ""
 ---
-
-## B♥2C warped post #todo 
-
-- [x] Find the inspiration, find the interesting (it feels very flat now)
-
-<!--
-First draft, 2026-10-29, from the outline and plan (f4e6abf to 9518d3e have them). Rough on purpose: next pass is storytelling, anecdotes, and language.
-Thesis: I moved my recipes into plain text so they'd last, the text made the cookbook feel like a thing at last, and the scope blew up until I reminded myself how much I love cooking.
-Spin-offs for later: "Ten things I learned building a cookbook with agents", pictures cost 1-2 orders of magnitude more than text (the lettuce rounds), folder vs tag as an ontology rule.
-Banner: the exploded Bruce burger twice, as handwritten monospace lines on lined paper and as a watercolour exploded stack, with dotted leaders matching each line to its layer. In the post: the theme stack as a three-tier layer cake (Blowfish base, Fugu middle, branding icing, hugo-warped drizzled through, a recipe card on top).
--->
-
 My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, all of them Markdown files, built into a site with Hugo.
 
 I meant to move some recipes out of Google Docs. Instead I built methods, blueprints, and burger builds, things no simple cookbook needs, and somewhere in the middle of it I remembered why I keep a cookbook at all.
@@ -62,7 +50,7 @@ There was a second half I didn't say out loud then: *and it should look great pu
 
 Markdown is text with a bit of lipstick. It reads fine raw, and with a little help it can look like anything.
 
-Here's a short version of my Asian slaw dressing, first as I write it, then as the site shows it. The excerpt is trimmed (shorter front matter, a shorter Mechanic, and only the first few ingredients):
+Here's an excerpt of my Asian slaw dressing, first as I write it, then as the site shows it.
 
 `````tabs {layout="stack"}
 tab: Text
