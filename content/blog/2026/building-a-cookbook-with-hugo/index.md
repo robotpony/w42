@@ -11,21 +11,46 @@ tags:
 description: ""
 ---
 
-## BLtC warped post #todo 
+## B♥2C warped post #todo 
 
-- [ ] 
+- [ ] Find the inspiration, find the interesting (it feels very flat now)
 
 ## Outline
 
-- I built a cookbook in hugo
-- The principle was that it had to look great in plain text
-- I was tired of propietary formats and hosting
-- I wanted it to have rich layouts and diagrams
+- I published my cookbook using Markdown and Hugo
+- Why? Recipes in Markdown is simpler for nerd-me to work in, and has a durability that paper, Word, GOOGLE docs, and custom apps like Paprika had.
+- The principle was that it had to look great in plain text, and edit easily
+- And, it had to look great published, not just an unstructured mess
+- I was tired of proprietary formats and hosting
+- I wanted it to have rich layouts and diagrams, and be easy to extend
+- Hugo was a big win for extensibility, as hooking into the way the text is processed was simple
+- Markdown was cool, as it's text with a bit of lipstick
+- It also plays well with agents, which can assess, review, and transform things quickly. Yes, I'm lazy.
+- Agents were also helpful for defining how text-y diagrams can be made, and even helped me come up with ideas for icons and glyphs for things
+- I've made the tools and recipe theme (as a base) free/Free for anyone to use or abuse
+- The recipes are free, too, as they're nothing special (and recipes should be free anyways)
 
 How it's built:
 
-- hugo theme (main theme, then subtheme that is custom)
-- hugo-warped (helpers for rendering custom formats from markdown, diagrams)
+- A hugo child/secondary theme sits on top of Blowfish (a decent base theme with some nice features)
+- A set of tools `hugo-warped` (for rendering custom formats from markdown, diagrams, etc)
+
+History:
+
+- I started the project of pulling recipes from paper and word docs a decade ago
+- It lived in Google docs, which were pretty good, but very manual
+- Oddly, sharing recipes from these docs caused friction
+- It never felt like a thing, either, despite being a whole cookbook 
+- It also was a pain to edit without good network access
+- I started moving things from those Google docs to markdown earlier this summer
+- Then I decided to test using Hugo for it
+- I had used Hugo for a blog and it was pretty good, but I hadn't yet automated some of the tooling around it
+- The site went together quickly, and scope exploded as I realized what was possible
+- I added methods, blueprints, builds, all things entirely unnecessary to a simple cookbook
+- But the goal of these features was to show off a few of the simpler families of techniques that really drive my cooking
+- And to show of my favourite burger, 20+ years in exploration. And chicken burgers. And stocks. And pan sauces. Wait a minute, I fucking love cooking. And win the fridge!
+- Somehow the project rekindled my love of cooking, writing about it, and even building blog-shaped things.
+- As I was winding down the cookbook work, the text-y thinking exploded into YET ANOTHER project. More on this later, but it's here: https://space-command.ca (text for TODOs, not a new concept, but my take on an exoskeletal version of it)
 
 ## Plan
 
