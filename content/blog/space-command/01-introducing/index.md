@@ -10,6 +10,12 @@ tags:
   - workflow
 description: "Space Command is a native Mac sidebar that reads the plain-text projects you already keep and shows you the one thing to do next. It's pre-alpha, and I use it every day."
 ---
+## Post tasks #todo 
+
+- [ ] move this whole post to projects, where both this and scorekeep will get a section for changelogs/posts/etc.
+
+## Outline
+
 Your projects already live in plain text. {{< space-command >}} reads them and shows you the one thing to do next.
 
 **{{< space-command >}}** is a native macOS sidebar app. It sits at the edge of your screen, a click from the menu bar, and works on your files where they are: Git repos, notes vaults, and Hugo blogs. Nothing to import, no second copy to keep in sync, and nothing leaves your Mac.
