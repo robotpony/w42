@@ -8,7 +8,7 @@ tags:
   - software-development
 banner:
   src: 2025/07/ai-dream-wide.jpg
-  alt: "AI Image"
+  alt: "AI-generated illustration, made with Stable Diffusion from a prompt by Bruce: a synthwave scene, a neon grid road running toward a striped pink-and-orange sun and palm trees, lined on both sides by glowing cyan circuit-board panels"
   width: 1024
   height: 455
 ---

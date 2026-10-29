@@ -8,7 +8,7 @@ tags:
   - productivity
 banner:
   src: 2025/08/a-home-office-space.jpg
-  alt: "A comfy home office"
+  alt: "AI-generated photo-style image, made with Stable Diffusion from a prompt by Bruce: a top-down view of a wooden desk with an open laptop, a steaming coffee, a brass lamp, a stack of books, a notepad and pen, a pencil cup, headphones, and a potted plant"
   width: 948
   height: 400
 ---

@@ -10,7 +10,7 @@ tags:
 - programming
 banner:
   src: 2025/10/harvest-banner.jpg
-  alt: "AI image showing harvest colours in watercolours"
+  alt: "AI-generated watercolour banner, made with Stable Diffusion from a prompt by Bruce: a row of autumn trees in orange, red, yellow, and green under a soft green-and-gold sky, with leaves blowing across it"
 ---
 Years ago, something clicked when I read about Anthony Bourdain's approach to feeding crowds. It was his [stunt turkey](https://www.amazon.ca/Appetites-Cookbook-Anthony-Bourdain/dp/0062409956) technique, where he cooks an extra turkey the week before the actual event. It made me think about how we release software. It seemed absurd at first: why would you cook two turkeys for one dinner?
 

@@ -15,9 +15,15 @@ banner:
 ---
 My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, plus essays, methods, and engineering style food logs, all of them Markdown files, built into a site with Hugo.
 
-I originally planned to move a subset of recipes out of Google Docs into a simple cookbook. Instead I built the whole thing, plus methods, blueprints, and burger builds, things no simple cookbook needs, and somewhere in the middle of it I remembered why I keep a cookbook at all.
+I started the project with a simple objective. Grab the best recipes and publish them in a simple site. I finished this version in a few hours, with a few more hours of automation, polish, and thinking about the shape of the files and folders.
 
-<!-- #todo In your words: a sharper opening line or scene (the moment you looked up and the "simple" cookbook had blueprints) -->
+Then inspiration hit.
+
+Why did I want to publish a cookbook? It was for my kids, my family, and to show people some of the things that changed my relationship with food and the kitchen. Cooking gets so much simpler when you break it down into methods and principles. I started to think about this and it was obvious that this was a teaching project as much as it was a personal cookbook. And how do you teach cooking in print form? You need pictures, and a breakdown of the concepts, applications of those concepts, and more. 
+
+"Creeeeep," the sound of scope exploding filled my imagination.
+
+So instead I built the base of a teaching platform for cookery: methods, blueprints, and  builds, things no simple cookbook needs. Somewhere in the middle of the process I remembered why I keep a cookbook at all. It's really, really fun.
 
 ## Decades of paper, then Google Docs
 

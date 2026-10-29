@@ -9,7 +9,7 @@ tags:
 - software-design
 banner:
   src: 2025/10/progression-of-tech-things-combining.jpg
-  alt: "AI showing progression to stasis"
+  alt: "AI-generated watercolour banner, made with Stable Diffusion from a prompt by Bruce: a smooth blue wave sweeps in from the left and folds into a burst of orange, red, and yellow, with paint spatter and drips across white paper"
   width: 1600
   height: 640
 ---

@@ -10,7 +10,7 @@ tags:
 - programming
 banner:
   src: 2025/10/technical-magical.jpg
-  alt: "AI showing technical magic in watercolours"
+  alt: "AI-generated watercolour banner, made with Stable Diffusion from a prompt by Bruce: a fanciful steel machine with a round, dial-faced head and arms holding small wheels glows against a rainbow sky over purple mountains, a smaller contraption beside it"
   width: 1600
   height: 597
 ---

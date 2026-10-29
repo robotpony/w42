@@ -10,7 +10,7 @@ tags:
 - creativity
 banner:
   src: 2025/10/pencil-sketch.jpg
-  alt: "AI sketch in the style of Silverstein"
+  alt: "AI-generated pen-and-ink sketch in the style of Shel Silverstein, made with Stable Diffusion from a prompt by Bruce: a row of pencils of different heights stands in the dip between two cross-hatched hills"
   width: 1280
   height: 498
 ---

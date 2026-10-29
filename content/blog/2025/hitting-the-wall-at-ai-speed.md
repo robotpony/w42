@@ -8,7 +8,7 @@ tags:
   - productivity
 banner:
   src: 2025/10/watercolour-clouds-dripping.jpg
-  alt: "AI showing complexity and fatique"
+  alt: "AI-generated watercolour banner, made with Stable Diffusion from a prompt by Bruce: a long cloud washes from red, orange, and yellow on the left into deep blue on the right, its base dripping paint down the page"
   width: 1600
   height: 640
 ---

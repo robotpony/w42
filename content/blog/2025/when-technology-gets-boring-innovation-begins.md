@@ -9,7 +9,7 @@ tags:
 - ai
 banner:
   src: 2025/10/progression-of-tech-cold-to-warm.jpg
-  alt: "AI showing progression in watercolour"
+  alt: "AI-generated watercolour banner, made with Stable Diffusion from a prompt by Bruce: a wavy band of colour runs from cool blue and teal through purple into warm red, orange, and yellow, with splashes and spatter on white paper"
 ---
 I was debugging a power issue with my thermostat last week when it hit me: I had no idea how many batteries were in my house. Not approximately. Not even close.
 

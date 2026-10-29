@@ -9,7 +9,7 @@ tags:
 - gaming
 banner:
   src: 2025/10/wind-waker-sketch.jpg
-  alt: "AI sketch of Wind Waker"
+  alt: "AI-generated illustration in the style of The Legend of Zelda: The Wind Waker, made with Stable Diffusion from a prompt by Bruce: a tall green island peak rises from a blue sea under a green-to-gold sky with curling white clouds, small islands on the horizon and a cliff face on the right"
   width: 1280
   height: 394
 ---

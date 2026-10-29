@@ -10,7 +10,7 @@ tags:
 - programming
 banner:
   src: 2025/09/crab-evolution-hand-drawn.jpg
-  alt: "AI Image of crabs"
+  alt: "AI-generated hand-drawn illustration, made with Stable Diffusion from a prompt by Bruce: crab evolution, from a long many-legged sea creature and a trilobite through shrimp- and lobster-like forms in the water to a row of crabs on the beach"
   width: 768
   height: 372
 ---
