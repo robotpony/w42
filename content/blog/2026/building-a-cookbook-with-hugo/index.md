@@ -13,7 +13,7 @@ description: ""
 
 ## B♥2C warped post #todo 
 
-- [ ] Find the inspiration, find the interesting (it feels very flat now)
+- [x] Find the inspiration, find the interesting (it feels very flat now)
 
 ## Outline
 
