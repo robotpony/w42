@@ -7,10 +7,12 @@ tags:
 - software-design
 - ux
 - gaming
+banner:
+  src: 2025/10/wind-waker-sketch.jpg
+  alt: "AI sketch of Wind Waker"
+  width: 1280
+  height: 394
 ---
-
-<img src="https://images.warpedvisions.org/2025/10/wind-waker-sketch.jpg" alt="AI sketch of Wind Waker" />
-
 There's a moment in *The Legend of Zelda: The Wind Waker* that fundamentally changes how you see the game world. You've spent dozens of hours sailing between islands, comfortable with the rhythm of ocean exploration. The world feels complete; a vast blue expanse dotted with discoveries. Then you dive beneath the waves for the first time and find Hyrule Castle, perfectly preserved in an air bubble at the bottom of the sea. Suddenly you realize you've been sailing over an entire civilization. The ocean wasn't the world, it was just the surface.
 
 This is what I call *world doubling*, and it's a powerful technique in fiction and game design. It's that moment when creators reveal their universe is far larger, deeper, or more complex than you imagined, while building on everything you already know and love about it.

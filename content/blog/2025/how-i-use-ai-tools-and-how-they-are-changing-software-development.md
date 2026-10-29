@@ -6,10 +6,12 @@ draft: false
 tags:
   - ai
   - software-development
+banner:
+  src: 2025/07/ai-dream-wide.jpg
+  alt: "AI Image"
+  width: 1024
+  height: 455
 ---
-
-<img src="https://images.warpedvisions.org/2025/07/ai-dream-wide.jpg" alt="AI Image" />
-
 Something weird happened the other day. I found myself sketching more than I had in years. The pages quickly filled with the doodles, wireframes, and half-formed ideas that used to live in my head until they died of neglect. The reason? I can finally get from sketch to fleshed-out concept fast enough that my ideas don't evaporate.
 
 After a few months of serious AI-assisted development, I'm starting to understand what these tools actually do well, and more importantly, where they will cheerfully lead you off a cliff. They don't replace thinking, they amplify it. But only if you understand the difference between augmenting your expertise and outsourcing your judgment.

@@ -8,10 +8,10 @@ tags:
 - software-development
 - llms
 - programming
+banner:
+  src: 2025/10/harvest-banner.jpg
+  alt: "AI image showing harvest colours in watercolours"
 ---
-
-<img src="https://images.warpedvisions.org/2025/10/harvest-banner.jpg" alt="AI image showing harvest colours in watercolours" />
-
 Years ago, something clicked when I read about Anthony Bourdain's approach to feeding crowds. It was his [stunt turkey](https://www.amazon.ca/Appetites-Cookbook-Anthony-Bourdain/dp/0062409956) technique, where he cooks an extra turkey the week before the actual event. It made me think about how we release software. It seemed absurd at first: why would you cook two turkeys for one dinner?
 
 Then I realized what he was really doing: load balancing across time.

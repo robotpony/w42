@@ -8,10 +8,12 @@ tags:
 - architecture
 - ai
 - programming
+banner:
+  src: 2025/09/crab-evolution-hand-drawn.jpg
+  alt: "AI Image of crabs"
+  width: 768
+  height: 372
 ---
-
-<img src="https://images.warpedvisions.org/2025/09/crab-evolution-hand-drawn.jpg" alt="AI Image of crabs" />
-
 Evolution has a weird obsession with crabs. At least five times, nature has taken some random crustacean and said, "you know what would work better? A crab." But it's not just crabs, evolution continues to reinvent the wheel. Trees evolved independently more than 40 times. Many different types of eyes appeared in dozens of unrelated lineages. Flight emerged in insects, pterosaurs, birds, and bats, each independently.
 
 These aren't coincidences. They're examples that good design is inevitable.

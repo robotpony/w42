@@ -6,10 +6,12 @@ draft: false
 tags:
   - workflow
   - productivity
+banner:
+  src: 2025/08/a-home-office-space.jpg
+  alt: "A comfy home office"
+  width: 948
+  height: 400
 ---
-
-<img src="https://images.warpedvisions.org/2025/08/a-home-office-space.jpg" alt="A comfy home office" />
-
 There's a feeling you get when everything clicks into place. Not the eureka moment of solving a problem, but something more fundamental: the deep satisfaction of being exactly where you need to be, with exactly what you need, arranged exactly how it should be. It's the feeling of *home*, but applied to the spaces where we create.
 
 This isn't about aesthetics or luxury. It's about something more primal: the human need to nest, to claim territory, to shape our environment until it shapes us back. And nowhere is this more crucial than in the spaces where we do our most demanding creative work.

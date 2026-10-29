@@ -7,10 +7,12 @@ tags:
 - ai
 - computing
 - software-design
+banner:
+  src: 2025/10/progression-of-tech-things-combining.jpg
+  alt: "AI showing progression to stasis"
+  width: 1600
+  height: 640
 ---
-
-<img src="https://images.warpedvisions.org/2025/10/progression-of-tech-things-combining.jpg" alt="AI showing progression to stasis" />
-
 I've been thinking about the current AI moment, and I can't shake the feeling that we're about to hit a wall. Not a failure wall, more like the wall Web 1.0 hit right before everything changed. Remember when every startup was "webr.com" and the height of innovation was animated GIFs? We're in the AI equivalent of that era right now.
 
 Just as Web 2.0 wasn't really about AJAX or rounded corners, AI 2.0 won't be about better chatbots. We're about to witness a fundamental shift in how AI gets built, deployed, and integrated into our daily tools. And honestly? It can't come soon enough.
