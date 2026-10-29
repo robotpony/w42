@@ -10,6 +10,8 @@ tags:
   - not-a-chef
 description: ""
 ---
+<img src="https://images.warpedvisions.org/2026/10/cookbook-text-to-burger.jpg" alt="AI-generated watercolour banner, made with OpenAI's image API from a prompt by Bruce: a simplified notebook sketch of a burger's layers on the left bleeds through blue and teal washes into an exploded burger on the right (bun, shredded lettuce, pickles, a griddled patty, and the bottom bun) in warm orange and red" />
+
 My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, all of them Markdown files, built into a site with Hugo.
 
 I meant to move some recipes out of Google Docs. Instead I built methods, blueprints, and burger builds, things no simple cookbook needs, and somewhere in the middle of it I remembered why I keep a cookbook at all.
