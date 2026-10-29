@@ -116,7 +116,7 @@ None of this is necessary for a simple cookbook. But these are the families of t
 
 The burgers are the clearest example. I've been chasing my favourite burger for more than 20 years, and a burger is a stack of decisions: the bun, the sauce, the patty, and what goes where. Here's [the Bruce burger](https://bruce-loves-to-cook.ca/methods/burgers/builds/bruce-burger/), the one I make at home, as text and as the site draws it:
 
-````tabs {layout="side"}
+````tabs {layout="aside"}
 tab: Text
 ```stack
 bun-top + mayo   | Toasted bun, mayo         | soft, rich
