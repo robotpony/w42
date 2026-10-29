@@ -180,15 +180,9 @@ Fugu is the cookbook theme: recipe pages, the sidebar, ingredient checklists, me
 
 ![The Recipes list on bruce-loves-to-cook.ca: the site's own header and logo above Fugu's card grid, where each recipe card shows cuisine and tag chips, a short description, a small ratio formula where the recipe has one, and prep and cook times](themes-layers.png)
 
-[hugo-warped](https://github.com/robotpony/hugo-warped) is the dialect: the diagram formats (`formula`, `stack`, `flow`, `tabs`, `timeline`, and a few more), each specified as text first. Fugu imports it as a Hugo module, and this blog draws the same formats.
+The dialect is [hugo-warped](https://github.com/robotpony/hugo-warped): the diagram formats, each written down as plain text before it draws anything. Fugu imports it as a Hugo module, and this blog draws the same formats.
 
-Hugo was a big win for this kind of extension. Hooking into how the text is processed is simple: a code fence with the info string `stack` goes to a template called `render-codeblock-stack.html`, and that template can draw whatever it likes from the lines inside. One template per format, and a new diagram is a new file. That's why the scope could blow up cheaply.
-
-<!-- #todo check: is "one template per format" accurate for hugo-warped (hook plus partial)? reword if the split matters -->
-
-One gotcha, since someone will hit it: Hugo drops bare words after the fence type. ```` ```stack compact ```` loses the `compact`, so arguments go in attributes, ```` ```stack {layout="compact"} ````.
-
-<!-- #todo check the example: use a real hugo-warped attribute instead of "compact" -->
+Hugo made this kind of extension easy. A template can take over any code fence by its name, so a new diagram format is a new template, and the text it reads stays plain. That's why the scope could blow up cheaply.
 
 ## No database
 
@@ -208,7 +202,7 @@ That's the other reason plain text works so well here: it plays well with agents
 
 A full build takes 1.2 seconds for 654 pages.
 
-Unfinished recipes are on the site too. `draft: true` publishes a recipe as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in the manifesto.
+Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in the manifesto.
 
 ## Three things the agents taught me
 
@@ -238,7 +232,7 @@ This isn't a tutorial, but if you want to build your own cookbook, here are the 
 
 - **Two lines of config.** The `theme = ["fugu", "blowfish"]` line, and Fugu imports hugo-warped as a Hugo module on its own.
 - **Small tools.** A few standard-library Python scripts keep the text honest: `frontmatter.py` reads and fixes front matter, and `check-fences.py` checks that every diagram block parses.
-- **Slash commands.** `/recipe-new` stubs a recipe, `/lint` checks the collection, `/preview` opens the dev server, and `/publish` builds and ships it.
+- **Slash commands.** One stubs a recipe (`/recipe-new`), others check the collection (`/lint`), open the dev server (`/preview`), and build and ship it (`/publish`).
 - **A plain host.** The site is static files, rsynced to an ordinary web host.
 
 It took two to three weeks of full-time work and cost under $25. It's only worth it if you want what I wanted: a printed-cookbook feel, today, from files you'll still be able to open in 20 years.
