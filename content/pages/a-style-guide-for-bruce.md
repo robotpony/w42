@@ -158,6 +158,7 @@ Minimize em-dashes—prefer commas, semicolons, or colons when they work equally
 
 * **Dates**: ask about dates and don't assume the current year
 * **Artifacts from the past**: show only real ones (a photo, a scan, the actual old code). Editors and AI tools shouldn't recreate a childhood sprite, notebook page, or listing "to show what it looked like": a stand-in isn't accurate enough to be useful, and it reads as made up. If nothing survives, describe it in prose.
+* **AI-generated images**: say so in the alt text, with how it was made, then what it shows: "AI-generated watercolour banner, made with OpenAI's image API from a prompt by Bruce: …". Name the tool or service, so a screen reader user learns what a sighted reader guesses from the style.
 
 ## Voice Evolution
 
