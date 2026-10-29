@@ -23,7 +23,7 @@ Why did I want to publish a cookbook? It was for my kids and my family, and to s
 
 "Creeeeep." The sound of scope exploding filled my imagination.
 
-So I doubled down and built the base of a teaching platform for cookery: methods, blueprints, and example application of concepts, things no simple cookbook needs. Somewhere in the middle of the process, I remembered why I keep a cookbook at all. It's really, really fun. I get to teach, we have a family cookbook, and I'm stoked to be writing about cooking again.
+So I doubled down and built the base of a teaching platform for cookery: methods, blueprints, and example applications of the concepts, things no simple cookbook needs. Somewhere in the middle of the process, I remembered why I keep a cookbook at all. It's really, really fun. I get to teach, we have a family cookbook, and I'm stoked to be writing about cooking again.
 
 ## Decades of paper, then Google Docs
 
