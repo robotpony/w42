@@ -61,7 +61,7 @@ Markdown is text with a bit of lipstick. It reads fine raw, and with a little he
 
 Here's an excerpt of my Asian slaw dressing, first as I write it, then as the site shows it.
 
-`````tabs {layout="stack"}
+`````tabs
 tab: Text
 ````markdown
 ---
