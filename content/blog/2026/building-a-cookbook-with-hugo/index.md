@@ -12,7 +12,7 @@ description: ""
 ---
 <img src="https://images.warpedvisions.org/2026/10/cookbook-text-to-burger.jpg" alt="AI-generated watercolour banner, made with OpenAI's image API from a prompt by Bruce: a simplified notebook sketch of a burger's layers on the left bleeds through blue and teal washes into an exploded burger on the right (bun, shredded lettuce, pickles, a griddled patty, and the bottom bun) in warm orange and red" />
 
-My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, all of them Markdown files, built into a site with Hugo.
+My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes (221 dishes and 8 drinks), 18 essays, 15 reference pages, and a food log of 38 entries. Under them sit the methods: 5 standalone methods (pan sauces, stock, ratios, foil packets, and reverse searing), plus 5 blueprints (burgers, chicken sandwiches, poke, one-pan pasta, and muesli) broken into 21 parts and 26 builds. All of it is Markdown files, and Hugo turns it into 597 pages in about a second.
 
 I meant to move some recipes out of Google Docs. Instead I built methods, blueprints, and burger builds, things no simple cookbook needs, and somewhere in the middle of it I remembered why I keep a cookbook at all.
 
@@ -190,7 +190,7 @@ That's the other reason plain text works so well here: it plays well with agents
 
 <!-- #todo In your words: an example of an agent helping with a diagram format or an icon -->
 
-A full build takes 1.2 seconds for 654 pages.
+A full build takes about a second for 597 pages.
 
 Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in the manifesto.
 
