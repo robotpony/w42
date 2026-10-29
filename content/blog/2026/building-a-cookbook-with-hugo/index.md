@@ -13,17 +13,17 @@ banner:
   src: 2026/10/cookbook-text-to-burger.jpg
   alt: "AI-generated watercolour banner, made with OpenAI's image API from a prompt by Bruce: a simplified notebook sketch of a burger's layers on the left bleeds through blue and teal washes into an exploded burger on the right (bun, shredded lettuce, pickles, a griddled patty, and the bottom bun) in warm orange and red"
 ---
-My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, plus essays, methods, and engineering style food logs, all of them Markdown files, built into a site with Hugo.
+My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, plus essays, methods, and engineering-style food logs, all of them Markdown files, built into a site with Hugo.
 
-I started the project with a simple objective. Grab the best recipes and publish them in a simple site. I finished this version in a few hours, with a few more hours of automation, polish, and thinking about the shape of the files and folders.
+I started the project with a simple objective: grab the best recipes and publish them on a simple site. I finished this version in a few hours, with a few more hours of automation, polish, and thinking about the shape of the files and folders.
 
 Then inspiration hit.
 
-Why did I want to publish a cookbook? It was for my kids, my family, and to show people some of the things that changed my relationship with food and the kitchen. Cooking gets so much simpler when you break it down into methods and principles. I started to think about this and it was obvious that this was a teaching project as much as it was a personal cookbook. And how do you teach cooking in print form? You need pictures, and a breakdown of the concepts, applications of those concepts, and more. 
+Why did I want to publish a cookbook? It was for my kids and my family, and to show people some of the things that changed my relationship with food and the kitchen. Cooking gets so much simpler when you break it down into methods and principles. I started to think about this, and it became obvious that this was a teaching project as much as it was a personal cookbook. And how do you teach cooking in print form? You need pictures, a breakdown of the concepts, applications of those concepts, and more.
 
-"Creeeeep," the sound of scope exploding filled my imagination.
+"Creeeeep." The sound of scope exploding filled my imagination.
 
-So instead I built the base of a teaching platform for cookery: methods, blueprints, and  builds, things no simple cookbook needs. Somewhere in the middle of the process I remembered why I keep a cookbook at all. It's really, really fun.
+So instead I built the base of a teaching platform for cookery: methods, blueprints, and builds, things no simple cookbook needs. Somewhere in the middle of the process, I remembered why I keep a cookbook at all. It's really, really fun.
 
 ## Decades of paper, then Google Docs
 
