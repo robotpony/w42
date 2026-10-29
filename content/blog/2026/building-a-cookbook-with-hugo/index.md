@@ -134,10 +134,8 @@ bun-base + mayo  | Toasted bun, mayo         | rich, barrier
 ```
 
 tab: On the site
-![The Bruce burger's stack drawing: the burger exploded into layers from top to bottom (toasted bun with mayo, shredded lettuce, thin tomato, mustard, double-sour pickles, onion sautéed in beef fat, a thin 140 g patty, raw purple onion, and the bottom bun with mayo), each labelled with its role and taste](bruce-burger-build.png)
+![The Bruce burger's stack drawing: the burger exploded into layers from top to bottom (toasted bun with mayo, shredded lettuce, thin tomato, mustard, double-sour pickles, onion sautéed in beef fat, a thin 140 g patty, raw purple onion, and the bottom bun with mayo), each labelled with its taste](bruce-burger-build.png)
 ````
-
-<!-- #todo the Bruce burger screenshots (bruce-burger-build.png and -dark) are coming from the not-a-chef agent; check the image once they land -->
 
 Each line is one layer: a part, what it is, and what it does for the bite. The site draws the stack from those lines and nothing else. That's the rule the diagram formats follow: *a diagram must not add anything the text doesn't say.* If the drawing knows something, the text has to say it first, so the text never loses anything when it's read raw.
 
