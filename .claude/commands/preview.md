@@ -13,6 +13,6 @@ Run: `tools/preview.sh $ARGUMENTS` (`make preview`, or `make preview-all` for `a
 - `all`: drafts and future-dated (scheduled) posts (-F).
 - `fresh`: pull the reading list from Goodreads before starting. Without it the preview uses the committed cache and never contacts Goodreads.
 
-The script stops any hugo server already on port 1313 and starts a fresh one, so the preview always reflects the current theme and config. Run it in the background; don't skip it because a server is already up.
+The script stops any hugo server already on port 1314 (the cookbook keeps 1313) and starts a fresh one, so the preview always reflects the current theme and config. Run it in the background; don't skip it because a server is already up.
 
 It opens the post's local URL in Chrome once the server responds, and prints which file and URL it picked. Report that URL, and whether future-dated posts were included.

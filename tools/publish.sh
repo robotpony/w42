@@ -39,7 +39,7 @@ check() {
   fi
 
   local hits
-  hits=$(grep -rlE 'localhost:1313|livereload\.js' public 2>/dev/null | head -5 || true)
+  hits=$(grep -rlE 'localhost:131[34]|livereload\.js' public 2>/dev/null | head -5 || true)
   if [[ -n "$hits" ]]; then
     echo "error: public/ contains dev-server output (localhost / livereload):" >&2
     echo "$hits" | sed 's/^/  /' >&2

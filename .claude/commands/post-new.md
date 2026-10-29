@@ -8,6 +8,6 @@ Usage: /post-new "Post title" [series folder]
 2. Derive the slug from the title (kebab-case).
 3. Create a page bundle so images can sit beside the post: `content/blog/<year>/<slug>/index.md`, or `content/blog/<year>/<series>/<NN-short-name>/index.md` for a post in a series (see `content/blog/2026/not-a-chef/`).
 4. Start from `archetypes/default.md`. Set `title` in sentence case (fix headline case if the user typed it), `date`, `slug`, `draft: true`, and any `tags` the user gave.
-5. Report the file path and its preview URL (`http://localhost:1313/blog/<year>/[<series>/]<slug>/`). Don't commit.
+5. Report the file path and its preview URL (`http://localhost:1314/blog/<year>/[<series>/]<slug>/`). Don't commit.
 
 For an outline or draft, follow up with `/warped:new-outline` or `/warped:draft`.

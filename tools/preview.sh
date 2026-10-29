@@ -31,7 +31,10 @@ done
 
 cd "$(dirname "$0")/.."
 
-BASE="http://localhost:1313"
+# Port 1314, not Hugo's default 1313: the cookbook (~/writing/not-a-chef)
+# previews on 1313, and the restart below would stop its server.
+PORT=1314
+BASE="http://localhost:$PORT"
 URL="$BASE/"
 
 # Resolve the post to a content file. No argument means the most recently
@@ -73,14 +76,14 @@ fi
 # Restart, don't reuse: a hugo server left running from an earlier session
 # keeps serving stale templates and config. Stop any hugo already listening
 # on the port, then start fresh.
-for pid in $(lsof -ti tcp:1313 -sTCP:LISTEN 2>/dev/null || true); do
+for pid in $(lsof -ti tcp:$PORT -sTCP:LISTEN 2>/dev/null || true); do
   if [ "$(ps -o comm= -p "$pid" 2>/dev/null)" = "hugo" ]; then
-    echo "Stopping the hugo server already on :1313 (pid $pid)."
+    echo "Stopping the hugo server already on :$PORT (pid $pid)."
     kill "$pid"
   fi
 done
 for _ in $(seq 1 20); do
-  lsof -ti tcp:1313 -sTCP:LISTEN >/dev/null 2>&1 || break
+  lsof -ti tcp:$PORT -sTCP:LISTEN >/dev/null 2>&1 || break
   sleep 0.25
 done
 
@@ -127,4 +130,4 @@ open_browser &
 # public/. `make deploy` rsyncs public/, so a running preview could ship
 # drafts that were only ever meant to be served locally. Keep the server in
 # memory so public/ only ever holds real builds.
-exec hugo server "${CONFIG[@]}" -D ${FUTURE[@]+"${FUTURE[@]}"} --disableFastRender --renderToMemory --bind 0.0.0.0
+exec hugo server "${CONFIG[@]}" -D ${FUTURE[@]+"${FUTURE[@]}"} --disableFastRender --renderToMemory --bind 0.0.0.0 --port "$PORT" --baseURL "$BASE/"
