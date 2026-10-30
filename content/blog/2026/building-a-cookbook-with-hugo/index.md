@@ -153,8 +153,6 @@ Hugo looks for each template in the site first, then in Fugu, then in Blowfish.
 
 [Blowfish](https://blowfish.page/) is a decent base theme with some nice features, and it's scaffolding you rent. On day one it gave me search, dark mode, and RSS. Then I spent a day fighting it, and by the end I'd overridden 17 of its 141 templates.
 
-I did spend some time fighting Blowfish, but it was mostly my own laziness and not understanding some of the shapes in the pages and CSS. Once I learned it well, the tradeoff of time and features was well worth it.
-
 *Fugu* (another word for Blowfish) is the cookbook theme: recipe pages, the sidebar, ingredient checklists, methods, blueprints, and builds. It started inside the site and got split out once its boundary was obvious, which wasn't on day one. The site itself keeps only its branding: the logo, the colours, and the header.
 
 ![The Recipes list on bruce-loves-to-cook.ca: the site's own header and logo above Fugu's card grid, where each recipe card shows cuisine and tag chips, a short description, a small ratio formula where the recipe has one, and prep and cook times](themes-layers.png)
