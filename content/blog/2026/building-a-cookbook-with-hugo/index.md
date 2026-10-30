@@ -1,6 +1,6 @@
 ---
 title: "B♥2C: building a cookbook with Hugo"
-date: 2026-10-28
+date: 2026-10-29
 draft: false
 slug: building-a-cookbook-with-hugo
 tags:
