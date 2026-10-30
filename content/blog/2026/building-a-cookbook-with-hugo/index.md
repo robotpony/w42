@@ -25,39 +25,33 @@ Why did I want to publish a cookbook? It was for my kids and my family, and to s
 
 So I doubled down and built the base of a teaching platform for cookery: methods, blueprints, and example applications of the concepts, things no simple cookbook needs. Somewhere in the middle of the process, I remembered why I keep a cookbook at all. It's really, really fun. I get to teach, we have a family cookbook, and I'm stoked to be writing about cooking again.
 
-## Decades of paper, then Google Docs
+## Decades of paper, then years of Google Docs
 
-My recipes started on paper, in flour-dusted binders, and in a scatter of Word documents. Pulling them into one place started a long time ago and went slowly, a few recipes at a time, whenever I remembered.
+My recipes started on paper, in flour-dusted binders, and some scattered Word documents. The binders included a wide array of recipe cards, printed webpages, hand written pages, and printed documents from various eras of Pages, Word, and more. Pulling them into one place started a long time ago and went slowly, a few recipes at a time, whenever I remembered.
 
-<!-- #todo In your words: what the paper era looked like (binders, cards, a box, your parents' recipes?) and roughly when you started gathering them -->
+Lockdown gave the project time. The recipes landed in Google Docs, which were pretty good: searchable, shared, and on every device. The process was also very manual. Every recipe was formatted by hand, and every fix to the layout was a fix to every document. I wrote essays, too, but without a way to index and link them easily, there wasn't much motivation to work on these more principled sections of the cookbook.
 
-Lockdown gave the project time. The recipes landed in Google Docs, which were pretty good: searchable, shared, and on every device. They were also very manual. Every recipe was formatted by hand, and every fix to the layout was a fix to every document.
+Oddly, it was sharing was where Google Docs caused the most friction. A recipe I wanted to send someone was a document with permissions, not a link anyone could open and read. Even when I opened permissions up, there was no real indexing or search. You could use Google drive search, but it didn't work for our kids or our parents.
 
-Oddly, sharing was where Google Docs caused the most friction. A recipe I wanted to send someone was a document with permissions, not a link anyone could open and read.
+It was also a pain to edit without a good network connection, which is often exactly when I want to fix a recipe. I often think about food on vacation, writing in my food log, and doing research by talking to local chefs and servers.
 
-<!-- #todo In your words: a sharing story, e.g. sending a recipe to a friend or family member and what went wrong (roles, not names) -->
-
-It was also a pain to edit without a good network connection, which is often exactly when I want to fix a recipe.
-
-<!-- #todo In your words: where you edit recipes without a network (so the line can name it) -->
-
-And it never felt like a *thing*. It was a whole cookbook, hundreds of recipes, and it still read like a folder of files.
+And even to us, it never felt like a *thing*. It was a whole cookbook, hundreds of recipes, yet it still read like a folder of files.
 
 Along the way I tried the apps. Paprika and a handful of other iOS and Mac recipe managers were good at the parts they cared about, and they failed me on everything else. Export was awkward. Sync was fragile. The recipes lived in each app's own format, on each app's own hosting, and the layouts were whatever the app decided a recipe looked like.
 
-<!-- #todo In your words: one concrete app story (an export that mangled things, a sync that lost edits, a layout that couldn't show a ratio) -->
+I never made it long in any of the apps as it was starting from zero each time, and it was so locked in.
 
-This summer I started moving the Google Docs into Markdown. Then I tried Hugo for it, mostly because this blog already ran on Hugo. Hugo worked well here, but I hadn't automated much of the tooling around it yet, and the cookbook became the place I did.
+This summer I started moving the Google Doc recipes into Markdown. Then I tried Hugo on top of those text files, mostly because this blog already ran on Hugo. Hugo worked well here, but I hadn't automated much of the tooling around it yet, and the cookbook became the reason I learned Hugo well. I automated it and even built apps to help manage posts. Initially it was an Obsidian plugin that I evolved into a macOS app I hacked together with Claude.
 
-The rule that drove the project came out of that move, and I wrote about it in [What I'm about, in plain text](/blog/2026/what-im-about-in-plain-text/):
+The was a a rule that drove the project, and I wrote about it in [What I'm about, in plain text](/blog/2026/what-im-about-in-plain-text/):
 
-> *A recipe should look **natural** in any text editor.*
+> *A recipe should look **natural** in any text editor, and it should look great published.
 
-There was a second half I didn't say out loud then: *and it should look great published.* Not an unstructured mess of headings and bullets, but a cookbook, with layouts and diagrams, that's easy to extend.
+I added that second half after reflecting on the project. I didn't just want a pile of documents. No unstructured mess of headings and bullets either, but a real cookbook, with layouts and diagrams, one that's easy to extend.
 
 ## Text with a bit of lipstick
 
-Markdown is text with a bit of lipstick. It reads fine raw, and with a little help it can look like anything.
+Markdown, for those that don't know, is plain text with a bit of lipstick. It reads fine raw, and with a little help it can look like pretty much anything you want.
 
 Here's an excerpt of my Asian slaw dressing, first as I write it, then as the site shows it.
 
@@ -86,17 +80,17 @@ tab: On the site
 ![The Asian slaw dressing recipe on bruce-loves-to-cook.ca: ingredients as a checklist with highlighted gram amounts and a settings button for scaling and units on the left, and in the sidebar the source and times, To serve, and the Mechanic with the 2:1 oil-to-acid formula drawn as a bottle and a flask, numbers, and a bar labelled By weight](slaw-dressing.png)
 `````
 
-The `## Mechanic` section is the idea behind the recipe, here a 2:1 ratio of oil to acid by weight, and the `formula` block under it is a diagram written as text. On the site, the Mechanic moves into the sidebar and draws as a bottle and a flask with a bar under them. The ingredients become a checklist you can tick off while cooking, with scaling and a metric/imperial switch.
+The *Mechanic* section is the idea behind the recipe, here a 2:1 ratio of oil to acid by weight, and the *formula* block under it is a diagram written as text. On the site, the Mechanic moves into the sidebar and draws as a bottle and a flask with a bar under them. The ingredients become a checklist you can tick off while cooking, with scaling and a switch to toggle between measurement units.
 
-None of that is in the text. The text stays a recipe you could print, paste into an email, or read in any editor.
+None of these extra features are in the text. The text stays a recipe you could print, paste into an email, or read in any editor.
 
-The repo is my Obsidian vault, too. There's no CMS and no copy step: I edit a recipe where I keep my notes, and the next build publishes it.
+The repo is my Obsidian vault, too. Obsidian is a text-based writing tool. It knows about Markdown and handles local links nicely, like a wiki. There's no CMS and no copy step: I edit a recipe where I keep my notes, and the next build publishes it.
 
-<!-- #todo In your words: what writing a recipe looks like now (Obsidian on the counter, phone at the store, a quick fix after dinner) -->
+When I find a new recipe or technique, I add it to my engineering food log. I call these my *Food Wishes*, after the inspirational Youtube creator, Chef John. These logs are raw lists and notes, including research, recipe notes while cooking. I edit these on my laptop or phone, and clean them up later, some of the time at least.
 
 ## Scope creep, on purpose
 
-The site went together quickly. Too quickly, maybe, because once the basic recipe pages worked, I started seeing what else plain text could do, and the scope exploded.
+The site went together quickly. Too quickly, perhaps, because once the basic recipe pages worked, I started seeing what else I could do with that plain text could do. The scope exploded.
 
 I added *methods*: pages that explain how a kind of food works, which variables matter, and how it fails, so you can cook something that isn't written down anywhere. Pan sauces. Stock. Reverse searing and water frying. Foil packets. A page of food ratios for making your own recipes.
 
@@ -104,9 +98,9 @@ Then *blueprints*, which break one kind of food into its parts, each with its ow
 
 None of this is necessary for a simple cookbook. But these are the families of technique that actually drive my cooking. A recipe is one way through a pattern, and the patterns are what I actually cook from.
 
-<!-- #todo In your words: an example of cooking from a pattern rather than a recipe (a pan sauce on a weeknight, a stock from scraps) -->
+A great example of this is my beef base. It's the laziest form of cooking ground beef: throw minced onions, garlic, mushrooms, beef, stock, and some spices in a pressure cooker and cook it until the beef softens. In about 40 minutes, you have 4-5L of soft beef. Now that soft beef is the base for dozens of recipes, from tacos, cottage pies, to American style meat sauce, Canadian chilli, pizzas, and a hundred different asian dishes. I freeze that base in 500ml containers, and it forms the base of many of our quick weeknight and lunch meals.
 
-The burgers are the clearest example. I've been chasing my favourite burger for more than 20 years, and a burger is a stack of decisions: the bun, the sauce, the patty, and what goes where. Here's [the Bruce burger](https://bruce-loves-to-cook.ca/methods/burgers/builds/bruce-burger/), the one I make at home, as text and as the site draws it:
+Burgers are another great example. I've been chasing my favourite burger for more than 20 years. A burger is a stack of decisions starting with the bun, the sauce, the patty, and what goes where. Here's [the Bruce burger](https://bruce-loves-to-cook.ca/methods/burgers/builds/bruce-burger/) (the BCS); it's the one I make at home. This is what it looks like as text and as the site draws it:
 
 ````tabs {layout="aside"}
 tab: Text
@@ -128,21 +122,16 @@ tab: On the site
 
 Each line is one layer: a part, what it is, and what it does for the bite. The site draws the stack from those lines and nothing else. That's the rule the diagram formats follow: *a diagram must not add anything the text doesn't say.* If the drawing knows something, the text has to say it first, so the text never loses anything when it's read raw.
 
-It starts from the Whopper: one wide patty with everything cold stacked on top. The technique comes from the White Spot burger: a thin griddled patty, seasoned after it cooks. Every part is there because I tested the alternatives and they lost. Two onions, raw for sharpness and sautéed in the beef fat for sweetness. Double-sour pickles, the strongest sour on the burger. Mustard instead of ketchup, since the onions bring the sweetness now.
+It starts from my teen years building thousands of Whoppers: one wide patty with everything cold stacked on top. The home technique comes from the White Spot burger: a thin griddled patty, seasoned after it cooks. Each part is there because I tested the alternatives and they lost. Two onions, raw for sharpness and sautéed in the beef fat for sweetness. Double-sour pickles, the strongest sour on the burger. Mustard instead of ketchup, since the onions bring the sweetness now.
 
-<!-- #todo In your words: the burger story, 20+ years of it (where it started, what changed, which test settled it); link [The quest for the perfect burger](https://bruce-loves-to-cook.ca/essays/cooking-reflections/the-quest-for-the-perfect-burger/) or retell a piece of it -->
+Then I attacked the chicken ~~burger~~ sandwich. And stocks. And pan sauces. Wait a minute, I *fucking love cooking*.
 
-Then chicken burgers. And stocks. And pan sauces. Wait a minute, I fucking love cooking.
+I always have. I just needed to remind myself, and building the cookbook did that. The methods and blueprints weren't scope creep so much as me writing down how I actually think about food, for the first time, in a form I could keep and share.
 
-I always have. I just needed to remind myself, and building the cookbook did that. The methods and blueprints weren't scope creep so much as me writing down how I actually think about food, for the first time, in a form I could keep.
+Not everything is a method. Some of it is a principle, like [Win the fridge](https://bruce-loves-to-cook.ca/tags/win-the-fridge/): use every scrap before it goes to waste. We came up with Win the Fridge as a way to gamify not wasting anything. The kids and my partner got into it, and we would find clever ways to use the rest of whatever happened to need to be used up next.
+## How the site is built
 
-Not everything is a method. Some of it is a principle, like [Win the fridge](https://bruce-loves-to-cook.ca/tags/win-the-fridge/): use every scrap before it goes to waste.
-
-<!-- #todo In your words: one line on Win the fridge, why it matters to you (or cut to just the link) -->
-
-## How it's built
-
-The cookbook is three themes and a dialect.
+The cookbook is three themes and a dialect. Simple, no?
 
 ```flow
 Site theme   | branding
@@ -151,7 +140,7 @@ Base theme   | core services and sizing
 caption: Where Hugo looks for a template, first to last
 ```
 
-<!-- #todo In your words: maybe an aside here, that this is a lot like layering food (a digression, and a stretch; cut it if it stays one) -->
+This isn't too far from how cooking works, too. You layer things on a base of technique and flavour. You layer in specifics for the region, available ingredients, and what you're craving.  And then you make it yours. If you were chef John, you'd add a pinch of cayenne, and it would be yours. I'm more apt to add a bit of acid and a bit more salt, as I like it punchy.
 
 The site's config starts with one line:
 
@@ -163,13 +152,13 @@ Hugo looks for each template in the site first, then in Fugu, then in Blowfish.
 
 [Blowfish](https://blowfish.page/) is a decent base theme with some nice features, and it's scaffolding you rent. On day one it gave me search, dark mode, and RSS. Then I spent a day fighting it, and by the end I'd overridden 17 of its 141 templates.
 
-<!-- #todo In your words: the day fighting Blowfish, what broke or what it insisted on -->
+I did spend some time fighting Blowfish, but it was mostly me own laziness and not understanding some of the shapes in the pages and CSS. Once I learned it well, the tradeoff of time and features was well worth it.
 
-Fugu is the cookbook theme: recipe pages, the sidebar, ingredient checklists, methods, blueprints, and builds. It started inside the site and got split out once its boundary was obvious, which wasn't on day one. The site itself keeps only its branding: the logo, the colours, and the header.
+*Fugu* (another word for Blowfish) is the cookbook theme: recipe pages, the sidebar, ingredient checklists, methods, blueprints, and builds. It started inside the site and got split out once its boundary was obvious, which wasn't on day one. The site itself keeps only its branding: the logo, the colours, and the header.
 
 ![The Recipes list on bruce-loves-to-cook.ca: the site's own header and logo above Fugu's card grid, where each recipe card shows cuisine and tag chips, a short description, a small ratio formula where the recipe has one, and prep and cook times](themes-layers.png)
 
-The dialect is [hugo-warped](https://github.com/robotpony/hugo-warped): the diagram formats, each written down as plain text before it draws anything. Fugu imports it as a Hugo module, and this blog draws the same formats.
+The dialect is [hugo-warped](https://github.com/robotpony/hugo-warped): the diagram formats, each written down as plain text before it draws anything. Fugu imports it as a Hugo module, and I reuse those tools in my other sites (including this one). 
 
 Hugo made this kind of extension easy. A template can take over any code fence by its name, so a new diagram format is a new template, and the text it reads stays plain. That's why the scope could blow up cheaply.
 
@@ -177,45 +166,35 @@ Hugo made this kind of extension easy. A template can take over any code fence b
 
 The cookbook has three layers of features, and no fourth: what's in the source, what happens at build time, and what happens in the browser. A backend for saved recipes came up and got deferred, because the moment there's a database, the text isn't the whole cookbook anymore.
 
-<!-- #todo In your words: why deferring the backend felt right (or what would change your mind) -->
+The truth is I deferred the database layer after years of managing CMSs with heavy backends. These backends make local tests and deploys a pain, and Hugo's static `rsync` is honestly one of the nicest ways to deploy something at this scale.
 
 Structure comes from the files. Folders are for what a page can only be one of (a recipe, a method, a drink, an essay), and tags are for what it can be several of (vegan, quick, dressings). Wiki links resolve by title, so `[[Simple gravy]]` in Obsidian is a link on the site.
 
-<!-- #todo check: the gravy title for the wiki link example -->
-
 The build writes an `index.json` of the whole collection, which lets agents answer questions about it: which recipes use buttermilk, which methods have no builds yet, which tags are nearly empty.
 
-That's the other reason plain text works so well here: it plays well with agents. They can read, review, and reshape hundreds of text files quickly, and they don't need an API to do it. Yes, I'm lazy. Agents also helped define how the text diagrams should work, and even came up with ideas for icons and glyphs.
+That's the other reason plain text works so well here: it plays well with agents. They can read, review, and reshape hundreds of text files quickly, and they don't need an API to do it. Yes, I'm lazy. Agents also helped define how the text diagrams should work, and even came up with the base concepts for icons and glyphs.
 
-<!-- #todo In your words: an example of an agent helping with a diagram format or an icon -->
+The best use of agents for the diagram format was finding consistency and running scenarios, and producing endless mockups. Getting a text format right requires trying variations, and testing those with each build. This is something a lazy human will never do consistently, so I made sure it was automated.
 
-A full build takes about a second for 597 pages.
+A full build takes about a second for 597 pages. 
 
-Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in the manifesto.
+Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in the manifesto: showing your work helps others understand how to think about developing and adjusting recipes. It's honest to recipes as they're never perfect, just better tested at some point.
 
-## Three things the agents taught me
+## Three things using agents taught me
 
 I built most of the cookbook with Claude Code, over two to three weeks. A few things I learned stuck.
 
 **Mocks are the decision log.** Before building a feature, I had the agent mock it up as a page I could look at. There are 31 mocks in the repo now, and each one ends with a dated *Decided* line saying what we picked. A later session, which remembers nothing, can open a mock and pick the decision up cold.
 
-<!-- #todo In your words: one mock and the decision it captured (the sidebar Mechanic? the ingredient checklist?) -->
+Mocks were great for restructuring the files and folders. It took several passes to think clearly about how I wanted things to fit, and doing this by hand would have taken days of gruntwork. It was also great for trying variations of diagrams and content, and trying diagrams in various orientations and widths. Any time you want to try 100 versions of something, agents are there to tirelessly toil away.
 
 **Hooks enforce, memory guides.** I told the agent not to add itself as a co-author on commits. It remembered, mostly. The trailer slipped through on three commits anyway, until I added a hook that rejects any commit message carrying it. Memory is good for preferences. Anything that has to be true every time needs a hook.
 
-<!-- #todo In your words: how you noticed the trailer, and how it felt -->
-
-**Verify by looking.** An agent will tell you a page is done. Looking at it is how you find out it's maybe 50% there. The other half of that lesson was a Safari window nobody was watching.
-
-<!-- #todo In your words: the "maybe 50% there" pass and the Safari window, the actual stories -->
-
-<!-- #todo check: does this section overlap the "Building a recipe site with Claude Code" draft enough to cut that one, or does it stay separate? -->
+**Verify by looking.** An agent will tell you a page is done. Looking at it is how you find out it's maybe 50% there. The other half of that lesson was a Safari window nobody was watching. I did add a layer of agent testing, but we structured work so that I was the final reviewer of everything. 
 
 ## Take it
 
 Everything is free. [Fugu](https://github.com/robotpony/hugo-theme-fugu) and [hugo-warped](https://github.com/robotpony/hugo-warped) are MIT licensed, for anyone to use or abuse. The recipes are [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), because recipes should be free, and mine are nothing special.
-
-<!-- #todo check: is the not-a-chef repo itself public, and should it be linked here? -->
 
 This isn't a tutorial, but if you want to build your own cookbook, here are the hints:
 
@@ -226,18 +205,10 @@ This isn't a tutorial, but if you want to build your own cookbook, here are the 
 
 It took two to three weeks of full-time work and cost under $25. It's only worth it if you want what I wanted: a printed-cookbook feel, today, from files you'll still be able to open in 20 years.
 
-<!-- #todo check: what the under-$25 covered (agent usage, domain, hosting?) -->
-
 ## The text kept spreading
 
 There's a trade-off. My wife still finds the old Google Drive cookbook easier to edit, and she's not wrong. When she adds a recipe there, I move it over by hand.
 
-<!-- #todo In your words: her side of it, or a recipe of hers you moved over -->
+The text kept spreading anyway. The diagram formats from the cookbook now draw diagrams on this blog and in Scorekeep, so this post's diagrams come from the cookbook's work. And as I was winding the cookbook down, the text-first thinking exploded into yet another project, [Space Command](https://space-command.ca/): plain text for to-dos, not a new idea, but my take on an exoskeletal version of it, where it sits on top of a Hugo and Obsidian folder and helps with editing and publishing. More on that later.
 
-The text kept spreading anyway. The diagram formats from the cookbook now draw diagrams on this blog and in Scorekeep, so this post's diagrams come from the cookbook's work. And as I was winding the cookbook down, the text-first thinking exploded into yet another project, [Space Command](https://space-command.ca/): plain text for to-dos, not a new idea, but my take on an exoskeletal version of it. More on that later.
-
-<!-- #todo In your words: one line on what "exoskeletal" means for Space Command -->
-
-Somehow a cookbook rekindled my love of cooking, of writing about it, and even of building blog-shaped things.
-
-<!-- #todo In your words: the closing line -->
+Somehow a cookbook rekindled my love of cooking, of writing about it, and even of building blog-shaped things. Having something to share that feels like a cookbook site is the difference between something I work on occasionally and something I obsess over.
