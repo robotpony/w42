@@ -41,7 +41,7 @@ Along the way I tried the apps. Paprika and a handful of other iOS and Mac recip
 
 I never made it long in any of the apps, because each one started from zero and locked everything in.
 
-This summer I started moving the Google Doc recipes into Markdown. Then I tried Hugo on top of those text files, mostly because this blog already ran on Hugo. Hugo worked well here, but I hadn't automated much of the tooling around it yet, and the cookbook became the reason I learned Hugo well. I automated it and even built apps to help manage posts. Initially it was an Obsidian plugin that I evolved into a macOS app I hacked together with Claude.
+This summer I started moving the Google Doc recipes into Markdown. Then I tried Hugo on top of those text files, mostly because this blog already ran on Hugo. Hugo worked well here, but I hadn't automated much of the tooling around it yet, and the cookbook became the reason I learned Hugo well. I automated it and even built apps to help manage posts. Initially it was an Obsidian plugin that I evolved into a macOS app I hacked together with Claude, one that never stuck.
 
 One rule drove the project, and I wrote about it in [What I'm about, in plain text](/blog/2026/what-im-about-in-plain-text/):
 
@@ -208,7 +208,7 @@ It took two to three weeks of full-time work and cost under $25. It's only worth
 
 ## The text kept spreading
 
-There's a trade-off. My wife still finds the old Google Drive cookbook easier to edit, and she's not wrong. When she adds a recipe there, I move it over by hand.
+There's a trade-off. My partner still finds the old Google Drive cookbook easier to edit, and she's not wrong. When she adds a recipe there, I move it over by hand.
 
 The text kept spreading anyway. The diagram formats from the cookbook now draw diagrams on this blog and in Scorekeep, so this post's diagrams come from the cookbook's work. And as I was winding the cookbook down, the text-first thinking exploded into yet another project, [Space Command](https://space-command.ca/): plain text for to-dos, not a new idea, but my take on an exoskeletal version of it, where it sits on top of a Hugo and Obsidian folder and helps with editing and publishing. More on that later.
 
