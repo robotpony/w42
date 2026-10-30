@@ -1,7 +1,7 @@
 ---
 title: "B♥2C: building a cookbook with Hugo"
 date: 2026-10-28
-draft: true
+draft: false
 slug: building-a-cookbook-with-hugo
 tags:
   - cooking
@@ -100,7 +100,7 @@ None of this is necessary for a simple cookbook. But these are the families of t
 
 A great example of this is my beef base. It's the laziest form of cooking ground beef: throw minced onions, garlic, mushrooms, beef, stock, and some spices in a pressure cooker and cook it until the beef softens. In about 40 minutes, you have 4–5 L of soft beef. Now that soft beef is the base for dozens of recipes, from tacos and cottage pies to American-style meat sauce, Canadian chilli, pizzas, and a hundred different Asian dishes. I freeze that base in 500 ml containers, and it forms the base of many of our quick weeknight and lunch meals.
 
-Burgers are another great example. I've been chasing my favourite burger for more than 20 years. A burger is a stack of decisions starting with the bun, the sauce, the patty, and what goes where. Here's [the Bruce burger](https://bruce-loves-to-cook.ca/methods/burgers/builds/bruce-burger/) (the BCS); it's the one I make at home. This is what it looks like as text and as the site draws it:
+Burgers are another great example. I've been chasing my favourite burger for more than 20 years. A burger is a stack of decisions starting with the bun, the sauce, the patty, and what goes where. Here's [the Bruce burger](https://bruce-loves-to-cook.ca/methods/burgers/builds/bruce-burger/); it's the one I make at home. This is what it looks like as text and as the site draws it:
 
 ````tabs {layout="aside"}
 tab: Text
@@ -191,7 +191,7 @@ Mocks were great for restructuring the files and folders. It took several passes
 
 **Hooks enforce, memory guides.** I told the agent not to add itself as a co-author on commits. It remembered, mostly. The trailer slipped through on three commits anyway, until I added a hook that rejects any commit message carrying it. Memory is good for preferences. Anything that has to be true every time needs a hook.
 
-**Verify by looking.** An agent will tell you a page is done. Looking at it is how you find out it's maybe 50% there. The other half of that lesson was a Safari window nobody was watching. <!-- #todo tell the Safari window story in a sentence or two --> I did add a layer of agent testing, but we structured work so that I was the final reviewer of everything. 
+**Verify by looking.** An agent will tell you a page is done. Looking at it is how you find out it's maybe 50% there. The other half of that lesson was a Safari window nobody was watching. I did add a layer of agent testing, but we structured work so that I was the final reviewer of everything. 
 
 ## Take it
 
@@ -204,7 +204,7 @@ This isn't a tutorial, but if you want to build your own cookbook, here are the 
 - **Slash commands.** One stubs a recipe (`/recipe-new`), others check the collection (`/lint`), open the dev server (`/preview`), and build and ship it (`/publish`).
 - **A plain host.** The site is static files, rsynced to an ordinary web host.
 
-It took two to three weeks of full-time work and cost under $25. It's only worth it if you want what I wanted: a printed-cookbook feel, today, from files you'll still be able to open in 20 years.
+It took two to three weeks of full-time work and cost under $25 of agent time. It's only worth it if you want what I wanted: a printed-cookbook feel, today, from files you'll still be able to open in 20 years.
 
 ## The text kept spreading
 
