@@ -27,11 +27,11 @@ So I doubled down and built the base of a teaching platform for cookery: methods
 
 ## Decades of paper, then years of Google Docs
 
-My recipes started on paper, in flour-dusted binders, and some scattered Word documents. The binders included a wide array of recipe cards, printed webpages, hand written pages, and printed documents from various eras of Pages, Word, and more. Pulling them into one place started a long time ago and went slowly, a few recipes at a time, whenever I remembered.
+My recipes started on paper, in flour-dusted binders, and some scattered Word documents. The binders included a wide array of recipe cards, printed webpages, handwritten pages, and printed documents from various eras of Pages, Word, and more. Pulling them into one place started a long time ago and went slowly, a few recipes at a time, whenever I remembered.
 
 Lockdown gave the project time. The recipes landed in Google Docs, which were pretty good: searchable, shared, and on every device. The process was also very manual. Every recipe was formatted by hand, and every fix to the layout was a fix to every document. I wrote essays, too, but without a way to index and link them easily, there wasn't much motivation to work on these more principled sections of the cookbook.
 
-Oddly, it was sharing was where Google Docs caused the most friction. A recipe I wanted to send someone was a document with permissions, not a link anyone could open and read. Even when I opened permissions up, there was no real indexing or search. You could use Google drive search, but it didn't work for our kids or our parents.
+Oddly, sharing was where Google Docs caused the most friction. A recipe I wanted to send someone was a document with permissions, not a link anyone could open and read. Even when I opened permissions up, there was no real indexing or search. You could use Google Drive search, but it didn't work for our kids or our parents.
 
 It was also a pain to edit without a good network connection, which is often exactly when I want to fix a recipe. I often think about food on vacation, writing in my food log, and doing research by talking to local chefs and servers.
 
@@ -39,19 +39,19 @@ And even to us, it never felt like a *thing*. It was a whole cookbook, hundreds 
 
 Along the way I tried the apps. Paprika and a handful of other iOS and Mac recipe managers were good at the parts they cared about, and they failed me on everything else. Export was awkward. Sync was fragile. The recipes lived in each app's own format, on each app's own hosting, and the layouts were whatever the app decided a recipe looked like.
 
-I never made it long in any of the apps as it was starting from zero each time, and it was so locked in.
+I never made it long in any of the apps, because each one started from zero and locked everything in.
 
 This summer I started moving the Google Doc recipes into Markdown. Then I tried Hugo on top of those text files, mostly because this blog already ran on Hugo. Hugo worked well here, but I hadn't automated much of the tooling around it yet, and the cookbook became the reason I learned Hugo well. I automated it and even built apps to help manage posts. Initially it was an Obsidian plugin that I evolved into a macOS app I hacked together with Claude.
 
-The was a a rule that drove the project, and I wrote about it in [What I'm about, in plain text](/blog/2026/what-im-about-in-plain-text/):
+One rule drove the project, and I wrote about it in [What I'm about, in plain text](/blog/2026/what-im-about-in-plain-text/):
 
-> *A recipe should look **natural** in any text editor, and it should look great published.
+> *A recipe should look **natural** in any text editor, and it should look great published.*
 
 I added that second half after reflecting on the project. I didn't just want a pile of documents. No unstructured mess of headings and bullets either, but a real cookbook, with layouts and diagrams, one that's easy to extend.
 
 ## Text with a bit of lipstick
 
-Markdown, for those that don't know, is plain text with a bit of lipstick. It reads fine raw, and with a little help it can look like pretty much anything you want.
+Markdown, for those who don't know, is plain text with a bit of lipstick. It reads fine raw, and with a little help it can look like pretty much anything you want.
 
 Here's an excerpt of my Asian slaw dressing, first as I write it, then as the site shows it.
 
@@ -86,11 +86,11 @@ None of these extra features are in the text. The text stays a recipe you could 
 
 The repo is my Obsidian vault, too. Obsidian is a text-based writing tool. It knows about Markdown and handles local links nicely, like a wiki. There's no CMS and no copy step: I edit a recipe where I keep my notes, and the next build publishes it.
 
-When I find a new recipe or technique, I add it to my engineering food log. I call these my *Food Wishes*, after the inspirational Youtube creator, Chef John. These logs are raw lists and notes, including research, recipe notes while cooking. I edit these on my laptop or phone, and clean them up later, some of the time at least.
+When I find a new recipe or technique, I add it to my engineering food log. I call these my *Food Wishes*, after the inspirational YouTube creator, Chef John. These logs are raw lists and notes, including research and notes made while cooking. I edit these on my laptop or phone, and clean them up later, some of the time at least.
 
 ## Scope creep, on purpose
 
-The site went together quickly. Too quickly, perhaps, because once the basic recipe pages worked, I started seeing what else I could do with that plain text could do. The scope exploded.
+The site went together quickly. Too quickly, perhaps, because once the basic recipe pages worked, I started seeing what else that plain text could do. The scope exploded.
 
 I added *methods*: pages that explain how a kind of food works, which variables matter, and how it fails, so you can cook something that isn't written down anywhere. Pan sauces. Stock. Reverse searing and water frying. Foil packets. A page of food ratios for making your own recipes.
 
@@ -98,7 +98,7 @@ Then *blueprints*, which break one kind of food into its parts, each with its ow
 
 None of this is necessary for a simple cookbook. But these are the families of technique that actually drive my cooking. A recipe is one way through a pattern, and the patterns are what I actually cook from.
 
-A great example of this is my beef base. It's the laziest form of cooking ground beef: throw minced onions, garlic, mushrooms, beef, stock, and some spices in a pressure cooker and cook it until the beef softens. In about 40 minutes, you have 4-5L of soft beef. Now that soft beef is the base for dozens of recipes, from tacos, cottage pies, to American style meat sauce, Canadian chilli, pizzas, and a hundred different asian dishes. I freeze that base in 500ml containers, and it forms the base of many of our quick weeknight and lunch meals.
+A great example of this is my beef base. It's the laziest form of cooking ground beef: throw minced onions, garlic, mushrooms, beef, stock, and some spices in a pressure cooker and cook it until the beef softens. In about 40 minutes, you have 4–5 L of soft beef. Now that soft beef is the base for dozens of recipes, from tacos and cottage pies to American-style meat sauce, Canadian chilli, pizzas, and a hundred different Asian dishes. I freeze that base in 500 ml containers, and it forms the base of many of our quick weeknight and lunch meals.
 
 Burgers are another great example. I've been chasing my favourite burger for more than 20 years. A burger is a stack of decisions starting with the bun, the sauce, the patty, and what goes where. Here's [the Bruce burger](https://bruce-loves-to-cook.ca/methods/burgers/builds/bruce-burger/) (the BCS); it's the one I make at home. This is what it looks like as text and as the site draws it:
 
@@ -128,7 +128,8 @@ Then I attacked the chicken ~~burger~~ sandwich. And stocks. And pan sauces. Wai
 
 I always have. I just needed to remind myself, and building the cookbook did that. The methods and blueprints weren't scope creep so much as me writing down how I actually think about food, for the first time, in a form I could keep and share.
 
-Not everything is a method. Some of it is a principle, like [Win the fridge](https://bruce-loves-to-cook.ca/tags/win-the-fridge/): use every scrap before it goes to waste. We came up with Win the Fridge as a way to gamify not wasting anything. The kids and my partner got into it, and we would find clever ways to use the rest of whatever happened to need to be used up next.
+Not everything is a method. Some of it is a principle, like [Win the fridge](https://bruce-loves-to-cook.ca/tags/win-the-fridge/): use every scrap before it goes to waste. We came up with Win the Fridge as a way to gamify not wasting anything. The kids and my partner got into it, and we would find clever ways to use up whatever was next in line.
+
 ## How the site is built
 
 The cookbook is three themes and a dialect. Simple, no?
@@ -140,7 +141,7 @@ Base theme   | core services and sizing
 caption: Where Hugo looks for a template, first to last
 ```
 
-This isn't too far from how cooking works, too. You layer things on a base of technique and flavour. You layer in specifics for the region, available ingredients, and what you're craving.  And then you make it yours. If you were chef John, you'd add a pinch of cayenne, and it would be yours. I'm more apt to add a bit of acid and a bit more salt, as I like it punchy.
+This isn't too far from how cooking works, too. You layer things on a base of technique and flavour. You layer in specifics for the region, available ingredients, and what you're craving. And then you make it yours. If you were Chef John, you'd add a pinch of cayenne, and it would be yours. I'm more apt to add a bit of acid and a bit more salt, as I like it punchy.
 
 The site's config starts with one line:
 
@@ -152,7 +153,7 @@ Hugo looks for each template in the site first, then in Fugu, then in Blowfish.
 
 [Blowfish](https://blowfish.page/) is a decent base theme with some nice features, and it's scaffolding you rent. On day one it gave me search, dark mode, and RSS. Then I spent a day fighting it, and by the end I'd overridden 17 of its 141 templates.
 
-I did spend some time fighting Blowfish, but it was mostly me own laziness and not understanding some of the shapes in the pages and CSS. Once I learned it well, the tradeoff of time and features was well worth it.
+I did spend some time fighting Blowfish, but it was mostly my own laziness and not understanding some of the shapes in the pages and CSS. Once I learned it well, the tradeoff of time and features was well worth it.
 
 *Fugu* (another word for Blowfish) is the cookbook theme: recipe pages, the sidebar, ingredient checklists, methods, blueprints, and builds. It started inside the site and got split out once its boundary was obvious, which wasn't on day one. The site itself keeps only its branding: the logo, the colours, and the header.
 
@@ -178,7 +179,7 @@ The best use of agents for the diagram format was finding consistency and runnin
 
 A full build takes about a second for 597 pages. 
 
-Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in the manifesto: showing your work helps others understand how to think about developing and adjusting recipes. It's honest to recipes as they're never perfect, just better tested at some point.
+Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in the manifesto: showing your work helps others understand how to think about developing and adjusting recipes. It's honest: recipes are never perfect, only better tested.
 
 ## Three things using agents taught me
 
@@ -190,7 +191,7 @@ Mocks were great for restructuring the files and folders. It took several passes
 
 **Hooks enforce, memory guides.** I told the agent not to add itself as a co-author on commits. It remembered, mostly. The trailer slipped through on three commits anyway, until I added a hook that rejects any commit message carrying it. Memory is good for preferences. Anything that has to be true every time needs a hook.
 
-**Verify by looking.** An agent will tell you a page is done. Looking at it is how you find out it's maybe 50% there. The other half of that lesson was a Safari window nobody was watching. I did add a layer of agent testing, but we structured work so that I was the final reviewer of everything. 
+**Verify by looking.** An agent will tell you a page is done. Looking at it is how you find out it's maybe 50% there. The other half of that lesson was a Safari window nobody was watching. <!-- #todo tell the Safari window story in a sentence or two --> I did add a layer of agent testing, but we structured work so that I was the final reviewer of everything. 
 
 ## Take it
 
