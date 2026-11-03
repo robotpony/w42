@@ -31,6 +31,8 @@ done
 
 cd "$(dirname "$0")/.."
 
+themes/hugo-warped/tools/check-hugo.sh
+
 # Port 1314, not Hugo's default 1313: the cookbook (~/writing/not-a-chef)
 # previews on 1313, and the restart below would stop its server.
 PORT=1314

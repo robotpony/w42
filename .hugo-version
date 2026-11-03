@@ -1,0 +1,3 @@
+# Checked by themes/hugo-warped/tools/check-hugo.sh before previews and builds.
+min = 0.158.0      # the theme's floor (themes/w42/theme.toml)
+tested = 0.169.0   # the version this site was last built on

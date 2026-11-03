@@ -19,6 +19,8 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
+themes/hugo-warped/tools/check-hugo.sh
+
 usage() {
   sed -n '5,17p' "$0" | sed 's/^# \{0,1\}//'
 }

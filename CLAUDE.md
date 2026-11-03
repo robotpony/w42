@@ -50,6 +50,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
   - Branding JS/CSS and the fonts load from `cdn.warpedvisions.org` on the live site (`warpedScript`/`warpedStyle` in hugo.toml). The preview serves them from the `cdn/` submodule (robotpony/warped.js, `~/projects/sites/warped.js`) through `tools/hugo.preview.toml`, so it works offline. After each warped.js CDN deploy (the warped.js agent owns that repo), bump `cdn/` here and set `?v=<commit>` on `warpedScript`/`warpedStyle` in hugo.toml, so the preview matches and visitors' 2-day caches miss
   - Hugo templates in `layouts/`
   - English-only `i18n/` (other translations were removed); the theme needs Hugo 0.158.0 or later
+- **Hugo version:** `.hugo-version` holds `min` and `tested`; `tools/preview.sh` and `tools/publish.sh` run hugo-warped's `tools/check-hugo.sh` first, which refuses anything below `min` and warns on anything but `tested`. Raise `tested` after building on a newer Hugo
 
 ### Configuration
 - **hugo.toml** contains all site configuration
