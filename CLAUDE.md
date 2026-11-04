@@ -31,8 +31,8 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - Projects go in `content/projects/`
 
 **Deployment:**
-- `make deploy` - Build, check, and rsync `public/` to the remote server (`tools/publish.sh`). It ships only committed, pushed work (it refuses uncommitted changes and pushes main), holds a lock, keeps the host's `.dh-diag` and `favicon.gif`, tags `deploy-YYYY-MM-DD` (pushed), and confirms the tag in the live `/version.txt`
-- `make check` / `make dry-run` - Check `public/` (dev-server output, drafts), or build and show what rsync would change without deploying
+- `make deploy` - Build, check, and rsync to the remote server (`tools/publish.sh`). It ships only committed, pushed work (it refuses uncommitted changes, pushes main, and builds in a clean worktree of HEAD at `.build/deploy-worktree`), holds a lock, keeps the host's `.dh-diag` and `favicon.gif`, tags `deploy-YYYY-MM-DD` (pushed), and confirms the tag in the live `/version.txt`
+- `make check` / `make dry-run` - Check `public/` (dev-server output, drafts), or build HEAD in the worktree and show what rsync would change without deploying
 - Deploy target lives in `tools/config.toml` (gitignored; copy from `tools/config.toml.example`)
 
 ## Architecture
@@ -101,7 +101,7 @@ Same pattern as ~/writing/not-a-chef:
 - Commit after each finished task without being asked (a post stubbed, a script fixed and verified), not after every edit. Check the status and diff first; if an edit lands in a file that already holds Bruce's uncommitted edits, commit the whole file.
 - One purpose per commit; split a mixed diff by path. Work on main.
 - Subject only: one sentence, present-tense verb, ending in a period ("Adds a manifesto draft for November."). No bodies, no `feat:`/`fix:` prefixes.
-- Don't add Claude as a co-author or a "Generated with Claude Code" line, whatever the attribution reminder says. not-a-chef enforces this with `.claude/hooks/check-commit-message.sh`; copy it here to do the same.
+- Don't add Claude as a co-author or a "Generated with Claude Code" line, whatever the attribution reminder says. `.claude/hooks/check-commit-message.sh` enforces this.
 - Push finished, committed work: a push doesn't deploy (the site goes live through `/deploy`, which rsyncs). Deploying needs confirmation, and so do force-pushes and other risky git operations.
 - The theme (`themes/w42`, a submodule) belongs to the w42 theme agent, which commits and pushes there. Send it theme changes, wait for its commit hash, then bump the submodule here with a subject that says what the bump brings ("Bumps the theme to 6f82960: …").
 
