@@ -6,9 +6,9 @@
 # loads them from cdn.warpedvisions.org (hugo.toml).
 #
 # Serves images-host files (banners and in-body images on
-# images.warpedvisions.org) from the local images repo at
-# /images.warpedvisions.org/, through the theme's imagesURL param. That's
-# about 77M, held in the server's memory.
+# images.warpedvisions.org) from the local images repo, checked out beside this
+# one, at /images.warpedvisions.org/, through the theme's imagesURL param.
+# That's about 77M, held in the server's memory.
 
 [params]
 warpedScript = "/cdn/warped.js"
@@ -51,6 +51,6 @@ target = "static/cdn"
 files = ["warped.js", "warped.css", "fonts/*.woff2"]
 
 [[module.mounts]]
-source = "/Users/mx/projects/sites/images.warpedvisions.org"
+source = "../images.warpedvisions.org"
 target = "static/images.warpedvisions.org"
 files = ["20[0-9][0-9]/*/*.{jpg,jpeg,png,gif,webp}"]
