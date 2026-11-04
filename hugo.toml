@@ -7,6 +7,9 @@ theme = 'w42'
 # and tools/publish.sh check fails if one slips through.
 buildDrafts = false
 
+# Renders the theme's robots.txt: open in production, Disallow: / elsewhere.
+enableRobotsTXT = true
+
 [pagination]
 pagerSize = 5
 
