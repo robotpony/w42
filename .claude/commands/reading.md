@@ -1,11 +1,13 @@
 # /reading
 
-Pull the reading list from Goodreads now, and commit what changed.
+Import the reading list from a Goodreads library export, and commit what changed.
 
-Usage: /reading
+Usage: /reading [file]
 
-1. Run: `tools/goodreads.sh` (`make reading`). It fetches the read and currently-reading shelves into `data/reading.json`, with new covers in `assets/reading/`. A failed fetch warns and leaves the cache alone.
-2. Report its summary line, and name the books that are new or changed shelf (`git diff data/reading.json`). Say so if nothing changed.
-3. If `data/reading.json` or `assets/reading/` changed, commit just those paths as "Updates the reading list." and push.
+Bruce downloads the export by hand, about monthly: https://www.goodreads.com/review/import, Export Library, then the download link once it's ready. If the file isn't there, ask for it. Never commit the export: it holds reviews and the to-read shelf, and it's gitignored.
 
-A running preview picks up the new data without a restart. To pull as part of another run instead, use `READING=fresh` (`make preview READING=fresh`, `/preview fresh`, `make build READING=fresh`).
+1. Run: `tools/goodreads.sh import $ARGUMENTS` (`make reading`). The default file is `goodreads_library_export.csv` in the repo root. It updates `data/reading.json` from the read and currently-reading shelves and looks up covers for new books on Open Library.
+2. Report its summary, including the New, Moved and No cover lines, or say that nothing changed. A No cover line means a blank tile until Bruce adds `assets/reading/<id>.jpg` and imports again.
+3. If `data/reading.json` or `assets/reading/` changed, commit just those paths as "Updates the reading list." and push. The change goes live with the next `/deploy`.
+
+A running preview picks up the new data without a restart.

@@ -5,10 +5,6 @@
 #   tools/preview.sh all          drafts and future-dated posts
 #   tools/preview.sh [all] POST   open POST: a file, a bundle folder, or part
 #                                 of a content path (e.g. a slug)
-#   tools/preview.sh fresh ...    pull the reading list from Goodreads first
-#
-# The reading list comes from its committed cache unless asked: `fresh`, or
-# READING=fresh (or daily) in the environment (make preview READING=fresh).
 #
 # A future-dated target post turns on `all` by itself, since Hugo won't
 # serve it otherwise.
@@ -16,14 +12,12 @@ set -euo pipefail
 
 FUTURE=()
 POST=""
-READING="${READING:-cached}"
 for arg in "$@"; do
   case "$arg" in
     all) FUTURE=(-F) ;;
-    fresh) READING=fresh ;;
-    -*) echo "usage: tools/preview.sh [all] [fresh] [post]" >&2; exit 1 ;;
+    -*) echo "usage: tools/preview.sh [all] [post]" >&2; exit 1 ;;
     *)
-      [ -z "$POST" ] || { echo "usage: tools/preview.sh [all] [fresh] [post]" >&2; exit 1; }
+      [ -z "$POST" ] || { echo "usage: tools/preview.sh [all] [post]" >&2; exit 1; }
       POST="$arg"
       ;;
   esac
@@ -111,9 +105,6 @@ open_browser() {
     sleep 0.5
   done
 }
-
-# The reading list: cached unless asked (fresh or daily)
-tools/goodreads.sh "$READING"
 
 # warped.js, warped.css, and the fonts come from the cdn/ submodule, so the
 # preview works offline (tools/hugo.preview.toml). Without the submodule it

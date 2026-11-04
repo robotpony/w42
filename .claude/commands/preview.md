@@ -2,7 +2,7 @@
 
 Start the Hugo development server and open a post in the browser.
 
-Usage: /preview [all] [fresh] [post]
+Usage: /preview [all] [post]
 
 Run: `tools/preview.sh $ARGUMENTS` (`make preview`, or `make preview-all` for `all`)
 
@@ -11,7 +11,6 @@ Run: `tools/preview.sh $ARGUMENTS` (`make preview`, or `make preview-all` for `a
 - If the target post is future-dated, the script turns on `all` by itself.
 - No `all` and no future-dated target: drafts (-D), but not future-dated posts, so the preview matches what a build would publish today.
 - `all`: drafts and future-dated (scheduled) posts (-F).
-- `fresh`: pull the reading list from Goodreads before starting. Without it the preview uses the committed cache and never contacts Goodreads.
 
 The script stops this site's own hugo server on port 1314 (the shared list is `~/.claude/rules/site-ports.md`) and starts a fresh one, so the preview always reflects the current theme and config. If anything else holds the port, it exits with an error naming the process; report that and don't stop the process yourself. Run it in the background; don't skip it because a server is already up.
 

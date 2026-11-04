@@ -21,4 +21,4 @@ publish:
 	tools/publish.sh
 
 reading:
-	tools/goodreads.sh
+	tools/goodreads.sh import

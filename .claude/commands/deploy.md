@@ -6,8 +6,7 @@ Usage: /deploy [dry-run]
 
 1. Run: `tools/publish.sh` (`make deploy`), or `tools/publish.sh dry-run` for `dry-run`. A deploy:
    - takes a lock, so a second session's deploy waits;
-   - refuses uncommitted changes (the reading cache aside);
-   - refreshes the reading list at most daily (`READING=fresh` pulls now), commits it if it changed ("Updates the reading list."), and pushes main;
+   - refuses uncommitted changes and pushes main;
    - builds HEAD in a clean worktree (`.build/deploy-worktree`) and checks it for dev-server output and drafts;
    - rsyncs by checksum with `--delete` and `--itemize-changes`, listing only real changes (keeping the host's `.dh-diag` and `favicon.gif`), writes `version.txt`, tags `deploy-YYYY-MM-DD` and pushes that tag;
    - fetches the live `version.txt` to confirm the tag.

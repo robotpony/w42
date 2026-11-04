@@ -12,7 +12,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - `make preview` - Restart the dev server (`tools/preview.sh`) with drafts, in memory, and open it in Chrome
 - `make preview-all` - Same, plus future-dated (scheduled) posts (`tools/preview.sh all`)
 - `make build` - Build static site to /public directory (`tools/publish.sh build`)
-- `make reading` - Refresh the Goodreads reading cache (`tools/goodreads.sh`): `data/reading.json` and covers in `assets/reading/`, both committed. `READING` sets when a run pulls from Goodreads: `cached` (never), `daily` (if the last pull is a day old), or `fresh` (now). Previews default to cached and builds to daily; `make preview READING=fresh`, `tools/preview.sh fresh`, or `/preview fresh` pulls now. A deploy commits any change ("Updates the reading list.")
+- `make reading` - Import the reading list from a Goodreads library export (`tools/goodreads.sh import [file]`, default `goodreads_library_export.csv`, gitignored because it holds reviews): `data/reading.json` and covers in `assets/reading/`, both committed. Goodreads' RSS feeds are gone, so Bruce downloads the export by hand about monthly, from https://www.goodreads.com/review/import. Previews and builds never contact Goodreads
 
 - `tools/banner.sh <name> <prompt>` - Generate a watercolour-style banner with OpenAI's image API (needs `OPENAI_API_KEY` or an `openai-api-key` keychain entry), crop it to 1536x559, and save it in the images repo under `YYYY/MM/`. `--from` recrops without a new call; `--help` has the rest. Options, local tools included, are in `tools/IMAGES.md`
 
@@ -22,7 +22,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - `/post-new` - stub a new post as a page bundle
 - `/image-add` - add photos or screenshots to a post's bundle (`tools/add-image.sh` for photos)
 - `/lint` - check post front matter, images, links, and leftover drafting markers
-- `/reading` - pull the reading list from Goodreads now and commit any change
+- `/reading` - import a Goodreads export and commit any change
 
 **Content creation:**
 - `hugo new` uses `$EDITOR` (`newContentEditor` is commented out in hugo.toml); `vim` is in the exec allowlist

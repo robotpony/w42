@@ -7,14 +7,10 @@
 #   tools/publish.sh check      sanity-check this checkout's public/
 #   tools/publish.sh dry-run    build HEAD, check, show what rsync would change
 #
-# Builds pull the reading list from Goodreads at most daily; READING=fresh
-# pulls it now, READING=cached skips it (make build READING=fresh).
-#
-# A deploy ships only committed, pushed work: it refuses uncommitted changes
-# (the reading cache aside, which it commits), pushes, and builds in a clean
-# worktree of HEAD, so gitignored files can't ship either. It holds a lock so
-# two sessions can't deploy at once. tools/deploy.sh then tags it and checks
-# the live site.
+# A deploy ships only committed, pushed work: it refuses uncommitted changes,
+# pushes, and builds in a clean worktree of HEAD, so gitignored files can't
+# ship either. It holds a lock so two sessions can't deploy at once.
+# tools/deploy.sh then tags it and checks the live site.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -23,11 +19,7 @@ ROOT="$PWD"
 themes/hugo-warped/tools/check-hugo.sh
 
 usage() {
-  sed -n '5,17p' "$0" | sed 's/^# \{0,1\}//'
-}
-
-refresh_reading() {
-  tools/goodreads.sh "${READING:-daily}"
+  sed -n '5,13p' "$0" | sed 's/^# \{0,1\}//'
 }
 
 # --cleanDestinationDir: drop anything in public/ this build didn't write
@@ -115,16 +107,6 @@ for row in csv.DictReader(sys.stdin):
   echo "Checked public/: ok."
 }
 
-# A deploy commits the reading cache the build just refreshed, so what goes
-# live is in git.
-commit_reading() {
-  if [[ -n "$(git status --porcelain -- data/reading.json assets/reading)" ]]; then
-    git add -- data/reading.json assets/reading
-    git commit -q -m "Updates the reading list." -- data/reading.json assets/reading
-    echo "Committed the updated reading list."
-  fi
-}
-
 # One deploy at a time: a second session waits up to 10 minutes. A lock whose
 # process is gone is taken over.
 LOCK=resources/.deploy.lock
@@ -148,13 +130,11 @@ lock() {
   trap cleanup EXIT
 }
 
-# Uncommitted work doesn't ship. The reading cache is the exception: the
-# build refreshes it and commit_reading commits it. Untracked files inside
-# the theme submodule don't count.
+# Uncommitted work doesn't ship. Untracked files inside the theme submodule
+# don't count.
 require_clean() {
   local dirty
-  dirty=$(git status --porcelain --ignore-submodules=untracked -- . \
-    ':!data/reading.json' ':!assets/reading')
+  dirty=$(git status --porcelain --ignore-submodules=untracked)
   if [[ -n "$dirty" ]]; then
     echo "error: uncommitted changes; commit them before deploying:" >&2
     echo "$dirty" | sed 's/^/  /' >&2
@@ -173,7 +153,7 @@ push() {
 
 # A dry run builds HEAD, like a deploy; say what it leaves out.
 warn_dirty() {
-  if [[ -n "$(git status --porcelain --ignore-submodules=untracked -- . ':!data/reading.json' ':!assets/reading')" ]]; then
+  if [[ -n "$(git status --porcelain --ignore-submodules=untracked)" ]]; then
     echo "note: this checkout has uncommitted changes; they aren't in this dry run, and a deploy refuses them."
   fi
 }
@@ -184,15 +164,12 @@ case "$cmd" in
   all)
     lock
     require_clean
-    refresh_reading
-    commit_reading
     push
     make_worktree
     build_in_worktree
     tools/deploy.sh
     ;;
   build)
-    refresh_reading
     hugo_build
     ;;
   check)
@@ -201,11 +178,7 @@ case "$cmd" in
   dry-run)
     lock
     warn_dirty
-    refresh_reading
     make_worktree
-    # A deploy would commit a refreshed reading cache first, so include it.
-    cp data/reading.json "$WORKTREE/data/reading.json"
-    rsync -a --delete assets/reading/ "$WORKTREE/assets/reading/"
     build_in_worktree
     tools/deploy.sh --dry-run
     ;;
