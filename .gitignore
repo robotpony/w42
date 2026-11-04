@@ -7,3 +7,4 @@ tools/config.toml
 resources/
 # warped-todo Obsidian plugin writes project notes here; they belong in the vault
 projects/
+.build/

@@ -51,13 +51,12 @@ The site uses a custom Hugo theme called "w42" (located in `themes/w42/`):
 
 - `make preview` — run the Hugo dev server locally (`tools/preview.sh`)
 - `make build` — build the static site to `public/`
-- `make deploy` — build, check, then rsync `public/` to the server (`tools/publish.sh`)
+- `make deploy` — build HEAD in a clean worktree, check, then rsync to the server (`tools/publish.sh`)
 
 `tools/publish.sh` is the single entry point behind `make build`/`make deploy`; it also has subcommands:
 
 - `tools/publish.sh check` (`make check`) — sanity-check the current `public/`: fails on dev-server output (`localhost:1313`, `livereload.js`) or any draft post
-- `tools/publish.sh dry-run` (`make dry-run`) — build, check, and show what rsync would change without touching the server
-- `tools/publish.sh deploy` — check and deploy the current `public/` without rebuilding
+- `tools/publish.sh dry-run` (`make dry-run`) — build HEAD in a clean worktree, check, and show what rsync would change without touching the server
 
 ### Setup (per machine)
 

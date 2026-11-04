@@ -3,21 +3,22 @@
 # live in the Makefile and tools/deploy.sh.
 #
 #   tools/publish.sh            build, check, deploy (the usual path)
-#   tools/publish.sh build      build public/ only
-#   tools/publish.sh check      sanity-check the current public/
-#   tools/publish.sh dry-run    build, check, show what rsync would change
-#   tools/publish.sh deploy     check and deploy the current public/ (no rebuild)
+#   tools/publish.sh build      build public/ in this checkout
+#   tools/publish.sh check      sanity-check this checkout's public/
+#   tools/publish.sh dry-run    build HEAD, check, show what rsync would change
 #
 # Builds pull the reading list from Goodreads at most daily; READING=fresh
 # pulls it now, READING=cached skips it (make build READING=fresh).
 #
 # A deploy ships only committed, pushed work: it refuses uncommitted changes
-# (the reading cache aside, which it commits), pushes, and holds a lock so two
-# sessions can't deploy at once. tools/deploy.sh then tags it and checks the
-# live site.
+# (the reading cache aside, which it commits), pushes, and builds in a clean
+# worktree of HEAD, so gitignored files can't ship either. It holds a lock so
+# two sessions can't deploy at once. tools/deploy.sh then tags it and checks
+# the live site.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
+ROOT="$PWD"
 
 themes/hugo-warped/tools/check-hugo.sh
 
@@ -25,12 +26,51 @@ usage() {
   sed -n '5,17p' "$0" | sed 's/^# \{0,1\}//'
 }
 
+refresh_reading() {
+  tools/goodreads.sh "${READING:-daily}"
+}
+
 # --cleanDestinationDir: drop anything in public/ this build didn't write
 # (old drafts, deleted pages) so rsync --delete can't ship it.
-build() {
-  tools/goodreads.sh "${READING:-daily}"
+hugo_build() {
   echo "Building site..."
   hugo --minify --cleanDestinationDir
+}
+
+# A worktree of HEAD with the two submodules a build needs (cdn/ is
+# preview-only). --reference reuses this checkout's objects, so only the first
+# fetch is real work. HUGO_RESOURCEDIR shares the processed-image cache.
+WORKTREE=.build/deploy-worktree
+remove_worktree() {
+  git worktree remove --force "$WORKTREE" 2>/dev/null || rm -rf "$WORKTREE"
+  git worktree prune
+}
+
+make_worktree() {
+  remove_worktree
+  mkdir -p "$(dirname "$WORKTREE")"
+  git worktree add -q --detach "$WORKTREE" HEAD
+  MADE_WORKTREE=1
+  local sub
+  for sub in themes/w42 themes/hugo-warped; do
+    git -C "$WORKTREE" submodule --quiet update --init --reference "$ROOT/$sub" -- "$sub"
+  done
+  if [[ -f tools/config.toml ]]; then cp tools/config.toml "$WORKTREE/tools/config.toml"; fi
+  echo "Building from a clean worktree of HEAD ($(git rev-parse --short HEAD))."
+}
+
+# Moves into the worktree, so tools/deploy.sh ships its public/ from there.
+build_in_worktree() {
+  cd "$WORKTREE"
+  export HUGO_RESOURCEDIR="$ROOT/resources"
+  hugo_build
+  check
+}
+
+cleanup() {
+  cd "$ROOT"
+  if [[ -n "${MADE_WORKTREE:-}" ]]; then remove_worktree; fi
+  rm -rf "$LOCK"
 }
 
 # Refuse to ship a public/ that came from a dev server or a draft build.
@@ -105,7 +145,7 @@ lock() {
     waited=$((waited + 5))
   done
   echo $$ > "$LOCK/pid"
-  trap 'rm -rf "$LOCK"' EXIT
+  trap cleanup EXIT
 }
 
 # Uncommitted work doesn't ship. The reading cache is the exception: the
@@ -131,10 +171,10 @@ push() {
   fi
 }
 
-# Content that isn't committed still shows in a dry run; say so.
+# A dry run builds HEAD, like a deploy; say what it leaves out.
 warn_dirty() {
-  if [[ -n "$(git status --porcelain -- content 2>/dev/null)" ]]; then
-    echo "note: content/ has uncommitted changes; a deploy refuses them until they're committed."
+  if [[ -n "$(git status --porcelain --ignore-submodules=untracked -- . ':!data/reading.json' ':!assets/reading')" ]]; then
+    echo "note: this checkout has uncommitted changes; they aren't in this dry run, and a deploy refuses them."
   fi
 }
 
@@ -144,30 +184,30 @@ case "$cmd" in
   all)
     lock
     require_clean
-    build
-    check
+    refresh_reading
     commit_reading
     push
+    make_worktree
+    build_in_worktree
     tools/deploy.sh
     ;;
   build)
-    build
+    refresh_reading
+    hugo_build
     ;;
   check)
     check
     ;;
   dry-run)
-    warn_dirty
-    build
-    check
-    tools/deploy.sh --dry-run
-    ;;
-  deploy)
     lock
-    require_clean
-    check
-    push
-    tools/deploy.sh
+    warn_dirty
+    refresh_reading
+    make_worktree
+    # A deploy would commit a refreshed reading cache first, so include it.
+    cp data/reading.json "$WORKTREE/data/reading.json"
+    rsync -a --delete assets/reading/ "$WORKTREE/assets/reading/"
+    build_in_worktree
+    tools/deploy.sh --dry-run
     ;;
   -h|--help|help)
     usage
