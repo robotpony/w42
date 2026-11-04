@@ -379,19 +379,6 @@
    "cover": "reading/57531095.jpg"
   },
   {
-   "id": "30045683",
-   "title": "The Little Book of Hygge",
-   "full_title": "The Little Book of Hygge: The Danish Way to Live Well",
-   "author": "Meik Wiking",
-   "rating": 5,
-   "read": "2023-10-18",
-   "added": "2023-10-18",
-   "date": "2023-10-18",
-   "shelf": "read",
-   "url": "https://www.goodreads.com/book/show/30045683",
-   "cover": "reading/30045683.jpg"
-  },
-  {
    "id": "968",
    "title": "The Da Vinci Code",
    "full_title": "The Da Vinci Code (Robert Langdon, #2)",
@@ -598,6 +585,19 @@
    "shelf": "read",
    "url": "https://www.goodreads.com/book/show/31360",
    "cover": "reading/31360.jpg"
+  },
+  {
+   "id": "30045683",
+   "title": "The Little Book of Hygge",
+   "full_title": "The Little Book of Hygge: The Danish Way to Live Well",
+   "author": "Meik Wiking",
+   "rating": 5,
+   "read": "2023-09-27",
+   "added": "2023-10-18",
+   "date": "2023-09-27",
+   "shelf": "read",
+   "url": "https://www.goodreads.com/book/show/30045683",
+   "cover": "reading/30045683.jpg"
   },
   {
    "id": "23586542",
@@ -1798,7 +1798,7 @@
   {
    "id": "49661162",
    "title": "Randomize",
-   "full_title": "Randomize (Forward Collection, #6)",
+   "full_title": "Randomize",
    "author": "Andy Weir",
    "rating": 5,
    "read": "2022-11-23",
