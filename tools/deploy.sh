@@ -9,8 +9,17 @@
 set -euo pipefail
 
 # --delete empties the target of anything not in public/, except the host's
-# own files (DreamHost's diagnostics and its favicon.gif)
-RSYNC_FLAGS=(-avz --delete --exclude=.dh-diag --exclude=favicon.gif)
+# own files (DreamHost's diagnostics and its favicon.gif).
+# -c and no -t: each build rewrites every file, so compare content, and
+# --itemize-changes lists what changes. .DS_Store is gitignored, so a build in
+# this checkout can still copy it from static/.
+RSYNC_FLAGS=(-rlpzc --delete --itemize-changes --exclude=/.dh-diag --exclude=/favicon.gif --exclude=.DS_Store)
+
+# macOS's rsync (openrsync) also lists files that differ only in time, as
+# .f..T....; Hugo keeps static files' times, so drop those from the list.
+sync_site() {
+  rsync "${RSYNC_FLAGS[@]}" public/ "${HOST}:${REMOTE_PATH}/" | { grep -v '^\.f\.\.[Tt]\.\.\.\. ' || true; }
+}
 if [[ "${1:-}" == "--dry-run" ]]; then
   RSYNC_FLAGS+=(--dry-run)
 fi
@@ -73,7 +82,7 @@ fi
 
 if [[ " ${RSYNC_FLAGS[*]} " == *" --dry-run "* ]]; then
   echo "Dry run: public/ -> ${HOST}:${REMOTE_PATH} (nothing will be changed)"
-  rsync "${RSYNC_FLAGS[@]}" public/ "${HOST}:${REMOTE_PATH}/"
+  sync_site
   echo "Dry run complete."
 else
   TAG="deploy-$(date +%F)"
@@ -85,7 +94,7 @@ else
   echo "$TAG $(git rev-parse --short HEAD)" > public/version.txt
 
   echo "Deploying public/ -> ${HOST}:${REMOTE_PATH} as $TAG"
-  rsync "${RSYNC_FLAGS[@]}" public/ "${HOST}:${REMOTE_PATH}/"
+  sync_site
   echo "Deploy complete."
 
   git tag "$TAG"

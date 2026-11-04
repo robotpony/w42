@@ -9,7 +9,7 @@ Usage: /deploy [dry-run]
    - refuses uncommitted changes (the reading cache aside);
    - builds `public/`, pulling the reading list at most daily (`READING=fresh` pulls now), and checks it for dev-server output and drafts;
    - commits the reading cache if it changed ("Updates the reading list.") and pushes main;
-   - rsyncs with `--delete` (keeping the host's `.dh-diag` and `favicon.gif`), writes `version.txt`, tags `deploy-YYYY-MM-DD` and pushes that tag;
+   - rsyncs by checksum with `--delete` and `--itemize-changes`, listing only real changes (keeping the host's `.dh-diag` and `favicon.gif`), writes `version.txt`, tags `deploy-YYYY-MM-DD` and pushes that tag;
    - fetches the live `version.txt` to confirm the tag.
 2. If it refuses uncommitted changes, show the list and ask Bruce what to do. Don't commit his edits for him, and never flip a draft to published without his OK.
 3. Before deploying a big change (many pages or a deletion in the dry run, or a new section), run the dry run first and summarise it in a line or two.
