@@ -17,6 +17,7 @@ cd "$(dirname "$0")/.."
 ROOT="$PWD"
 
 themes/hugo-warped/tools/check-hugo.sh
+tools/goodreads.sh remind
 
 usage() {
   sed -n '5,13p' "$0" | sed 's/^# \{0,1\}//'

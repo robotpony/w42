@@ -26,6 +26,7 @@ done
 cd "$(dirname "$0")/.."
 
 themes/hugo-warped/tools/check-hugo.sh
+tools/goodreads.sh remind
 
 # This site's port in the shared list (~/.claude/rules/site-ports.md).
 PORT=1314

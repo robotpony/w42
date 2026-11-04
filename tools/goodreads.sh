@@ -6,6 +6,10 @@
 # manual download: https://www.goodreads.com/review/import (Export Library).
 #
 #   tools/goodreads.sh import [file]   default: goodreads_library_export.csv
+#   tools/goodreads.sh remind          note if the last import is over 35 days old
+#
+# preview.sh and publish.sh run remind, so a forgotten export gets noticed. It
+# only prints; it never stops a preview or a deploy.
 #
 # The export holds reviews and the to-read shelf, so it's gitignored and only
 # the fields below reach the site.
@@ -23,8 +27,22 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
+if [[ "${1:-}" == "remind" ]]; then
+  python3 -I - <<'EOF' || true
+import datetime, json
+
+with open("data/reading.json") as fh:
+    imported = json.load(fh).get("imported", "")
+days = (datetime.date.today() - datetime.date.fromisoformat(imported)).days if imported else None
+if days is None or days > 35:
+    since = f"{days} days ago" if imported else "before imports were dated"
+    print(f"note: the reading list was last imported {since}. Download a new export (https://www.goodreads.com/review/import) and run /reading.")
+EOF
+  exit 0
+fi
+
 if [[ "${1:-}" != "import" || $# -gt 2 ]]; then
-  echo "usage: tools/goodreads.sh import [file]" >&2
+  echo "usage: tools/goodreads.sh import [file] | remind" >&2
   exit 1
 fi
 FILE="${2:-goodreads_library_export.csv}"
@@ -167,7 +185,7 @@ for b in books:
 books = merged
 
 with open(DATA, "w") as fh:
-    json.dump({"profile": saved["profile"], "books": books}, fh, indent=1, ensure_ascii=False)
+    json.dump({"profile": saved["profile"], "imported": TODAY, "books": books}, fh, indent=1, ensure_ascii=False)
     fh.write("\n")
 
 counts = {s: sum(b["shelf"] == s for b in books) for s in SHELVES}

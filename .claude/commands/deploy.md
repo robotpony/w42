@@ -12,6 +12,6 @@ Usage: /deploy [dry-run]
    - fetches the live `version.txt` to confirm the tag.
 2. If it refuses uncommitted changes, show the list and ask Bruce what to do. Don't commit his edits for him, and never flip a draft to published without his OK.
 3. Before deploying a big change (many pages or a deletion in the dry run, or a new section), run the dry run first and summarise it in a line or two.
-4. Report the build summary, what rsync changed (new, changed, deleted; name the pages, not every file), the tag, and the live check. If the tag push failed, retry `git push origin <tag>`.
+4. Report any note about the reading list's age, the build summary, what rsync changed (new, changed, deleted; name the pages, not every file), the tag, and the live check. If the tag push failed, retry `git push origin <tag>`.
 
 If `tools/config.toml` is missing or lacks `[deploy]`, relay the error and point to `tools/config.toml.example`.
