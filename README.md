@@ -68,8 +68,8 @@ For `host`, a plain `user@hostname` works, but a `~/.ssh/config` alias (with its
 ```
 # ~/.ssh/config
 Host warpedvisions
-    HostName w42.warpedvisions.org
-    User w28
+    HostName example.com
+    User deploy-user
     IdentityFile ~/.ssh/id_ed25519_warpedvisions
 ```
 

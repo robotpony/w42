@@ -7,11 +7,11 @@
 #
 #   # ~/.ssh/config
 #   Host warpedvisions
-#       HostName w42.warpedvisions.org
-#       User w28
+#       HostName example.com
+#       User deploy-user
 #       IdentityFile ~/.ssh/id_ed25519_warpedvisions
 #
-host = "w28@w42.warpedvisions.org"
+host = "deploy-user@example.com"
 
 # Path to the site root on the server (relative paths are expanded
 # server-side, so "~/warpedvisions.org" works against the deploy user's home).
