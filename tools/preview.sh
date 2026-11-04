@@ -33,8 +33,7 @@ cd "$(dirname "$0")/.."
 
 themes/hugo-warped/tools/check-hugo.sh
 
-# Port 1314, not Hugo's default 1313: the cookbook (~/writing/not-a-chef)
-# previews on 1313, and the restart below would stop its server.
+# This site's port in the shared list (~/.claude/rules/site-ports.md).
 PORT=1314
 BASE="http://localhost:$PORT"
 URL="$BASE/"
@@ -76,18 +75,29 @@ else
 fi
 
 # Restart, don't reuse: a hugo server left running from an earlier session
-# keeps serving stale templates and config. Stop any hugo already listening
-# on the port, then start fresh.
+# keeps serving stale templates and config. Stop only this site's own server
+# (a hugo running from this folder); anything else on the port belongs to
+# someone else, so refuse rather than kill it.
+ROOT="$(pwd -P)"
 for pid in $(lsof -ti tcp:$PORT -sTCP:LISTEN 2>/dev/null || true); do
-  if [ "$(ps -o comm= -p "$pid" 2>/dev/null)" = "hugo" ]; then
-    echo "Stopping the hugo server already on :$PORT (pid $pid)."
+  CWD="$(lsof -a -p "$pid" -d cwd -Fn 2>/dev/null | sed -n 's/^n//p' || true)"
+  if [ "$(ps -o comm= -p "$pid" 2>/dev/null)" = "hugo" ] && [ "$CWD" = "$ROOT" ]; then
+    echo "Stopping this site's hugo server on :$PORT (pid $pid)."
     kill "$pid"
+  else
+    echo "error: port $PORT is held by another process, which this script won't stop:" >&2
+    echo "  pid $pid, running from ${CWD:-an unknown folder}: $(ps -o command= -p "$pid" 2>/dev/null || true)" >&2
+    exit 1
   fi
 done
 for _ in $(seq 1 20); do
   lsof -ti tcp:$PORT -sTCP:LISTEN >/dev/null 2>&1 || break
   sleep 0.25
 done
+if lsof -ti tcp:$PORT -sTCP:LISTEN >/dev/null 2>&1; then
+  echo "error: this site's hugo server is still on port $PORT after 5 seconds." >&2
+  exit 1
+fi
 
 open_browser() {
   # Wait for the server to actually answer before opening a tab on it.
@@ -132,4 +142,4 @@ open_browser &
 # public/. `make deploy` rsyncs public/, so a running preview could ship
 # drafts that were only ever meant to be served locally. Keep the server in
 # memory so public/ only ever holds real builds.
-exec hugo server "${CONFIG[@]}" -D ${FUTURE[@]+"${FUTURE[@]}"} --disableFastRender --renderToMemory --bind 0.0.0.0 --port "$PORT" --baseURL "$BASE/"
+exec hugo server "${CONFIG[@]}" -D ${FUTURE[@]+"${FUTURE[@]}"} --disableFastRender --renderToMemory --bind 127.0.0.1 --port "$PORT" --baseURL "$BASE/"
