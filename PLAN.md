@@ -2,7 +2,7 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Next
 
-- [ ] **Test at phone width**: the section RSS link against long centred titles, inline title icons (post h1s, cards, mid-title placement), the description, and body-text icons. Bruce checks widths in dev tools. #todo
+- [x] **Test at phone width**: the section RSS link against long centred titles, inline title icons (post h1s, cards, mid-title placement), the description, and body-text icons. Bruce checks widths in dev tools. #todone
 
 ## Open
 
