@@ -84,7 +84,7 @@ The *Mechanic* section is the idea behind the recipe, here a 2:1 ratio of oil to
 
 None of these extra features are in the text. The text stays a recipe you could print, paste into an email, or read in any editor.
 
-The repo is my Obsidian vault, too. Obsidian is a text-based writing tool. It knows about Markdown and handles local links nicely, like a wiki. There's no CMS and no copy step: I edit a recipe where I keep my notes, and the next build publishes it.
+The repo is my Obsidian vault, too. Obsidian is a text-based writing tool. It knows about Markdown and handles local links nicely, like a wiki. There's no CMS and no copy step. I edit a recipe where I keep my notes, and the next build publishes it.
 
 When I find a new recipe or technique, I add it to my engineering food log. I call these my *Food Wishes*, after the inspirational YouTube creator, Chef John. These logs are raw lists and notes, including research and notes made while cooking. I edit these on my laptop or phone, and clean them up later, some of the time at least.
 
@@ -153,7 +153,7 @@ Hugo looks for each template in the site first, then in Fugu, then in Blowfish.
 
 [Blowfish](https://blowfish.page/) is a decent base theme with some nice features, and it's scaffolding you rent. On day one it gave me search, dark mode, and RSS. Then I spent a day fighting it, and by the end I'd overridden 17 of its 141 templates.
 
-*Fugu* (another word for Blowfish) is the cookbook theme: recipe pages, the sidebar, ingredient checklists, methods, blueprints, and builds. It started inside the site and got split out once its boundary was obvious, which wasn't on day one. The site itself keeps only its branding: the logo, the colours, and the header.
+*Fugu* (another word for Blowfish) is the cookbook theme: recipe pages, the sidebar, ingredient checklists, methods, blueprints, and builds. It started inside the site and got split out once its boundary was obvious, which wasn't on day one. The site itself keeps only the logo, the colours, and the header.
 
 ![The Recipes list on bruce-loves-to-cook.ca: the site's own header and logo above Fugu's card grid, where each recipe card shows cuisine and tag chips, a short description, a small ratio formula where the recipe has one, and prep and cook times](themes-layers.png)
 
@@ -165,19 +165,19 @@ Hugo made this kind of extension easy. A template can take over any code fence b
 
 The cookbook has three layers of features, and no fourth: what's in the source, what happens at build time, and what happens in the browser. A backend for saved recipes came up and got deferred, because the moment there's a database, the text isn't the whole cookbook anymore.
 
-The other reason: years of managing CMSs with heavy backends. These backends make local tests and deploys a pain, and Hugo's static `rsync` is honestly one of the nicest ways to deploy something at this scale.
+I'd also spent years managing CMSs with heavy backends. They make local tests and deploys a pain, and Hugo's static `rsync` is honestly one of the nicest ways to deploy something at this scale.
 
 Structure comes from the files. Folders are for what a page can only be one of (a recipe, a method, a drink, an essay), and tags are for what it can be several of (vegan, quick, dressings). Wiki links resolve by title, so `[[Simple gravy]]` in Obsidian is a link on the site.
 
-The build writes an `index.json` of the whole collection, which lets agents answer questions about it: which recipes use buttermilk, which methods have no builds yet, which tags are nearly empty.
+The build writes an `index.json` of the whole collection, which lets agents answer questions about it, like which recipes use buttermilk, which methods have no builds yet, or which tags are nearly empty.
 
-That's the other reason plain text works so well here: it plays well with agents. They can read, review, and reshape hundreds of text files quickly, and they don't need an API to do it. Yes, I'm lazy. Agents also helped define how the text diagrams should work, and even came up with the base concepts for icons and glyphs.
+Plain text also plays well with agents. They can read, review, and reshape hundreds of text files quickly, and they don't need an API to do it. Yes, I'm lazy. Agents also helped define how the text diagrams should work, and even came up with the base concepts for icons and glyphs.
 
 The best use of agents for the diagram format was finding consistency and running scenarios, and producing endless mockups. Getting a text format right requires trying variations, and testing those with each build. This is something a lazy human will never do consistently, so I made sure it was automated.
 
 A full build takes about a second for 597 pages.
 
-Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in [the manifesto](/blog/2026/what-im-about-in-plain-text/): showing your work helps others understand how to think about developing and adjusting recipes. It's honest: recipes are never perfect, only better tested.
+Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose. I wrote about why in [the manifesto](/blog/2026/what-im-about-in-plain-text/). Showing your work helps others understand how to think about developing and adjusting recipes, and it's honest, since recipes are never perfect, only better tested.
 
 ## Three things using agents taught me
 
@@ -202,7 +202,7 @@ This isn't a tutorial, but if you want to build your own cookbook, here are the 
 - **Slash commands.** One stubs a recipe (`/recipe-new`), others check the collection (`/lint`), open the dev server (`/preview`), and build and ship it (`/publish`).
 - **A plain host.** The site is static files, rsynced to an ordinary web host.
 
-It took two to three weeks of full-time work and cost under $25 of agent time. It's only worth it if you want what I wanted: a printed-cookbook feel, today, from files you'll still be able to open in 20 years.
+It took two to three weeks of full-time work and cost under $25 of agent time. It's only worth it if you want a printed-cookbook feel today, from files you'll still be able to open in 20 years.
 
 ## The text kept spreading
 
