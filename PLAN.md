@@ -6,7 +6,6 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Open
 
-- [ ] **Build number in the footer** (future), as in not-a-chef: `data/build.toml` holds a publish count. `tools/publish.sh` bumps it on a full deploy, passes the commit hash as `HUGO_PARAMS_BUILDHASH`, puts the count back if the deploy fails, and commits "Publishes build N." once it succeeds. The footer shows "Build N · hash", or "Build dev" on the dev server. The worktree build means the tree is always clean, so the `+` dirty marker and the dirty-tree exception from not-a-chef aren't needed. Footer part goes to the theme agent. See `~/writing/not-a-chef/tools/publish.sh` and `layouts/partials/footer.html`.
 - [ ] **Banner image options** (`tools/IMAGES.md`, three open decisions): `tools/banner.sh` (OpenAI) is untested end to end without an API key; a local option (ComfyUI with SDXL, or Draw Things) is written up but not set up. #todo
 - [ ] **Future phase: images and richer visuals** (tracked 2026-10-28; ideate before any mocks). A band of small images along the top of the site, plus more visual detail elsewhere. Open: which pages get the band (essays carry no promos, so likely the home page, indexes and About), where the images come from (post banners, bundle photos, the cookbook), and what the "additional details" are. Theme work once decided. #idea
 - [ ] **Date the undated draft**: `content/blog/2026/boring-is-where-ai-earns-its-keep.md` has `date: ""`, so it sorts oddly in preview and fails `/lint`. The date goes on at publish.
@@ -32,7 +31,7 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Done
 
-- **2026-11-08**: plan review; `archetypes/log-format.md` (an Obsidian template) deleted; merged `hugo-warped-module` branches deleted here (the theme repo's origin copy is left to Bruce); "Built in Canada 🇨🇦" in the footer (theme f829c1a, 0.11.2); all of it live by deploy-2026-11-08, the first real deploy from a clean worktree.
+- **2026-11-08**: plan review; `archetypes/log-format.md` (an Obsidian template) deleted; merged `hugo-warped-module` branches deleted here (the theme repo's origin copy is left to Bruce); "Built in Canada 🇨🇦" in the footer (theme f829c1a, 0.11.2); all of it live by deploy-2026-11-08, the first real deploy from a clean worktree. Build number in the footer ("Build N · hash", theme 218522e, 0.12.0): `data/build.toml` starts at 9, one per earlier deploy tag, and each deploy commits "Publishes build N." once it ships.
 - **2026-11-04**: reading list from a Goodreads export (the RSS feeds are gone; builds never contact Goodreads); deploys build from a clean worktree of HEAD; deploy host out of committed files; commit message hook from not-a-chef.
 - **2026-10-29**: `timeline`, `flow` and `tabs` fences through hugo-warped's module, theme 0.8.0, live by deploy-2026-10-29-3; banners as `banner:` front matter loaded through the theme's `imagesURL`, which the preview points at the local images repo (theme 3365b3e); preview bound to 127.0.0.1; Hugo version check before previews and builds.
 - **2026-10-22**: "Recently read" shelf and `/reading/` (theme c72d0bd..021fc57); warped.js `debug` off and fonts self-hosted (warped.js ad1ba82; theme eccbda1 dropped Google Fonts).
