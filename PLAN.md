@@ -3,7 +3,6 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 ## Next
 
 - [ ] **Deploy the Goodreads import** (undeployed since deploy-2026-11-04): the export-based reading list, the 35-day import note, the commit message hook, and the first real worktree deploy (the dry run matched the live site). After `/deploy`, check `/reading/` and the home page shelf. #todo
-- [ ] **Delete the merged `hugo-warped-module` branches**: local and `origin` here, and `origin` in the theme repo (theme agent). Both are merged into main/master; hugo-warped's plan tracks this across sites. Needs Bruce's OK, since it deletes remote branches. #todo
 - [ ] **Test at phone width**: the section RSS link against long centred titles, inline title icons (post h1s, cards, mid-title placement), the description, and body-text icons. Bruce checks widths in dev tools. #todo
 
 ## Open
@@ -12,7 +11,6 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 - [ ] **Build number in the footer** (future), as in not-a-chef: `data/build.toml` holds a publish count. `tools/publish.sh` bumps it on a full deploy, passes the commit hash as `HUGO_PARAMS_BUILDHASH`, puts the count back if the deploy fails, and commits "Publishes build N." once it succeeds. The footer shows "Build N · hash", or "Build dev" on the dev server. The worktree build means the tree is always clean, so the `+` dirty marker and the dirty-tree exception from not-a-chef aren't needed. Footer part goes to the theme agent. See `~/writing/not-a-chef/tools/publish.sh` and `layouts/partials/footer.html`.
 - [ ] **Banner image options** (`tools/IMAGES.md`, three open decisions): `tools/banner.sh` (OpenAI) is untested end to end without an API key; a local option (ComfyUI with SDXL, or Draw Things) is written up but not set up. #todo
 - [ ] **Future phase: images and richer visuals** (tracked 2026-10-28; ideate before any mocks). A band of small images along the top of the site, plus more visual detail elsewhere. Open: which pages get the band (essays carry no promos, so likely the home page, indexes and About), where the images come from (post banners, bundle photos, the cookbook), and what the "additional details" are. Theme work once decided. #idea
-- [ ] **`archetypes/log-format.md`** is an Obsidian template (`{{title}}`, `{{date}}`), not a Hugo archetype, so `hugo new --kind log-format` fails. The eng logs it served are no longer published here (dc1985f), so delete it, or move it to the vault's templates folder.
 - [ ] **Date the undated draft**: `content/blog/2026/boring-is-where-ai-earns-its-keep.md` has `date: ""`, so it sorts oddly in preview and fails `/lint`. The date goes on at publish.
 - [ ] **Bring back "carved" on the About page**: it linked the retired warpedvisionsdotorg Instagram, so it's out of the "things I've" list for now. Return it when the carvings have a home (a projects page, a gallery, or posts), between "worked on" and "drawn".
 - [ ] **Rename projects-sidebar in the theme**: the "Things I've made" block no longer sits in a sidebar (it's below the content at every width). Theme agent.
@@ -36,6 +34,7 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Done
 
+- **2026-11-08**: plan review; `archetypes/log-format.md` (an Obsidian template) deleted; merged `hugo-warped-module` branches deleted here.
 - **2026-11-04**: reading list from a Goodreads export (the RSS feeds are gone; builds never contact Goodreads); deploys build from a clean worktree of HEAD; deploy host out of committed files; commit message hook from not-a-chef.
 - **2026-10-29**: `timeline`, `flow` and `tabs` fences through hugo-warped's module, theme 0.8.0, live by deploy-2026-10-29-3; banners as `banner:` front matter loaded through the theme's `imagesURL`, which the preview points at the local images repo (theme 3365b3e); preview bound to 127.0.0.1; Hugo version check before previews and builds.
 - **2026-10-22**: "Recently read" shelf and `/reading/` (theme c72d0bd..021fc57); warped.js `debug` off and fonts self-hosted (warped.js ad1ba82; theme eccbda1 dropped Google Fonts).
