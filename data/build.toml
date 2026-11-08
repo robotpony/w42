@@ -1,4 +1,6 @@
-# Publish count, shown in the footer. tools/publish.sh bumps it on a full
-# deploy and commits the bump once the site is live; nothing else edits it.
-# Seeded with the nine deploy-* tags before it existed.
+# Publish count, shown in the footer as "Build <series>.<number>" (w42 is
+# warped 42). tools/publish.sh bumps number on a full deploy and commits the
+# bump once the site is live; nothing else edits it. number was seeded with
+# the nine deploy-* tags before it existed.
+series = 42
 number = 9

@@ -13,8 +13,8 @@
 # tools/deploy.sh then tags it and checks the live site.
 #
 # A deploy also counts itself: data/build.toml's number goes up before the
-# build, the footer shows "Build N · hash" ("Build dev" on the dev server),
-# and once the site has shipped the bump is committed as "Publishes build N."
+# build, the footer shows "Build 42.N · hash" ("Build dev" on the dev server),
+# and once the site has shipped the bump is committed as "Publishes build 42.N."
 # and pushed. If the deploy stops before shipping, the number goes back.
 set -euo pipefail
 
@@ -181,10 +181,12 @@ bump_build() {
     exit 1
   fi
   BUILD_NUMBER=$((n + 1))
+  BUILD_SERIES=$(sed -nE 's/^series = ([0-9]+)$/\1/p' "$BUILD_FILE")
+  BUILD_NAME="${BUILD_SERIES:+$BUILD_SERIES.}$BUILD_NUMBER"
   sed -E "s/^number = [0-9]+$/number = $BUILD_NUMBER/" "$BUILD_FILE" > "$BUILD_FILE.tmp"
   mv "$BUILD_FILE.tmp" "$BUILD_FILE"
   BUILD_BUMPED=1
-  echo "Build $BUILD_NUMBER."
+  echo "Build $BUILD_NAME."
 }
 
 restore_build() {
@@ -203,11 +205,11 @@ deploy_and_count() {
   cd "$ROOT"
   if [[ "$(git tag -l 'deploy-*' --points-at HEAD)" != "$before" ]]; then
     BUILD_BUMPED=""
-    git commit -q -m "Publishes build $BUILD_NUMBER." -- "$BUILD_FILE"
+    git commit -q -m "Publishes build $BUILD_NAME." -- "$BUILD_FILE"
     if ! git push -q; then
-      echo "warning: committed build $BUILD_NUMBER, but the push failed; run 'git push'." >&2
+      echo "warning: committed build $BUILD_NAME, but the push failed; run 'git push'." >&2
     fi
-    echo "Published build $BUILD_NUMBER."
+    echo "Published build $BUILD_NAME."
   fi
   return "$status"
 }
