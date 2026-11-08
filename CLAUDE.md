@@ -67,6 +67,7 @@ Blog posts use Hugo front matter with:
 - `title` and `date`
 - `draft: false` for published posts
 - Tags for categorization
+- `banner:` with `src` (a path in the images repo, e.g. `2025/10/harvest-banner.jpg`) and `alt` (required; a banner without it is left out with a warning). The theme loads it through `imagesURL`: images.warpedvisions.org live, the local `../images.warpedvisions.org` checkout in preview, so a new banner shows locally before the images repo is pushed
 - A series sets `seriesTag` in its `_index.md` cascade (see `content/blog/space-command/_index.md`): that tag leads the post footer, tinted, and links to the series page
 - All content uses a-style-guide-for-bruce.md as a style guide, including formatting headers and titles
 

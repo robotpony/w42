@@ -20,6 +20,16 @@ It's also generic autumn, with nothing tied to the essay. Banners would earn mor
 
 The `warped:banner-image` skill writes watercolour prompts for posts.
 
+A post names its banner in front matter, by its path in the images repo:
+
+```yaml
+banner:
+  src: 2025/10/harvest-banner.jpg
+  alt: "AI-generated watercolour banner: …"
+```
+
+Alt text is required (the theme leaves out a banner without it). Width and height default to 1536x559. The preview serves the file from the local images repo, so it shows before the images repo is pushed and deployed.
+
 ## Hosted: OpenAI (built)
 
 `tools/banner.sh` calls OpenAI's image API (gpt-image-1 by default; `BANNER_MODEL` overrides it). It crops the 1536x1024 result to 1536x559 (`--crop top|center|bottom`) and saves a JPEG in the images repo under `YYYY/MM/`. `--from` recrops a saved full image without paying for a new one. See `tools/banner.sh --help`.
