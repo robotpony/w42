@@ -1,5 +1,5 @@
 ---
-title: "B♥2C: building a cookbook with Hugo"
+title: Building a cookbook with Hugo
 date: 2026-10-29
 draft: false
 slug: building-a-cookbook-with-hugo
@@ -8,14 +8,14 @@ tags:
   - hugo
   - markdown
   - not-a-chef
-description: ""
+description: "How 200 family recipes moved from binders and Google Docs into plain-text Markdown, and grew into a Hugo cookbook with methods, blueprints, and text diagrams."
 banner:
   src: 2026/10/cookbook-text-to-burger.jpg
   alt: "AI-generated watercolour banner, made with OpenAI's image API from a prompt by Bruce: a simplified notebook sketch of a burger's layers on the left bleeds through blue and teal washes into an exploded burger on the right (bun, shredded lettuce, pickles, a griddled patty, and the bottom bun) in warm orange and red"
 ---
-My cookbook is live. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has 229 recipes, plus essays, methods, and engineering-style food logs, all of them Markdown files, built into a site with Hugo.
+My first cookbook went live this summer. [Bruce loves to cook](https://bruce-loves-to-cook.ca/) has over 200 recipes, as well as essays, methods, and engineering-style food logs, each written in Markdown files, built into a website using Hugo.
 
-I started the project with a simple objective: grab the best recipes and publish them on a simple site. I finished this version in a few hours, with a few more hours of automation, polish, and thinking about the shape of the files and folders.
+I started the project with a simple objective: grab our best recipes and publish them on a simple website. I finished this version in a few hours, with a few more hours of automation, polish, and thinking about the shape of the files and folders.
 
 Then inspiration hit.
 
@@ -41,13 +41,13 @@ Along the way I tried the apps. Paprika and a handful of other iOS and Mac recip
 
 I never made it long in any of the apps, because each one started from zero and locked everything in.
 
-This summer I started moving the Google Doc recipes into Markdown. Then I tried Hugo on top of those text files, mostly because this blog already ran on Hugo. Hugo worked well here, but I hadn't automated much of the tooling around it yet, and the cookbook became the reason I learned Hugo well. I automated it and even built apps to help manage posts. Initially it was an Obsidian plugin that I evolved into a macOS app I hacked together with Claude, one that never stuck.
+This summer I started moving the Google Doc recipes into Markdown. Then I tried Hugo on top of those text files, mostly because this blog already ran on Hugo. Hugo worked well here, but I hadn't automated much of the tooling around it yet, and the cookbook became the reason I learned Hugo well. I automated it and built tools to help manage posts: first an Obsidian plugin, then a macOS app I hacked together with Claude. Neither stuck.
 
 One rule drove the project, and I wrote about it in [What I'm about, in plain text](/blog/2026/what-im-about-in-plain-text/):
 
 > *A recipe should look **natural** in any text editor, and it should look great published.*
 
-I added that second half after reflecting on the project. I didn't just want a pile of documents. No unstructured mess of headings and bullets either, but a real cookbook, with layouts and diagrams, one that's easy to extend.
+I added that second half after reflecting on the project. I didn't want a pile of documents, or an unstructured mess of headings and bullets. I wanted a real cookbook, with layouts and diagrams, that's easy to extend.
 
 ## Text with a bit of lipstick
 
@@ -157,7 +157,7 @@ Hugo looks for each template in the site first, then in Fugu, then in Blowfish.
 
 ![The Recipes list on bruce-loves-to-cook.ca: the site's own header and logo above Fugu's card grid, where each recipe card shows cuisine and tag chips, a short description, a small ratio formula where the recipe has one, and prep and cook times](themes-layers.png)
 
-The dialect is [hugo-warped](https://github.com/robotpony/hugo-warped): the diagram formats, each written down as plain text before it draws anything. Fugu imports it as a Hugo module, and I reuse those tools in my other sites (including this one). 
+The dialect is [hugo-warped](https://github.com/robotpony/hugo-warped): the diagram formats, each written down as plain text before it draws anything. Fugu imports it as a Hugo module, and I reuse those tools in my other sites (including this one).
 
 Hugo made this kind of extension easy. A template can take over any code fence by its name, so a new diagram format is a new template, and the text it reads stays plain. That's why the scope could blow up cheaply.
 
@@ -165,7 +165,7 @@ Hugo made this kind of extension easy. A template can take over any code fence b
 
 The cookbook has three layers of features, and no fourth: what's in the source, what happens at build time, and what happens in the browser. A backend for saved recipes came up and got deferred, because the moment there's a database, the text isn't the whole cookbook anymore.
 
-The truth is I deferred the database layer after years of managing CMSs with heavy backends. These backends make local tests and deploys a pain, and Hugo's static `rsync` is honestly one of the nicest ways to deploy something at this scale.
+The other reason: years of managing CMSs with heavy backends. These backends make local tests and deploys a pain, and Hugo's static `rsync` is honestly one of the nicest ways to deploy something at this scale.
 
 Structure comes from the files. Folders are for what a page can only be one of (a recipe, a method, a drink, an essay), and tags are for what it can be several of (vegan, quick, dressings). Wiki links resolve by title, so `[[Simple gravy]]` in Obsidian is a link on the site.
 
@@ -175,21 +175,21 @@ That's the other reason plain text works so well here: it plays well with agents
 
 The best use of agents for the diagram format was finding consistency and running scenarios, and producing endless mockups. Getting a text format right requires trying variations, and testing those with each build. This is something a lazy human will never do consistently, so I made sure it was automated.
 
-A full build takes about a second for 597 pages. 
+A full build takes about a second for 597 pages.
 
-Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in the manifesto: showing your work helps others understand how to think about developing and adjusting recipes. It's honest: recipes are never perfect, only better tested.
+Unfinished recipes are on the site too. A draft publishes as [Test kitchen](https://bruce-loves-to-cook.ca/reference/essays/test-kitchen/), on purpose; I wrote about why in [the manifesto](/blog/2026/what-im-about-in-plain-text/): showing your work helps others understand how to think about developing and adjusting recipes. It's honest: recipes are never perfect, only better tested.
 
 ## Three things using agents taught me
 
 I built most of the cookbook with Claude Code, over two to three weeks. A few things I learned stuck.
 
-**Mocks are the decision log.** Before building a feature, I had the agent mock it up as a page I could look at. There are 31 mocks in the repo now, and each one ends with a dated *Decided* line saying what we picked. A later session, which remembers nothing, can open a mock and pick the decision up cold.
+**Mocks are the decision log.** Before building a feature, I had the agent mock it up as a page I could look at. There are about 40 mocks in the repo now, and most of the later ones end with a dated *Decided* line saying what we picked. A later session, which remembers nothing, can open a mock and pick the decision up cold.
 
 Mocks were great for restructuring the files and folders. It took several passes to think clearly about how I wanted things to fit, and doing this by hand would have taken days of gruntwork. It was also great for trying variations of diagrams and content, and trying diagrams in various orientations and widths. Any time you want to try 100 versions of something, agents are there to tirelessly toil away.
 
 **Hooks enforce, memory guides.** I told the agent not to add itself as a co-author on commits. It remembered, mostly. The trailer slipped through on three commits anyway, until I added a hook that rejects any commit message carrying it. Memory is good for preferences. Anything that has to be true every time needs a hook.
 
-**Verify by looking.** An agent will tell you a page is done. Looking at it is how you find out it's maybe 50% there. The other half of that lesson was a Safari window nobody was watching. I did add a layer of agent testing, but we structured work so that I was the final reviewer of everything. 
+**Verify by looking.** An agent will tell you a page is done. Looking at it is how you find out it's maybe 50% there. I did add a layer of agent testing, but we structured work so that I was the final reviewer of everything.
 
 ## Take it
 
@@ -197,7 +197,7 @@ Everything is free. [Fugu](https://github.com/robotpony/hugo-theme-fugu) and [hu
 
 This isn't a tutorial, but if you want to build your own cookbook, here are the hints:
 
-- **Two lines of config.** The `theme = ["fugu", "blowfish"]` line, and Fugu imports hugo-warped as a Hugo module on its own.
+- **One line of config.** The `theme = ["fugu", "blowfish"]` line; Fugu imports hugo-warped as a Hugo module on its own.
 - **Small tools.** A few standard-library Python scripts keep the text honest: `frontmatter.py` reads and fixes front matter, and `check-fences.py` checks that every diagram block parses.
 - **Slash commands.** One stubs a recipe (`/recipe-new`), others check the collection (`/lint`), open the dev server (`/preview`), and build and ship it (`/publish`).
 - **A plain host.** The site is static files, rsynced to an ordinary web host.
@@ -208,6 +208,6 @@ It took two to three weeks of full-time work and cost under $25 of agent time. I
 
 There's a trade-off. My partner still finds the old Google Drive cookbook easier to edit, and she's not wrong. When she adds a recipe there, I move it over by hand.
 
-The text kept spreading anyway. The diagram formats from the cookbook now draw diagrams on this blog and in Scorekeep, so this post's diagrams come from the cookbook's work. And as I was winding the cookbook down, the text-first thinking exploded into yet another project, [Space Command](https://space-command.ca/): plain text for to-dos, not a new idea, but my take on an exoskeletal version of it, where it sits on top of a Hugo and Obsidian folder and helps with editing and publishing. More on that later.
+The text kept spreading anyway. The diagram formats from the cookbook now draw diagrams on this blog and in Scorekeep, so this post's diagrams come from the cookbook's work. And as I was winding the cookbook down, the text-first thinking exploded into yet another project, [Space Command](https://space-command.ca/). Plain text for to-dos isn't a new idea, but this is my take on an exoskeletal version of it: it sits on top of a Hugo and Obsidian folder and helps with editing and publishing. More on that later.
 
-Somehow a cookbook rekindled my love of cooking, of writing about it, and even of building blog-shaped things. Having something to share that feels like a cookbook site is the difference between something I work on occasionally and something I obsess over.
+Somehow a cookbook rekindled my love of cooking, of writing about it, and even of building blog-shaped things. Having something to share with a printed-cookbook feel is the difference between something I work on occasionally and something I obsess over.
