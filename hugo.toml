@@ -20,7 +20,6 @@ tag = 'tags'
 [params]
 mainSections = ['blog']
 description = '[ESSAYS](/), [RECIPES](https://bruce-loves-to-cook.ca/), AND [GENERAL MAKERY](/projects) BY [BRUCE ALDERSON](/pages/about-bruce-alderson).'
-footer.text = "[@robotpony mas.to](https://mas.to/@robotpony)"
 disableSpecial1stPost = true
 defaultTheme = "light"
 # Used for RSS and meta author.
