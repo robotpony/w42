@@ -1,5 +1,5 @@
-# "Things I've made": the projects sidebar on index pages and the about page
-# (never on essays). Rendered by the theme's partials/projects_sidebar.html.
+# "Things I've made": the projects block on index pages and the about page
+# (never on essays). Rendered by the theme's partials/projects_block.html.
 heading: Things I've made
 items:
   - name: Space Command
