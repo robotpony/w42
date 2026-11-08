@@ -31,7 +31,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - Projects go in `content/projects/`
 
 **Deployment:**
-- `make deploy` - Build, check, and rsync to the remote server (`tools/publish.sh`). It ships only committed, pushed work (it refuses uncommitted changes, pushes main, and builds in a clean worktree of HEAD at `.build/deploy-worktree`), holds a lock, keeps the host's `.dh-diag` and `favicon.gif`, tags `deploy-YYYY-MM-DD` (pushed), and confirms the tag in the live `/version.txt`
+- `make deploy` - Build, check, and rsync to the remote server (`tools/publish.sh`). It ships only committed, pushed work (it refuses uncommitted changes, pushes main, and builds in a clean worktree of HEAD at `.build/deploy-worktree`), holds a lock, keeps the host's `.dh-diag` and `favicon.gif`, tags `deploy-YYYY-MM-DD` (pushed), and confirms the tag in the live `/version.txt`. Each deploy also counts itself: it bumps `number` in `data/build.toml` before the build, passes the short commit as `HUGO_PARAMS_BUILDHASH`, and once the site has shipped commits and pushes "Publishes build 42.N." (the number goes back if it stops first). The footer shows "Build 42.N · hash", or "Build dev" on the dev server
 - `make check` / `make dry-run` - Check `public/` (dev-server output, drafts), or build HEAD in the worktree and show what rsync would change without deploying
 - Deploy target lives in `tools/config.toml` (gitignored; copy from `tools/config.toml.example`)
 
