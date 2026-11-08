@@ -12,7 +12,7 @@ description: "Space Command is a native Mac sidebar that reads the plain-text pr
 ---
 ## Post tasks #todo 
 
-- [ ] move this whole post to projects, where both this and scorekeep will get a section for changelogs/posts/etc.
+- [x] move this whole post to projects, where both this and scorekeep will get a section for changelogs/posts/etc.
 
 ## Outline
 
@@ -65,6 +65,6 @@ What doesn't exist yet: the rest of the Tasks tab, the Posts and Clipboard tabs,
 
 ## Following along
 
-Launch news and dev notes will land here, in this series. If you only want the {{< space-command >}} posts, there's a [feed for just this series](/blog/space-command/index.xml). The [teaser site](https://space-command.ca/) has the short version.
+Launch news and dev notes will land here, in this series. If you only want the {{< space-command >}} posts, there's a [feed for just this series](/projects/space-command/index.xml). The [teaser site](https://space-command.ca/) has the short version.
 
 Built in Canada 🇨🇦.

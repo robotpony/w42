@@ -28,4 +28,4 @@ It lives in the menu bar and opens as a sidebar with three tabs: Tasks, Posts, a
 
 ## How it works
 
-The [help docs](https://space-command.ca/help/) are up for anyone curious. They cover setup, tasks and ideas, projects and their health, posts, the clipboard, key commands, and a few tips. The teaser site is at [space-command.ca](https://space-command.ca/), and the [introduction](/blog/space-command/space-command-a-mac-sidebar-for-plain-text-projects/) has the backstory.
+The [help docs](https://space-command.ca/help/) are up for anyone curious. They cover setup, tasks and ideas, projects and their health, posts, the clipboard, key commands, and a few tips. The teaser site is at [space-command.ca](https://space-command.ca/), and the [introduction](/projects/space-command/space-command-a-mac-sidebar-for-plain-text-projects/) has the backstory.

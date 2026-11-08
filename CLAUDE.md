@@ -28,7 +28,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - `hugo new` uses `$EDITOR` (`newContentEditor` is commented out in hugo.toml); `vim` is in the exec allowlist
 - Blog posts go in `content/blog/YYYY/` following year-based organization. Posts with images are page bundles (`<slug>/index.md` with images beside it); a series gets a subfolder (`content/blog/2026/not-a-chef/`)
 - Recipes live on the cookbook site (bruce-loves-to-cook.ca, repo `~/writing/not-a-chef`), not here; `/food/` and `/pages/food/` redirect there (`static/.htaccess`)
-- Projects go in `content/projects/`
+- Projects go in `content/projects/`: one section per project (`space-command/`, `scorekeep/`, `makery/`) holding its launch news, changelogs (tagged `changelog`), and dev notes. Essays about a project stay in `content/blog/`
 
 **Deployment:**
 - `make deploy` - Build, check, and rsync to the remote server (`tools/publish.sh`). It ships only committed, pushed work (it refuses uncommitted changes, pushes main, and builds in a clean worktree of HEAD at `.build/deploy-worktree`), holds a lock, keeps the host's `.dh-diag` and `favicon.gif`, tags `deploy-YYYY-MM-DD` (pushed), and confirms the tag in the live `/version.txt`. Each deploy also counts itself: it bumps `number` in `data/build.toml` before the build, passes the short commit as `HUGO_PARAMS_BUILDHASH`, and once the site has shipped commits and pushes "Publishes build 42.N." (the number goes back if it stops first). The footer shows "Build 42.N · hash", or "Build dev" on the dev server
@@ -68,7 +68,7 @@ Blog posts use Hugo front matter with:
 - `draft: false` for published posts
 - Tags for categorization
 - `banner:` with `src` (a path in the images repo, e.g. `2025/10/harvest-banner.jpg`) and `alt` (required; a banner without it is left out with a warning). The theme loads it through `imagesURL`: images.warpedvisions.org live, the local `../images.warpedvisions.org` checkout in preview, so a new banner shows locally before the images repo is pushed
-- A series sets `seriesTag` in its `_index.md` cascade (see `content/blog/space-command/_index.md`): that tag leads the post footer, tinted, and links to the series page
+- A series sets `seriesTag` in its `_index.md` cascade (see `content/projects/space-command/_index.md`): that tag leads the post footer, tinted, and links to the series page
 - All content uses a-style-guide-for-bruce.md as a style guide, including formatting headers and titles
 
 ## Key Features

@@ -14,3 +14,8 @@ ErrorDocument 404 /404.html
 
 # Recipes moved to the cookbook site (2026-10-17).
 RedirectMatch 301 ^/(pages/)?food(/.*)?$ https://bruce-loves-to-cook.ca/
+
+# Project posts moved under /projects/ (2026-11-08): Space Command from the
+# blog, and the makery posts from /projects/older/.
+RedirectMatch 301 ^/blog/space-command(/.*)?$ /projects/space-command$1
+RedirectMatch 301 ^/projects/older(/.*)?$ /projects/makery$1

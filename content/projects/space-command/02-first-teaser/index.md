@@ -13,4 +13,4 @@ The first teaser for {{< space-command >}}, the Mac sidebar I'm building for the
 
 ![Space Command's teaser card in the light palette: Mark one thing #focus and Space Command puts it at the top of every view. It reads the notes, plans, and TODO lists you already keep, so there's nothing new to set up. Just the next thing to do.](space-command-focus-teaser.png)
 
-It's pre-alpha, so there's nothing to download yet, but the palette's settled and `#focus` leads every view. More at [space-command.ca](https://space-command.ca/), or in the [introduction](/blog/space-command/space-command-a-mac-sidebar-for-plain-text-projects/).
+It's pre-alpha, so there's nothing to download yet, but the palette's settled and `#focus` leads every view. More at [space-command.ca](https://space-command.ca/), or in the [introduction](/projects/space-command/space-command-a-mac-sidebar-for-plain-text-projects/).

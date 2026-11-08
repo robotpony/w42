@@ -224,5 +224,5 @@ That's why the gravy recipe above leads with its Mechanic. Learn the 1:5 ratio a
 
 I found that spark again when I realized that the 10-year-old with a notebook beside his wonky tape drive and the person writing `PLAN.md` files were doing the same thing. Both of us write the design down first, because the machine will forget it one way or another. For that matter, so will the human. Both of us keep the notes somewhere they can be read and rebuilt from. I didn't set out to work this way, but over the years it won out.
 
-So what's next is more of the same, on purpose. [Space Command](/blog/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first, in plain text, where all of this started.
+So what's next is more of the same, on purpose. [Space Command](/projects/space-command/) is in alpha playtest now, and it's the most direct version of all this: an app whose source of truth is plain text. I'll keep writing about it here first, in plain text, where all of this started.
 
