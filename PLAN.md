@@ -6,11 +6,10 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Open
 
-- [ ] **Banner image options** (`tools/IMAGES.md`, three open decisions): `tools/banner.sh` (OpenAI) is untested end to end without an API key; a local option (ComfyUI with SDXL, or Draw Things) is written up but not set up. #todo
+- [ ] **Banner image options** (`tools/IMAGES.md`, three open decisions): `tools/banner.sh` (OpenAI) is untested end to end: the keychain's `openai-api-key` was rejected as incorrect on 2026-11-08, so it needs a fresh platform.openai.com key. The local setup waits on that result; a local option (ComfyUI with SDXL, or Draw Things) is written up but not set up. #todo
 - [ ] **Future phase: images and richer visuals** (tracked 2026-10-28; ideate before any mocks). A band of small images along the top of the site, plus more visual detail elsewhere. Open: which pages get the band (essays carry no promos, so likely the home page, indexes and About), where the images come from (post banners, bundle photos, the cookbook), and what the "additional details" are. Theme work once decided. #idea
-- [ ] **Date the undated draft**: `content/blog/2026/boring-is-where-ai-earns-its-keep.md` has `date: ""`, so it sorts oddly in preview and fails `/lint`. The date goes on at publish.
 - [ ] **Bring back "carved" on the About page**: it linked the retired warpedvisionsdotorg Instagram, so it's out of the "things I've" list for now. Return it when the carvings have a home (a projects page, a gallery, or posts), between "worked on" and "drawn".
-- [ ] **Rename projects-sidebar in the theme**: the "Things I've made" block no longer sits in a sidebar (it's below the content at every width). Theme agent.
+- [ ] **Rename projects-sidebar in the theme** (sent to the theme agent 2026-11-08): the "Things I've made" block no longer sits in a sidebar (it's below the content at every width). It becomes `projects_block`; `showProjects` stays.
 - [ ] **Essay idea: the LLM filter cuts both ways** (from the manifesto draft, 2026-10-25). "If it isn't good practice without an LLM, it isn't good practice with one" also cuts the other way: a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest of them: no design written down, nothing to check the result against, and nothing to rebuild from. #idea
 
 ## Routine
