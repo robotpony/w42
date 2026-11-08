@@ -11,6 +11,11 @@
 # pushes, and builds in a clean worktree of HEAD, so gitignored files can't
 # ship either. It holds a lock so two sessions can't deploy at once.
 # tools/deploy.sh then tags it and checks the live site.
+#
+# A deploy also counts itself: data/build.toml's number goes up before the
+# build, the footer shows "Build N · hash" ("Build dev" on the dev server),
+# and once the site has shipped the bump is committed as "Publishes build N."
+# and pushed. If the deploy stops before shipping, the number goes back.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -53,15 +58,20 @@ make_worktree() {
 }
 
 # Moves into the worktree, so tools/deploy.sh ships its public/ from there.
+# The build number comes from this checkout (a deploy has just bumped it);
+# HUGO_PARAMS_BUILDHASH reaches the footer as site.Params.buildhash.
 build_in_worktree() {
+  cp "$BUILD_FILE" "$WORKTREE/$BUILD_FILE"
   cd "$WORKTREE"
   export HUGO_RESOURCEDIR="$ROOT/resources"
+  export HUGO_PARAMS_BUILDHASH="$(git rev-parse --short HEAD)"
   hugo_build
   check
 }
 
 cleanup() {
   cd "$ROOT"
+  if [[ -n "${BUILD_BUMPED:-}" ]]; then restore_build; fi
   if [[ -n "${MADE_WORKTREE:-}" ]]; then remove_worktree; fi
   rm -rf "$LOCK"
 }
@@ -159,6 +169,49 @@ warn_dirty() {
   fi
 }
 
+BUILD_FILE=data/build.toml
+
+# Full deploys only, after require_clean. Undone by cleanup if the deploy
+# stops before shipping; committed by commit_build once it has shipped.
+bump_build() {
+  local n
+  n=$(sed -nE 's/^number = ([0-9]+)$/\1/p' "$BUILD_FILE")
+  if [[ ! "$n" =~ ^[0-9]+$ ]]; then
+    echo "error: can't read 'number = N' from $BUILD_FILE." >&2
+    exit 1
+  fi
+  BUILD_NUMBER=$((n + 1))
+  sed -E "s/^number = [0-9]+$/number = $BUILD_NUMBER/" "$BUILD_FILE" > "$BUILD_FILE.tmp"
+  mv "$BUILD_FILE.tmp" "$BUILD_FILE"
+  BUILD_BUMPED=1
+  echo "Build $BUILD_NUMBER."
+}
+
+restore_build() {
+  BUILD_BUMPED=""
+  git checkout -- "$BUILD_FILE"
+  echo "Deploy didn't ship; the build number stays at its last value." >&2
+}
+
+# tools/deploy.sh tags HEAD only after rsync succeeds, and can still fail
+# afterwards (the live check). A new deploy-* tag on HEAD means the site
+# shipped, so the build counts even then.
+deploy_and_count() {
+  local before status=0
+  before=$(git tag -l 'deploy-*' --points-at HEAD)
+  tools/deploy.sh || status=$?
+  cd "$ROOT"
+  if [[ "$(git tag -l 'deploy-*' --points-at HEAD)" != "$before" ]]; then
+    BUILD_BUMPED=""
+    git commit -q -m "Publishes build $BUILD_NUMBER." -- "$BUILD_FILE"
+    if ! git push -q; then
+      echo "warning: committed build $BUILD_NUMBER, but the push failed; run 'git push'." >&2
+    fi
+    echo "Published build $BUILD_NUMBER."
+  fi
+  return "$status"
+}
+
 cmd="${1:-all}"
 
 case "$cmd" in
@@ -166,9 +219,10 @@ case "$cmd" in
     lock
     require_clean
     push
+    bump_build
     make_worktree
     build_in_worktree
-    tools/deploy.sh
+    deploy_and_count
     ;;
   build)
     hugo_build
