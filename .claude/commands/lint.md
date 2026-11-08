@@ -5,7 +5,7 @@ Validate blog posts' front matter and links.
 Check all `.md` files under `content/blog/` (or only the path given). For each file, verify:
 
 1. Required front matter fields are present: `title`, `date`, `slug`, `draft`
-2. `date` parses: ISO 8601 (`2026-10-20` or `2026-10-20T09:00:00`). `TBD` or other text breaks the Hugo build; flag it as an error.
+2. `date` parses: ISO 8601 (`2026-10-20` or `2026-10-20T09:00:00`). `TBD` or other text breaks the Hugo build; flag it as an error. A draft (`draft: true`) may leave it empty (`date: ""`), since the date goes on at publish; don't flag that
 3. `slug` is kebab-case and unique within its year folder
 4. `tags` is a list of plain lowercase strings (no `#` prefix)
 5. `title` is sentence case (first word and proper nouns only), per the blog-writing skill
