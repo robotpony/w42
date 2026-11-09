@@ -41,7 +41,7 @@ Alt text is required (the theme leaves out a banner without it). Width and heigh
 
 ## Local options (not set up)
 
-The Mac is an M4 Pro with 48 GB, which runs local models comfortably. The limit is disk: 13 GB was free on 2026-10-23.
+The Mac is an M4 Pro with 48 GB, which runs local models comfortably. Disk was the limit (13 GB free on 2026-10-23); 112 GB was free on 2026-11-09, so every model here fits.
 
 | Tool | Notes |
 |------|-------|
@@ -53,7 +53,7 @@ The Mac is an M4 Pro with 48 GB, which runs local models comfortably. The limit 
 Models for the watercolour look:
 
 - **SDXL plus a watercolour LoRA.** SDXL is about 7 GB, so it fits on the disk. Watercolour LoRAs (small style add-ons) are easy to find, and SDXL's license (OpenRAIL++) allows this use.
-- **FLUX.1 schnell** (Apache 2.0) or **FLUX.1 dev** (non-commercial). Both follow prompts better and come closer to gpt-image, but with their text encoders they're well over the free space unless quantized.
+- **FLUX.1 schnell** (Apache 2.0) or **FLUX.1 dev** (non-commercial). Both follow prompts better and come closer to gpt-image, and with their text encoders they're large, though they now fit on the disk.
 
 Local models need more prompt tuning for this style, and they're weaker at composition, such as "an Atari beside a notebook". They're free per image and run offline, though, so you can generate a batch and pick the best one, and they fit the manifesto's "own the press" argument.
 
@@ -62,5 +62,5 @@ The plan is to give `banner.sh` a `--local` option that sends the prompt to Comf
 ## Open decisions
 
 1. Should the local option use (A) ComfyUI with SDXL and a watercolour LoRA, or (B) Draw Things? Recommended: A, it's already installed and scriptable.
-2. Should we download the SDXL model (about 7 GB)? Recommended: yes, after freeing some disk space, since the generated images and a LoRA need room too.
-3. Should we set up an OpenAI API key and try `banner.sh` on the manifesto? A first prompt: "Loose watercolour on white paper, wide banner: an old Atari computer beside an open notebook of graph-paper sketches, warm autumn palette, ink linework, lots of quiet space at the top".
+2. Should we download the SDXL model (about 7 GB)? Recommended: yes; the disk has room now (2026-11-09).
+3. Decided 2026-11-09: OpenAI first. Bruce sets up a fresh API key, then we try `banner.sh` on the manifesto? A first prompt: "Loose watercolour on white paper, wide banner: an old Atari computer beside an open notebook of graph-paper sketches, warm autumn palette, ink linework, lots of quiet space at the top".

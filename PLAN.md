@@ -2,9 +2,8 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Open
 
-- [ ] **Banner image options** (`tools/IMAGES.md`, three open decisions): `tools/banner.sh` (OpenAI) is untested end to end: the keychain's `openai-api-key` was rejected as incorrect on 2026-11-08, so it needs a fresh platform.openai.com key. The local setup waits on that result; a local option (ComfyUI with SDXL, or Draw Things) is written up but not set up. #todo
-- [ ] **Bring back "carved" on the About page**: it linked the retired warpedvisionsdotorg Instagram, so it's out of the "things I've" list for now. Return it when the carvings have a home (a projects page, a gallery, or posts), between "worked on" and "drawn".
-- [ ] **Essay idea: the LLM filter cuts both ways** (from the manifesto draft, 2026-10-25). "If it isn't good practice without an LLM, it isn't good practice with one" also cuts the other way: a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest of them: no design written down, nothing to check the result against, and nothing to rebuild from. #idea
+- [ ] **Banner images, OpenAI first** (`tools/IMAGES.md`, decided 2026-11-09): Bruce sets up a fresh platform.openai.com key (the keychain's `openai-api-key` was rejected on 2026-11-08), then `tools/banner.sh` gets its first end-to-end test on the manifesto prompt. The local option (ComfyUI with SDXL, or Draw Things) waits on that result. #todo
+- [ ] **Bring back "carved" on the About page**: it linked the retired warpedvisionsdotorg Instagram, so it's out of the "things I've" list for now. Return it when the carvings have a home (a projects page, a gallery, or posts), between "worked on" and "drawn". Later: Bruce needs to pull the carving photos first (2026-11-09). #todo
 
 ## Routine
 
@@ -15,6 +14,7 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 ## Decided
 
 - Search stays off. The theme keeps the templates; enabling it later needs `[outputs] home = ['HTML','RSS','JSON']` and a `layout: search` page.
+- The LLM-filter essay idea ("if it isn't good practice without an LLM, it isn't good practice with one" cuts both ways) folds into the verification debt post as its too-little-thought side (2026-11-09).
 - Retired drafts are deleted with `git rm`, not archived in the repo; git history keeps them (2026-11-09).
 - Food lives on the cookbook site (bruce-loves-to-cook.ca, the not-a-chef repo); `/pages/food/` and `/food/` redirect there.
 - Essay pages carry no sidebars or promos, out of respect for readers. Index pages and About can (2026-10-18).
@@ -24,7 +24,7 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Done
 
-- **2026-11-08**: plan review; phone-width test passed; `archetypes/log-format.md` (an Obsidian template) deleted; merged `hugo-warped-module` branches deleted here (the theme repo's origin copy is left to Bruce); "Built in Canada 🇨🇦" in the footer (theme f829c1a), live by deploy-2026-11-08, the first real deploy from a clean worktree. Then, not yet deployed: the footer's "Build 42.N · hash" (theme 218522e, f348d1e; `data/build.toml` holds `series = 42` and a count seeded at 9, one per earlier deploy tag, and each deploy commits "Publishes build 42.N." once it ships); the projects sidebar renamed the projects block (theme e297503); `/lint` lets drafts leave the date empty; the images-and-visuals phase closed.
+- **2026-11-08**: plan review; phone-width test passed; `archetypes/log-format.md` (an Obsidian template) deleted; merged `hugo-warped-module` branches deleted here (the theme repo's origin copy is left to Bruce); "Built in Canada 🇨🇦" in the footer (theme f829c1a), live by deploy-2026-11-08, the first real deploy from a clean worktree. Then: the footer's "Build 42.N · hash" (theme 218522e, f348d1e; `data/build.toml` holds `series = 42` and a count seeded at 9, one per earlier deploy tag, and each deploy commits "Publishes build 42.N." once it ships), live by build 42.13; the projects sidebar renamed the projects block (theme e297503); `/lint` lets drafts leave the date empty; the images-and-visuals phase closed.
 - **2026-11-04**: reading list from a Goodreads export (the RSS feeds are gone; builds never contact Goodreads); deploys build from a clean worktree of HEAD; deploy host out of committed files; commit message hook from not-a-chef.
 - **2026-10-29**: `timeline`, `flow` and `tabs` fences through hugo-warped's module, theme 0.8.0, live by deploy-2026-10-29-3; banners as `banner:` front matter loaded through the theme's `imagesURL`, which the preview points at the local images repo (theme 3365b3e); preview bound to 127.0.0.1; Hugo version check before previews and builds.
 - **2026-10-22**: "Recently read" shelf and `/reading/` (theme c72d0bd..021fc57); warped.js `debug` off and fonts self-hosted (warped.js ad1ba82; theme eccbda1 dropped Google Fonts).
