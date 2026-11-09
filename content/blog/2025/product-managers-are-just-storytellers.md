@@ -12,13 +12,13 @@ tags:
 
 <!-- #todo Confirm the roadmap meeting and its "Why are we even building this?" question really happened; frame it as a composite if not. -->
 
-I was sitting in a roadmap review meeting a few years back when someone asked the question that cracked everything open: "Why are we even building this?"
+I was sitting in a roadmap review meeting a few years back when someone asked the question, "why are we even building this?"
 
-It was a reasonable question. We had a requirements document. We had metrics showing demand. We had engineering estimates and a timeline. We had everything you're supposed to have. The question was about *meaning*. Why does this matter? What world are we building toward?
+It's a reasonable question. We had a project brief, with clear purpose and intent. We had a requirements document. We had metrics showing demand. We had engineering estimates and timelines. We had everything you're supposed to have. The question was about *meaning*. Why does this matter? What world are we building toward?
 
 The answer wasn't in the document.
 
-Here's the thing about product management: we're not actually managers. We're not really strategists, though people use that word. We're storytellers. Our job is to tell the story about *why* we're building something, and tell it in a way that everyone—engineers, designers, leadership, users—sees themselves in the narrative and understands what we're trying to accomplish.
+The thing about product managers is that the scope of the role is loosely defined. We're not always innovators. We're not always strategists, though you hear that word a lot. We're not really builders, though. hybrid roles do exist. We're storytellers. Our job is to tell the story about *why* we're building something, and tell it in a way that everyone—engineers, designers, leadership, users—sees themselves in the narrative and understands what we're trying to accomplish.
 
 The documents come after. Requirements, specifications, design artifacts, decision records. They're necessary. But they're not where the work actually happens. The work happens when a team understands not just *what* they're building, but *why* it matters.
 
