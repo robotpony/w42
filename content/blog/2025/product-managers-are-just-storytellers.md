@@ -8,6 +8,10 @@ tags:
   - writing
 ---
 
+<!-- #todo Voice pass: it reads drafted, not written. Cut the LLM tells ("cracked everything open", "Let me show you what I mean", "Utterly uninspiring", "Why This Changes Everything", "the actual operating system of your team"), bring the em-dashes down from 20 to 1–2, put the headings in sentence case, and aim for ~1,300 words. -->
+
+<!-- #todo Confirm the roadmap meeting and its "Why are we even building this?" question really happened; frame it as a composite if not. -->
+
 I was sitting in a roadmap review meeting a few years back when someone asked the question that cracked everything open: "Why are we even building this?"
 
 It was a reasonable question. We had a requirements document. We had metrics showing demand. We had engineering estimates and a timeline. We had everything you're supposed to have. The question was about *meaning*. Why does this matter? What world are we building toward?
@@ -21,6 +25,8 @@ The documents come after. Requirements, specifications, design artifacts, decisi
 Most PM writing gets this backwards.
 
 ## The Refunds Story
+
+<!-- #todo Keep this section: it's the post. Confirm the payment platform and the refunds fight are real, or give the real details. -->
 
 Let me show you what I mean.
 
@@ -68,6 +74,8 @@ This is why great engineers don't just execute requirements—they interrogate t
 
 ## The Shapes Stories Take
 
+<!-- #todo Reads like a catalogue. The Comparison Story already works inside the refunds example, so shrink the four shapes to a short list. -->
+
 Not all stories are the same shape. Different narrative structures work for different purposes.
 
 **The Empathy Story** is what we just walked through. A person, their problem, why it matters. Sue and her boutique. A developer struggling with an API that's too complex. A content creator trying to understand why their videos aren't getting recommended. The empathy story grounds everything in human reality.
@@ -82,6 +90,8 @@ The story doesn't have to be perfect. You don't need exact numbers. You need *di
 
 ## Where Stories Live (And Why That Matters)
 
+<!-- #todo Off-thesis: cut to a sentence or two and spin it off as its own essay (institutional memory, archiving and indexing stories, "making the same decision twice"). -->
+
 Most teams fail because stories die.
 
 Someone tells a great story in a meeting. Everyone nods. The moment passes. Months later, a new team member joins, and the story is gone. Six months later, someone re-litigates the exact same tension because they don't know it was already resolved, already thought through, already understood.
@@ -89,6 +99,8 @@ Someone tells a great story in a meeting. Everyone nods. The moment passes. Mont
 Stories need to be *archived and indexed*.
 
 The refunds story doesn't live in a Slack thread that scrolls away. It doesn't live in someone's head. It lives in the product definition, linked to the requirements it justifies. It lives in design artifacts that reference the problem Sue is solving. It lives in engineering specs that quote the story to explain why certain edge cases matter.
+
+<!-- #todo Typo: "Designs definitions" in the next paragraph. -->
 
 Stories turn into requirements. Requirements turn into design outlines. Designs definitions turn into engineering specifications. And the story runs through all of it as the *why*.
 
@@ -106,9 +118,13 @@ It's easy to tell a story that makes your preferred outcome sound inevitable. "T
 
 The guardrail is unglamorous: **facts, motivations, metrics, and people who know the domain calling you out**.
 
+<!-- #todo Confirm the "43% of our customer base" figure is real, or soften it. -->
+
 Sue isn't an invented persona. She's a pattern we observed with 43% of our customer base. We have data showing that customers in that cohort have high churn or low feature adoption. We can see their actual behaviour in support tickets and analytics. The story emerges from that evidence, not the other way around.
 
 Then you add motivations. Why do these people use our product? What are they trying to accomplish? What frustrates them? Not what you think they should want—what they *actually* care about, based on how they spend time and money.
+
+<!-- #todo The next paragraph puts "directional understanding is enough" in quotation marks, as if quoting someone; drop them. -->
 
 Then you tie it to metrics. One choice pushes time-to-first-refund down, the other up. One choice improves retention for this cohort, the other doesn't. The metrics don't have to be precise—"directional understanding is enough"—but they have to be *real*.
 
@@ -121,6 +137,8 @@ That's the check against propaganda. It's not foolproof—you can still fool you
 The moment you realize you're tailoring the story to fit your preferences instead of following where the evidence points, that's when you know you've crossed the line. That's when you need to step back and let the evidence speak instead.
 
 ## Why This Changes Everything
+
+<!-- #todo Three endings: this section, The Practice, and The Real Job each wrap up the post. Keep The Real Job and fold the best lines from the other two into it. -->
 
 When your team shares a story about *why* they're building something, the entire dynamic shifts.
 
