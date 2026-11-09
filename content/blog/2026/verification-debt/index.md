@@ -17,6 +17,8 @@ tags:
 
 <!-- #todo The balance: software has always balanced viable ideas, salable ideas, and viable approaches (can it be solved at all). Two sides of it here: too little thought and it falls over (slop), too much scope and it falls over the same way (verification debt). Eyes bigger than your stomach. -->
 
+<!-- #todo The too-little-thought side, from the manifesto (2026-10-25): "If it isn't good practice without an LLM, it isn't good practice with one" cuts both ways, since a lot of the ways people use LLMs don't hold up. Vibe coding a whole app from a single prompt is the silliest: no design written down, nothing to check the result against, and nothing to rebuild from. That's verification debt from day one. -->
+
 <!-- #todo Evidence from your own projects, all good and curated, but still creep: Scorekeep added iPadOS (more than doubled design and verification time), then games, then features and many refactors, then integrations. Bruce Loves to Cook added methods and blueprints, then drinks. -->
 
 <!-- #todo The practice: how you contain scope now, and how you say no. -->
