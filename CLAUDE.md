@@ -42,7 +42,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
   - `content/blog/` - Blog posts organized by year (2008-2026)
   - `content/projects/` - Maker projects and art
   - `content/pages/` - Static pages (about, etc.)
-- **Not site content:** `trash/` holds retired drafts. Root `projects/` is gitignored (the warped-todo Obsidian plugin writes notes there); never add it back.
+- **Not site content:** Retired drafts are deleted with `git rm` (recover them from history). Root `projects/` is gitignored (the warped-todo Obsidian plugin writes notes there); never add it back.
 
 - **Theme architecture (themes/w42/):**
   - Based on PaperMod with custom "Warped" branding

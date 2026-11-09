@@ -15,7 +15,7 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 ## Decided
 
 - Search stays off. The theme keeps the templates; enabling it later needs `[outputs] home = ['HTML','RSS','JSON']` and a `layout: search` page.
-- `trash/` stays in the repo as an archive of retired drafts.
+- Retired drafts are deleted with `git rm`, not archived in the repo; git history keeps them (2026-11-09).
 - Food lives on the cookbook site (bruce-loves-to-cook.ca, the not-a-chef repo); `/pages/food/` and `/food/` redirect there.
 - Essay pages carry no sidebars or promos, out of respect for readers. Index pages and About can (2026-10-18).
 - `warped.js`/`warped.css` and the fonts come from `cdn.warpedvisions.org`; the theme carries no copy, and the preview serves them from `cdn/`.
