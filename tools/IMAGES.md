@@ -32,10 +32,10 @@ Alt text is required (the theme leaves out a banner without it). Width and heigh
 
 ## Hosted: OpenAI (built)
 
-`tools/banner.sh` calls OpenAI's image API (gpt-image-1 by default; `BANNER_MODEL` overrides it). It crops the 1536x1024 result to 1536x559 (`--crop top|center|bottom`) and saves a JPEG in the images repo under `YYYY/MM/`. `--from` recrops a saved full image without paying for a new one. See `tools/banner.sh --help`.
+`tools/banner.sh` calls OpenAI's image API (gpt-image-2.6-sunburst by default, the detail model; `BANNER_MODEL` overrides it, e.g. with the faster gpt-image-2.6-flare). It asks for a 1536x560 image, the banner shape rounded to the API's multiples of 16, and trims a row to 1536x559 (`--crop` picks the band when a `--from` image is taller) and saves a JPEG in the images repo under `YYYY/MM/`. `--from` recrops a saved full image without paying for a new one. See `tools/banner.sh --help`.
 
-- **API key needed.** It's a platform.openai.com key, billed per image and separate from a ChatGPT subscription. OpenAI may ask you to verify your organization before it allows gpt-image-1. The script reads `OPENAI_API_KEY`, or else the keychain item `openai-api-key`: `security add-generic-password -U -a "$USER" -s openai-api-key -w`.
-- **Untested end to end.** No key was set up. The cropping and the missing-key error were tested on a copy of `harvest-banner.jpg`.
+- **API key needed.** It's a platform.openai.com key, billed per image and separate from a ChatGPT subscription. OpenAI may ask you to verify your organization before it allows GPT Image models; that's in the organization settings (platform.openai.com/settings/organization/general), not the project settings. The script reads `OPENAI_API_KEY`, or else the keychain item `openai-api-key`: `security add-generic-password -U -a "$USER" -s openai-api-key -w`.
+- **Untested end to end.** The first key was rejected (2026-11-08). The cropping (1536x560 and 1536x1024 inputs) and the missing-key error were tested on copies of `harvest-banner.jpg`. The model ID comes from the docs' links (2026-11-10); `/v1/models` confirms it once a key works.
 - **sips quirk.** `sips` silently skips a crop that reaches the image's last row. The script stops one row short and checks the final height.
 - **Strengths:** it follows prompts closely, and it gets the loose ink-and-wash look with little tuning.
 

@@ -8,14 +8,16 @@
 #   name:   file name without extension (harvest-banner)
 #   prompt: the image prompt, or - to read it from stdin (warped:banner-image
 #           writes these)
-#   --crop: which band of the 1536x1024 image to keep (default center)
+#   --crop: which band to keep when the image is taller than the banner
+#           (default center); a fresh 1536x560 image loses one row either way
 #   --from: recrop an image this script already generated, without paying
 #           for a new one; each run prints where it kept the full image
 #
 # The API key comes from OPENAI_API_KEY, or else from the login keychain:
 #   security add-generic-password -U -a "$USER" -s openai-api-key -w
-# BANNER_MODEL overrides the model (default gpt-image-1). IMAGES_REPO overrides
-# where banners go (default ~/projects/sites/images.warpedvisions.org).
+# BANNER_MODEL overrides the model (default gpt-image-2.6-sunburst).
+# IMAGES_REPO overrides where banners go (default
+# ~/projects/sites/images.warpedvisions.org).
 # Refuses to overwrite an existing banner.
 
 set -euo pipefail
@@ -26,10 +28,11 @@ if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
   exit 0
 fi
 
-MODEL="${BANNER_MODEL:-gpt-image-1}"
+MODEL="${BANNER_MODEL:-gpt-image-2.6-sunburst}"
 REPO="${IMAGES_REPO:-$HOME/projects/sites/images.warpedvisions.org}"
 WIDTH=1536
-HEIGHT=1024
+# Ask for the banner shape itself (sizes must be multiples of 16), then trim a row.
+HEIGHT=560
 BANNER_HEIGHT=559
 QUALITY=85
 
@@ -46,14 +49,7 @@ done
 name="${1:?usage: banner.sh [--crop top|center|bottom] <name> <prompt>}"
 dest="$REPO/$(date +%Y/%m)/$name.jpg"
 [[ -e "$dest" ]] && { echo "error: banner exists: $dest" >&2; exit 1; }
-
-case "$crop" in
-  top) offset=0 ;;
-  center) offset=$(( (HEIGHT - BANNER_HEIGHT) / 2 )) ;;
-  # sips silently skips a crop that reaches the last row, so stop one short.
-  bottom) offset=$(( HEIGHT - BANNER_HEIGHT - 1 )) ;;
-  *) echo "error: --crop must be top, center, or bottom" >&2; exit 1 ;;
-esac
+[[ "$crop" =~ ^(top|center|bottom)$ ]] || { echo "error: --crop must be top, center, or bottom" >&2; exit 1; }
 
 if [[ -n "$from" ]]; then
   [[ -f "$from" ]] || { echo "error: not found: $from" >&2; exit 1; }
@@ -87,11 +83,19 @@ else
   jq -r '.data[0].b64_json' <<<"$response" | base64 --decode >"$full"
 fi
 
-size=$(sips -g pixelWidth -g pixelHeight "$full" | awk '/pixel/ {print $2}' | paste -sd x -)
-[[ "$size" == "${WIDTH}x${HEIGHT}" ]] || {
-  echo "error: expected ${WIDTH}x${HEIGHT}, got $size: $full" >&2
+width=$(sips -g pixelWidth "$full" | awk '/pixel/ {print $2}')
+height=$(sips -g pixelHeight "$full" | awk '/pixel/ {print $2}')
+[[ "$width" == "$WIDTH" ]] && (( height > BANNER_HEIGHT )) || {
+  echo "error: expected ${WIDTH} wide and over ${BANNER_HEIGHT} tall, got ${width}x${height}: $full" >&2
   exit 1
 }
+
+case "$crop" in
+  top) offset=0 ;;
+  center) offset=$(( (height - BANNER_HEIGHT) / 2 )) ;;
+  # sips silently skips a crop that reaches the last row, so stop one short.
+  bottom) offset=$(( height - BANNER_HEIGHT - 1 )) ;;
+esac
 
 mkdir -p "$(dirname "$dest")"
 sips -s format jpeg -s formatOptions "$QUALITY" \

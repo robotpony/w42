@@ -14,7 +14,7 @@ This is a Hugo static site for warpedvisions.org, a personal blog focused on ess
 - `make build` - Build static site to /public directory (`tools/publish.sh build`)
 - `make reading` - Import the reading list from a Goodreads library export (`tools/goodreads.sh import [file]`, default `goodreads_library_export.csv`, gitignored because it holds reviews): `data/reading.json` and covers in `assets/reading/`, both committed. Goodreads' RSS feeds are gone, so Bruce downloads the export by hand about monthly, from https://www.goodreads.com/review/import. Previews and builds never contact Goodreads, and they print a note when the last import is over 35 days old
 
-- `tools/banner.sh <name> <prompt>` - Generate a watercolour-style banner with OpenAI's image API (needs `OPENAI_API_KEY` or an `openai-api-key` keychain entry), crop it to 1536x559, and save it in the images repo under `YYYY/MM/`. `--from` recrops without a new call; `--help` has the rest. Options, local tools included, are in `tools/IMAGES.md`
+- `tools/banner.sh <name> <prompt>` - Generate a watercolour-style banner with OpenAI's image API (needs `OPENAI_API_KEY` or an `openai-api-key` keychain entry), generate it at 1536x560, trim it to 1536x559, and save it in the images repo under `YYYY/MM/`. `--from` recrops without a new call; `--help` has the rest. Options, local tools included, are in `tools/IMAGES.md`
 
 **Claude commands** (`.claude/commands/`, same pattern as ~/writing/not-a-chef):
 - `/preview [all] [post]` - start the dev server and open the newest post (or the one named); `all`, `/preview-all`, or a future-dated target adds future-dated posts
