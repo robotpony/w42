@@ -5,6 +5,7 @@
 #
 # Usage: tools/banner.sh [--crop top|center|bottom] <name> <prompt>
 #        tools/banner.sh [--crop top|center|bottom] --from <png> <name>
+#        tools/banner.sh --check
 #   name:   file name without extension (harvest-banner)
 #   prompt: the image prompt, or - to read it from stdin (warped:banner-image
 #           writes these)
@@ -12,10 +13,12 @@
 #           (default center); a fresh 1536x560 image loses one row either way
 #   --from: recrop an image this script already generated, without paying
 #           for a new one; each run prints where it kept the full image
+#   --check: test the key setup for free (finds the key, checks its length,
+#           and asks OpenAI which image models it can use); never prints it
 #
 # The API key comes from OPENAI_API_KEY, or else from the login keychain. Copy
-# the key, then (the -w prompt cuts input at 128 characters, too short for
-# sk-proj- keys, so it reads the clipboard):
+# the key, save it from the clipboard (a bare -w prompt cuts it at 128
+# characters), then run --check. Full setup: tools/IMAGES.md.
 #   security add-generic-password -U -a "$USER" -s openai-api-key -w "$(pbpaste)"
 # BANNER_MODEL overrides the model (default gpt-image-2.6-sunburst).
 # IMAGES_REPO overrides where banners go (default
@@ -30,7 +33,43 @@ if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
   exit 0
 fi
 
+# Sets $key and $key_source, or exits with setup help.
+find_key() {
+  key="${OPENAI_API_KEY:-}" key_source="OPENAI_API_KEY"
+  if [[ -z "$key" ]]; then
+    key=$(security find-generic-password -s openai-api-key -w 2>/dev/null || true)
+    key_source="keychain item openai-api-key"
+  fi
+  [[ -n "$key" ]] || {
+    echo "error: no API key; set OPENAI_API_KEY or add openai-api-key to the keychain (see tools/IMAGES.md)" >&2
+    exit 1
+  }
+}
+
 MODEL="${BANNER_MODEL:-gpt-image-2.6-sunburst}"
+
+if [[ "${1:-}" == "--check" ]]; then
+  find_key
+  echo "Key: from $key_source, ${#key} characters, ends ${key: -4}"
+  # The keychain's -w prompt keeps 128 characters; sk-proj- keys run about 164.
+  if [[ ${#key} -eq 128 || "$key" =~ [[:space:]] ]]; then
+    echo "error: the key looks cut short or has stray spaces; save it again from the clipboard (tools/IMAGES.md)" >&2
+    exit 1
+  fi
+  models=$(curl -sS https://api.openai.com/v1/models -H "Authorization: Bearer $key")
+  if jq -e '.error' >/dev/null <<<"$models"; then
+    echo "error: OpenAI refused the key: $(jq -r '.error.message' <<<"$models" | sed -E 's/sk-[A-Za-z0-9_*-]+/sk-…/')" >&2
+    exit 1
+  fi
+  echo "Image models: $(jq -r '[.data[].id | select(startswith("gpt-image"))] | sort | join(", ")' <<<"$models")"
+  if jq -e --arg m "$MODEL" 'any(.data[]; .id == $m)' >/dev/null <<<"$models"; then
+    echo "OK: $MODEL is available. (Organization verification, if needed, only shows on a real call.)"
+  else
+    echo "error: $MODEL isn't in the key's model list; set BANNER_MODEL to one above, or check the project's Limits" >&2
+    exit 1
+  fi
+  exit 0
+fi
 REPO="${IMAGES_REPO:-$HOME/projects/sites/images.warpedvisions.org}"
 WIDTH=1536
 # Ask for the banner shape itself (sizes must be multiples of 16), then trim a row.
@@ -60,14 +99,7 @@ else
   prompt="${2:?usage: banner.sh [--crop top|center|bottom] <name> <prompt>}"
   [[ "$prompt" == "-" ]] && prompt=$(cat)
 
-  key="${OPENAI_API_KEY:-}"
-  if [[ -z "$key" ]]; then
-    key=$(security find-generic-password -s openai-api-key -w 2>/dev/null || true)
-  fi
-  [[ -n "$key" ]] || {
-    echo "error: no API key; set OPENAI_API_KEY or add openai-api-key to the keychain (see --help)" >&2
-    exit 1
-  }
+  find_key
 
   full="${TMPDIR:-/tmp}/banner-$name.png"
   echo "Generating $name with $MODEL (this takes a minute)..." >&2
