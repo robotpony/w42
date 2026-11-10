@@ -2,7 +2,7 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Open
 
-- [ ] **Banner images, OpenAI first** (`tools/IMAGES.md`, decided 2026-11-09): The key works (`tools/banner.sh --check` passed 2026-11-10); next, `tools/banner.sh` gets its first end-to-end test on the manifesto prompt. The local option (ComfyUI with SDXL, or Draw Things) waits on that result. #todo
+- [ ] **Banner images, OpenAI first** (`tools/IMAGES.md`, decided 2026-11-09): It works end to end (2026-11-10: `--check` passed, and the manifesto prompt made `2026/11/manifesto-banner.jpg`, uncommitted in the images repo). Next: Bruce judges the look. The local option (ComfyUI with SDXL, or Draw Things) waits on that result. #todo
 - [ ] **Bring back "carved" on the About page**: it linked the retired warpedvisionsdotorg Instagram, so it's out of the "things I've" list for now. Return it when the carvings have a home (a projects page, a gallery, or posts), between "worked on" and "drawn". Later: Bruce needs to pull the carving photos first (2026-11-09). #todo
 
 ## Routine
