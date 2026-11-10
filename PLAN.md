@@ -2,7 +2,6 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Open
 
-- [ ] **Banner images, OpenAI first** (`tools/IMAGES.md`, decided 2026-11-09): It works end to end (2026-11-10: `--check` passed, and the manifesto prompt made `2026/11/manifesto-banner.jpg`, uncommitted in the images repo). Next: Bruce judges the look. The local option (ComfyUI with SDXL, or Draw Things) waits on that result. #todo
 - [ ] **Bring back "carved" on the About page**: it linked the retired warpedvisionsdotorg Instagram, so it's out of the "things I've" list for now. Return it when the carvings have a home (a projects page, a gallery, or posts), between "worked on" and "drawn". Later: Bruce needs to pull the carving photos first (2026-11-09). #todo
 
 ## Routine
@@ -24,6 +23,7 @@ Site, setup, and theme plan (started 2026-10-15; last reviewed 2026-11-08 on Hug
 
 ## Done
 
+- **2026-11-10**: banners from OpenAI's image API: `tools/banner.sh` on gpt-image-2.6-sunburst at 1536x560, a free `--check`, key setup in `tools/IMAGES.md` (the keychain's `-w` prompt cuts keys at 128 characters), a default no-text-or-logos guard (`--allow-marks` skips it), and banners treated as mocks for review; local options dropped.
 - **2026-11-08**: plan review; phone-width test passed; `archetypes/log-format.md` (an Obsidian template) deleted; merged `hugo-warped-module` branches deleted here (the theme repo's origin copy is left to Bruce); "Built in Canada 🇨🇦" in the footer (theme f829c1a), live by deploy-2026-11-08, the first real deploy from a clean worktree. Then: the footer's "Build 42.N · hash" (theme 218522e, f348d1e; `data/build.toml` holds `series = 42` and a count seeded at 9, one per earlier deploy tag, and each deploy commits "Publishes build 42.N." once it ships), live by build 42.13; the projects sidebar renamed the projects block (theme e297503); `/lint` lets drafts leave the date empty; the images-and-visuals phase closed.
 - **2026-11-04**: reading list from a Goodreads export (the RSS feeds are gone; builds never contact Goodreads); deploys build from a clean worktree of HEAD; deploy host out of committed files; commit message hook from not-a-chef.
 - **2026-10-29**: `timeline`, `flow` and `tabs` fences through hugo-warped's module, theme 0.8.0, live by deploy-2026-10-29-3; banners as `banner:` front matter loaded through the theme's `imagesURL`, which the preview points at the local images repo (theme 3365b3e); preview bound to 127.0.0.1; Hugo version check before previews and builds.

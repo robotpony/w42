@@ -3,7 +3,7 @@
 # banner shape (1536x559, like the 2025 watercolour banners), and save it as a
 # JPEG in the images repo under YYYY/MM/.
 #
-# Usage: tools/banner.sh [--crop top|center|bottom] <name> <prompt>
+# Usage: tools/banner.sh [--crop top|center|bottom] [--allow-marks] <name> <prompt>
 #        tools/banner.sh [--crop top|center|bottom] --from <png> <name>
 #        tools/banner.sh --check
 #   name:   file name without extension (harvest-banner)
@@ -11,6 +11,9 @@
 #           writes these)
 #   --crop: which band to keep when the image is taller than the banner
 #           (default center); a fresh 1536x560 image loses one row either way
+#   --allow-marks: leave off the guard the script adds to every prompt by
+#           default (no text, logos, code, or sprites; blank pages and screens),
+#           for a post that wants them on purpose
 #   --from: recrop an image this script already generated, without paying
 #           for a new one; each run prints where it kept the full image
 #   --check: test the key setup for free (finds the key, checks its length,
@@ -23,7 +26,8 @@
 # BANNER_MODEL overrides the model (default gpt-image-2.6-sunburst).
 # IMAGES_REPO overrides where banners go (default
 # ~/projects/sites/images.warpedvisions.org).
-# Refuses to overwrite an existing banner.
+# Refuses to overwrite an existing banner. Each banner is a mock until Bruce
+# approves it: the script opens it for review, and a rejected one is deleted.
 
 set -euo pipefail
 
@@ -79,10 +83,12 @@ QUALITY=85
 
 crop=center
 from=""
+guard=1
 while [[ "${1:-}" == --* ]]; do
   case "$1" in
     --crop) crop="${2:?--crop needs top, center, or bottom}"; shift 2 ;;
     --from) from="${2:?--from needs a png}"; shift 2 ;;
+    --allow-marks) guard=0; shift ;;
     *) echo "error: unknown option: $1" >&2; exit 1 ;;
   esac
 done
@@ -98,6 +104,11 @@ if [[ -n "$from" ]]; then
 else
   prompt="${2:?usage: banner.sh [--crop top|center|bottom] <name> <prompt>}"
   [[ "$prompt" == "-" ]] && prompt=$(cat)
+  # The model draws lettering, logos and code faithfully, and invented code or
+  # sprites would pass for Bruce's real old work, so ask for none by default.
+  if (( guard )); then
+    prompt+=" No text, letters, numbers, logos, brand names, code, or pixel sprites anywhere; any screens, pages, or notebooks are blank or loose abstract washes."
+  fi
 
   find_key
 
@@ -145,3 +156,5 @@ got=$(sips -g pixelHeight "$dest" | awk '/pixel/ {print $2}')
 echo "Full image: $full (recrop with --from)" >&2
 echo "Banner: $dest"
 echo "URL: https://images.warpedvisions.org/${dest#"$REPO"/}"
+echo "Mock for review: approve before it goes in a post or the images repo is committed; delete it if rejected." >&2
+[[ -n "${BANNER_NO_OPEN:-}" ]] || open "$dest"

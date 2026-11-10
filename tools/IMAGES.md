@@ -1,6 +1,6 @@
 # Banner images
 
-Notes on generating post banners, written 2026-10-23 for review. The open decisions are at the end.
+How post banners are made. OpenAI's image API is the tool (decided 2026-11-10, after the first run matched the 2025 look); the local options were dropped.
 
 ## The current look
 
@@ -30,12 +30,14 @@ banner:
 
 Alt text is required (the theme leaves out a banner without it). Width and height default to 1536x559. The preview serves the file from the local images repo, so it shows before the images repo is pushed and deployed.
 
-## Hosted: OpenAI (built)
+## OpenAI (`tools/banner.sh`)
 
 `tools/banner.sh` calls OpenAI's image API (gpt-image-2.6-sunburst by default, the detail model; `BANNER_MODEL` overrides it, e.g. with the faster gpt-image-2.6-flare). It asks for a 1536x560 image, the banner shape rounded to the API's multiples of 16, and trims a row to 1536x559 (`--crop` picks the band when a `--from` image is taller) and saves a JPEG in the images repo under `YYYY/MM/`. `--from` recrops a saved full image without paying for a new one. See `tools/banner.sh --help`.
 
 - **API key needed.** It's a platform.openai.com key, billed per image and separate from a ChatGPT subscription. Setup is below.
-- **Model and size.** `--check` confirmed gpt-image-2.6-sunburst on 2026-11-10; plain gpt-image-1 is gone from the model list, so the old default would fail even with a good key. Custom sizes follow the docs (multiples of 16, ratio up to 3:1); the first real call (2026-11-10, `2026/11/manifesto-banner.jpg`) took 1536x560 in 38 seconds and needed no organization verification. The cropping was tested on 1536x560 and 1536x1024 copies of `harvest-banner.jpg`.
+- **Model and size.** `--check` confirmed gpt-image-2.6-sunburst on 2026-11-10; plain gpt-image-1 is gone from the model list, so the old default would fail even with a good key. Custom sizes follow the docs (multiples of 16, ratio up to 3:1); the first real call (2026-11-10, a test banner since deleted) took 1536x560 in 38 seconds and needed no organization verification. The cropping was tested on 1536x560 and 1536x1024 copies of `harvest-banner.jpg`.
+- **Prompt guard.** The model draws lettering, logos and code faithfully, and invented code or sprites would pass for Bruce's real old work. So the script adds a line to every prompt by default: no text, logos, code or sprites, and any pages and screens left blank. `--allow-marks` leaves it off for a post that wants those on purpose.
+- **Mocks first.** Every generated banner is a mock: the script opens it for review, and it goes in a post (and the images repo is committed) only once Bruce approves it. A rejected banner is deleted, and the prompt is revised for the next run.
 - **sips quirk.** `sips` silently skips a crop that reaches the image's last row. The script stops one row short and checks the final height.
 - **Strengths:** it follows prompts closely, and it gets the loose ink-and-wash look with little tuning.
 
@@ -65,28 +67,6 @@ If `--check` fails:
 - **Default model missing:** the project's Limits tab (Project Settings) may block it, or the ID has changed. Set `BANNER_MODEL` to one the check lists.
 - **"must be verified"** on the first real call (the check can't see it): verify the organization at platform.openai.com/settings/organization/general. That's organization settings, a level above the Project Settings tabs. Access can take about 15 minutes to arrive.
 
-## Local options (not set up)
+## Local options (dropped)
 
-The Mac is an M4 Pro with 48 GB, which runs local models comfortably. Disk was the limit (13 GB free on 2026-10-23); 112 GB was free on 2026-11-09, so every model here fits.
-
-| Tool | Notes |
-|------|-------|
-| ComfyUI | Already installed (Comfy Desktop, `~/ComfyUI-Installs`, 2.6 GB, no models yet). Node-based and the most flexible, with a local HTTP API that `banner.sh` could call with a saved workflow. It has a learning curve. |
-| Draw Things | A free, Mac-native app from the App Store. The easiest to get good results from, it downloads models for you and can run a local API server. |
-| mflux | A command-line FLUX runner built on Apple's MLX. Easy to script, but it needs a Python setup, and FLUX models are large. |
-| DiffusionBee | The simplest app, but it has fallen behind on newer models. Skip it. |
-
-Models for the watercolour look:
-
-- **SDXL plus a watercolour LoRA.** SDXL is about 7 GB, so it fits on the disk. Watercolour LoRAs (small style add-ons) are easy to find, and SDXL's license (OpenRAIL++) allows this use.
-- **FLUX.1 schnell** (Apache 2.0) or **FLUX.1 dev** (non-commercial). Both follow prompts better and come closer to gpt-image, and with their text encoders they're large, though they now fit on the disk.
-
-Local models need more prompt tuning for this style, and they're weaker at composition, such as "an Atari beside a notebook". They're free per image and run offline, though, so you can generate a batch and pick the best one, and they fit the manifesto's "own the press" argument.
-
-The plan is to give `banner.sh` a `--local` option that sends the prompt to ComfyUI's API, keeping the cropping and saving it has now.
-
-## Open decisions
-
-1. Should the local option use (A) ComfyUI with SDXL and a watercolour LoRA, or (B) Draw Things? Recommended: A, it's already installed and scriptable.
-2. Should we download the SDXL model (about 7 GB)? Recommended: yes; the disk has room now (2026-11-09).
-3. Decided 2026-11-09: OpenAI first. Bruce sets up a fresh API key, then we try `banner.sh` on the manifesto? A first prompt: "Loose watercolour on white paper, wide banner: an old Atari computer beside an open notebook of graph-paper sketches, warm autumn palette, ink linework, lots of quiet space at the top".
+ComfyUI (SDXL with a watercolour LoRA), Draw Things, mflux and DiffusionBee were weighed on 2026-11-09. They're free per image and run offline, but they need more prompt tuning and compose worse. The first OpenAI banner (2026-11-10) matched the 2025 look closely, so they were dropped; git history has the comparison.
