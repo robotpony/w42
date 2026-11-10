@@ -34,7 +34,7 @@ Alt text is required (the theme leaves out a banner without it). Width and heigh
 
 `tools/banner.sh` calls OpenAI's image API (gpt-image-1 by default; `BANNER_MODEL` overrides it). It crops the 1536x1024 result to 1536x559 (`--crop top|center|bottom`) and saves a JPEG in the images repo under `YYYY/MM/`. `--from` recrops a saved full image without paying for a new one. See `tools/banner.sh --help`.
 
-- **API key needed.** It's a platform.openai.com key, billed per image and separate from a ChatGPT subscription. OpenAI may ask you to verify your organization before it allows gpt-image-1. The script reads `OPENAI_API_KEY`, or else the keychain item `openai-api-key`: `security add-generic-password -a "$USER" -s openai-api-key -w`.
+- **API key needed.** It's a platform.openai.com key, billed per image and separate from a ChatGPT subscription. OpenAI may ask you to verify your organization before it allows gpt-image-1. The script reads `OPENAI_API_KEY`, or else the keychain item `openai-api-key`: `security add-generic-password -U -a "$USER" -s openai-api-key -w`.
 - **Untested end to end.** No key was set up. The cropping and the missing-key error were tested on a copy of `harvest-banner.jpg`.
 - **sips quirk.** `sips` silently skips a crop that reaches the image's last row. The script stops one row short and checks the final height.
 - **Strengths:** it follows prompts closely, and it gets the loose ink-and-wash look with little tuning.

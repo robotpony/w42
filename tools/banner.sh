@@ -13,7 +13,7 @@
 #           for a new one; each run prints where it kept the full image
 #
 # The API key comes from OPENAI_API_KEY, or else from the login keychain:
-#   security add-generic-password -a "$USER" -s openai-api-key -w
+#   security add-generic-password -U -a "$USER" -s openai-api-key -w
 # BANNER_MODEL overrides the model (default gpt-image-1). IMAGES_REPO overrides
 # where banners go (default ~/projects/sites/images.warpedvisions.org).
 # Refuses to overwrite an existing banner.
