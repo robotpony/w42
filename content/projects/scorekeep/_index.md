@@ -33,6 +33,4 @@ We play a lot of games, and not just at home. We've discovered the fun in taking
 
 We even bring our games on vacation: to the beach, on decks and verandas, in parks, and when sailing. There is always time to play a game when we're winding down.
 
-While paper works well enough, I started using a spreadsheet years ago to score our family's version of 4-Card Golf. Try using that spreadsheet on a phone and the motivation for a simple app becomes crystal clear: data entry sucks, and everything's manual. It's also handy to use as a cheat sheet for those games that have special cards, as we're always teaching new people our favourite games.
-
-
+While paper works well enough, I started using a spreadsheet years ago to score our family's version of 4-Card Golf. Try using that spreadsheet on a phone and the motivation for a simple app becomes crystal clear: data entry sucks, and everything's manual. We also use Scorekeep as a cheat sheet for those games that have special cards, as we're always teaching new people our favourite games.
