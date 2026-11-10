@@ -13,6 +13,7 @@ cascade:
 
 A scorepad for the card and dice games you actually play. [Scorekeep](https://scorekeep.warpedvisions.org/) is an iPhone and iPad app that does the maths, applies the house rules, and remembers every game, on sheets shaped the way you'd draw them on paper.
 
+<!-- When Scorekeep's site/hugo.toml gets a public TestFlight betaURL, swap the email invite for that link. -->
 > **Coming soon, testing now.** Scorekeep 1.0 is in TestFlight while I finish the App Store checklist and a last round of playtesting. Want to try it? Email [scorekeep@warpedvisions.org](mailto:scorekeep@warpedvisions.org) for an invite, and send bugs to the same address. Until the first release, saved games may not survive from one test build to the next.
 
 ### What it does
@@ -32,6 +33,8 @@ Eleven, house rules built in: Dice 10,000, 4-Card Golf, Gin Rummy, Cribbage, Cra
 Free. No account, no ads. No sync or analytics either: your games stay on the device ([privacy policy](https://scorekeep.warpedvisions.org/privacy/)). iPhone and iPad on iOS 17 or later, and Apple Silicon Macs as an iPad app.
 
 ### Why I built it
+
+We play a lot of games, but not just at home. We
 
 [PERSONAL: the short version of the site's "Why Scorekeep?": you and your partner playing at the beach, in pubs, on vacation; a spreadsheet that took a dozen taps per number; forgetting the rules to games you hadn't played in a while]
 
