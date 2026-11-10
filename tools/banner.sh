@@ -13,8 +13,10 @@
 #   --from: recrop an image this script already generated, without paying
 #           for a new one; each run prints where it kept the full image
 #
-# The API key comes from OPENAI_API_KEY, or else from the login keychain:
-#   security add-generic-password -U -a "$USER" -s openai-api-key -w
+# The API key comes from OPENAI_API_KEY, or else from the login keychain. Copy
+# the key, then (the -w prompt cuts input at 128 characters, too short for
+# sk-proj- keys, so it reads the clipboard):
+#   security add-generic-password -U -a "$USER" -s openai-api-key -w "$(pbpaste)"
 # BANNER_MODEL overrides the model (default gpt-image-2.6-sunburst).
 # IMAGES_REPO overrides where banners go (default
 # ~/projects/sites/images.warpedvisions.org).
